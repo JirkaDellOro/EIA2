@@ -1,6 +1,6 @@
 <map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
-<node CREATED="1480496236572" ID="ID_1483245584" MODIFIED="1485857615834" TEXT="Entwicklung&#xa;Interaktiver&#xa;Anwendungen&#xa;II">
+<node CREATED="1480496236572" ID="ID_1483245584" MODIFIED="1485857725610" TEXT="Entwicklung Interaktiver Anwendungen II">
 <node CREATED="1480496315340" HGAP="44" ID="ID_1809458400" MODIFIED="1485857584149" POSITION="right" TEXT="Installations" VSHIFT="-152">
 <node CREATED="1485856687396" FOLDED="true" ID="ID_927234325" MODIFIED="1485856739383" TEXT="Eclipse">
 <node CREATED="1485856693472" ID="ID_1923863265" MODIFIED="1485856731094" TEXT="Eclipse Neon for JavaScript and Web Developers"/>
