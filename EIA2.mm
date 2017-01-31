@@ -1,17 +1,7 @@
 <map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
-<node CREATED="1480496236572" ID="ID_1483245584" MODIFIED="1480496289269">
-<richcontent TYPE="NODE"><html>
-  <head>
-    
-  </head>
-  <body>
-    <p style="text-align: center">
-      Entwicklung<br />Interaktiver<br />Anwendungen<br />II
-    </p>
-  </body>
-</html></richcontent>
-<node CREATED="1480496315340" FOLDED="true" HGAP="44" ID="ID_1809458400" MODIFIED="1485857154405" POSITION="right" TEXT="Installations" VSHIFT="-152">
+<node CREATED="1480496236572" ID="ID_1483245584" MODIFIED="1485857615834" TEXT="Entwicklung&#xa;Interaktiver&#xa;Anwendungen&#xa;II">
+<node CREATED="1480496315340" HGAP="44" ID="ID_1809458400" MODIFIED="1485857584149" POSITION="right" TEXT="Installations" VSHIFT="-152">
 <node CREATED="1485856687396" FOLDED="true" ID="ID_927234325" MODIFIED="1485856739383" TEXT="Eclipse">
 <node CREATED="1485856693472" ID="ID_1923863265" MODIFIED="1485856731094" TEXT="Eclipse Neon for JavaScript and Web Developers"/>
 </node>
@@ -100,10 +90,10 @@
 </node>
 </node>
 </node>
-<node CREATED="1480754786292" FOLDED="true" ID="ID_172686505" MODIFIED="1484651490196" POSITION="left" TEXT="Terminal">
+<node CREATED="1480754786292" FOLDED="true" ID="ID_172686505" MODIFIED="1485857596157" POSITION="left" TEXT="Terminal">
 <node CREATED="1480754795203" ID="ID_1096568647" MODIFIED="1480783779871" TEXT="Rightclick on Project-&gt;start local terminal-&gt;Git Bash"/>
 </node>
-<node CREATED="1481403992317" FOLDED="true" HGAP="55" ID="ID_187226101" MODIFIED="1484651509700" POSITION="right" TEXT="Curriculum" VSHIFT="67">
+<node CREATED="1481403992317" FOLDED="true" HGAP="55" ID="ID_187226101" MODIFIED="1485857598063" POSITION="right" TEXT="Curriculum" VSHIFT="67">
 <node CREATED="1481404003125" FOLDED="true" ID="ID_1041763061" MODIFIED="1481409971291" TEXT="Set up a github page">
 <node CREATED="1481404017272" ID="ID_1256980336" MODIFIED="1481404024465" TEXT="get to know git"/>
 <node CREATED="1481404025274" ID="ID_1745096591" MODIFIED="1481404030279" TEXT="get to know git hub"/>
