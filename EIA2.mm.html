@@ -1,0 +1,1444 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>EIA2</title>
+<style type="text/css">
+    li { list-style: none;  margin: 0; }
+    p { margin: 0; }
+    span.foldopened { color: white; font-size: xx-small;
+    border-width: 1; font-family: monospace; padding: 0em 0.25em 0em 0.25em; background: #e0e0e0;
+    VISIBILITY: visible;
+    cursor:pointer; }
+
+
+    span.foldclosed { color: #666666; font-size: xx-small;
+    border-width: 1; font-family: monospace; padding: 0em 0.25em 0em 0.25em; background: #e0e0e0;
+    VISIBILITY: hidden;
+    cursor:pointer; }
+
+    span.foldspecial { color: #666666; font-size: xx-small; border-style: none solid solid none;
+    border-color: #CCCCCC; border-width: 1; font-family: sans-serif; padding: 0em 0.1em 0em 0.1em; background: #e0e0e0;
+    cursor:pointer; }
+
+    span.l { color: red; font-weight: bold; }
+
+    a.mapnode:link {text-decoration: none; color: black; }
+    a.mapnode:visited {text-decoration: none; color: black; }
+    a.mapnode:active {text-decoration: none; color: black; }
+    a.mapnode:hover {text-decoration: none; color: black; background: #eeeee0; }
+
+</style>
+<!-- ^ Position is not set to relative / absolute here because of Mozilla -->
+</head>
+<body>
+
+<script type="text/javascript">
+   // Here we implement folding. It works fine with MSIE5.5, MSIE6.0 and
+   // Mozilla 0.9.6.
+
+   if (document.layers) {
+      //Netscape 4 specific code
+      pre = 'document.';
+      post = ''; }
+   if (document.getElementById) {
+      //Netscape 6 specific code
+      pre = 'document.getElementById("';
+      post = '").style'; }
+   if (document.all) {
+      //IE4+ specific code
+      pre = 'document.all.';
+      post = '.style'; }
+
+function layer_exists(layer) {
+   try {
+      eval(pre + layer + post);
+      return true; }
+   catch (error) {
+      return false; }}
+
+function show_layer(layer) {
+   eval(pre + layer + post).position = 'relative'; 
+   eval(pre + layer + post).visibility = 'visible'; }
+
+function hide_layer(layer) {
+   eval(pre + layer + post).visibility = 'hidden';
+   eval(pre + layer + post).position = 'absolute'; }
+
+function hide_folder(folder) {
+    hide_folding_layer(folder)
+    show_layer('show'+folder);
+
+    scrollBy(0,0); // This is a work around to make it work in Browsers (Explorer, Mozilla)
+}
+
+function show_folder(folder) {
+    // Precondition: all subfolders are folded
+
+    show_layer('hide'+folder);
+    hide_layer('show'+folder);
+    show_layer('fold'+folder);
+
+    scrollBy(0,0); // This is a work around to make it work in Browsers (Explorer, Mozilla)
+
+    var i;
+    for (i=1; layer_exists('fold'+folder+'_'+i); ++i) {
+       show_layer('show'+folder+'_'+i); }
+}
+function show_folder_completely(folder) {
+    // Precondition: all subfolders are folded
+
+    show_layer('hide'+folder);
+    hide_layer('show'+folder);
+    show_layer('fold'+folder);
+
+    scrollBy(0,0); // This is a work around to make it work in Browsers (Explorer, Mozilla)
+
+    var i;
+    for (i=1; layer_exists('fold'+folder+'_'+i); ++i) {
+       show_folder_completely(folder+'_'+i); }
+}
+
+
+
+function hide_folding_layer(folder) {
+   var i;
+   for (i=1; layer_exists('fold'+folder+'_'+i); ++i) {
+       hide_folding_layer(folder+'_'+i); }
+
+   hide_layer('hide'+folder);
+   hide_layer('show'+folder);
+   hide_layer('fold'+folder);
+
+   scrollBy(0,0); // This is a work around to make it work in Browsers (Explorer, Mozilla)
+}
+
+function fold_document() {
+   var i;
+   var folder = '1';
+   for (i=1; layer_exists('fold'+folder+'_'+i); ++i) {
+       hide_folder(folder+'_'+i); }
+}
+
+function unfold_document() {
+   var i;
+   var folder = '1';
+   for (i=1; layer_exists('fold'+folder+'_'+i); ++i) {
+       show_folder_completely(folder+'_'+i); }
+}
+
+</script>
+<SPAN class="foldspecial" onclick="fold_document()">All +</SPAN>
+<SPAN class="foldspecial" onclick="unfold_document()">All -</SPAN>
+<p>EIA2
+<ul><li><span id="show1_1" class="foldclosed" onClick="show_folder('1_1')" style="POSITION: absolute">+</span> <span id="hide1_1" class="foldopened" onClick="hide_folder('1_1')">-</span>
+References
+<ul id="fold1_1" style="POSITION: relative; VISIBILITY: visible;"><li><a href="DIA2Landscape.png" target="_blank"><span class=l>~</span>&nbsp;Landscape
+</a>
+
+</li>
+<li><a href="https://git-scm.com/" target="_blank"><span class=l>~</span>&nbsp;Git
+</a>
+
+</li>
+<li><a href="https://help.github.com/" target="_blank"><span class=l>~</span>&nbsp;Github
+</a>
+
+</li>
+<li><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links" target="_blank"><span class=l>~</span>&nbsp;Markdown
+</a>
+
+</li>
+<li><a href="https://wiki.selfhtml.org/wiki/JavaScript" target="_blank"><span class=l>~</span>&nbsp;Javascript
+</a>
+
+</li>
+<li><a href="http://www.typescriptlang.org/" target="_blank"><span class=l>~</span>&nbsp;TypeScript
+</a>
+
+</li>
+<li><a href="DO-Hierarchy.pdf" target="_blank"><span class=l>~</span>&nbsp;DOM-Classes
+</a>
+
+</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D" target="_blank"><span class=l>~</span>&nbsp;CanvasRenderingContext2D
+</a>
+
+</li>
+<li><a href="http://www.cheat-sheets.org/saved-copy/HTML5_Canvas_Cheat_Sheet.pdf" target="_blank"><span class=l>~</span>&nbsp;HTML5 Canvas Cheat Sheet
+</a>
+
+</li>
+<li><a href="http://computergrafik.entertrain.com/" target="_blank"><span class=l>~</span>&nbsp;Computergrafik
+</a>
+
+</li>
+<li><a href="https://nodejs.org/dist/latest-v7.x/docs/api/" target="_blank"><span class=l>~</span>&nbsp;Node
+</a>
+
+</li>
+<li><a href="https://docs.mongodb.com/manual/reference/method/" target="_blank"><span class=l>~</span>&nbsp;Mongo shell
+</a>
+
+</li>
+<li><a href="http://mongodb.github.io/node-mongodb-native/2.0/api/index.html" target="_blank"><span class=l>~</span>&nbsp;Node mongodb driver
+</a>
+
+</li>
+<li><a href="http://www.mongodbspain.com/wp-content/uploads/2014/03/MongoDBSpain-CheatSheet-p1.jpg" target="_blank"><span class=l>~</span>&nbsp;MongoDB Cheat Sheet
+</a>
+
+</li>
+<li><a href="https://devcenter.heroku.com/categories/reference" target="_blank"><span class=l>~</span>&nbsp;Heroku
+</a>
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2" class="foldclosed" onClick="show_folder('1_2')" style="POSITION: absolute">+</span> <span id="hide1_2" class="foldopened" onClick="hide_folder('1_2')">-</span>
+Installations
+<ul id="fold1_2" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_2_1" class="foldclosed" onClick="show_folder('1_2_1')" style="POSITION: absolute">+</span> <span id="hide1_2_1" class="foldopened" onClick="hide_folder('1_2_1')">-</span>
+Node
+<ul id="fold1_2_1" style="POSITION: relative; VISIBILITY: visible;"><li><a href="https://nodejs.org" target="_blank"><span class=l>~</span>&nbsp;https://nodejs.org
+</a>
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2_2" class="foldclosed" onClick="show_folder('1_2_2')" style="POSITION: absolute">+</span> <span id="hide1_2_2" class="foldopened" onClick="hide_folder('1_2_2')">-</span>
+Eclipse
+<ul id="fold1_2_2" style="POSITION: relative; VISIBILITY: visible;"><li>Eclipse IDE for JavaScript and Web Developers
+
+</li>
+<li><a href="http://www.eclipse.org/downloads/eclipse-packages/" target="_blank"><span class=l>~</span>&nbsp;eclipse.org &gt; Downloads &gt; Eclipse-packages
+</a>
+
+</li>
+<li>download archive and unpack at destination of choice
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2_3" class="foldclosed" onClick="show_folder('1_2_3')" style="POSITION: absolute">+</span> <span id="hide1_2_3" class="foldopened" onClick="hide_folder('1_2_3')">-</span>
+Terminal
+<ul id="fold1_2_3" style="POSITION: relative; VISIBILITY: visible;"><li>Rightclick on Project-&gt;start local terminal
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2_4" class="foldclosed" onClick="show_folder('1_2_4')" style="POSITION: absolute">+</span> <span id="hide1_2_4" class="foldopened" onClick="hide_folder('1_2_4')">-</span>
+Typescript in Eclipse
+<ul id="fold1_2_4" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_2_4_1" class="foldclosed" onClick="show_folder('1_2_4_1')" style="POSITION: absolute">+</span> <span id="hide1_2_4_1" class="foldopened" onClick="hide_folder('1_2_4_1')">-</span>
+Help -&gt; Marketplace
+<ul id="fold1_2_4_1" style="POSITION: relative; VISIBILITY: visible;"><li>Search/Coose Typescript by Palantir
+
+</li>
+<li>Install
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2_4_2" class="foldclosed" onClick="show_folder('1_2_4_2')" style="POSITION: absolute">+</span> <span id="hide1_2_4_2" class="foldopened" onClick="hide_folder('1_2_4_2')">-</span>
+Preferences -&gt; Typescript -&gt; Compiler
+<ul id="fold1_2_4_2" style="POSITION: relative; VISIBILITY: visible;"><li>ECMAScript target version: ES6
+
+</li>
+<li>Module Code Generation: CommonJS
+
+</li>
+<li>Module resolution: Classic
+
+</li>
+<li><span id="show1_2_4_2_1" class="foldclosed" onClick="show_folder('1_2_4_2_1')" style="POSITION: absolute">+</span> <span id="hide1_2_4_2_1" class="foldopened" onClick="hide_folder('1_2_4_2_1')">-</span>
+Check
+<ul id="fold1_2_4_2_1" style="POSITION: relative; VISIBILITY: visible;"><li>Do not emit outputs...
+
+</li>
+<li>Report error on expressions...
+
+</li>
+<li>Compile all...
+
+</li>
+<li>Generate correspondig...
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2_4_3" class="foldclosed" onClick="show_folder('1_2_4_3')" style="POSITION: absolute">+</span> <span id="hide1_2_4_3" class="foldopened" onClick="hide_folder('1_2_4_3')">-</span>
+Help -&gt; Install new software
+<ul id="fold1_2_4_3" style="POSITION: relative; VISIBILITY: visible;"><li>Coose tslint from http://eclipse-update.palantir.com/eclipse-tslint
+
+</li>
+<li>Install
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2_4_4" class="foldclosed" onClick="show_folder('1_2_4_4')" style="POSITION: absolute">+</span> <span id="hide1_2_4_4" class="foldopened" onClick="hide_folder('1_2_4_4')">-</span>
+<a href="tslint.json" target="_blank"><span class=l>~</span>&nbsp;tslint.json
+</a>
+<ul id="fold1_2_4_4" style="POSITION: relative; VISIBILITY: visible;"><li>download to every TypeScript project
+
+</li>
+
+</ul>
+</li>
+<li>Enable TypeScript and TSLint on every TypeScript project
+
+</li>
+<li>LATER: copy node.d.ts and mongo.d.ts to project
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2_5" class="foldclosed" onClick="show_folder('1_2_5')" style="POSITION: absolute">+</span> <span id="hide1_2_5" class="foldopened" onClick="hide_folder('1_2_5')">-</span>
+Github (+pages)
+<ul id="fold1_2_5" style="POSITION: relative; VISIBILITY: visible;"><li><a href="https://github.com/" target="_blank"><span class=l>~</span>&nbsp;https://github.com/
+</a>
+
+</li>
+<li><span id="show1_2_5_1" class="foldclosed" onClick="show_folder('1_2_5_1')" style="POSITION: absolute">+</span> <span id="hide1_2_5_1" class="foldopened" onClick="hide_folder('1_2_5_1')">-</span>
+create user + page
+<ul id="fold1_2_5_1" style="POSITION: relative; VISIBILITY: visible;"><li>sign up
+
+</li>
+<li><span id="show1_2_5_1_1" class="foldclosed" onClick="show_folder('1_2_5_1_1')" style="POSITION: absolute">+</span> <span id="hide1_2_5_1_1" class="foldopened" onClick="hide_folder('1_2_5_1_1')">-</span>
+start new project/create repository
+<ul id="fold1_2_5_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>choose owner
+
+</li>
+<li>repository name: &lt;github-username&gt;.github.io
+
+</li>
+<li>with readme
+
+</li>
+
+</ul>
+</li>
+<li>open &lt;username&gt;.github.io in browser
+
+</li>
+<li>create index.html
+
+</li>
+<li>open and change index.html
+
+</li>
+<li>commit and test
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2_5_2" class="foldclosed" onClick="show_folder('1_2_5_2')" style="POSITION: absolute">+</span> <span id="hide1_2_5_2" class="foldopened" onClick="hide_folder('1_2_5_2')">-</span>
+personal settings
+<ul id="fold1_2_5_2" style="POSITION: relative; VISIBILITY: visible;"><li>notifications -&gt; automatically watch
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2_5_3" class="foldclosed" onClick="show_folder('1_2_5_3')" style="POSITION: absolute">+</span> <span id="hide1_2_5_3" class="foldopened" onClick="hide_folder('1_2_5_3')">-</span>
+create project + page
+<ul id="fold1_2_5_3" style="POSITION: relative; VISIBILITY: visible;"><li>create new repository
+
+</li>
+<li>type repository name
+
+</li>
+<li>initialize with readme
+
+</li>
+<li>settings -&gt; GitHub Pages -&gt; Source -&gt; Master Branch -&gt; Save
+
+</li>
+<li>open &lt;username&gt;.github.io/&lt;reponame&gt; in browser
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2_6" class="foldclosed" onClick="show_folder('1_2_6')" style="POSITION: absolute">+</span> <span id="hide1_2_6" class="foldopened" onClick="hide_folder('1_2_6')">-</span>
+Git in Eclipse
+<ul id="fold1_2_6" style="POSITION: relative; VISIBILITY: visible;"><li>Import -&gt; Import projects from git -&gt; Clone URI
+
+</li>
+<li><span id="show1_2_6_1" class="foldclosed" onClick="show_folder('1_2_6_1')" style="POSITION: absolute">+</span> <span id="hide1_2_6_1" class="foldopened" onClick="hide_folder('1_2_6_1')">-</span>
+set path to github-project
+<ul id="fold1_2_6_1" style="POSITION: relative; VISIBILITY: visible;"><li>copy from github under "Clone or download"
+
+</li>
+
+</ul>
+</li>
+<li>hit next 3 times
+
+</li>
+<li>Import as general project
+
+</li>
+<li>next -&gt; finish
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2_7" class="foldclosed" onClick="show_folder('1_2_7')" style="POSITION: absolute">+</span> <span id="hide1_2_7" class="foldopened" onClick="hide_folder('1_2_7')">-</span>
+Heroku
+<ul id="fold1_2_7" style="POSITION: relative; VISIBILITY: visible;"><li><a href="https://www.heroku.com/" target="_blank"><span class=l>~</span>&nbsp;https://www.heroku.com/
+</a>
+
+</li>
+<li>Create free account
+
+</li>
+<li>select language Node.js
+
+</li>
+<li>create new app using "new"-button
+
+</li>
+<li>connect app to Github-project
+
+</li>
+<li>authorize Heroku to access repositories
+
+</li>
+<li><span id="show1_2_7_1" class="foldclosed" onClick="show_folder('1_2_7_1')" style="POSITION: absolute">+</span> <span id="hide1_2_7_1" class="foldopened" onClick="hide_folder('1_2_7_1')">-</span>
+<a href="package.json" target="_blank"><span class=l>~</span>&nbsp;package.json
+</a>
+<ul id="fold1_2_7_1" style="POSITION: relative; VISIBILITY: visible;"><li>download to your project
+
+</li>
+<li>modifiy it properly
+
+</li>
+<li>sync to Github
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2_8" class="foldclosed" onClick="show_folder('1_2_8')" style="POSITION: absolute">+</span> <span id="hide1_2_8" class="foldopened" onClick="hide_folder('1_2_8')">-</span>
+MongoDB
+<ul id="fold1_2_8" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_2_8_1" class="foldclosed" onClick="show_folder('1_2_8_1')" style="POSITION: absolute">+</span> <span id="hide1_2_8_1" class="foldopened" onClick="hide_folder('1_2_8_1')">-</span>
+local
+<ul id="fold1_2_8_1" style="POSITION: relative; VISIBILITY: visible;"><li><a href="https://www.mongodb.com/download-center" target="_blank"><span class=l>~</span>&nbsp;https://www.mongodb.com/download-center
+</a>
+
+</li>
+<li>Install Community Server
+
+</li>
+<li>Create database folder in project
+
+</li>
+<li><span id="show1_2_8_1_1" class="foldclosed" onClick="show_folder('1_2_8_1_1')" style="POSITION: absolute">+</span> <span id="hide1_2_8_1_1" class="foldopened" onClick="hide_folder('1_2_8_1_1')">-</span>
+In Eclipse, configure MongoServer as external tool
+<ul id="fold1_2_8_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>Run -&gt; External Tools -&gt; External Tool Configurations -&gt; New Launch Configuration
+
+</li>
+<li>Name it "Start MongoDB"
+
+</li>
+<li><span id="show1_2_8_1_1_1" class="foldclosed" onClick="show_folder('1_2_8_1_1_1')" style="POSITION: absolute">+</span> <span id="hide1_2_8_1_1_1" class="foldopened" onClick="hide_folder('1_2_8_1_1_1')">-</span>
+Main
+<ul id="fold1_2_8_1_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>Location -&gt; Browse Filesystem -&gt; find mongod.exe in installation
+
+</li>
+<li>Working Directory -&gt; Browse Workspace -&gt; select workspace
+
+</li>
+<li>Arguments: --dbpath [database folder]
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2_8_1_1_2" class="foldclosed" onClick="show_folder('1_2_8_1_1_2')" style="POSITION: absolute">+</span> <span id="hide1_2_8_1_1_2" class="foldopened" onClick="hide_folder('1_2_8_1_1_2')">-</span>
+Build
+<ul id="fold1_2_8_1_1_2" style="POSITION: relative; VISIBILITY: visible;"><li>disable "Build before launch"
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2_8_1_1_3" class="foldclosed" onClick="show_folder('1_2_8_1_1_3')" style="POSITION: absolute">+</span> <span id="hide1_2_8_1_1_3" class="foldopened" onClick="hide_folder('1_2_8_1_1_3')">-</span>
+Common
+<ul id="fold1_2_8_1_1_3" style="POSITION: relative; VISIBILITY: visible;"><li>Check "Display in favorites menu"
+
+</li>
+
+</ul>
+</li>
+<li>Start with run-button
+
+</li>
+<li>observe console in Eclipse
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2_8_1_2" class="foldclosed" onClick="show_folder('1_2_8_1_2')" style="POSITION: absolute">+</span> <span id="hide1_2_8_1_2" class="foldopened" onClick="hide_folder('1_2_8_1_2')">-</span>
+Install node driver for mongodb
+<ul id="fold1_2_8_1_2" style="POSITION: relative; VISIBILITY: visible;"><li>open terminal on project
+
+</li>
+<li>type "npm install mongodb"
+
+</li>
+<li>globally requires admin rights...
+
+</li>
+<li>folder "node_modules" appears in project
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2_8_2" class="foldclosed" onClick="show_folder('1_2_8_2')" style="POSITION: absolute">+</span> <span id="hide1_2_8_2" class="foldopened" onClick="hide_folder('1_2_8_2')">-</span>
+remote
+<ul id="fold1_2_8_2" style="POSITION: relative; VISIBILITY: visible;"><li><a href="https://mlab.com/" target="_blank"><span class=l>~</span>&nbsp;https://mlab.com/
+</a>
+
+</li>
+<li>create account
+
+</li>
+<li><span id="show1_2_8_2_1" class="foldclosed" onClick="show_folder('1_2_8_2_1')" style="POSITION: absolute">+</span> <span id="hide1_2_8_2_1" class="foldopened" onClick="hide_folder('1_2_8_2_1')">-</span>
+create database
+<ul id="fold1_2_8_2_1" style="POSITION: relative; VISIBILITY: visible;"><li>create new MongoDB deployment
+
+</li>
+<li>choose amazon and server in Ireland
+
+</li>
+<li>choose single node and sandbox
+
+</li>
+<li>choose database name
+
+</li>
+<li>hit "create new mongoDB deployment "
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2_8_2_2" class="foldclosed" onClick="show_folder('1_2_8_2_2')" style="POSITION: absolute">+</span> <span id="hide1_2_8_2_2" class="foldopened" onClick="hide_folder('1_2_8_2_2')">-</span>
+create user
+<ul id="fold1_2_8_2_2" style="POSITION: relative; VISIBILITY: visible;"><li>at https://mlab.com/home
+
+</li>
+<li>click name of database
+
+</li>
+<li>select users and "add database user"
+
+</li>
+<li>enter username and password
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2_9" class="foldclosed" onClick="show_folder('1_2_9')" style="POSITION: absolute">+</span> <span id="hide1_2_9" class="foldopened" onClick="hide_folder('1_2_9')">-</span>
+Additional
+<ul id="fold1_2_9" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_2_9_1" class="foldclosed" onClick="show_folder('1_2_9_1')" style="POSITION: absolute">+</span> <span id="hide1_2_9_1" class="foldopened" onClick="hide_folder('1_2_9_1')">-</span>
+Connection to HFU-Server
+<ul id="fold1_2_9_1" style="POSITION: relative; VISIBILITY: visible;"><li>If necessary: Start VPN-Client outside of Eclipse
+
+</li>
+<li>Open View -&gt; Remote Systems -&gt; Remote Systems
+
+</li>
+<li>New Connection -&gt; SSH Only
+
+</li>
+<li>Host: ssh.hs-furtwangen.de
+
+</li>
+<li>View "MyHome", type credentials
+
+</li>
+<li>Browse directory, create or delete files/folders
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2_9_2" class="foldclosed" onClick="show_folder('1_2_9_2')" style="POSITION: absolute">+</span> <span id="hide1_2_9_2" class="foldopened" onClick="hide_folder('1_2_9_2')">-</span>
+SyncToServer
+<ul id="fold1_2_9_2" style="POSITION: relative; VISIBILITY: visible;"><li>Create new project
+
+</li>
+<li>Export -&gt; Remote Systems -&gt; Remote File System
+
+</li>
+<li>Check &nbsp;Review/Synchronize
+
+</li>
+<li>save exportsetting in project
+
+</li>
+<li>Select destination: Connection and target folder
+
+</li>
+<li>Add View Team-&gt;Synchronize
+
+</li>
+<li>Choose right-click "put" or switch to sync-perspective to upload
+
+</li>
+<li>After restart of Eclipse: rightclick on exportsettings-file and chose export to remote system
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_3" class="foldclosed" onClick="show_folder('1_3')" style="POSITION: absolute">+</span> <span id="hide1_3" class="foldopened" onClick="hide_folder('1_3')">-</span>
+Curriculum
+<ul id="fold1_3" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_3_1" class="foldclosed" onClick="show_folder('1_3_1')" style="POSITION: absolute">+</span> <span id="hide1_3_1" class="foldopened" onClick="hide_folder('1_3_1')">-</span>
+Versioning /Safety / Recall
+<ul id="fold1_3_1" style="POSITION: relative; VISIBILITY: visible;"><li>get to know git
+
+</li>
+<li>get to know git hub
+
+</li>
+<li>recall first semester
+
+</li>
+<li>generate some content with typescript
+
+</li>
+
+</ul>
+</li>
+<li>Tracetable / Debugger
+
+</li>
+<li>DOM / Events
+
+</li>
+<li>Canvas
+
+</li>
+<li>Associative Arrays
+
+</li>
+<li>Animation, Interaktion
+
+</li>
+<li>Classes
+
+</li>
+<li>Inheritance, Polymorphism
+
+</li>
+<li>Scopes and Visability
+
+</li>
+<li>Forms and Queries
+
+</li>
+<li>Asynchronism
+
+</li>
+<li>Exceptions, Enums, Generics, Anonymous Functions
+
+</li>
+<li>Database
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_4" class="foldclosed" onClick="show_folder('1_4')" style="POSITION: absolute">+</span> <span id="hide1_4" class="foldopened" onClick="hide_folder('1_4')">-</span>
+Git
+<ul id="fold1_4" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_4_1" class="foldclosed" onClick="show_folder('1_4_1')" style="POSITION: absolute">+</span> <span id="hide1_4_1" class="foldopened" onClick="hide_folder('1_4_1')">-</span>
+General
+<ul id="fold1_4_1" style="POSITION: relative; VISIBILITY: visible;"><li>Version Control and Repository System
+
+</li>
+<li><a href="https://github.com/torvalds" target="_blank"><span class=l>~</span>&nbsp;developed by Linus Torvalds and the Linux-Community &nbsp;in 2005
+</a>
+
+</li>
+<li><span id="show1_4_1_1" class="foldclosed" onClick="show_folder('1_4_1_1')" style="POSITION: absolute">+</span> <span id="hide1_4_1_1" class="foldopened" onClick="hide_folder('1_4_1_1')">-</span>
+creates local copies of source files
+<ul id="fold1_4_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>in database ".git"
+
+</li>
+
+</ul>
+</li>
+<li>allows for multiple branches
+
+</li>
+<li>workflow: modify -&gt; stage -&gt; commit
+
+</li>
+<li>supports synchronization of repositories on remote systems
+
+</li>
+<li>file ".gitignore" references files not to include in repository
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_4_2" class="foldclosed" onClick="show_folder('1_4_2')" style="POSITION: absolute">+</span> <span id="hide1_4_2" class="foldopened" onClick="hide_folder('1_4_2')">-</span>
+Commands
+<ul id="fold1_4_2" style="POSITION: relative; VISIBILITY: visible;"><li>init
+
+</li>
+<li>add
+
+</li>
+<li>commit
+
+</li>
+<li>branch
+
+</li>
+<li>pull
+
+</li>
+<li>push
+
+</li>
+<li>checkout
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5" class="foldclosed" onClick="show_folder('1_5')" style="POSITION: absolute">+</span> <span id="hide1_5" class="foldopened" onClick="hide_folder('1_5')">-</span>
+Javascript
+<ul id="fold1_5" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_5_1" class="foldclosed" onClick="show_folder('1_5_1')" style="POSITION: absolute">+</span> <span id="hide1_5_1" class="foldopened" onClick="hide_folder('1_5_1')">-</span>
+General
+<ul id="fold1_5_1" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_5_1_1" class="foldclosed" onClick="show_folder('1_5_1_1')" style="POSITION: absolute">+</span> <span id="hide1_5_1_1" class="foldopened" onClick="hide_folder('1_5_1_1')">-</span>
+<a href="https://github.com/brendaneich" target="_blank"><span class=l>~</span>&nbsp;developed by Brendan Eich in 1995
+</a>
+<ul id="fold1_5_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>Founder and CTO Mozilla Foundation
+
+</li>
+<li>Mocha -&gt; LiveScript -&gt; JavaScript
+
+</li>
+<li><span id="show1_5_1_1_1" class="foldclosed" onClick="show_folder('1_5_1_1_1')" style="POSITION: absolute">+</span> <span id="hide1_5_1_1_1" class="foldopened" onClick="hide_folder('1_5_1_1_1')">-</span>
+Standardized as ECMA-Script
+<ul id="fold1_5_1_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>European Computer Manufacturers Association
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_1_2" class="foldclosed" onClick="show_folder('1_5_1_2')" style="POSITION: absolute">+</span> <span id="hide1_5_1_2" class="foldopened" onClick="hide_folder('1_5_1_2')">-</span>
+Features and limitations
+<ul id="fold1_5_1_2" style="POSITION: relative; VISIBILITY: visible;"><li>dynamic and implicit typing
+
+</li>
+<li>prototype based
+
+</li>
+<li>wide spread and growing
+
+</li>
+<li>huge community and a multitude of libraries
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_1_3" class="foldclosed" onClick="show_folder('1_5_1_3')" style="POSITION: absolute">+</span> <span id="hide1_5_1_3" class="foldopened" onClick="hide_folder('1_5_1_3')">-</span>
+Requires runtime environment
+<ul id="fold1_5_1_3" style="POSITION: relative; VISIBILITY: visible;"><li>Browser
+
+</li>
+<li>Node
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_1_4" class="foldclosed" onClick="show_folder('1_5_1_4')" style="POSITION: absolute">+</span> <span id="hide1_5_1_4" class="foldopened" onClick="hide_folder('1_5_1_4')">-</span>
+Fields of application
+<ul id="fold1_5_1_4" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_5_1_4_1" class="foldclosed" onClick="show_folder('1_5_1_4_1')" style="POSITION: absolute">+</span> <span id="hide1_5_1_4_1" class="foldopened" onClick="hide_folder('1_5_1_4_1')">-</span>
+Mobile Apps
+<ul id="fold1_5_1_4_1" style="POSITION: relative; VISIBILITY: visible;"><li>Phonegap
+
+</li>
+<li>Cordova
+
+</li>
+<li>Titanium
+
+</li>
+<li>NativeScript
+
+</li>
+<li>...
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_1_4_2" class="foldclosed" onClick="show_folder('1_5_1_4_2')" style="POSITION: absolute">+</span> <span id="hide1_5_1_4_2" class="foldopened" onClick="hide_folder('1_5_1_4_2')">-</span>
+Desktop
+<ul id="fold1_5_1_4_2" style="POSITION: relative; VISIBILITY: visible;"><li>Electron
+
+</li>
+<li>Titanium
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_1_4_3" class="foldclosed" onClick="show_folder('1_5_1_4_3')" style="POSITION: absolute">+</span> <span id="hide1_5_1_4_3" class="foldopened" onClick="hide_folder('1_5_1_4_3')">-</span>
+Server-Programming
+<ul id="fold1_5_1_4_3" style="POSITION: relative; VISIBILITY: visible;"><li>Node.js
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_1_4_4" class="foldclosed" onClick="show_folder('1_5_1_4_4')" style="POSITION: absolute">+</span> <span id="hide1_5_1_4_4" class="foldopened" onClick="hide_folder('1_5_1_4_4')">-</span>
+Game-Engines
+<ul id="fold1_5_1_4_4" style="POSITION: relative; VISIBILITY: visible;"><li>Flash
+
+</li>
+<li>Unity
+
+</li>
+<li>Phaser
+
+</li>
+<li>CreateJS
+
+</li>
+<li>Cocos
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_1_4_5" class="foldclosed" onClick="show_folder('1_5_1_4_5')" style="POSITION: absolute">+</span> <span id="hide1_5_1_4_5" class="foldopened" onClick="hide_folder('1_5_1_4_5')">-</span>
+Physical Computing
+<ul id="fold1_5_1_4_5" style="POSITION: relative; VISIBILITY: visible;"><li><a href="https://github.com/ecto/duino" target="_blank"><span class=l>~</span>&nbsp;Duino
+</a>
+
+</li>
+<li><a href="https://github.com/rwaldron/johnny-five" target="_blank"><span class=l>~</span>&nbsp;Jonny Five
+</a>
+
+</li>
+<li><a href="http://www.voodootikigod.com/nodebots-the-rise-of-js-robotics/" target="_blank"><span class=l>~</span>&nbsp;Node.js-SerialPort
+</a>
+
+</li>
+<li><a href="http://breakoutjs.com/" target="_blank"><span class=l>~</span>&nbsp;Breakout.js
+</a>
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_1_4_6" class="foldclosed" onClick="show_folder('1_5_1_4_6')" style="POSITION: absolute">+</span> <span id="hide1_5_1_4_6" class="foldopened" onClick="hide_folder('1_5_1_4_6')">-</span>
+WebGL
+<ul id="fold1_5_1_4_6" style="POSITION: relative; VISIBILITY: visible;"><li><a href="https://github.com/mrdoob/three.js/" target="_blank"><span class=l>~</span>&nbsp;Three.js
+</a>
+
+</li>
+<li>Processing.js
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_1_4_7" class="foldclosed" onClick="show_folder('1_5_1_4_7')" style="POSITION: absolute">+</span> <span id="hide1_5_1_4_7" class="foldopened" onClick="hide_folder('1_5_1_4_7')">-</span>
+<span style="font-family: SansSerif, sans-serif; ">Music</span>
+<ul id="fold1_5_1_4_7" style="POSITION: relative; VISIBILITY: visible;"><li>TimbreJS
+
+</li>
+<li>SoundJS
+
+</li>
+<li>MidiJS
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_1_4_8" class="foldclosed" onClick="show_folder('1_5_1_4_8')" style="POSITION: absolute">+</span> <span id="hide1_5_1_4_8" class="foldopened" onClick="hide_folder('1_5_1_4_8')">-</span>
+Controller
+<ul id="fold1_5_1_4_8" style="POSITION: relative; VISIBILITY: visible;"><li><a href="https://wiki.mozilla.org/GamepadAPI" target="_blank"><span class=l>~</span>&nbsp;GamePad-API
+</a>
+
+</li>
+<li>LeapMotion
+
+</li>
+<li>Kinect
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_1_4_9" class="foldclosed" onClick="show_folder('1_5_1_4_9')" style="POSITION: absolute">+</span> <span id="hide1_5_1_4_9" class="foldopened" onClick="hide_folder('1_5_1_4_9')">-</span>
+Emscripten
+<ul id="fold1_5_1_4_9" style="POSITION: relative; VISIBILITY: visible;"><li>Running other languages in browser
+
+</li>
+<li>e.g. Ruby, Python
+
+</li>
+<li>Mozilla
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_1_4_10" class="foldclosed" onClick="show_folder('1_5_1_4_10')" style="POSITION: absolute">+</span> <span id="hide1_5_1_4_10" class="foldopened" onClick="hide_folder('1_5_1_4_10')">-</span>
+Real-Time Communication
+<ul id="fold1_5_1_4_10" style="POSITION: relative; VISIBILITY: visible;"><li>WebRTC
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_2" class="foldclosed" onClick="show_folder('1_5_2')" style="POSITION: absolute">+</span> <span id="hide1_5_2" class="foldopened" onClick="hide_folder('1_5_2')">-</span>
+Basic vocabulary
+<ul id="fold1_5_2" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_5_2_1" class="foldclosed" onClick="show_folder('1_5_2_1')" style="POSITION: absolute">+</span> <span id="hide1_5_2_1" class="foldopened" onClick="hide_folder('1_5_2_1')">-</span>
+Blocks
+<ul id="fold1_5_2_1" style="POSITION: relative; VISIBILITY: visible;"><li>{ }
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_2_2" class="foldclosed" onClick="show_folder('1_5_2_2')" style="POSITION: absolute">+</span> <span id="hide1_5_2_2" class="foldopened" onClick="hide_folder('1_5_2_2')">-</span>
+Variables
+<ul id="fold1_5_2_2" style="POSITION: relative; VISIBILITY: visible;"><li>var
+
+</li>
+<li>let
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_2_3" class="foldclosed" onClick="show_folder('1_5_2_3')" style="POSITION: absolute">+</span> <span id="hide1_5_2_3" class="foldopened" onClick="hide_folder('1_5_2_3')">-</span>
+Types
+<ul id="fold1_5_2_3" style="POSITION: relative; VISIBILITY: visible;"><li>void
+
+</li>
+<li>number
+
+</li>
+<li>string
+
+</li>
+<li>boolean
+
+</li>
+<li>Array
+
+</li>
+<li>Object
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_2_4" class="foldclosed" onClick="show_folder('1_5_2_4')" style="POSITION: absolute">+</span> <span id="hide1_5_2_4" class="foldopened" onClick="hide_folder('1_5_2_4')">-</span>
+Values
+<ul id="fold1_5_2_4" style="POSITION: relative; VISIBILITY: visible;"><li>true
+
+</li>
+<li>false
+
+</li>
+<li>undefined
+
+</li>
+<li>null
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_2_5" class="foldclosed" onClick="show_folder('1_5_2_5')" style="POSITION: absolute">+</span> <span id="hide1_5_2_5" class="foldopened" onClick="hide_folder('1_5_2_5')">-</span>
+Conditions
+<ul id="fold1_5_2_5" style="POSITION: relative; VISIBILITY: visible;"><li>if
+
+</li>
+<li>else
+
+</li>
+<li>switch
+
+</li>
+<li>case
+
+</li>
+<li>default 	
+
+</li>
+<li>break
+
+</li>
+<li>? :
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_2_6" class="foldclosed" onClick="show_folder('1_5_2_6')" style="POSITION: absolute">+</span> <span id="hide1_5_2_6" class="foldopened" onClick="hide_folder('1_5_2_6')">-</span>
+Loops
+<ul id="fold1_5_2_6" style="POSITION: relative; VISIBILITY: visible;"><li>do
+
+</li>
+<li>while
+
+</li>
+<li>for
+
+</li>
+<li>in
+
+</li>
+<li>of
+
+</li>
+<li>break
+
+</li>
+<li>continue 
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_2_7" class="foldclosed" onClick="show_folder('1_5_2_7')" style="POSITION: absolute">+</span> <span id="hide1_5_2_7" class="foldopened" onClick="hide_folder('1_5_2_7')">-</span>
+Functions
+<ul id="fold1_5_2_7" style="POSITION: relative; VISIBILITY: visible;"><li>function 
+
+</li>
+<li> return
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_2_8" class="foldclosed" onClick="show_folder('1_5_2_8')" style="POSITION: absolute">+</span> <span id="hide1_5_2_8" class="foldopened" onClick="hide_folder('1_5_2_8')">-</span>
+Exceptions
+<ul id="fold1_5_2_8" style="POSITION: relative; VISIBILITY: visible;"><li>try
+
+</li>
+<li>catch
+
+</li>
+<li>finally
+
+</li>
+<li>throw
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_2_9" class="foldclosed" onClick="show_folder('1_5_2_9')" style="POSITION: absolute">+</span> <span id="hide1_5_2_9" class="foldopened" onClick="hide_folder('1_5_2_9')">-</span>
+OOP
+<ul id="fold1_5_2_9" style="POSITION: relative; VISIBILITY: visible;"><li>class
+
+</li>
+<li>new
+
+</li>
+<li>extends
+
+</li>
+<li>super
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_3" class="foldclosed" onClick="show_folder('1_5_3')" style="POSITION: absolute">+</span> <span id="hide1_5_3" class="foldopened" onClick="hide_folder('1_5_3')">-</span>
+Predefined objects
+<ul id="fold1_5_3" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_5_3_1" class="foldclosed" onClick="show_folder('1_5_3_1')" style="POSITION: absolute">+</span> <span id="hide1_5_3_1" class="foldopened" onClick="hide_folder('1_5_3_1')">-</span>
+Standardobjects
+<ul id="fold1_5_3_1" style="POSITION: relative; VISIBILITY: visible;"><li>Array
+
+</li>
+<li>Date
+
+</li>
+<li>Math
+
+</li>
+<li>String
+
+</li>
+<li>Function
+
+</li>
+<li>...
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_3_2" class="foldclosed" onClick="show_folder('1_5_3_2')" style="POSITION: absolute">+</span> <span id="hide1_5_3_2" class="foldopened" onClick="hide_folder('1_5_3_2')">-</span>
+Browserobjects
+<ul id="fold1_5_3_2" style="POSITION: relative; VISIBILITY: visible;"><li>Navigator
+
+</li>
+<li>Screen
+
+</li>
+<li><span id="show1_5_3_2_1" class="foldclosed" onClick="show_folder('1_5_3_2_1')" style="POSITION: absolute">+</span> <span id="hide1_5_3_2_1" class="foldopened" onClick="hide_folder('1_5_3_2_1')">-</span>
+Window
+<ul id="fold1_5_3_2_1" style="POSITION: relative; VISIBILITY: visible;"><li>Location
+
+</li>
+<li>History
+
+</li>
+<li>Document
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_3_2_2" class="foldclosed" onClick="show_folder('1_5_3_2_2')" style="POSITION: absolute">+</span> <span id="hide1_5_3_2_2" class="foldopened" onClick="hide_folder('1_5_3_2_2')">-</span>
+Document
+<ul id="fold1_5_3_2_2" style="POSITION: relative; VISIBILITY: visible;"><li>Access to all elements in the document
+
+</li>
+<li>Elements kann bei created, altered and destroyed
+
+</li>
+<li>Different classes for different elements using inheritance
+
+</li>
+<li>Tree structure with parent-children-relationships
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_6" class="foldclosed" onClick="show_folder('1_6')" style="POSITION: absolute">+</span> <span id="hide1_6" class="foldopened" onClick="hide_folder('1_6')">-</span>
+TypeScript
+<ul id="fold1_6" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_6_1" class="foldclosed" onClick="show_folder('1_6_1')" style="POSITION: absolute">+</span> <span id="hide1_6_1" class="foldopened" onClick="hide_folder('1_6_1')">-</span>
+General
+<ul id="fold1_6_1" style="POSITION: relative; VISIBILITY: visible;"><li>developed by Microsoft
+
+</li>
+<li><a href="https://github.com/ahejlsberg" target="_blank"><span class=l>~</span>&nbsp;Anders Hejlsberg (Turbo Pascal, Delphi, J++, C#, .NET)
+</a>
+
+</li>
+<li>Superset of JavaScript (ECMA-Script)
+
+</li>
+<li>explicit and static typing possible (+ one dynamic type)
+
+</li>
+<li>implements upcoming ECMA-Standards and more
+
+</li>
+<li>transpiles to JavaScript and is compatible
+
+</li>
+<li>developed for big, complex and scalable applications
+
+</li>
+<li>supported by IDEs like Eclipse
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_6_2" class="foldclosed" onClick="show_folder('1_6_2')" style="POSITION: absolute">+</span> <span id="hide1_6_2" class="foldopened" onClick="hide_folder('1_6_2')">-</span>
+Interfaces
+<ul id="fold1_6_2" style="POSITION: relative; VISIBILITY: visible;"><li>interface
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_6_3" class="foldclosed" onClick="show_folder('1_6_3')" style="POSITION: absolute">+</span> <span id="hide1_6_3" class="foldopened" onClick="hide_folder('1_6_3')">-</span>
+Modules
+<ul id="fold1_6_3" style="POSITION: relative; VISIBILITY: visible;"><li>export 
+
+</li>
+<li>import 
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li>Node
+
+</li>
+<li><span id="show1_7" class="foldclosed" onClick="show_folder('1_7')" style="POSITION: absolute">+</span> <span id="hide1_7" class="foldopened" onClick="hide_folder('1_7')">-</span>
+MongoDB
+<ul id="fold1_7" style="POSITION: relative; VISIBILITY: visible;"><li>shell commands
+
+</li>
+<li><span id="show1_7_1" class="foldclosed" onClick="show_folder('1_7_1')" style="POSITION: absolute">+</span> <span id="hide1_7_1" class="foldopened" onClick="hide_folder('1_7_1')">-</span>
+node classes and interfaces
+<ul id="fold1_7_1" style="POSITION: relative; VISIBILITY: visible;"><li>as defined in module "mongodb"
+
+</li>
+<li><span id="show1_7_1_1" class="foldclosed" onClick="show_folder('1_7_1_1')" style="POSITION: absolute">+</span> <span id="hide1_7_1_1" class="foldopened" onClick="hide_folder('1_7_1_1')">-</span>
+MongoCallback
+<ul id="fold1_7_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>Many methods require a callback function as parameter
+
+</li>
+<li><span id="show1_7_1_1_1" class="foldclosed" onClick="show_folder('1_7_1_1_1')" style="POSITION: absolute">+</span> <span id="hide1_7_1_1_1" class="foldopened" onClick="hide_folder('1_7_1_1_1')">-</span>
+of type MongoCallback&lt;T&gt;
+<ul id="fold1_7_1_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>function (error: MongoError, result: T): void;
+
+</li>
+<li>where T is the type of the actual data
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_7_1_2" class="foldclosed" onClick="show_folder('1_7_1_2')" style="POSITION: absolute">+</span> <span id="hide1_7_1_2" class="foldopened" onClick="hide_folder('1_7_1_2')">-</span>
+MongoClient
+<ul id="fold1_7_1_2" style="POSITION: relative; VISIBILITY: visible;"><li>Connect to MongoDB using a url of a database
+
+</li>
+<li>connect (url: string, callback: MongoCallback&lt;Db&gt;)
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_7_1_3" class="foldclosed" onClick="show_folder('1_7_1_3')" style="POSITION: absolute">+</span> <span id="hide1_7_1_3" class="foldopened" onClick="hide_folder('1_7_1_3')">-</span>
+Db
+<ul id="fold1_7_1_3" style="POSITION: relative; VISIBILITY: visible;"><li>Represents a database, handling users and collections
+
+</li>
+<li><span id="show1_7_1_3_1" class="foldclosed" onClick="show_folder('1_7_1_3_1')" style="POSITION: absolute">+</span> <span id="hide1_7_1_3_1" class="foldopened" onClick="hide_folder('1_7_1_3_1')">-</span>
+close( ) 
+<ul id="fold1_7_1_3_1" style="POSITION: relative; VISIBILITY: visible;"><li>Close the database and it's underlying connections
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_7_1_3_2" class="foldclosed" onClick="show_folder('1_7_1_3_2')" style="POSITION: absolute">+</span> <span id="hide1_7_1_3_2" class="foldopened" onClick="hide_folder('1_7_1_3_2')">-</span>
+collection( name:string )
+<ul id="fold1_7_1_3_2" style="POSITION: relative; VISIBILITY: visible;"><li>returns the collection with the given name
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_7_1_4" class="foldclosed" onClick="show_folder('1_7_1_4')" style="POSITION: absolute">+</span> <span id="hide1_7_1_4" class="foldopened" onClick="hide_folder('1_7_1_4')">-</span>
+Collection
+<ul id="fold1_7_1_4" style="POSITION: relative; VISIBILITY: visible;"><li><p>Represents a collection of data, handling insertion, lookup, modification and deletion
+<p>insertOne ( doc: {...}, callback: MongoCallback&lt;InsertOneWriteOpResult&gt;): void
+<p><span id="show1_7_1_4_1" class="foldclosed" onClick="show_folder('1_7_1_4_1')" style="POSITION: absolute">+</span> <span id="hide1_7_1_4_1" class="foldopened" onClick="hide_folder('1_7_1_4_1')">-</span>
+<span style="font-family: SansSerif, sans-serif; ">find ( query: {...} ) : Cursor</span>
+<ul id="fold1_7_1_4_1" style="POSITION: relative; VISIBILITY: visible;"><li>finds all data matching the query object
+
+</li>
+<li>returns a cursor for iteration over results
+
+</li>
+
+</ul><p><span id="show1_7_1_4_2" class="foldclosed" onClick="show_folder('1_7_1_4_2')" style="POSITION: absolute">+</span> <span id="hide1_7_1_4_2" class="foldopened" onClick="hide_folder('1_7_1_4_2')">-</span>
+findOne ( query: {...}, callback: MongoCallback&lt;Object&gt; ) : void
+<ul id="fold1_7_1_4_2" style="POSITION: relative; VISIBILITY: visible;"><li>finds the first data matching the query object 
+
+</li>
+<li>then calls the callback function and passes the object found
+
+</li>
+
+</ul><p><span id="show1_7_1_4_3" class="foldclosed" onClick="show_folder('1_7_1_4_3')" style="POSITION: absolute">+</span> <span id="hide1_7_1_4_3" class="foldopened" onClick="hide_folder('1_7_1_4_3')">-</span>
+updateOne ( query: {...}, update: {...}, options: ReplaceOneOptions, 
+<br>
+callback: MongoCallback&lt;UpdateWriteOpResult&gt;): void; 
+<ul id="fold1_7_1_4_3" style="POSITION: relative; VISIBILITY: visible;"><li>updates one document in the database
+
+</li>
+<li>the first found with the given query
+
+</li>
+<li>using the pattern given as the update-object
+
+</li>
+<li>and the replace options
+
+</li>
+
+</ul></li>
+</ul>
+</li>
+<li><span id="show1_7_1_5" class="foldclosed" onClick="show_folder('1_7_1_5')" style="POSITION: absolute">+</span> <span id="hide1_7_1_5" class="foldopened" onClick="hide_folder('1_7_1_5')">-</span>
+Cursor
+<ul id="fold1_7_1_5" style="POSITION: relative; VISIBILITY: visible;"><li>Represents a subset of data as a result of a find-command
+
+</li>
+<li><span id="show1_7_1_5_1" class="foldclosed" onClick="show_folder('1_7_1_5_1')" style="POSITION: absolute">+</span> <span id="hide1_7_1_5_1" class="foldopened" onClick="hide_folder('1_7_1_5_1')">-</span>
+close ( callback: MongoCallback&lt;CursorResult&gt; ): void
+<ul id="fold1_7_1_5_1" style="POSITION: relative; VISIBILITY: visible;"><li>close the cursor
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_7_1_5_2" class="foldclosed" onClick="show_folder('1_7_1_5_2')" style="POSITION: absolute">+</span> <span id="hide1_7_1_5_2" class="foldopened" onClick="hide_folder('1_7_1_5_2')">-</span>
+sort ( keyOrList: string | Object[] | Object, direction?: number): Cursor;
+<ul id="fold1_7_1_5_2" style="POSITION: relative; VISIBILITY: visible;"><li>sort the cursor data
+
+</li>
+<li>according to the criteria given as keyOrList
+
+</li>
+<li>and a- or descendingas given in direction
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_7_1_5_3" class="foldclosed" onClick="show_folder('1_7_1_5_3')" style="POSITION: absolute">+</span> <span id="hide1_7_1_5_3" class="foldopened" onClick="hide_folder('1_7_1_5_3')">-</span>
+toArray ( callback: MongoCallback&lt;any[]&gt; ): void;
+<ul id="fold1_7_1_5_3" style="POSITION: relative; VISIBILITY: visible;"><li>creates a JavaScript-Array of Objects from the Cursor
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_7_1_6" class="foldclosed" onClick="show_folder('1_7_1_6')" style="POSITION: absolute">+</span> <span id="hide1_7_1_6" class="foldopened" onClick="hide_folder('1_7_1_6')">-</span>
+Query-Object
+<ul id="fold1_7_1_6" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_7_1_6_1" class="foldclosed" onClick="show_folder('1_7_1_6_1')" style="POSITION: absolute">+</span> <span id="hide1_7_1_6_1" class="foldopened" onClick="hide_folder('1_7_1_6_1')">-</span>
+{ key: "John" }
+<ul id="fold1_7_1_6_1" style="POSITION: relative; VISIBILITY: visible;"><li>the value of property key must match the string "John"
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_7_1_6_2" class="foldclosed" onClick="show_folder('1_7_1_6_2')" style="POSITION: absolute">+</span> <span id="hide1_7_1_6_2" class="foldopened" onClick="hide_folder('1_7_1_6_2')">-</span>
+{ key: { $gt: 20, $lt: 80, $ne: 50 } }
+<ul id="fold1_7_1_6_2" style="POSITION: relative; VISIBILITY: visible;"><li>the value of property key must be 
+
+</li>
+<li>greater than 20, less than 80 and not equal to 50
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_7_1_6_3" class="foldclosed" onClick="show_folder('1_7_1_6_3')" style="POSITION: absolute">+</span> <span id="hide1_7_1_6_3" class="foldopened" onClick="hide_folder('1_7_1_6_3')">-</span>
+{ $or: [ { key: { $lt: 20 } }, { key: { $gt: 80 } }, { key: 50 } ] }
+<ul id="fold1_7_1_6_3" style="POSITION: relative; VISIBILITY: visible;"><li>the value of property key must be
+
+</li>
+<li>less than 20 or greater than 80 or equal to 50
+
+</li>
+
+</ul>
+</li>
+<li>{ $where: {
+
+</li>
+
+</ul>
+</li>
+<li>Update-Object
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul><SCRIPT type="text/javascript">
+fold_document();
+</SCRIPT>
+</body>
+</html>
