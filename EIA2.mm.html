@@ -1312,9 +1312,9 @@ collection( name:string )
 <li><span id="show1_7_1_4" class="foldclosed" onClick="show_folder('1_7_1_4')" style="POSITION: absolute">+</span> <span id="hide1_7_1_4" class="foldopened" onClick="hide_folder('1_7_1_4')">-</span>
 Collection
 <ul id="fold1_7_1_4" style="POSITION: relative; VISIBILITY: visible;"><li><p>Represents a collection of data, handling insertion, lookup, modification and deletion
-<p>insertOne ( doc: {...}, callback: MongoCallback&lt;InsertOneWriteOpResult&gt;): void
+<p>insertOne ( doc: Object, callback: MongoCallback&lt;InsertOneWriteOpResult&gt;): void
 <p><span id="show1_7_1_4_1" class="foldclosed" onClick="show_folder('1_7_1_4_1')" style="POSITION: absolute">+</span> <span id="hide1_7_1_4_1" class="foldopened" onClick="hide_folder('1_7_1_4_1')">-</span>
-<span style="font-family: SansSerif, sans-serif; ">find ( query: {...} ) : Cursor</span>
+<span style="font-family: SansSerif, sans-serif; ">find ( query: Object ) : Cursor</span>
 <ul id="fold1_7_1_4_1" style="POSITION: relative; VISIBILITY: visible;"><li>finds all data matching the query object
 
 </li>
@@ -1323,7 +1323,7 @@ Collection
 </li>
 
 </ul><p><span id="show1_7_1_4_2" class="foldclosed" onClick="show_folder('1_7_1_4_2')" style="POSITION: absolute">+</span> <span id="hide1_7_1_4_2" class="foldopened" onClick="hide_folder('1_7_1_4_2')">-</span>
-findOne ( query: {...}, callback: MongoCallback&lt;Object&gt; ) : void
+findOne ( query: Object, callback: MongoCallback&lt;Object&gt; ) : void
 <ul id="fold1_7_1_4_2" style="POSITION: relative; VISIBILITY: visible;"><li>finds the first data matching the query object 
 
 </li>
@@ -1332,7 +1332,7 @@ findOne ( query: {...}, callback: MongoCallback&lt;Object&gt; ) : void
 </li>
 
 </ul><p><span id="show1_7_1_4_3" class="foldclosed" onClick="show_folder('1_7_1_4_3')" style="POSITION: absolute">+</span> <span id="hide1_7_1_4_3" class="foldopened" onClick="hide_folder('1_7_1_4_3')">-</span>
-updateOne ( query: {...}, update: {...}, options: ReplaceOneOptions, 
+updateOne ( query: Object, update: Object, options: ReplaceOneOptions, 
 <br>
 callback: MongoCallback&lt;UpdateWriteOpResult&gt;): void; 
 <ul id="fold1_7_1_4_3" style="POSITION: relative; VISIBILITY: visible;"><li>updates one document in the database
@@ -1345,6 +1345,12 @@ callback: MongoCallback&lt;UpdateWriteOpResult&gt;): void;
 
 </li>
 <li>and the replace options
+
+</li>
+
+</ul><p><span id="show1_7_1_4_4" class="foldclosed" onClick="show_folder('1_7_1_4_4')" style="POSITION: absolute">+</span> <span id="hide1_7_1_4_4" class="foldopened" onClick="hide_folder('1_7_1_4_4')">-</span>
+remove( query: Object, callback: MongoCallback&lt;WriteOpResult&gt;): void;
+<ul id="fold1_7_1_4_4" style="POSITION: relative; VISIBILITY: visible;"><li>removes all data matching the query object
 
 </li>
 
@@ -1390,9 +1396,9 @@ toArray ( callback: MongoCallback&lt;any[]&gt; ): void;
 </ul>
 </li>
 <li><span id="show1_7_1_6" class="foldclosed" onClick="show_folder('1_7_1_6')" style="POSITION: absolute">+</span> <span id="hide1_7_1_6" class="foldopened" onClick="hide_folder('1_7_1_6')">-</span>
-Query-Object
+query examples
 <ul id="fold1_7_1_6" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_7_1_6_1" class="foldclosed" onClick="show_folder('1_7_1_6_1')" style="POSITION: absolute">+</span> <span id="hide1_7_1_6_1" class="foldopened" onClick="hide_folder('1_7_1_6_1')">-</span>
-{ key: "John" }
+{ "key": "John" }
 <ul id="fold1_7_1_6_1" style="POSITION: relative; VISIBILITY: visible;"><li>the value of property key must match the string "John"
 
 </li>
@@ -1400,7 +1406,7 @@ Query-Object
 </ul>
 </li>
 <li><span id="show1_7_1_6_2" class="foldclosed" onClick="show_folder('1_7_1_6_2')" style="POSITION: absolute">+</span> <span id="hide1_7_1_6_2" class="foldopened" onClick="hide_folder('1_7_1_6_2')">-</span>
-{ key: { $gt: 20, $lt: 80, $ne: 50 } }
+{ "key": { $gt: 20, $lt: 80, $ne: 50 } }
 <ul id="fold1_7_1_6_2" style="POSITION: relative; VISIBILITY: visible;"><li>the value of property key must be 
 
 </li>
@@ -1411,7 +1417,7 @@ Query-Object
 </ul>
 </li>
 <li><span id="show1_7_1_6_3" class="foldclosed" onClick="show_folder('1_7_1_6_3')" style="POSITION: absolute">+</span> <span id="hide1_7_1_6_3" class="foldopened" onClick="hide_folder('1_7_1_6_3')">-</span>
-{ $or: [ { key: { $lt: 20 } }, { key: { $gt: 80 } }, { key: 50 } ] }
+{ $or: [ { "key": { $lt: 20 } }, { "key": { $gt: 80 } }, { "key": 50 } ] }
 <ul id="fold1_7_1_6_3" style="POSITION: relative; VISIBILITY: visible;"><li>the value of property key must be
 
 </li>
@@ -1421,14 +1427,66 @@ Query-Object
 
 </ul>
 </li>
-<li>{ $where: {
+<li><span id="show1_7_1_6_4" class="foldclosed" onClick="show_folder('1_7_1_6_4')" style="POSITION: absolute">+</span> <span id="hide1_7_1_6_4" class="foldopened" onClick="hide_folder('1_7_1_6_4')">-</span>
+{ $where: { "this.key1 + this.key2 &gt; 100" } }
+<ul id="fold1_7_1_6_4" style="POSITION: relative; VISIBILITY: visible;"><li>evaluates a Javascript-expression
+
+</li>
+<li>example: the sum of the properties key1 and key2 must exceed 100
+
+</li>
+<li>this is mandatory to access the properties
 
 </li>
 
 </ul>
 </li>
-<li>Update-Object
 
+</ul>
+</li>
+<li><span id="show1_7_1_7" class="foldclosed" onClick="show_folder('1_7_1_7')" style="POSITION: absolute">+</span> <span id="hide1_7_1_7" class="foldopened" onClick="hide_folder('1_7_1_7')">-</span>
+update examples
+<ul id="fold1_7_1_7" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_7_1_7_1" class="foldclosed" onClick="show_folder('1_7_1_7_1')" style="POSITION: absolute">+</span> <span id="hide1_7_1_7_1" class="foldopened" onClick="hide_folder('1_7_1_7_1')">-</span>
+{ $set: { "key1": 10, "key2": "John", ... } }
+<ul id="fold1_7_1_7_1" style="POSITION: relative; VISIBILITY: visible;"><li>sets the value of property key1 to 10, and key2 to "John"
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_7_1_7_2" class="foldclosed" onClick="show_folder('1_7_1_7_2')" style="POSITION: absolute">+</span> <span id="hide1_7_1_7_2" class="foldopened" onClick="hide_folder('1_7_1_7_2')">-</span>
+{ $unset: { "key": "", ... } }
+<ul id="fold1_7_1_7_2" style="POSITION: relative; VISIBILITY: visible;"><li>removes the property key and its value
+
+</li>
+<li>the given value is irrelevant
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_7_1_7_3" class="foldclosed" onClick="show_folder('1_7_1_7_3')" style="POSITION: absolute">+</span> <span id="hide1_7_1_7_3" class="foldopened" onClick="hide_folder('1_7_1_7_3')">-</span>
+{ $rename: { "key1": "key2" } }
+<ul id="fold1_7_1_7_3" style="POSITION: relative; VISIBILITY: visible;"><li>renames property "key1" to "key2"
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_7_1_8" class="foldclosed" onClick="show_folder('1_7_1_8')" style="POSITION: absolute">+</span> <span id="hide1_7_1_8" class="foldopened" onClick="hide_folder('1_7_1_8')">-</span>
+options example
+<ul id="fold1_7_1_8" style="POSITION: relative; VISIBILITY: visible;"><li>{ upsert: true }
+<ul><li>if there is no data matching the query, it's inserted
+
+</li>
+
+</ul>
+</li>
+
+</ul>
 </li>
 
 </ul>

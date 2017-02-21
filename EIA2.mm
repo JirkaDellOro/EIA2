@@ -391,9 +391,9 @@
 </node>
 </node>
 <node CREATED="1486898557142" ID="ID_180594711" MODIFIED="1486898567605" POSITION="right" TEXT="Node"/>
-<node CREATED="1487104916773" FOLDED="true" ID="ID_304950281" MODIFIED="1487696986680" POSITION="right" TEXT="MongoDB">
+<node CREATED="1487104916773" FOLDED="true" ID="ID_304950281" MODIFIED="1487711555522" POSITION="right" TEXT="MongoDB">
 <node CREATED="1487104929733" ID="ID_1070702900" MODIFIED="1487104936722" TEXT="shell commands"/>
-<node CREATED="1487104937556" FOLDED="true" ID="ID_1992942420" MODIFIED="1487696982763" TEXT="node classes and interfaces">
+<node CREATED="1487104937556" FOLDED="true" ID="ID_1992942420" MODIFIED="1487711553692" TEXT="node classes and interfaces">
 <node CREATED="1487514437186" ID="ID_1852186695" MODIFIED="1487514592789" TEXT="as defined in module &quot;mongodb&quot;"/>
 <node CREATED="1487513955694" FOLDED="true" ID="ID_1033719456" MODIFIED="1487674598043" TEXT="MongoCallback">
 <node CREATED="1487514000759" ID="ID_1609965266" MODIFIED="1487514020510" TEXT="Many methods require a callback function as parameter"/>
@@ -415,26 +415,29 @@
 <node CREATED="1487514258445" ID="ID_1753032270" MODIFIED="1487514271552" TEXT="returns the collection with the given name"/>
 </node>
 </node>
-<node CREATED="1487105811281" FOLDED="true" ID="ID_36915352" MODIFIED="1487695594374" TEXT="Collection">
+<node CREATED="1487105811281" FOLDED="true" ID="ID_36915352" MODIFIED="1487711532815" TEXT="Collection">
 <node CREATED="1487600693858" ID="ID_873080621" MODIFIED="1487600774010" TEXT="Represents a collection of data, handling insertion, lookup, modification and deletion"/>
-<node CREATED="1487515470114" ID="ID_1159007885" MODIFIED="1487593289444" TEXT="insertOne ( doc: {...}, callback: MongoCallback&lt;InsertOneWriteOpResult&gt;): void"/>
-<node CREATED="1487104946631" FOLDED="true" ID="ID_548922737" MODIFIED="1487680135068" TEXT="find ( query: {...} ) : Cursor">
+<node CREATED="1487515470114" ID="ID_1159007885" MODIFIED="1487711172167" TEXT="insertOne ( doc: Object, callback: MongoCallback&lt;InsertOneWriteOpResult&gt;): void"/>
+<node CREATED="1487104946631" FOLDED="true" ID="ID_548922737" MODIFIED="1487711163730" TEXT="find ( query: Object ) : Cursor">
 <font NAME="SansSerif" SIZE="12"/>
 <node CREATED="1487104984688" ID="ID_1227585520" MODIFIED="1487105136426" TEXT="finds all data matching the query object"/>
 <node CREATED="1487105137541" ID="ID_1868019610" MODIFIED="1487105192859" TEXT="returns a cursor for iteration over results"/>
 </node>
-<node CREATED="1487515478156" FOLDED="true" ID="ID_492620773" MODIFIED="1487674642646" TEXT="findOne ( query: {...}, callback: MongoCallback&lt;Object&gt; ) : void">
+<node CREATED="1487515478156" FOLDED="true" ID="ID_492620773" MODIFIED="1487711180893" TEXT="findOne ( query: Object, callback: MongoCallback&lt;Object&gt; ) : void">
 <node CREATED="1487576443513" ID="ID_790517308" MODIFIED="1487576452162" TEXT="finds the first data matching the query object "/>
 <node CREATED="1487576454317" ID="ID_844470801" MODIFIED="1487576473561" TEXT="then calls the callback function and passes the object found"/>
 </node>
-<node CREATED="1487592976241" FOLDED="true" ID="ID_1092746753" MODIFIED="1487680138505" TEXT="updateOne ( query: {...}, update: {...}, options: ReplaceOneOptions, &#xa;callback: MongoCallback&lt;UpdateWriteOpResult&gt;): void; ">
+<node CREATED="1487592976241" FOLDED="true" ID="ID_1092746753" MODIFIED="1487711201517" TEXT="updateOne ( query: Object, update: Object, options: ReplaceOneOptions, &#xa;callback: MongoCallback&lt;UpdateWriteOpResult&gt;): void; ">
 <node CREATED="1487674646036" ID="ID_819043065" MODIFIED="1487674675183" TEXT="updates one document in the database"/>
 <node CREATED="1487674676777" ID="ID_138222897" MODIFIED="1487674690636" TEXT="the first found with the given query"/>
 <node CREATED="1487674691678" ID="ID_1224378265" MODIFIED="1487674733501" TEXT="using the pattern given as the update-object"/>
 <node CREATED="1487674736431" ID="ID_1105498860" MODIFIED="1487674754785" TEXT="and the replace options"/>
 </node>
+<node CREATED="1487707170214" FOLDED="true" ID="ID_1736345212" MODIFIED="1487711212224" TEXT="remove( query: Object, callback: MongoCallback&lt;WriteOpResult&gt;): void;">
+<node CREATED="1487104984688" ID="ID_1457272926" MODIFIED="1487707223586" TEXT="removes all data matching the query object"/>
 </node>
-<node CREATED="1487105814120" FOLDED="true" ID="ID_922031714" MODIFIED="1487695602905" TEXT="Cursor">
+</node>
+<node CREATED="1487105814120" FOLDED="true" ID="ID_922031714" MODIFIED="1487711086426" TEXT="Cursor">
 <node CREATED="1487600795530" ID="ID_1119169742" MODIFIED="1487600823864" TEXT="Represents a subset of data as a result of a find-command"/>
 <node CREATED="1487674058331" FOLDED="true" ID="ID_1872856572" MODIFIED="1487674859772" TEXT="close ( callback: MongoCallback&lt;CursorResult&gt; ): void">
 <node CREATED="1487674852045" ID="ID_414456688" MODIFIED="1487674858090" TEXT="close the cursor"/>
@@ -448,21 +451,41 @@
 <node CREATED="1487680163336" ID="ID_215230960" MODIFIED="1487680189330" TEXT="creates a JavaScript-Array of Objects from the Cursor"/>
 </node>
 </node>
-<node CREATED="1487593514087" FOLDED="true" ID="ID_1393455632" MODIFIED="1487696981489" TEXT="Query-Object">
-<node CREATED="1487682152114" FOLDED="true" ID="ID_1031203213" MODIFIED="1487695438539" TEXT="{ key: &quot;John&quot; }">
+<node CREATED="1487593514087" FOLDED="true" ID="ID_1393455632" MODIFIED="1487711288450" TEXT="query examples">
+<node CREATED="1487682152114" FOLDED="true" ID="ID_1031203213" MODIFIED="1487709607052" TEXT="{ &quot;key&quot;: &quot;John&quot; }">
 <node CREATED="1487682171733" ID="ID_1802763024" MODIFIED="1487692216846" TEXT="the value of property key must match the string &quot;John&quot;"/>
 </node>
-<node CREATED="1487682221654" FOLDED="true" ID="ID_239567795" MODIFIED="1487695437599" TEXT="{ key: { $gt: 20, $lt: 80, $ne: 50 } }">
+<node CREATED="1487682221654" FOLDED="true" ID="ID_239567795" MODIFIED="1487709621102" TEXT="{ &quot;key&quot;: { $gt: 20, $lt: 80, $ne: 50 } }">
 <node CREATED="1487691990671" ID="ID_1308292225" MODIFIED="1487692223658" TEXT="the value of property key must be "/>
 <node CREATED="1487692117021" ID="ID_1846051939" MODIFIED="1487692140778" TEXT="greater than 20, less than 80 and not equal to 50"/>
 </node>
-<node CREATED="1487692252419" FOLDED="true" ID="ID_325384311" MODIFIED="1487695436985" TEXT="{ $or: [ { key: { $lt: 20 } }, { key: { $gt: 80 } }, { key: 50 } ] }">
+<node CREATED="1487692252419" FOLDED="true" ID="ID_325384311" MODIFIED="1487709635012" TEXT="{ $or: [ { &quot;key&quot;: { $lt: 20 } }, { &quot;key&quot;: { $gt: 80 } }, { &quot;key&quot;: 50 } ] }">
 <node CREATED="1487695343688" ID="ID_918270336" MODIFIED="1487695357104" TEXT="the value of property key must be"/>
 <node CREATED="1487695367760" ID="ID_550605546" MODIFIED="1487695418991" TEXT="less than 20 or greater than 80 or equal to 50"/>
 </node>
-<node CREATED="1487695614935" ID="ID_1526158237" MODIFIED="1487695652479" TEXT="{ $where: {"/>
+<node CREATED="1487695614935" FOLDED="true" ID="ID_1526158237" MODIFIED="1487706840041" TEXT="{ $where: { &quot;this.key1 + this.key2 &gt; 100&quot; } }">
+<node CREATED="1487706765461" ID="ID_1904367484" MODIFIED="1487706780580" TEXT="evaluates a Javascript-expression"/>
+<node CREATED="1487706781299" ID="ID_1981221960" MODIFIED="1487706814131" TEXT="example: the sum of the properties key1 and key2 must exceed 100"/>
+<node CREATED="1487706815271" ID="ID_1267051184" MODIFIED="1487706836684" TEXT="this is mandatory to access the properties"/>
 </node>
-<node CREATED="1487593526013" ID="ID_250425857" MODIFIED="1487593542773" TEXT="Update-Object"/>
+</node>
+<node CREATED="1487593526013" FOLDED="true" ID="ID_250425857" MODIFIED="1487711280787" TEXT="update examples">
+<node CREATED="1487708838868" FOLDED="true" ID="ID_1289777789" MODIFIED="1487709650480" TEXT="{ $set: { &quot;key1&quot;: 10, &quot;key2&quot;: &quot;John&quot;, ... } }">
+<node CREATED="1487708968367" ID="ID_181787116" MODIFIED="1487709033256" TEXT="sets the value of property key1 to 10, and key2 to &quot;John&quot;"/>
+</node>
+<node CREATED="1487709068965" FOLDED="true" ID="ID_93152214" MODIFIED="1487709656232" TEXT="{ $unset: { &quot;key&quot;: &quot;&quot;, ... } }">
+<node CREATED="1487709155478" ID="ID_493382292" MODIFIED="1487709171700" TEXT="removes the property key and its value"/>
+<node CREATED="1487709172365" ID="ID_1742646260" MODIFIED="1487709185259" TEXT="the given value is irrelevant"/>
+</node>
+<node CREATED="1487709286363" FOLDED="true" ID="ID_1116049958" MODIFIED="1487709783716" TEXT="{ $rename: { &quot;key1&quot;: &quot;key2&quot; } }">
+<node CREATED="1487709677352" ID="ID_1231684289" MODIFIED="1487709697254" TEXT="renames property &quot;key1&quot; to &quot;key2&quot;"/>
+</node>
+</node>
+<node CREATED="1487711363303" FOLDED="true" ID="ID_599284470" MODIFIED="1487711527776" TEXT="options example">
+<node CREATED="1487711373225" ID="ID_847185120" MODIFIED="1487711524608" TEXT="{ upsert: true }">
+<node CREATED="1487711437000" ID="ID_1422438116" MODIFIED="1487711479017" TEXT="if there is no data matching the query, it&apos;s inserted"/>
+</node>
+</node>
 </node>
 </node>
 </node>
