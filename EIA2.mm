@@ -265,7 +265,6 @@
 <node CREATED="1391930106769" ID="ID_1880444144" MODIFIED="1417623989017" TEXT="Processing.js"/>
 </node>
 <node CREATED="1417624839038" FOLDED="true" ID="ID_796036974" MODIFIED="1486973946738" TEXT="Music">
-<font NAME="SansSerif" SIZE="12"/>
 <node CREATED="1417624845506" ID="ID_457272396" MODIFIED="1417624991577" TEXT="TimbreJS"/>
 <node CREATED="1417624850123" ID="ID_1180515555" MODIFIED="1417624988706" TEXT="SoundJS"/>
 <node CREATED="1417625348475" ID="ID_255039467" MODIFIED="1417625350790" TEXT="MidiJS"/>
@@ -433,7 +432,6 @@
 <node CREATED="1487600693858" ID="ID_873080621" MODIFIED="1487600774010" TEXT="Represents a collection of data, handling insertion, lookup, modification and deletion"/>
 <node CREATED="1487515470114" ID="ID_1159007885" MODIFIED="1487711172167" TEXT="insertOne ( doc: Object, callback: MongoCallback&lt;InsertOneWriteOpResult&gt;): void"/>
 <node CREATED="1487104946631" FOLDED="true" ID="ID_548922737" MODIFIED="1487711163730" TEXT="find ( query: Object ) : Cursor">
-<font NAME="SansSerif" SIZE="12"/>
 <node CREATED="1487104984688" ID="ID_1227585520" MODIFIED="1487105136426" TEXT="finds all data matching the query object"/>
 <node CREATED="1487105137541" ID="ID_1868019610" MODIFIED="1487105192859" TEXT="returns a cursor for iteration over results"/>
 </node>
