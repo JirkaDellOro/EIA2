@@ -1018,6 +1018,12 @@ Values
 <li>null
 
 </li>
+<li>NaN
+
+</li>
+<li>Infinity
+
+</li>
 
 </ul>
 </li>
@@ -1122,9 +1128,9 @@ OOP
 </ul>
 </li>
 <li><span id="show1_5_3" class="foldclosed" onClick="show_folder('1_5_3')" style="POSITION: absolute">+</span> <span id="hide1_5_3" class="foldopened" onClick="hide_folder('1_5_3')">-</span>
-Predefined objects
+Predefined objects/classes
 <ul id="fold1_5_3" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_5_3_1" class="foldclosed" onClick="show_folder('1_5_3_1')" style="POSITION: absolute">+</span> <span id="hide1_5_3_1" class="foldopened" onClick="hide_folder('1_5_3_1')">-</span>
-Standardobjects
+Standard
 <ul id="fold1_5_3_1" style="POSITION: relative; VISIBILITY: visible;"><li>Array
 
 </li>
@@ -1140,6 +1146,9 @@ Standardobjects
 <li>Function
 
 </li>
+<li>JSON
+
+</li>
 <li>...
 
 </li>
@@ -1147,7 +1156,7 @@ Standardobjects
 </ul>
 </li>
 <li><span id="show1_5_3_2" class="foldclosed" onClick="show_folder('1_5_3_2')" style="POSITION: absolute">+</span> <span id="hide1_5_3_2" class="foldopened" onClick="hide_folder('1_5_3_2')">-</span>
-Browserobjects
+Browser
 <ul id="fold1_5_3_2" style="POSITION: relative; VISIBILITY: visible;"><li>Navigator
 
 </li>
@@ -1187,6 +1196,23 @@ Document
 </li>
 
 </ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_4" class="foldclosed" onClick="show_folder('1_5_4')" style="POSITION: absolute">+</span> <span id="hide1_5_4" class="foldopened" onClick="hide_folder('1_5_4')">-</span>
+Global functions
+<ul id="fold1_5_4" style="POSITION: relative; VISIBILITY: visible;"><li>parseInt(value: string, radix?: number): number | NaN
+
+</li>
+<li>parseFloat(value: string): number | NaN
+
+</li>
+<li>decodeURIComponent(encodedURIComponent: string): string
+
+</li>
+<li>encodeURIComponent(uriComponent: string): string
+
 </li>
 
 </ul>
@@ -1284,55 +1310,121 @@ General
 <li><span id="show1_7_2" class="foldclosed" onClick="show_folder('1_7_2')" style="POSITION: absolute">+</span> <span id="hide1_7_2" class="foldopened" onClick="hide_folder('1_7_2')">-</span>
 Core modules and classes
 <ul id="fold1_7_2" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_7_2_1" class="foldclosed" onClick="show_folder('1_7_2_1')" style="POSITION: absolute">+</span> <span id="hide1_7_2_1" class="foldopened" onClick="hide_folder('1_7_2_1')">-</span>
+Console
+<ul id="fold1_7_2_1" style="POSITION: relative; VISIBILITY: visible;"><li>log ( message?: any, ...optionalParams: any[] ): void;
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_7_2_2" class="foldclosed" onClick="show_folder('1_7_2_2')" style="POSITION: absolute">+</span> <span id="hide1_7_2_2" class="foldopened" onClick="hide_folder('1_7_2_2')">-</span>
+Process
+<ul id="fold1_7_2_2" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_7_2_2_1" class="foldclosed" onClick="show_folder('1_7_2_2_1')" style="POSITION: absolute">+</span> <span id="hide1_7_2_2_1" class="foldopened" onClick="hide_folder('1_7_2_2_1')">-</span>
+General
+<ul id="fold1_7_2_2_1" style="POSITION: relative; VISIBILITY: visible;"><li>global object
+
+</li>
+<li>provides information about, and control over, the current Node.js process. As a global, it is 
+
+</li>
+<li>always available to Node.js applications without using require().
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_7_2_2_2" class="foldclosed" onClick="show_folder('1_7_2_2_2')" style="POSITION: absolute">+</span> <span id="hide1_7_2_2_2" class="foldopened" onClick="hide_folder('1_7_2_2_2')">-</span>
+argv
+<ul id="fold1_7_2_2_2" style="POSITION: relative; VISIBILITY: visible;"><li>an array of strings passed to node when the application was started
+
+</li>
+<li>element 0 is the path to the node instance running the app
+
+</li>
+<li>element 1 is the path to the js-file being executed
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_7_2_2_3" class="foldclosed" onClick="show_folder('1_7_2_2_3')" style="POSITION: absolute">+</span> <span id="hide1_7_2_2_3" class="foldopened" onClick="hide_folder('1_7_2_2_3')">-</span>
+env
+<ul id="fold1_7_2_2_3" style="POSITION: relative; VISIBILITY: visible;"><li>information about the environment
+
+</li>
+<li>e.g. PORT
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_7_2_2_4" class="foldclosed" onClick="show_folder('1_7_2_2_4')" style="POSITION: absolute">+</span> <span id="hide1_7_2_2_4" class="foldopened" onClick="hide_folder('1_7_2_2_4')">-</span>
+addListener ( eventName: string, callback: Function ): Process
+<ul id="fold1_7_2_2_4" style="POSITION: relative; VISIBILITY: visible;"><li>registers a callback function for a process-event
+
+</li>
+<li>event "beforeExit" can be used to cleanup before application finishes
+
+</li>
+<li>same: &nbsp;on ( eventName: string, callback: Function ): Process
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_7_2_3" class="foldclosed" onClick="show_folder('1_7_2_3')" style="POSITION: absolute">+</span> <span id="hide1_7_2_3" class="foldopened" onClick="hide_folder('1_7_2_3')">-</span>
 HTTP
-<ul id="fold1_7_2_1" style="POSITION: relative; VISIBILITY: visible;"><li><p>import http = require("http");
-<p><span id="show1_7_2_1_1" class="foldclosed" onClick="show_folder('1_7_2_1_1')" style="POSITION: absolute">+</span> <span id="hide1_7_2_1_1" class="foldopened" onClick="hide_folder('1_7_2_1_1')">-</span>
+<ul id="fold1_7_2_3" style="POSITION: relative; VISIBILITY: visible;"><li><p>import http = require("http");
+<p><span id="show1_7_2_3_1" class="foldclosed" onClick="show_folder('1_7_2_3_1')" style="POSITION: absolute">+</span> <span id="hide1_7_2_3_1" class="foldopened" onClick="hide_folder('1_7_2_3_1')">-</span>
 createServer(requestListener?: ( request: IncomingMessage, response: ServerResponse ) =&gt; void ): Server;
-<ul id="fold1_7_2_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>creates and returns an instance of Server
+<ul id="fold1_7_2_3_1" style="POSITION: relative; VISIBILITY: visible;"><li>creates and returns an instance of Server
 
 </li>
 
-</ul><p><span id="show1_7_2_1_2" class="foldclosed" onClick="show_folder('1_7_2_1_2')" style="POSITION: absolute">+</span> <span id="hide1_7_2_1_2" class="foldopened" onClick="hide_folder('1_7_2_1_2')">-</span>
+</ul><p><span id="show1_7_2_3_2" class="foldclosed" onClick="show_folder('1_7_2_3_2')" style="POSITION: absolute">+</span> <span id="hide1_7_2_3_2" class="foldopened" onClick="hide_folder('1_7_2_3_2')">-</span>
 Server
-<ul id="fold1_7_2_1_2" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_7_2_1_2_1" class="foldclosed" onClick="show_folder('1_7_2_1_2_1')" style="POSITION: absolute">+</span> <span id="hide1_7_2_1_2_1" class="foldopened" onClick="hide_folder('1_7_2_1_2_1')">-</span>
+<ul id="fold1_7_2_3_2" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_7_2_3_2_1" class="foldclosed" onClick="show_folder('1_7_2_3_2_1')" style="POSITION: absolute">+</span> <span id="hide1_7_2_3_2_1" class="foldopened" onClick="hide_folder('1_7_2_3_2_1')">-</span>
 listen ( port: number ): Server;
-<ul id="fold1_7_2_1_2_1" style="POSITION: relative; VISIBILITY: visible;"><li>tells the serverinstance to listen on the given port
+<ul id="fold1_7_2_3_2_1" style="POSITION: relative; VISIBILITY: visible;"><li>tells the serverinstance to listen on the given port
 
 </li>
 
 </ul>
 </li>
 
-</ul><p><span id="show1_7_2_1_3" class="foldclosed" onClick="show_folder('1_7_2_1_3')" style="POSITION: absolute">+</span> <span id="hide1_7_2_1_3" class="foldopened" onClick="hide_folder('1_7_2_1_3')">-</span>
+</ul><p><span id="show1_7_2_3_3" class="foldclosed" onClick="show_folder('1_7_2_3_3')" style="POSITION: absolute">+</span> <span id="hide1_7_2_3_3" class="foldopened" onClick="hide_folder('1_7_2_3_3')">-</span>
 IncomingMessage
-<ul id="fold1_7_2_1_3" style="POSITION: relative; VISIBILITY: visible;"><li>created automatically by the server and sent as the first parameter to the requestListener
+<ul id="fold1_7_2_3_3" style="POSITION: relative; VISIBILITY: visible;"><li>created automatically by the server and sent as the first parameter to the requestListener
 
 </li>
-<li><span id="show1_7_2_1_3_1" class="foldclosed" onClick="show_folder('1_7_2_1_3_1')" style="POSITION: absolute">+</span> <span id="hide1_7_2_1_3_1" class="foldopened" onClick="hide_folder('1_7_2_1_3_1')">-</span>
+<li><span id="show1_7_2_3_3_1" class="foldclosed" onClick="show_folder('1_7_2_3_3_1')" style="POSITION: absolute">+</span> <span id="hide1_7_2_3_3_1" class="foldopened" onClick="hide_folder('1_7_2_3_3_1')">-</span>
 method: string
-<ul id="fold1_7_2_1_3_1" style="POSITION: relative; VISIBILITY: visible;"><li>"GET", "POST", etc.
+<ul id="fold1_7_2_3_3_1" style="POSITION: relative; VISIBILITY: visible;"><li>"GET", "POST", etc.
 
 </li>
 
 </ul>
 </li>
-<li><span id="show1_7_2_1_3_2" class="foldclosed" onClick="show_folder('1_7_2_1_3_2')" style="POSITION: absolute">+</span> <span id="hide1_7_2_1_3_2" class="foldopened" onClick="hide_folder('1_7_2_1_3_2')">-</span>
+<li><span id="show1_7_2_3_3_2" class="foldclosed" onClick="show_folder('1_7_2_3_3_2')" style="POSITION: absolute">+</span> <span id="hide1_7_2_3_3_2" class="foldopened" onClick="hide_folder('1_7_2_3_3_2')">-</span>
 url: string
-<ul id="fold1_7_2_1_3_2" style="POSITION: relative; VISIBILITY: visible;"><li>the path including the search-string the server was requested with
+<ul id="fold1_7_2_3_3_2" style="POSITION: relative; VISIBILITY: visible;"><li>the path including the search-string the server was requested with
 
 </li>
 
 </ul>
 </li>
 
-</ul><p><span id="show1_7_2_1_4" class="foldclosed" onClick="show_folder('1_7_2_1_4')" style="POSITION: absolute">+</span> <span id="hide1_7_2_1_4" class="foldopened" onClick="hide_folder('1_7_2_1_4')">-</span>
+</ul><p><span id="show1_7_2_3_4" class="foldclosed" onClick="show_folder('1_7_2_3_4')" style="POSITION: absolute">+</span> <span id="hide1_7_2_3_4" class="foldopened" onClick="hide_folder('1_7_2_3_4')">-</span>
 ServerResponse
-<ul id="fold1_7_2_1_4" style="POSITION: relative; VISIBILITY: visible;"><li>created automatically by the server and sent as the second parameter to the requestListener
+<ul id="fold1_7_2_3_4" style="POSITION: relative; VISIBILITY: visible;"><li>created automatically by the server and sent as the second parameter to the requestListener
 
 </li>
-<li><span id="show1_7_2_1_4_1" class="foldclosed" onClick="show_folder('1_7_2_1_4_1')" style="POSITION: absolute">+</span> <span id="hide1_7_2_1_4_1" class="foldopened" onClick="hide_folder('1_7_2_1_4_1')">-</span>
+<li><span id="show1_7_2_3_4_1" class="foldclosed" onClick="show_folder('1_7_2_3_4_1')" style="POSITION: absolute">+</span> <span id="hide1_7_2_3_4_1" class="foldopened" onClick="hide_folder('1_7_2_3_4_1')">-</span>
 setHeader ( name: string, value: string | string[ ] ): void;
-<ul id="fold1_7_2_1_4_1" style="POSITION: relative; VISIBILITY: visible;"><li>writes a header to the response stream
+<ul id="fold1_7_2_3_4_1" style="POSITION: relative; VISIBILITY: visible;"><li>writes a header to the response stream
 
 </li>
 <li>e.g. setHeader("content-type", "text/html")
@@ -1341,9 +1433,9 @@ setHeader ( name: string, value: string | string[ ] ): void;
 
 </ul>
 </li>
-<li><span id="show1_7_2_1_4_2" class="foldclosed" onClick="show_folder('1_7_2_1_4_2')" style="POSITION: absolute">+</span> <span id="hide1_7_2_1_4_2" class="foldopened" onClick="hide_folder('1_7_2_1_4_2')">-</span>
+<li><span id="show1_7_2_3_4_2" class="foldclosed" onClick="show_folder('1_7_2_3_4_2')" style="POSITION: absolute">+</span> <span id="hide1_7_2_3_4_2" class="foldopened" onClick="hide_folder('1_7_2_3_4_2')">-</span>
 write ( text: string, callback?: Function ): boolean;
-<ul id="fold1_7_2_1_4_2" style="POSITION: relative; VISIBILITY: visible;"><li>This sends a string to the response body
+<ul id="fold1_7_2_3_4_2" style="POSITION: relative; VISIBILITY: visible;"><li>This sends a string to the response body
 
 </li>
 <li>This method may be called multiple times to provide successive parts of the body.
@@ -1358,9 +1450,9 @@ write ( text: string, callback?: Function ): boolean;
 
 </ul>
 </li>
-<li><span id="show1_7_2_1_4_3" class="foldclosed" onClick="show_folder('1_7_2_1_4_3')" style="POSITION: absolute">+</span> <span id="hide1_7_2_1_4_3" class="foldopened" onClick="hide_folder('1_7_2_1_4_3')">-</span>
+<li><span id="show1_7_2_3_4_3" class="foldclosed" onClick="show_folder('1_7_2_3_4_3')" style="POSITION: absolute">+</span> <span id="hide1_7_2_3_4_3" class="foldopened" onClick="hide_folder('1_7_2_3_4_3')">-</span>
 end ( text: string, callback?: Function ): void;
-<ul id="fold1_7_2_1_4_3" style="POSITION: relative; VISIBILITY: visible;"><li>same as write, but completes the response body
+<ul id="fold1_7_2_3_4_3" style="POSITION: relative; VISIBILITY: visible;"><li>same as write, but completes the response body
 
 </li>
 <li>and signals the server to send the response to the client
@@ -1379,22 +1471,22 @@ end ( text: string, callback?: Function ): void;
 </ul></li>
 </ul>
 </li>
-<li><span id="show1_7_2_2" class="foldclosed" onClick="show_folder('1_7_2_2')" style="POSITION: absolute">+</span> <span id="hide1_7_2_2" class="foldopened" onClick="hide_folder('1_7_2_2')">-</span>
+<li><span id="show1_7_2_4" class="foldclosed" onClick="show_folder('1_7_2_4')" style="POSITION: absolute">+</span> <span id="hide1_7_2_4" class="foldopened" onClick="hide_folder('1_7_2_4')">-</span>
 URL
-<ul id="fold1_7_2_2" style="POSITION: relative; VISIBILITY: visible;"><li>import url = require("url");
+<ul id="fold1_7_2_4" style="POSITION: relative; VISIBILITY: visible;"><li>import url = require("url");
 
 </li>
 <li>parse ( urlStr: string, parseQueryString?: boolean): Url;
 
 </li>
-<li><span id="show1_7_2_2_1" class="foldclosed" onClick="show_folder('1_7_2_2_1')" style="POSITION: absolute">+</span> <span id="hide1_7_2_2_1" class="foldopened" onClick="hide_folder('1_7_2_2_1')">-</span>
+<li><span id="show1_7_2_4_1" class="foldclosed" onClick="show_folder('1_7_2_4_1')" style="POSITION: absolute">+</span> <span id="hide1_7_2_4_1" class="foldopened" onClick="hide_folder('1_7_2_4_1')">-</span>
 example
-<ul id="fold1_7_2_2_1" style="POSITION: relative; VISIBILITY: visible;"><li>url.parse( "http://user:pass@host.com:8080/p/a/t/h?query=string#anchor", true)
+<ul id="fold1_7_2_4_1" style="POSITION: relative; VISIBILITY: visible;"><li>url.parse( "http://user:pass@host.com:8080/p/a/t/h?query=string#anchor", true)
 
 </li>
-<li><span id="show1_7_2_2_1_1" class="foldclosed" onClick="show_folder('1_7_2_2_1_1')" style="POSITION: absolute">+</span> <span id="hide1_7_2_2_1_1" class="foldopened" onClick="hide_folder('1_7_2_2_1_1')">-</span>
+<li><span id="show1_7_2_4_1_1" class="foldclosed" onClick="show_folder('1_7_2_4_1_1')" style="POSITION: absolute">+</span> <span id="hide1_7_2_4_1_1" class="foldopened" onClick="hide_folder('1_7_2_4_1_1')">-</span>
 returns Url
-<ul id="fold1_7_2_2_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>href: 'http://user:pass@host.com:8080/p/a/t/h?query=string#anchor'
+<ul id="fold1_7_2_4_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>href: 'http://user:pass@host.com:8080/p/a/t/h?query=string#anchor'
 
 </li>
 <li>slashes: true
@@ -1441,9 +1533,6 @@ returns Url
 </li>
 
 </ul>
-</li>
-<li>process
-
 </li>
 
 </ul>
