@@ -171,7 +171,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1481403992317" FOLDED="true" ID="ID_187226101" MODIFIED="1488192856899" POSITION="left" TEXT="Curriculum">
+<node CREATED="1481403992317" FOLDED="true" ID="ID_187226101" MODIFIED="1488213071126" POSITION="left" TEXT="Curriculum">
 <node CREATED="1481404003125" FOLDED="true" ID="ID_1041763061" MODIFIED="1487792496769" TEXT="Versioning /Safety / Recall">
 <node CREATED="1481404017272" ID="ID_1256980336" MODIFIED="1481404024465" TEXT="get to know git"/>
 <node CREATED="1481404025274" ID="ID_1745096591" MODIFIED="1481404030279" TEXT="get to know git hub"/>
@@ -192,6 +192,210 @@
 <node CREATED="1486638322234" ID="ID_1397042242" MODIFIED="1486638527677" TEXT="Asynchronism"/>
 <node CREATED="1486640781962" ID="ID_539244345" MODIFIED="1487243219942" TEXT="Exceptions, Enums, Generics, Anonymous Functions"/>
 <node CREATED="1486640699737" ID="ID_684751491" MODIFIED="1486640723589" TEXT="Database"/>
+</node>
+<node CREATED="1488204302237" FOLDED="true" ID="ID_1955454365" MODIFIED="1488213069814" POSITION="left" TEXT="GiS-Curriculum">
+<node CREATED="1488204320351" FOLDED="true" ID="ID_328143328" MODIFIED="1488204348561" TEXT="Javascript">
+<node CREATED="1488204331933" MODIFIED="1488204331933" TEXT="Javascript Intro"/>
+<node CREATED="1488204331935" MODIFIED="1488204331935" TEXT="- script tags platzieren im body"/>
+<node CREATED="1488204331936" MODIFIED="1488204331936" TEXT="- Verarbeitungsfolge aufzeigen!"/>
+<node CREATED="1488204331937" MODIFIED="1488204331937" TEXT="- Ausgaben vorstellen: alert, console.log, document.write()"/>
+<node CREATED="1488204331939" MODIFIED="1488204331939" TEXT="- Element im DOM finden und eine Ausgabe dort bewerkstelligen"/>
+<node CREATED="1488204331941" MODIFIED="1488204331941" TEXT="- getElementBy...."/>
+<node CREATED="1488204331942" MODIFIED="1488204331942" TEXT="- Manipulation des Knoteninhalts mit textContent (keine Interpretation)"/>
+<node CREATED="1488204331943" MODIFIED="1488204331943" TEXT="- Manipulation des Knoteninhalts mit innerHTML (Interpretation)"/>
+<node CREATED="1488204331944" ID="ID_779294265" MODIFIED="1488204331944" TEXT="- Erzeugen neuer Knoten mit write und innerHTML"/>
+<node CREATED="1488204331945" ID="ID_1591004683" MODIFIED="1488204331945" TEXT="- Erzeugen neuer Knoten mit createElement und einf&#xfc;gen mit appendChild"/>
+</node>
+<node CREATED="1488204331947" FOLDED="true" ID="ID_1635034577" MODIFIED="1488204346789" TEXT="Events">
+<node CREATED="1488204331949" ID="ID_253977694" MODIFIED="1488204331949" TEXT="- unterschiedliche Einbindungen vorf&#xfc;hren"/>
+<node CREATED="1488204331951" ID="ID_673281518" MODIFIED="1488204331951" TEXT="- f&#xfc;r DOM-Referenz window.onload einf&#xfc;hren"/>
+<node CREATED="1488204331951" ID="ID_1879396215" MODIFIED="1488204331951" TEXT="- Event-Objekt vorstellen"/>
+<node CREATED="1488204331952" ID="ID_459301869" MODIFIED="1488204331952" TEXT="- eventListener einf&#xfc;hren"/>
+<node CREATED="1488204331953" ID="ID_207922463" MODIFIED="1488204331953" TEXT="- window.onload auf window.addEventListener(&quot;load&quot;,...) &#xe4;ndern"/>
+<node CREATED="1488204331956" ID="ID_163328853" MODIFIED="1488204331956" TEXT="- Eventphasen erkl&#xe4;ren, Schaubild an Tafel"/>
+<node CREATED="1488204331957" ID="ID_1350309925" MODIFIED="1488204331957" TEXT="- Event auf Document-Ebene abfangen"/>
+<node CREATED="1488204331957" ID="ID_1210951257" MODIFIED="1488204331957" TEXT="- Phasen nutzen um vor oder nach Target abzufangen"/>
+<node CREATED="1488204331958" ID="ID_204478191" MODIFIED="1488204331958" TEXT="- Target und currentTarget kl&#xe4;ren"/>
+<node CREATED="1488204331958" ID="ID_1955917478" MODIFIED="1488204331958" TEXT="- Komplette event-Anzeige freischalten"/>
+<node CREATED="1488204331959" ID="ID_1979677557" MODIFIED="1488204331959" TEXT="- for .. in .. Schleife kl&#xe4;ren"/>
+<node CREATED="1488204331960" ID="ID_1393518991" MODIFIED="1488204331960" TEXT="- Assoziatives Array kl&#xe4;ren"/>
+</node>
+<node CREATED="1488204365690" FOLDED="true" ID="ID_377738059" MODIFIED="1488204413490" TEXT="Formulare">
+<node CREATED="1488204365692" ID="ID_1068935922" MODIFIED="1488204365692" TEXT="- Formularelemente einf&#xfc;hren / vorf&#xfc;hren"/>
+<node CREATED="1488204365693" ID="ID_225635902" MODIFIED="1488204365693" TEXT="- name-Attribut!"/>
+<node CREATED="1488204365694" ID="ID_1316246092" MODIFIED="1488204365694" TEXT="- Radiobuttons brauchen gleichen Namen um als Gruppe zu funktionieren"/>
+<node CREATED="1488204365695" ID="ID_590779774" MODIFIED="1488204365695" TEXT="- Fieldset und Legend um Formular zu untergliedern, kann sp&#xe4;ter mit Stylesheet formatiert werden"/>
+<node CREATED="1488204365696" ID="ID_1669288384" MODIFIED="1488204365696" TEXT="- Change-Event erkl&#xe4;ren"/>
+<node CREATED="1488204365698" ID="ID_457547924" MODIFIED="1488204365698" TEXT="- Multiple bei Select, Checked bei Checkbox: Attribute ohne Wert"/>
+</node>
+<node CREATED="1488204409961" FOLDED="true" ID="ID_1355658949" MODIFIED="1488204422055" TEXT="HTML5: neue Elemente, Canvas, Drag&amp;Drop">
+<node CREATED="1488204409962" ID="ID_478203087" MODIFIED="1488204409962" TEXT="Elemente"/>
+<node CREATED="1488204409963" ID="ID_1065962374" MODIFIED="1488204409963" TEXT="- Beispielcollection vorstellen"/>
+<node CREATED="1488204409964" ID="ID_389451233" MODIFIED="1488204409964" TEXT="Leinwandelement Canvas"/>
+<node CREATED="1488204409965" ID="ID_1224274671" MODIFIED="1488204409965" TEXT="- Einbinden in HTML-DOM und dimensionieren"/>
+<node CREATED="1488204409966" ID="ID_1950861498" MODIFIED="1488204409966" TEXT="- Context ist &quot;Zeichenmaschine&quot;"/>
+<node CREATED="1488204409967" ID="ID_732306309" MODIFIED="1488204409967" TEXT="- Pfadbefehle werden nach beginPath() gesammelt und mit stroke() abgesetzt"/>
+<node CREATED="1488204409968" ID="ID_1822621237" MODIFIED="1488204409968" TEXT="- fill-Befehle werden gleich gezeichnet"/>
+<node CREATED="1488204409969" ID="ID_955982079" MODIFIED="1488204409969" TEXT="- Transformationen"/>
+<node CREATED="1488204409970" ID="ID_1421965120" MODIFIED="1488204409970" TEXT="- Text"/>
+<node CREATED="1488204409971" ID="ID_1111449163" MODIFIED="1488204409971" TEXT="- Blending Modes"/>
+<node CREATED="1488204409972" ID="ID_1287011693" MODIFIED="1488204409972" TEXT="- Masken mit clip()"/>
+<node CREATED="1488204409972" ID="ID_1976878147" MODIFIED="1488204409972" TEXT="neue Events bei HTML5, insbesondere Drag&amp;Drop"/>
+<node CREATED="1488204409973" ID="ID_1026906304" MODIFIED="1488204409973" TEXT="- Beispielcode vorstellen, &#xc4;nderungen beobachten"/>
+<node CREATED="1488204409974" ID="ID_1240706286" MODIFIED="1488204409974" TEXT="- Element als draggable markieren"/>
+<node CREATED="1488204409975" ID="ID_1607759590" MODIFIED="1488204409975" TEXT="- bei dragstart dataTransfer-Objekt beschreiben"/>
+<node CREATED="1488204409976" ID="ID_393953254" MODIFIED="1488204409976" TEXT="- Event-Information wird gespeichert und ist bei Drop verf&#xfc;gbar"/>
+<node CREATED="1488204409978" ID="ID_1967929829" MODIFIED="1488204409978" TEXT="- drop auf Element erlauben, bei dragover preventDefault ausf&#xfc;hren"/>
+<node CREATED="1488204409979" ID="ID_902978125" MODIFIED="1488204409979" TEXT="- bei drop dataTransfer-Objekt auslesen und entsprechend agieren"/>
+</node>
+<node CREATED="1488204474886" FOLDED="true" ID="ID_1278652514" MODIFIED="1488204483399" TEXT="Formular">
+<node CREATED="1488204474887" ID="ID_1666297927" MODIFIED="1488204474887" TEXT="- Formular aus Lektion 4 nehmen"/>
+<node CREATED="1488204474888" ID="ID_1316561283" MODIFIED="1488204474888" TEXT="- Um &lt;form&gt;-Tag erg&#xe4;nzen, action=die Datei selbst, method=&quot;get&quot;"/>
+<node CREATED="1488204474890" ID="ID_1374223250" MODIFIED="1488204474890" TEXT="- submit-Button einf&#xfc;gen"/>
+<node CREATED="1488204474891" ID="ID_1505997186" MODIFIED="1488204474891" TEXT="- In Firebug Netzwerknachrichten untersuchen -&gt; Parameter"/>
+<node CREATED="1488204474891" ID="ID_1144851371" MODIFIED="1488204474891" TEXT="- Per action die Daten an PHP leiten"/>
+<node CREATED="1488204474892" ID="ID_1269303313" MODIFIED="1488204474892" TEXT="- $GET, $POST, $REQUEST"/>
+<node CREATED="1488204474897" ID="ID_1905950715" MODIFIED="1488204474897" TEXT="- multiple select -&gt; [] in name erzeugt Array in PHP"/>
+<node CREATED="1488204474898" ID="ID_1757887251" MODIFIED="1488204474898" TEXT="- verschiedene Zugriffe demonstrieren"/>
+<node CREATED="1488204474899" ID="ID_360473448" MODIFIED="1488204474899" TEXT="FormData"/>
+<node CREATED="1488204474900" ID="ID_266878854" MODIFIED="1488204474900" TEXT="- ohne Header versenden, Header ist bei FormData &quot;dabei&quot;"/>
+<node CREATED="1488204474901" ID="ID_993217109" MODIFIED="1488204474901" TEXT="Asynchron"/>
+<node CREATED="1488204474902" ID="ID_1110113382" MODIFIED="1488204474902" TEXT="- dritter Parameter in XmlHttpRequest.open"/>
+</node>
+</node>
+<node CREATED="1488205145847" FOLDED="true" ID="ID_1447644901" MODIFIED="1488213069248" POSITION="left" TEXT="GiS-Exercises">
+<node CREATED="1488205477444" FOLDED="true" ID="ID_990521194" MODIFIED="1488205523659" TEXT="W15">
+<node CREATED="1488205156141" FOLDED="true" ID="ID_442267717" MODIFIED="1488205164837" TEXT="Clock">
+<node CREATED="1488205160267" MODIFIED="1488205160267" TEXT="Binden Sie eine Webseite in Ihre Pr&#xe4;senz ein, welche Datum und Uhrzeit anzeigt, zu welcher sie aufgerufen wurde. Die Zeit muss sich dann nicht mehr &#xe4;ndern, das k&#xf6;nnen wir sp&#xe4;ter machen. Jede Ziffer soll in einer eigenen Box angezeigt werden, so dass die Seite die Anmutung einer mechanischen Anzeigetafel bekommt. Halten Sie HTML, JS und CSS weitestgehend getrennt in eigenen Dateien."/>
+</node>
+<node CREATED="1488205183742" FOLDED="true" ID="ID_249449733" MODIFIED="1488205197139" TEXT="ExamineDom">
+<node CREATED="1488205190263" FOLDED="true" ID="ID_61159902" MODIFIED="1488205195616" TEXT="Im Lektionen-Bereich (...~del/Gis/Lektionen/...) finden Sie einen Ordner &quot;ExamineDom&quot; mit HTML, CSS und JavaScript-Code.">
+<node CREATED="1488205190265" MODIFIED="1488205190265" TEXT="Finden Sie (gerne gemeinsam im Team) heraus, was der JavaScript-Teil macht, und wie! Verfassen Sie eine entsprechende Beschreibung."/>
+<node CREATED="1488205190268" MODIFIED="1488205190268" TEXT="Erweitern Sie den Javascript-Code so, dass die Tabelle sinnvoll benannte Header bekommt und dass die Attribute der Knoten in einer weiteren Spalte in der Form &quot;name=value name=value ...&quot; ausgegeben werden."/>
+<node CREATED="1488205190270" MODIFIED="1488205190270" TEXT="Zeichnen Sie die zugeh&#xf6;rige Baumstruktur. Sie k&#xf6;nnen gerne eine Handzeichnung einscannen/abfotografieren."/>
+<node CREATED="1488205190272" MODIFIED="1488205190272" TEXT="Experimentieren Sie mit anderen HTML-Elementen innerhalb des Elementes mit der id &quot;divId&quot;"/>
+<node CREATED="1488205190273" MODIFIED="1488205190273" TEXT="Integrieren Sie die Seite auf Ihrer Website und erg&#xe4;nzen sie um die Dokumentation aus a) und die Zeichnung aus d)"/>
+</node>
+</node>
+<node CREATED="1488205223744" FOLDED="true" ID="ID_1785701052" MODIFIED="1488205232487" TEXT="Event-Box">
+<node CREATED="1488205230142" FOLDED="true" ID="ID_924432304" MODIFIED="1488205232035" TEXT="Entwickeln Sie eine TypeScript-Programmierung mit Event-Listenern in einer externen Datei (ggf. zusammen mit einer Stylesheet-Datei), so dass nach der Einbindung des entstandenen Javascript-Codes in eine HTML-Seite folgendes geschieht:">
+<node CREATED="1488205230148" MODIFIED="1488205230148" TEXT="Am Mauszeiger erscheint permanent eine Box in der Informationen zur Zeigerposition und zum darunter liegenden HTML-Element angezeigt werden. Diese Informationen sind:"/>
+<node CREATED="1488205230153" MODIFIED="1488205230153" TEXT="die Screen-Koordinaten, die Page-Koordinaten, die Client-Koordinaten, das Target, die Target-id und die CSS-Klasse des Targets"/>
+<node CREATED="1488205230157" MODIFIED="1488205230157" TEXT="Binden Sie das Script in Ihre CSS-Demo ein"/>
+<node CREATED="1488205230159" MODIFIED="1488205230159" TEXT="Bei Klick auf ein bestimmtes Element der Seite soll sich ein Attribut Ihrer Wahl des Elementes sichtbar ver&#xe4;ndern."/>
+<node CREATED="1488205230164" MODIFIED="1488205230164" TEXT="Bei Klick auf ein jedes beliebige der anderen Elemente der Seite soll sich das Attribut des bei c) anklickbaren Elementes erneut sichtbar &#xe4;ndern."/>
+</node>
+</node>
+<node CREATED="1488205244655" FOLDED="true" ID="ID_1445396503" MODIFIED="1488205256093" TEXT="Blackmailer">
+<node CREATED="1488205249740" FOLDED="true" ID="ID_1045324308" MODIFIED="1488205255674" TEXT="Programmieren Sie mit TypeScript eine kleine Blackmailer-App!">
+<node CREATED="1488205249742" MODIFIED="1488205249742" TEXT="Es sollen die Buchstaben A bis Z in einer Sektion der Seite einzeln formatiert zur Auswahl erscheinen"/>
+<node CREATED="1488205249744" MODIFIED="1488205249744" TEXT="Ein Buchstabe kann per Mausklick, sowie durch Druck auf die entsprechende Taste auf der Tastatur, ausgew&#xe4;hlt werden. Die Auswahl wird optisch hervorgehoben."/>
+<node CREATED="1488205249748" MODIFIED="1488205249748" TEXT="Bei erneutem Mausklick in einer zweiten Sektion der Seite erscheint dort an der Mausposition der ausgew&#xe4;hlte Buchstabe. Somit kann der User einen &quot;verwackelten&quot; Text in dieser Sektion erzeugen."/>
+<node CREATED="1488205249753" MODIFIED="1488205249753" TEXT="Um einen bereits erzeugten Buchstaben zu l&#xf6;schen, gen&#xfc;gt es ihn bei gehaltener Alt-Taste anzuklicken."/>
+</node>
+</node>
+<node CREATED="1488205311377" FOLDED="true" ID="ID_1812525961" MODIFIED="1488205319047" TEXT="Schmuckladen">
+<node CREATED="1488205315829" FOLDED="true" ID="ID_1508845330" MODIFIED="1488205318414" TEXT="Gestalten Sie ein Formular f&#xfc;r einen Online-Weihnachtsbaumschmuckladen! Sehen Sie sich gerne in anderen Online-Shops um und lassen Sie sich inspirieren. Achten Sie aber darauf, das wir derzeit nur mit einem sehr schlichten Formular arbeiten. Interaktion mit grafischen Objekten behandeln wir ggf. sp&#xe4;ter. Nehmen Sie sich, wie immer, Papier und Bleistift und zeichnen Sie zun&#xe4;chst das Formular so wie Sie es sich w&#xfc;nschen auf. Es darf diesmal gerne gut aussehen, auch Formularelemente lassen sich mit CSS aufh&#xfc;bschen! Definieren Sie auch klar die einzelnen Elemente, deren Eigenschaften und die Planungen zur technischen Umsetzung und Programmierung. Folgendes muss auf jeden Fall realisiert sein:">
+<node CREATED="1488205315835" MODIFIED="1488205315835" TEXT="Der Kunde kann einen von verschiedenen Weihnachtsbaumarten ausw&#xe4;hlen."/>
+<node CREATED="1488205315836" MODIFIED="1488205315836" TEXT="Der Kunde kann einen von verschiedenen T&#xf6;pfen, Haltern oder Untersetzern ausw&#xe4;hlen."/>
+<node CREATED="1488205315837" ID="ID_625885513" MODIFIED="1488205315837" TEXT="Der Kunde kann Schmuckelemente aus vielen verschiedenen Sorten w&#xe4;hlen, also auch mehrere pro gew&#xe4;hlter Sorte."/>
+<node CREATED="1488205315841" MODIFIED="1488205315841" TEXT="Weiterhin kann er angeben, welcher Transportdienstleister gew&#xe4;hlt werden soll und wohin die Bestellung geht, sowie einen Kommentar f&#xfc;r den H&#xe4;ndler hinterlassen (textarea)."/>
+<node CREATED="1488205315845" MODIFIED="1488205315845" TEXT="Bei jeder &#xc4;nderung soll der aktuelle Zustand der Bestellung in einem daf&#xfc;r vorgesehenen Bereich auf der Seite als knappe Zusammenfassung angezeigt werden."/>
+</node>
+</node>
+<node CREATED="1488205384889" FOLDED="true" ID="ID_1329167874" MODIFIED="1488205393908" TEXT="XML/JSON">
+<node CREATED="1488205391070" FOLDED="true" ID="ID_1557381640" MODIFIED="1488205392593" TEXT="Trennen Sie bei Ihrem Online-Weihnachtsbaumschmuckladen die Daten von der Pr&#xe4;sentationsstruktur!">
+<node CREATED="1488205391072" MODIFIED="1488205391072" TEXT="Lagern Sie die Informationen zur Bestellung, die derzeit noch in der HTML-Seite oder im JS-Code eingepflegt sind, in eine XML-Datei aus. Diese soll beim Start der Seite eingelesen und die HTML-Seite zur Laufzeit entsprechend aufgebaut bzw. erg&#xe4;nzt werden."/>
+<node CREATED="1488205391077" MODIFIED="1488205391077" TEXT="Der Weihnachtsbaumschmuckh&#xe4;ndler kann also jetzt in der XML-Datei seine Baumsorten, die Dekoration und andere ver&#xe4;nderliche Informationen angeben, ohne die HTML-Datei anfassen zu m&#xfc;ssen. Auch die einzelnen Preise werden aus der XML-Datei eingelesen."/>
+<node CREATED="1488205391082" MODIFIED="1488205391082" TEXT="In der Bestell&#xfc;bersicht soll nun bei jeder &#xc4;nderung des Formulars durch den Kunden der errechnete Gesamtpreis erscheinen!"/>
+<node CREATED="1488205391086" MODIFIED="1488205391086" TEXT="Achten Sie darauf, dass sich der Kanon der Artikel jetzt stark ver&#xe4;ndern kann, neue dazukommen und andere wieder entfernt werden. Auch bei anderen Informationsgruppen kann dies geschehen."/>
+<node CREATED="1488205391090" MODIFIED="1488205391090" TEXT="Entscheiden Sie selbst&#xe4;ndig, welche Strukturen im HTML-Code verbleiben, und welche von Javascript aufgebaut werden. Es ist hilfreich bei der Entwicklung auf eine &#xfc;bersichtliche HTML-Struktur aufbauen zu k&#xf6;nnen und nicht die ganze Seite per Javascript zu generieren."/>
+</node>
+</node>
+<node CREATED="1488205410862" FOLDED="true" ID="ID_1609284649" MODIFIED="1488205416733" TEXT="Drag&amp;Drop">
+<node CREATED="1488205414780" FOLDED="true" ID="ID_652151032" MODIFIED="1488205416201" TEXT="Modifizieren Sie Ihren Online-Weihnachtsbaumschmuckladen derart, dass der gew&#xe4;hlte Weihnachtsbaum dargestellt wird und per Drag&amp;Drop geschm&#xfc;ckt werden kann. Sie k&#xf6;nnen hierzu das Canvas-Element nutzen, k&#xf6;nnen es aber auch &apos;klassisch&apos; versuchen.">
+<node CREATED="1488205414785" MODIFIED="1488205414785" TEXT="Stellen Sie sicher, dass der Nutzer weiterhin den &#xdc;berblick &#xfc;ber seine Bestellung erh&#xe4;lt."/>
+<node CREATED="1488205414787" MODIFIED="1488205414787" TEXT="Sie k&#xf6;nnen die Schmuckobjekte automatisch positionieren, oder dies dem Nutzer &#xfc;berlassen. Eine Pr&#xfc;fung der Sinnhaftigkeit ist nicht zwingend erforderlich."/>
+<node CREATED="1488205414792" MODIFIED="1488205414792" TEXT="Zur Vereinfachung k&#xf6;nnen Sie sich bei der grafischen Darstellung auf simplifizierte Darstellungen beschr&#xe4;nken."/>
+<node CREATED="1488205414796" MODIFIED="1488205414796" TEXT="Gerne d&#xfc;rfen Sie das Ganze auch weiter treiben und nat&#xfc;rlicher erscheinende Darstellungen kreieren. Hier eignen sich ggf. eher Bilder oder Vektordaten (SVG), welche Sie mit einbinden und erscheinen lassen."/>
+<node CREATED="1488205414800" MODIFIED="1488205414800" TEXT="Die Seite wird weiterhin auf Basis von XML- oder JSON-Daten aufgebaut. Dort sind nun auch Informationen zur Darstellung im Drag&amp;Drop-Context enthalten."/>
+</node>
+</node>
+<node CREATED="1488205448373" FOLDED="true" ID="ID_281509247" MODIFIED="1488205452905" TEXT="PHP">
+<node CREATED="1488205451081" MODIFIED="1488205451081" TEXT="Installieren Sie ggf. XAMPP auf Ihrem System."/>
+<node CREATED="1488205451083" MODIFIED="1488205451083" TEXT="Setzen Sie sich mit den Codes aus der Vorlesung auseinander, insbesondere mit den PHP-Dateien, die Sie hier einsehen k&#xf6;nnen: gisForm.phpgisDisplayErrorAndSource.php"/>
+<node CREATED="1488205451086" MODIFIED="1488205451086" TEXT="Schalten Sie dazu die weiteren Funktionalit&#xe4;ten von gisForm.php frei."/>
+<node CREATED="1488205451087" MODIFIED="1488205451087" TEXT="Machen Sie sich mit PHP-Dokumentationen wie W3-Schools oder php.net vertraut."/>
+<node CREATED="1488205451088" MODIFIED="1488205451088" TEXT="Lassen Sie serverseitig die Bestelldaten des Weihnachtsschmuckladen-Formulars mit PHP entgegen nehmen und diese auswerten. W&#xe4;hlen Sie selbst, welchen Stand des Shops sie hierzu heran ziehen wollen."/>
+<node CREATED="1488205451092" MODIFIED="1488205451092" TEXT="Der Server erzeugt darauf hin mit PHP eine Webseite, welche dem Nutzer eine Zusammenfassung seiner Bestellung anzeigt. Auch der Preis soll ausgegeben werden, diese k&#xf6;nnen Sie mit den Formulardaten mitschicken."/>
+<node CREATED="1488205451097" MODIFIED="1488205451097" TEXT="Die Seite soll mit Hilfe des Stylesheets der Bestellseite passend zu dem Rest gestaltet sein."/>
+<node CREATED="1488205451099" MODIFIED="1488205451099" TEXT="Binden Sie die Datei &quot;gisDisplayErrorAndSource.php&quot; in Ihre PHP-Skripte ein. Das dort hinterlegte Skriptst&#xfc;ckchen bewirkt, dass im Fehlerfall eine lesbare Ausgabe erfolgt. Au&#xdf;erdem wird durch die Angabe von &quot;printSource&quot; als Parameter in der Adresse der Quellcode angezeigt. Stellen Sie ab jetzt f&#xfc;r alle Ihre PHP-Dateien einen Link zur Verf&#xfc;gung, welcher den String &quot;printSource&quot; als Parameter &#xfc;bergibt, damit die Betreuer schnell den Sourcecode pr&#xfc;fen k&#xf6;nnen."/>
+</node>
+<node CREATED="1488205466618" FOLDED="true" ID="ID_1659850721" MODIFIED="1488205470717" TEXT="Database">
+<node CREATED="1488205469772" MODIFIED="1488205469772" TEXT="Die Bestellungen aus Ihrem Weihnachtsbaumschmuckshop sollen in Ihrer Datenbank gespeichert werden. Die bestellte Anzahl zu jedem Artikel der Bestellung muss in einzelnen Spalten gespeichert sein. Es soll nun eine weitere Webseite f&#xfc;r den Shopbetreiber erstellt werden.">
+<node CREATED="1488205469777" MODIFIED="1488205469777" TEXT="Hier kann er die Inhalte der Datenbank anzeigen lassen, so dass er die Bestellungen packen und liefern kann."/>
+<node CREATED="1488205469782" MODIFIED="1488205469782" TEXT="Zus&#xe4;tzlich soll f&#xfc;r jeden Artikel die &#xfc;ber alle Bestellungen summierte Anzahl sowie der Gesamtpreis aller Bestellungen ausgegeben werden."/>
+<node CREATED="1488205469786" MODIFIED="1488205469786" TEXT="Der Shopbetreiber kann einzelne Eintr&#xe4;ge als &quot;geliefert&quot; markieren und einzelne sowie alle l&#xf6;schen."/>
+</node>
+</node>
+</node>
+<node CREATED="1488205524944" FOLDED="true" ID="ID_1282931735" MODIFIED="1488206349246" TEXT="S14">
+<node CREATED="1488205992149" FOLDED="true" ID="ID_1683275825" MODIFIED="1488206030411" TEXT="Skatblatt">
+<node CREATED="1488205995560" ID="ID_1926512584" MODIFIED="1488205995560" TEXT="Binden Sie eine Webseite in Ihre Pr&#xe4;senz ein, welche f&#xfc;nf Spielkarten aus einem Skatblatt darstellt. Dabei m&#xfc;ssen keine Bilder erscheinen. Es gen&#xfc;gt wenn die Karten als K&#xe4;stchen erscheinen, in denen jeweils die Angabe von Farbe und Wert zu finden ist, also z.B. &quot;Pik 7&quot; oder &quot;Herz Dame&quot;. Der HTML-Code soll im Wesentlichen nur einen Aufruf einer Javascript-Funktion enthalten, welche dann die Seite aufbaut. Halten Sie HTML, JS und CSS weitestgehend getrennt in eigenen Dateien. Auf diesen Aufgabenteil bezieht sich das abzugebende Konzept."/>
+<node CREATED="1488205995614" MODIFIED="1488205995614" TEXT="Bonusaufgabe: Die f&#xfc;nf anzuzeigenden Spielkarten werden zuf&#xe4;llig ausgew&#xe4;hlt!"/>
+</node>
+<node CREATED="1488206018483" FOLDED="true" ID="ID_359628502" MODIFIED="1488206042822" TEXT="Skat interaktiv">
+<node CREATED="1488206024591" FOLDED="true" ID="ID_1121893176" MODIFIED="1488206041681" TEXT="Erweitern Sie das Kartenspiel aus Aufgabe 3 um Interaktion.">
+<node CREATED="1488206024592" MODIFIED="1488206024592" TEXT="Hierzu platzieren Sie einen Ablage- und einen Nachziehstapel auf der Seite."/>
+<node CREATED="1488206024593" ID="ID_1207049304" MODIFIED="1488206024593" TEXT="Bei Klick auf eine Karte auf der Hand wird diese auf dem Ablagestapel dargestellt und verschwindet aus der Hand."/>
+<node CREATED="1488206024597" MODIFIED="1488206024597" TEXT="Bei Klick auf den Nachziehstapel erscheint eine weitere Karte auf der Hand. Diese ist entweder zuf&#xe4;llig ausgew&#xe4;hlt oder folgt einer im Code festgelegten Sequenz"/>
+</node>
+</node>
+<node CREATED="1488206201575" FOLDED="true" ID="ID_155971707" MODIFIED="1488206210731" TEXT="Blumenladen">
+<node CREATED="1488206207961" FOLDED="true" ID="ID_574201928" MODIFIED="1488206210245" TEXT="Gestalten Sie ein Formular f&#xfc;r einen Online-Blumenladen!">
+<node CREATED="1488206207963" ID="ID_1399448481" MODIFIED="1488206207963" TEXT="Nehmen Sie sich, wie immer, Papier und Bleistift und zeichnen Sie zun&#xe4;chst das Formular so wie Sie es sich w&#xfc;nschen auf. Es darf diesmal gerne gut aussehen, auch Formularelemente lassen sich mit CSS aufh&#xfc;bschen! Definieren Sie auch klar die einzelnen Elemente, deren Eigenschaften und die Planungen zur technischen Umsetzung und Programmierung. Folgendes muss auf jeden Fall realisiert sein:">
+<node CREATED="1488206207970" MODIFIED="1488206207970" TEXT="Der Kunde kann mehrere Blumen aus vielen verschiedenen Sorten w&#xe4;hlen, also auch mehrere pro gew&#xe4;hlter Sorte."/>
+<node CREATED="1488206207975" MODIFIED="1488206207975" TEXT="Weiterhin kann er zwischen unterschiedlichen, sich gegebenenfalls auch gegenseitig ausschlie&#xdf;enden Verpackungs- und Dekorationsformen w&#xe4;hlen wie Vasen oder Schleifen, und seinen Strau&#xdf; noch mit unterschiedlichem Gr&#xfc;nzeug ausstatten lassen. Weiterhin kann er angeben, welcher Transportdienstleister gew&#xe4;hlt werden soll und wohin der Strau&#xdf; geht, sowie einen Kommentar f&#xfc;r den Blumenh&#xe4;ndler hinterlassen (textarea)."/>
+<node CREATED="1488206207980" MODIFIED="1488206207980" TEXT="Bei jeder &#xc4;nderung soll der aktuelle Zustand der Wahl und der Preis in einem daf&#xfc;r vorgesehenen Bereich auf er Seite als knappe Zusammenfassung angezeigt werden."/>
+</node>
+<node CREATED="1488206207985" MODIFIED="1488206207985" TEXT="Sehen Sie sich aber auch in anderen Online-Blumenl&#xe4;den um und lassen Sie sich inspirieren. Achten Sie aber darauf, das wir derzeit nur mit einem sehr schlichten Formular arbeiten. Interaktion mit grafischen Objekten behandeln wir sp&#xe4;ter."/>
+</node>
+</node>
+<node CREATED="1488206240127" FOLDED="true" ID="ID_1965605742" MODIFIED="1488206251087" TEXT="XML/JSON">
+<node CREATED="1488206249904" MODIFIED="1488206249904" TEXT="Lagern Sie die Informationen zur Bestellung, die derzeit noch in der HTML-Seite oder im JS-Code eingepflegt sind, in eine XML-Datei aus. Diese soll beim Start der Seite eingelesen und die HTML-Seite zur Laufzeit entsprechend aufgebaut bzw. erg&#xe4;nzt werden."/>
+<node CREATED="1488206249909" MODIFIED="1488206249909" TEXT="Der Blumenh&#xe4;ndler kann also jetzt in der XML-Datei seine Blumensorten, die Dekoration und andere ver&#xe4;nderliche Informationen angeben, ohne die HTML-Datei anfassen zu m&#xfc;ssen. Auch die einzelnen Preise werden aus der XML-Datei eingelesen, die Funktionalit&#xe4;t des Formulars bleibt vollst&#xe4;ndig erhalten."/>
+<node CREATED="1488206249913" MODIFIED="1488206249913" TEXT="Achten Sie darauf, dass sich der Kanon der Blumensorten vollst&#xe4;ndig ver&#xe4;ndern kann, neue dazukommen und andere wieder entfernt werden. Auch bei anderen Informationsgruppen kann dies, je nach Aufbau Ihres Blumenladens, geschehen."/>
+<node CREATED="1488206249918" MODIFIED="1488206249918" TEXT="Entscheiden Sie selbst&#xe4;ndig, welche Strukturen im HTML-Code verbleiben, und welche von Javascript aufgebaut werden. Es ist hilfreich bei der Entwicklung auf eine &#xfc;bersichtliche HTML-Struktur aufbauen zu k&#xf6;nnen und nicht die ganze Seite per Javascript zu generieren."/>
+</node>
+<node CREATED="1488206269700" FOLDED="true" ID="ID_779116786" MODIFIED="1488206299511" TEXT="Canvas D&amp;D">
+<node CREATED="1488206282964" ID="ID_237558455" MODIFIED="1488206282964" TEXT="Aufgabe 7: Canvas, Drag &amp; Drop">
+<node CREATED="1488206282965" MODIFIED="1488206282965" TEXT="Modifizieren Sie Ihren Blumenladen derart, dass der Blumenstrau&#xdf; per Drag&amp;Drop zusammengestellt werden kann und auf dem Canvas grafisch angezeigt wird. Dabei ist es nicht erforderlich, und wahrscheinlich auch nicht sinnvoll, dass der Nutzer die Blumen genau platziert, sondern dass diese automatisch positioniert werden um eine g&#xfc;nstige grafische Ausgabe zu erm&#xf6;glichen."/>
+<node CREATED="1488206282970" MODIFIED="1488206282970" TEXT="Stellen Sie sicher, dass der Nutzer weiterhin den &#xdc;berblick &#xfc;ber seine Bestellung erh&#xe4;lt."/>
+<node CREATED="1488206282971" MODIFIED="1488206282971" TEXT="Zur Vereinfachung k&#xf6;nnen Sie sich bei der grafischen Darstellung auf farbige Kreise als Bl&#xfc;ten."/>
+<node CREATED="1488206282971" MODIFIED="1488206282971" TEXT="Gerne d&#xfc;rfen Sie nat&#xfc;rlich das Ganze auch weiter treiben und nat&#xfc;rlicher erscheinende Blumen darstellen. Hier eignen sich ggf. eher Bilder oder Vektordaten (SVG), welche Sie mit einbinden und auf dem Canvas erscheinen lassen."/>
+<node CREATED="1488206282974" MODIFIED="1488206282974" TEXT="Bonusaufgabe: Die Bestellseite wird weiterhin auf Basis der XML-Daten aufgebaut. Dort sind nun auch Informationen zur Darstellung auf dem Canvas enthalten."/>
+</node>
+<node CREATED="1488206282977" MODIFIED="1488206282977" TEXT="Hinweis: Studieren Sie das Beispiel gisDragDropCanvas aus dem Intranet! Das Canvas-CheatSheet ist derzeit auch wieder erreichbar."/>
+</node>
+<node CREATED="1488206325506" FOLDED="true" ID="ID_1116892438" MODIFIED="1488206347387" TEXT="Danach">
+<node CREATED="1488206329804" ID="ID_841317602" MODIFIED="1488206334640" TEXT="Blumenladen mit"/>
+<node CREATED="1488206335505" ID="ID_1096585845" MODIFIED="1488206336971" TEXT="PHP"/>
+<node CREATED="1488206337640" ID="ID_1129978998" MODIFIED="1488206340070" TEXT="Ajax"/>
+<node CREATED="1488206340754" ID="ID_976127974" MODIFIED="1488206343633" TEXT="Datenbank"/>
+</node>
+</node>
+<node CREATED="1488206419205" FOLDED="true" ID="ID_1660419014" MODIFIED="1488212819696" TEXT="W13">
+<node CREATED="1488206432538" FOLDED="true" ID="ID_1035811268" MODIFIED="1488206546713" TEXT="Sissa ibn Dahir">
+<node CREATED="1488206437287" MODIFIED="1488206437287" TEXT="Binden Sie eine Webseite in Ihre Pr&amp;auml;senz ein, welche die Situation auf dem Schachbrett nach der &lt;a href=&quot;"/>
+<node CREATED="1488206437291" ID="ID_768398618" LINK="http://de.wikipedia.org/wiki/Sissa_ibn_Dahir" MODIFIED="1488206437291" TEXT="http://de.wikipedia.org/wiki/Sissa_ibn_Dahir&quot; target=&quot;_blank&quot;&gt;Legende von Sissa ibn Dahir&lt;/a&gt; schematisch darstellt. Es soll das Schachbrett und auf jedem Feld die Anzahl der Reisk&#xf6;rner erkennbar sein. Der HTML-Code soll im Wesentlichen nur einen Aufruf einer Javascript-Funktion enthalten, welche dann die Seite aufbaut. Halten Sie HTML, JS und CSS weitestgehend getrennt in eigenen Dateien."/>
+</node>
+<node CREATED="1488206519304" FOLDED="true" ID="ID_1805092010" MODIFIED="1488206546100" TEXT="Memory">
+<node CREATED="1488206522269" ID="ID_13824244" MODIFIED="1488206522269" TEXT="Programmieren Sie ein kleines Memoryspiel in Javascript. Sie k&#xf6;nnen als Grundlage das Raster der Schachaufgabe nutzen."/>
+<node CREATED="1488206522275" ID="ID_171428478" MODIFIED="1488206522275" TEXT="Zu Beginn erscheinen die R&#xfc;cken der Memorykarten. Bei Klick auf einen R&#xfc;cken wird der Inhalt angezeigt. Ebenso f&#xfc;r eine zweite Karte. Dann werden die Inhalte verglichen und bei Gleichheit verschwinden die Karten. Bei Ungleichheit werden wieder die R&#xfc;cken angezeigt."/>
+<node CREATED="1488206522281" ID="ID_1840516332" MODIFIED="1488206540401" TEXT="Die Motive k&#xf6;nnen Bilder oder auch Worte sein. Denkbar ist auch ein kleiner Vokabeltrainer..."/>
+</node>
+<node CREATED="1488206567785" ID="ID_277935442" MODIFIED="1488206570467" TEXT="Eisladen"/>
+</node>
 </node>
 <node CREATED="1486898844788" FOLDED="true" ID="ID_1945764135" MODIFIED="1488133310521" POSITION="right" TEXT="Git">
 <node CREATED="1486898861640" FOLDED="true" ID="ID_1912447230" MODIFIED="1486970759448" TEXT="General">
