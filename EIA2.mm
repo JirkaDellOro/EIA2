@@ -1,6 +1,6 @@
 <map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
-<node CREATED="1480496236572" ID="ID_1483245584" MODIFIED="1488194803365" TEXT="EIA2">
+<node CREATED="1480496236572" ID="ID_1483245584" MODIFIED="1488552592586" TEXT="EIA2">
 <node CREATED="1486640980741" FOLDED="true" ID="ID_1634475163" MODIFIED="1488192839990" POSITION="left" TEXT="References">
 <node CREATED="1487071662786" ID="ID_517239067" LINK="DIA2Landscape.png" MODIFIED="1487071688268" TEXT="Landscape"/>
 <node CREATED="1486899143788" ID="ID_1157514353" LINK="https://git-scm.com/" MODIFIED="1486899151008" TEXT="Git"/>
@@ -171,30 +171,33 @@
 </node>
 </node>
 </node>
-<node CREATED="1481403992317" FOLDED="true" ID="ID_187226101" MODIFIED="1488213071126" POSITION="left" TEXT="Curriculum">
-<node CREATED="1481404003125" FOLDED="true" ID="ID_1041763061" MODIFIED="1487792496769" TEXT="Versioning /Safety / Recall">
+<node CREATED="1481403992317" FOLDED="true" ID="ID_187226101" MODIFIED="1488451388625" POSITION="left" TEXT="Curriculum">
+<node CREATED="1481404003125" FOLDED="true" ID="ID_1041763061" MODIFIED="1488358704831" TEXT="Versioning /Safety / Recall">
 <node CREATED="1481404017272" ID="ID_1256980336" MODIFIED="1481404024465" TEXT="get to know git"/>
 <node CREATED="1481404025274" ID="ID_1745096591" MODIFIED="1481404030279" TEXT="get to know git hub"/>
 <node CREATED="1481404031015" ID="ID_1317158703" MODIFIED="1486648609453" TEXT="recall first semester"/>
 <node CREATED="1481409931839" ID="ID_429382347" MODIFIED="1481409968816" TEXT="generate some content with typescript"/>
 </node>
-<node CREATED="1486762202465" ID="ID_1896864296" MODIFIED="1486762218816" TEXT="Tracetable / Debugger"/>
+<node CREATED="1486762202465" ID="ID_1896864296" MODIFIED="1488450954635" TEXT="Tracetable / Debugger">
+<node CREATED="1488358706786" ID="ID_401747030" MODIFIED="1488358736101" TEXT="Difference Runtime, Compiletime, Designtime"/>
+</node>
 <node CREATED="1486637599832" ID="ID_809730445" MODIFIED="1486637606047" TEXT="DOM / Events"/>
 <node CREATED="1486637471804" ID="ID_1801808833" MODIFIED="1486637478250" TEXT="Canvas"/>
 <node CREATED="1486637481546" ID="ID_1450108589" MODIFIED="1486637546989" TEXT="Associative Arrays"/>
-<node CREATED="1486640867059" ID="ID_565156591" MODIFIED="1486640872361" TEXT="Animation, Interaktion"/>
+<node CREATED="1486640867059" ID="ID_565156591" MODIFIED="1488358699827" TEXT="Animation, Interaction"/>
 <node CREATED="1486638178159" ID="ID_456355481" MODIFIED="1486638188335" TEXT="Classes"/>
 <node CREATED="1486638190057" ID="ID_786435816" MODIFIED="1486638203140" TEXT="Inheritance, Polymorphism"/>
 <node CREATED="1486638209592" ID="ID_1941289311" MODIFIED="1486638228878" TEXT="Scopes and Visability"/>
-<node CREATED="1486638259326" FOLDED="true" ID="ID_1581079006" MODIFIED="1487865395530" TEXT="Forms and Queries">
+<node CREATED="1486638259326" FOLDED="true" ID="ID_1581079006" MODIFIED="1488451382933" TEXT="Forms and Queries">
 <node CREATED="1487865334139" ID="ID_719604506" LINK="https://nodejs.org/dist/latest-v7.x/docs/api/url.html#url_url_strings_and_url_objects" MODIFIED="1487865394228" TEXT="show node URL scheme in documentation"/>
+<node CREATED="1488451367173" ID="ID_1683586108" MODIFIED="1488451375521" TEXT="start server side programming with node"/>
 </node>
 <node CREATED="1486638322234" ID="ID_1397042242" MODIFIED="1486638527677" TEXT="Asynchronism"/>
 <node CREATED="1486640781962" ID="ID_539244345" MODIFIED="1487243219942" TEXT="Exceptions, Enums, Generics, Anonymous Functions"/>
 <node CREATED="1486640699737" ID="ID_684751491" MODIFIED="1486640723589" TEXT="Database"/>
 </node>
-<node CREATED="1488204302237" FOLDED="true" ID="ID_1955454365" MODIFIED="1488213069814" POSITION="left" TEXT="GiS-Curriculum">
-<node CREATED="1488204320351" FOLDED="true" ID="ID_328143328" MODIFIED="1488204348561" TEXT="Javascript">
+<node CREATED="1488204302237" FOLDED="true" ID="ID_1955454365" MODIFIED="1488552593445" POSITION="left" TEXT="GiS-Curriculum">
+<node CREATED="1488204320351" FOLDED="true" ID="ID_328143328" MODIFIED="1488450949047" TEXT="Javascript">
 <node CREATED="1488204331933" MODIFIED="1488204331933" TEXT="Javascript Intro"/>
 <node CREATED="1488204331935" MODIFIED="1488204331935" TEXT="- script tags platzieren im body"/>
 <node CREATED="1488204331936" MODIFIED="1488204331936" TEXT="- Verarbeitungsfolge aufzeigen!"/>
@@ -206,7 +209,7 @@
 <node CREATED="1488204331944" ID="ID_779294265" MODIFIED="1488204331944" TEXT="- Erzeugen neuer Knoten mit write und innerHTML"/>
 <node CREATED="1488204331945" ID="ID_1591004683" MODIFIED="1488204331945" TEXT="- Erzeugen neuer Knoten mit createElement und einf&#xfc;gen mit appendChild"/>
 </node>
-<node CREATED="1488204331947" FOLDED="true" ID="ID_1635034577" MODIFIED="1488204346789" TEXT="Events">
+<node CREATED="1488204331947" ID="ID_1635034577" MODIFIED="1488450922616" TEXT="Events">
 <node CREATED="1488204331949" ID="ID_253977694" MODIFIED="1488204331949" TEXT="- unterschiedliche Einbindungen vorf&#xfc;hren"/>
 <node CREATED="1488204331951" ID="ID_673281518" MODIFIED="1488204331951" TEXT="- f&#xfc;r DOM-Referenz window.onload einf&#xfc;hren"/>
 <node CREATED="1488204331951" ID="ID_1879396215" MODIFIED="1488204331951" TEXT="- Event-Objekt vorstellen"/>
@@ -220,7 +223,7 @@
 <node CREATED="1488204331959" ID="ID_1979677557" MODIFIED="1488204331959" TEXT="- for .. in .. Schleife kl&#xe4;ren"/>
 <node CREATED="1488204331960" ID="ID_1393518991" MODIFIED="1488204331960" TEXT="- Assoziatives Array kl&#xe4;ren"/>
 </node>
-<node CREATED="1488204365690" FOLDED="true" ID="ID_377738059" MODIFIED="1488204413490" TEXT="Formulare">
+<node CREATED="1488204365690" ID="ID_377738059" MODIFIED="1488450916113" TEXT="Formulare">
 <node CREATED="1488204365692" ID="ID_1068935922" MODIFIED="1488204365692" TEXT="- Formularelemente einf&#xfc;hren / vorf&#xfc;hren"/>
 <node CREATED="1488204365693" ID="ID_225635902" MODIFIED="1488204365693" TEXT="- name-Attribut!"/>
 <node CREATED="1488204365694" ID="ID_1316246092" MODIFIED="1488204365694" TEXT="- Radiobuttons brauchen gleichen Namen um als Gruppe zu funktionieren"/>
@@ -263,10 +266,10 @@
 <node CREATED="1488204474902" ID="ID_1110113382" MODIFIED="1488204474902" TEXT="- dritter Parameter in XmlHttpRequest.open"/>
 </node>
 </node>
-<node CREATED="1488205145847" FOLDED="true" ID="ID_1447644901" MODIFIED="1488213069248" POSITION="left" TEXT="GiS-Exercises">
-<node CREATED="1488205477444" FOLDED="true" ID="ID_990521194" MODIFIED="1488205523659" TEXT="W15">
-<node CREATED="1488205156141" FOLDED="true" ID="ID_442267717" MODIFIED="1488205164837" TEXT="Clock">
-<node CREATED="1488205160267" MODIFIED="1488205160267" TEXT="Binden Sie eine Webseite in Ihre Pr&#xe4;senz ein, welche Datum und Uhrzeit anzeigt, zu welcher sie aufgerufen wurde. Die Zeit muss sich dann nicht mehr &#xe4;ndern, das k&#xf6;nnen wir sp&#xe4;ter machen. Jede Ziffer soll in einer eigenen Box angezeigt werden, so dass die Seite die Anmutung einer mechanischen Anzeigetafel bekommt. Halten Sie HTML, JS und CSS weitestgehend getrennt in eigenen Dateien."/>
+<node CREATED="1488205145847" FOLDED="true" ID="ID_1447644901" MODIFIED="1488552693245" POSITION="left" TEXT="GiS-Exercises">
+<node CREATED="1488205477444" FOLDED="true" ID="ID_990521194" MODIFIED="1488450902958" TEXT="W15">
+<node CREATED="1488205156141" FOLDED="true" ID="ID_442267717" MODIFIED="1488450818651" TEXT="Clock">
+<node CREATED="1488205160267" ID="ID_553978611" MODIFIED="1488205160267" TEXT="Binden Sie eine Webseite in Ihre Pr&#xe4;senz ein, welche Datum und Uhrzeit anzeigt, zu welcher sie aufgerufen wurde. Die Zeit muss sich dann nicht mehr &#xe4;ndern, das k&#xf6;nnen wir sp&#xe4;ter machen. Jede Ziffer soll in einer eigenen Box angezeigt werden, so dass die Seite die Anmutung einer mechanischen Anzeigetafel bekommt. Halten Sie HTML, JS und CSS weitestgehend getrennt in eigenen Dateien."/>
 </node>
 <node CREATED="1488205183742" FOLDED="true" ID="ID_249449733" MODIFIED="1488205197139" TEXT="ExamineDom">
 <node CREATED="1488205190263" FOLDED="true" ID="ID_61159902" MODIFIED="1488205195616" TEXT="Im Lektionen-Bereich (...~del/Gis/Lektionen/...) finden Sie einen Ordner &quot;ExamineDom&quot; mit HTML, CSS und JavaScript-Code.">
@@ -277,8 +280,8 @@
 <node CREATED="1488205190273" MODIFIED="1488205190273" TEXT="Integrieren Sie die Seite auf Ihrer Website und erg&#xe4;nzen sie um die Dokumentation aus a) und die Zeichnung aus d)"/>
 </node>
 </node>
-<node CREATED="1488205223744" FOLDED="true" ID="ID_1785701052" MODIFIED="1488205232487" TEXT="Event-Box">
-<node CREATED="1488205230142" FOLDED="true" ID="ID_924432304" MODIFIED="1488205232035" TEXT="Entwickeln Sie eine TypeScript-Programmierung mit Event-Listenern in einer externen Datei (ggf. zusammen mit einer Stylesheet-Datei), so dass nach der Einbindung des entstandenen Javascript-Codes in eine HTML-Seite folgendes geschieht:">
+<node CREATED="1488205223744" FOLDED="true" ID="ID_1785701052" MODIFIED="1488450833828" TEXT="Event-Box">
+<node CREATED="1488205230142" FOLDED="true" ID="ID_924432304" MODIFIED="1488450830070" TEXT="Entwickeln Sie eine TypeScript-Programmierung mit Event-Listenern in einer externen Datei (ggf. zusammen mit einer Stylesheet-Datei), so dass nach der Einbindung des entstandenen Javascript-Codes in eine HTML-Seite folgendes geschieht:">
 <node CREATED="1488205230148" MODIFIED="1488205230148" TEXT="Am Mauszeiger erscheint permanent eine Box in der Informationen zur Zeigerposition und zum darunter liegenden HTML-Element angezeigt werden. Diese Informationen sind:"/>
 <node CREATED="1488205230153" MODIFIED="1488205230153" TEXT="die Screen-Koordinaten, die Page-Koordinaten, die Client-Koordinaten, das Target, die Target-id und die CSS-Klasse des Targets"/>
 <node CREATED="1488205230157" MODIFIED="1488205230157" TEXT="Binden Sie das Script in Ihre CSS-Demo ein"/>
@@ -286,12 +289,12 @@
 <node CREATED="1488205230164" MODIFIED="1488205230164" TEXT="Bei Klick auf ein jedes beliebige der anderen Elemente der Seite soll sich das Attribut des bei c) anklickbaren Elementes erneut sichtbar &#xe4;ndern."/>
 </node>
 </node>
-<node CREATED="1488205244655" FOLDED="true" ID="ID_1445396503" MODIFIED="1488205256093" TEXT="Blackmailer">
-<node CREATED="1488205249740" FOLDED="true" ID="ID_1045324308" MODIFIED="1488205255674" TEXT="Programmieren Sie mit TypeScript eine kleine Blackmailer-App!">
-<node CREATED="1488205249742" MODIFIED="1488205249742" TEXT="Es sollen die Buchstaben A bis Z in einer Sektion der Seite einzeln formatiert zur Auswahl erscheinen"/>
-<node CREATED="1488205249744" MODIFIED="1488205249744" TEXT="Ein Buchstabe kann per Mausklick, sowie durch Druck auf die entsprechende Taste auf der Tastatur, ausgew&#xe4;hlt werden. Die Auswahl wird optisch hervorgehoben."/>
-<node CREATED="1488205249748" MODIFIED="1488205249748" TEXT="Bei erneutem Mausklick in einer zweiten Sektion der Seite erscheint dort an der Mausposition der ausgew&#xe4;hlte Buchstabe. Somit kann der User einen &quot;verwackelten&quot; Text in dieser Sektion erzeugen."/>
-<node CREATED="1488205249753" MODIFIED="1488205249753" TEXT="Um einen bereits erzeugten Buchstaben zu l&#xf6;schen, gen&#xfc;gt es ihn bei gehaltener Alt-Taste anzuklicken."/>
+<node CREATED="1488205244655" FOLDED="true" ID="ID_1445396503" MODIFIED="1488450835634" TEXT="Blackmailer">
+<node CREATED="1488205249740" FOLDED="true" ID="ID_1045324308" MODIFIED="1488450816148" TEXT="Programmieren Sie mit TypeScript eine kleine Blackmailer-App!">
+<node CREATED="1488205249742" ID="ID_671050651" MODIFIED="1488205249742" TEXT="Es sollen die Buchstaben A bis Z in einer Sektion der Seite einzeln formatiert zur Auswahl erscheinen"/>
+<node CREATED="1488205249744" ID="ID_509482445" MODIFIED="1488205249744" TEXT="Ein Buchstabe kann per Mausklick, sowie durch Druck auf die entsprechende Taste auf der Tastatur, ausgew&#xe4;hlt werden. Die Auswahl wird optisch hervorgehoben."/>
+<node CREATED="1488205249748" ID="ID_319832305" MODIFIED="1488205249748" TEXT="Bei erneutem Mausklick in einer zweiten Sektion der Seite erscheint dort an der Mausposition der ausgew&#xe4;hlte Buchstabe. Somit kann der User einen &quot;verwackelten&quot; Text in dieser Sektion erzeugen."/>
+<node CREATED="1488205249753" ID="ID_1776165680" MODIFIED="1488205249753" TEXT="Um einen bereits erzeugten Buchstaben zu l&#xf6;schen, gen&#xfc;gt es ihn bei gehaltener Alt-Taste anzuklicken."/>
 </node>
 </node>
 <node CREATED="1488205311377" FOLDED="true" ID="ID_1812525961" MODIFIED="1488205319047" TEXT="Schmuckladen">
@@ -312,7 +315,7 @@
 <node CREATED="1488205391090" MODIFIED="1488205391090" TEXT="Entscheiden Sie selbst&#xe4;ndig, welche Strukturen im HTML-Code verbleiben, und welche von Javascript aufgebaut werden. Es ist hilfreich bei der Entwicklung auf eine &#xfc;bersichtliche HTML-Struktur aufbauen zu k&#xf6;nnen und nicht die ganze Seite per Javascript zu generieren."/>
 </node>
 </node>
-<node CREATED="1488205410862" FOLDED="true" ID="ID_1609284649" MODIFIED="1488205416733" TEXT="Drag&amp;Drop">
+<node CREATED="1488205410862" FOLDED="true" ID="ID_1609284649" MODIFIED="1488450838922" TEXT="Drag&amp;Drop">
 <node CREATED="1488205414780" FOLDED="true" ID="ID_652151032" MODIFIED="1488205416201" TEXT="Modifizieren Sie Ihren Online-Weihnachtsbaumschmuckladen derart, dass der gew&#xe4;hlte Weihnachtsbaum dargestellt wird und per Drag&amp;Drop geschm&#xfc;ckt werden kann. Sie k&#xf6;nnen hierzu das Canvas-Element nutzen, k&#xf6;nnen es aber auch &apos;klassisch&apos; versuchen.">
 <node CREATED="1488205414785" MODIFIED="1488205414785" TEXT="Stellen Sie sicher, dass der Nutzer weiterhin den &#xdc;berblick &#xfc;ber seine Bestellung erh&#xe4;lt."/>
 <node CREATED="1488205414787" MODIFIED="1488205414787" TEXT="Sie k&#xf6;nnen die Schmuckobjekte automatisch positionieren, oder dies dem Nutzer &#xfc;berlassen. Eine Pr&#xfc;fung der Sinnhaftigkeit ist nicht zwingend erforderlich."/>
@@ -339,19 +342,19 @@
 </node>
 </node>
 </node>
-<node CREATED="1488205524944" FOLDED="true" ID="ID_1282931735" MODIFIED="1488206349246" TEXT="S14">
-<node CREATED="1488205992149" FOLDED="true" ID="ID_1683275825" MODIFIED="1488206030411" TEXT="Skatblatt">
+<node CREATED="1488205524944" FOLDED="true" ID="ID_1282931735" MODIFIED="1488450900731" TEXT="S14">
+<node CREATED="1488205992149" FOLDED="true" ID="ID_1683275825" MODIFIED="1488450842111" TEXT="Skatblatt">
 <node CREATED="1488205995560" ID="ID_1926512584" MODIFIED="1488205995560" TEXT="Binden Sie eine Webseite in Ihre Pr&#xe4;senz ein, welche f&#xfc;nf Spielkarten aus einem Skatblatt darstellt. Dabei m&#xfc;ssen keine Bilder erscheinen. Es gen&#xfc;gt wenn die Karten als K&#xe4;stchen erscheinen, in denen jeweils die Angabe von Farbe und Wert zu finden ist, also z.B. &quot;Pik 7&quot; oder &quot;Herz Dame&quot;. Der HTML-Code soll im Wesentlichen nur einen Aufruf einer Javascript-Funktion enthalten, welche dann die Seite aufbaut. Halten Sie HTML, JS und CSS weitestgehend getrennt in eigenen Dateien. Auf diesen Aufgabenteil bezieht sich das abzugebende Konzept."/>
-<node CREATED="1488205995614" MODIFIED="1488205995614" TEXT="Bonusaufgabe: Die f&#xfc;nf anzuzeigenden Spielkarten werden zuf&#xe4;llig ausgew&#xe4;hlt!"/>
+<node CREATED="1488205995614" ID="ID_1401209601" MODIFIED="1488205995614" TEXT="Bonusaufgabe: Die f&#xfc;nf anzuzeigenden Spielkarten werden zuf&#xe4;llig ausgew&#xe4;hlt!"/>
 </node>
-<node CREATED="1488206018483" FOLDED="true" ID="ID_359628502" MODIFIED="1488206042822" TEXT="Skat interaktiv">
-<node CREATED="1488206024591" FOLDED="true" ID="ID_1121893176" MODIFIED="1488206041681" TEXT="Erweitern Sie das Kartenspiel aus Aufgabe 3 um Interaktion.">
+<node CREATED="1488206018483" FOLDED="true" ID="ID_359628502" MODIFIED="1488450899710" TEXT="Skat interaktiv">
+<node CREATED="1488206024591" ID="ID_1121893176" MODIFIED="1488450845286" TEXT="Erweitern Sie das Kartenspiel aus Aufgabe 3 um Interaktion.">
 <node CREATED="1488206024592" MODIFIED="1488206024592" TEXT="Hierzu platzieren Sie einen Ablage- und einen Nachziehstapel auf der Seite."/>
 <node CREATED="1488206024593" ID="ID_1207049304" MODIFIED="1488206024593" TEXT="Bei Klick auf eine Karte auf der Hand wird diese auf dem Ablagestapel dargestellt und verschwindet aus der Hand."/>
 <node CREATED="1488206024597" MODIFIED="1488206024597" TEXT="Bei Klick auf den Nachziehstapel erscheint eine weitere Karte auf der Hand. Diese ist entweder zuf&#xe4;llig ausgew&#xe4;hlt oder folgt einer im Code festgelegten Sequenz"/>
 </node>
 </node>
-<node CREATED="1488206201575" FOLDED="true" ID="ID_155971707" MODIFIED="1488206210731" TEXT="Blumenladen">
+<node CREATED="1488206201575" FOLDED="true" ID="ID_155971707" MODIFIED="1488450899065" TEXT="Blumenladen">
 <node CREATED="1488206207961" FOLDED="true" ID="ID_574201928" MODIFIED="1488206210245" TEXT="Gestalten Sie ein Formular f&#xfc;r einen Online-Blumenladen!">
 <node CREATED="1488206207963" ID="ID_1399448481" MODIFIED="1488206207963" TEXT="Nehmen Sie sich, wie immer, Papier und Bleistift und zeichnen Sie zun&#xe4;chst das Formular so wie Sie es sich w&#xfc;nschen auf. Es darf diesmal gerne gut aussehen, auch Formularelemente lassen sich mit CSS aufh&#xfc;bschen! Definieren Sie auch klar die einzelnen Elemente, deren Eigenschaften und die Planungen zur technischen Umsetzung und Programmierung. Folgendes muss auf jeden Fall realisiert sein:">
 <node CREATED="1488206207970" MODIFIED="1488206207970" TEXT="Der Kunde kann mehrere Blumen aus vielen verschiedenen Sorten w&#xe4;hlen, also auch mehrere pro gew&#xe4;hlter Sorte."/>
@@ -367,7 +370,7 @@
 <node CREATED="1488206249913" MODIFIED="1488206249913" TEXT="Achten Sie darauf, dass sich der Kanon der Blumensorten vollst&#xe4;ndig ver&#xe4;ndern kann, neue dazukommen und andere wieder entfernt werden. Auch bei anderen Informationsgruppen kann dies, je nach Aufbau Ihres Blumenladens, geschehen."/>
 <node CREATED="1488206249918" MODIFIED="1488206249918" TEXT="Entscheiden Sie selbst&#xe4;ndig, welche Strukturen im HTML-Code verbleiben, und welche von Javascript aufgebaut werden. Es ist hilfreich bei der Entwicklung auf eine &#xfc;bersichtliche HTML-Struktur aufbauen zu k&#xf6;nnen und nicht die ganze Seite per Javascript zu generieren."/>
 </node>
-<node CREATED="1488206269700" FOLDED="true" ID="ID_779116786" MODIFIED="1488206299511" TEXT="Canvas D&amp;D">
+<node CREATED="1488206269700" FOLDED="true" ID="ID_779116786" MODIFIED="1488450892753" TEXT="Canvas D&amp;D">
 <node CREATED="1488206282964" ID="ID_237558455" MODIFIED="1488206282964" TEXT="Aufgabe 7: Canvas, Drag &amp; Drop">
 <node CREATED="1488206282965" MODIFIED="1488206282965" TEXT="Modifizieren Sie Ihren Blumenladen derart, dass der Blumenstrau&#xdf; per Drag&amp;Drop zusammengestellt werden kann und auf dem Canvas grafisch angezeigt wird. Dabei ist es nicht erforderlich, und wahrscheinlich auch nicht sinnvoll, dass der Nutzer die Blumen genau platziert, sondern dass diese automatisch positioniert werden um eine g&#xfc;nstige grafische Ausgabe zu erm&#xf6;glichen."/>
 <node CREATED="1488206282970" MODIFIED="1488206282970" TEXT="Stellen Sie sicher, dass der Nutzer weiterhin den &#xdc;berblick &#xfc;ber seine Bestellung erh&#xe4;lt."/>
@@ -377,19 +380,19 @@
 </node>
 <node CREATED="1488206282977" MODIFIED="1488206282977" TEXT="Hinweis: Studieren Sie das Beispiel gisDragDropCanvas aus dem Intranet! Das Canvas-CheatSheet ist derzeit auch wieder erreichbar."/>
 </node>
-<node CREATED="1488206325506" FOLDED="true" ID="ID_1116892438" MODIFIED="1488206347387" TEXT="Danach">
+<node CREATED="1488206325506" FOLDED="true" ID="ID_1116892438" MODIFIED="1488450897681" TEXT="Danach">
 <node CREATED="1488206329804" ID="ID_841317602" MODIFIED="1488206334640" TEXT="Blumenladen mit"/>
 <node CREATED="1488206335505" ID="ID_1096585845" MODIFIED="1488206336971" TEXT="PHP"/>
 <node CREATED="1488206337640" ID="ID_1129978998" MODIFIED="1488206340070" TEXT="Ajax"/>
 <node CREATED="1488206340754" ID="ID_976127974" MODIFIED="1488206343633" TEXT="Datenbank"/>
 </node>
 </node>
-<node CREATED="1488206419205" FOLDED="true" ID="ID_1660419014" MODIFIED="1488212819696" TEXT="W13">
-<node CREATED="1488206432538" FOLDED="true" ID="ID_1035811268" MODIFIED="1488206546713" TEXT="Sissa ibn Dahir">
-<node CREATED="1488206437287" MODIFIED="1488206437287" TEXT="Binden Sie eine Webseite in Ihre Pr&amp;auml;senz ein, welche die Situation auf dem Schachbrett nach der &lt;a href=&quot;"/>
+<node CREATED="1488206419205" FOLDED="true" ID="ID_1660419014" MODIFIED="1488450901622" TEXT="W13">
+<node CREATED="1488206432538" FOLDED="true" ID="ID_1035811268" MODIFIED="1488358339575" TEXT="Sissa ibn Dahir">
+<node CREATED="1488206437287" ID="ID_373738375" MODIFIED="1488206437287" TEXT="Binden Sie eine Webseite in Ihre Pr&amp;auml;senz ein, welche die Situation auf dem Schachbrett nach der &lt;a href=&quot;"/>
 <node CREATED="1488206437291" ID="ID_768398618" LINK="http://de.wikipedia.org/wiki/Sissa_ibn_Dahir" MODIFIED="1488206437291" TEXT="http://de.wikipedia.org/wiki/Sissa_ibn_Dahir&quot; target=&quot;_blank&quot;&gt;Legende von Sissa ibn Dahir&lt;/a&gt; schematisch darstellt. Es soll das Schachbrett und auf jedem Feld die Anzahl der Reisk&#xf6;rner erkennbar sein. Der HTML-Code soll im Wesentlichen nur einen Aufruf einer Javascript-Funktion enthalten, welche dann die Seite aufbaut. Halten Sie HTML, JS und CSS weitestgehend getrennt in eigenen Dateien."/>
 </node>
-<node CREATED="1488206519304" FOLDED="true" ID="ID_1805092010" MODIFIED="1488206546100" TEXT="Memory">
+<node CREATED="1488206519304" FOLDED="true" ID="ID_1805092010" MODIFIED="1488358341658" TEXT="Memory">
 <node CREATED="1488206522269" ID="ID_13824244" MODIFIED="1488206522269" TEXT="Programmieren Sie ein kleines Memoryspiel in Javascript. Sie k&#xf6;nnen als Grundlage das Raster der Schachaufgabe nutzen."/>
 <node CREATED="1488206522275" ID="ID_171428478" MODIFIED="1488206522275" TEXT="Zu Beginn erscheinen die R&#xfc;cken der Memorykarten. Bei Klick auf einen R&#xfc;cken wird der Inhalt angezeigt. Ebenso f&#xfc;r eine zweite Karte. Dann werden die Inhalte verglichen und bei Gleichheit verschwinden die Karten. Bei Ungleichheit werden wieder die R&#xfc;cken angezeigt."/>
 <node CREATED="1488206522281" ID="ID_1840516332" MODIFIED="1488206540401" TEXT="Die Motive k&#xf6;nnen Bilder oder auch Worte sein. Denkbar ist auch ein kleiner Vokabeltrainer..."/>
@@ -397,8 +400,8 @@
 <node CREATED="1488206567785" ID="ID_277935442" MODIFIED="1488206570467" TEXT="Eisladen"/>
 </node>
 </node>
-<node CREATED="1486898844788" FOLDED="true" ID="ID_1945764135" MODIFIED="1488133310521" POSITION="right" TEXT="Git">
-<node CREATED="1486898861640" FOLDED="true" ID="ID_1912447230" MODIFIED="1486970759448" TEXT="General">
+<node CREATED="1486898844788" FOLDED="true" ID="ID_1945764135" MODIFIED="1488552735985" POSITION="right" TEXT="Git">
+<node CREATED="1486898861640" FOLDED="true" ID="ID_1912447230" MODIFIED="1488552732040" TEXT="General">
 <node CREATED="1486898961826" ID="ID_1050781253" MODIFIED="1486899008728" TEXT="Version Control and Repository System"/>
 <node CREATED="1486899010607" ID="ID_661692839" LINK="https://github.com/torvalds" MODIFIED="1486902039077" TEXT="developed by Linus Torvalds and the Linux-Community  in 2005"/>
 <node CREATED="1486900178126" FOLDED="true" ID="ID_278488147" MODIFIED="1486902723313" TEXT="creates local copies of source files">
@@ -409,7 +412,7 @@
 <node CREATED="1486900281606" ID="ID_1743397591" MODIFIED="1486902568519" TEXT="supports synchronization of repositories on remote systems"/>
 <node CREATED="1486902872570" ID="ID_1386119070" MODIFIED="1486902898143" TEXT="file &quot;.gitignore&quot; references files not to include in repository"/>
 </node>
-<node CREATED="1486902351769" FOLDED="true" ID="ID_1620778353" MODIFIED="1488120208520" TEXT="Commands">
+<node CREATED="1486902351769" FOLDED="true" ID="ID_1620778353" MODIFIED="1488552734690" TEXT="Commands">
 <node CREATED="1486902358528" ID="ID_1197845708" MODIFIED="1486902363182" TEXT="init"/>
 <node CREATED="1486902363877" ID="ID_1066044562" MODIFIED="1486902365651" TEXT="add"/>
 <node CREATED="1486902536054" ID="ID_768872933" MODIFIED="1486902539182" TEXT="commit"/>
@@ -419,7 +422,7 @@
 <node CREATED="1486902652418" ID="ID_1440813983" MODIFIED="1486902654525" TEXT="checkout"/>
 </node>
 </node>
-<node CREATED="1486644726535" FOLDED="true" ID="ID_137792564" MODIFIED="1488133309439" POSITION="right" TEXT="JavaScript">
+<node CREATED="1486644726535" FOLDED="true" ID="ID_137792564" MODIFIED="1488552610247" POSITION="right" TEXT="JavaScript">
 <node CREATED="1327999957489" FOLDED="true" ID="ID_244725483" MODIFIED="1487932259757" TEXT="General">
 <node CREATED="1335116176266" FOLDED="true" ID="ID_790651252" LINK="https://github.com/brendaneich" MODIFIED="1487715319976" TEXT="developed by Brendan Eich in 1995">
 <node CREATED="1335117404239" ID="ID_1243951102" MODIFIED="1486970780195" TEXT="Founder and CTO Mozilla Foundation"/>
@@ -490,7 +493,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1486645134495" FOLDED="true" ID="ID_1657274837" MODIFIED="1487932742903" TEXT="Basic vocabulary">
+<node CREATED="1486645134495" FOLDED="true" ID="ID_1657274837" MODIFIED="1488539592867" TEXT="Basic vocabulary">
 <node CREATED="1486646240632" FOLDED="true" ID="ID_440876398" MODIFIED="1487932710290" TEXT="Blocks">
 <node CREATED="1486646245596" ID="ID_101812661" MODIFIED="1486646250397" TEXT="{ }"/>
 </node>
@@ -585,7 +588,7 @@
 <node CREATED="1487932863186" MODIFIED="1487932863186" TEXT="encodeURIComponent(uriComponent: string): string"/>
 </node>
 </node>
-<node CREATED="1486646080283" FOLDED="true" ID="ID_348215621" MODIFIED="1488133308084" POSITION="right" TEXT="TypeScript">
+<node CREATED="1486646080283" FOLDED="true" ID="ID_348215621" MODIFIED="1488552611549" POSITION="right" TEXT="TypeScript">
 <node CREATED="1486974083503" FOLDED="true" ID="ID_1456788917" MODIFIED="1487715042275" TEXT="General">
 <node CREATED="1486974087029" ID="ID_1931694768" MODIFIED="1486974339416" TEXT="developed by Microsoft"/>
 <node CREATED="1486974339880" ID="ID_1811022442" LINK="https://github.com/ahejlsberg" MODIFIED="1486974773100" TEXT="Anders Hejlsberg (Turbo Pascal, Delphi, J++, C#, .NET)"/>
@@ -604,8 +607,101 @@
 <node CREATED="1486645411698" ID="ID_1538316216" MODIFIED="1486645427873" TEXT="import "/>
 </node>
 </node>
-<node CREATED="1335127717958" FOLDED="true" ID="ID_598994719" LINK="DO-Hierarchy.pdf" MODIFIED="1488191851996" POSITION="right" TEXT="Document Object Model (DOM)">
-<node CREATED="1488133392440" FOLDED="true" ID="ID_1057259957" MODIFIED="1488133635957" TEXT="General">
+<node CREATED="1488538765698" FOLDED="true" ID="ID_607602390" MODIFIED="1488552740980" POSITION="right" TEXT="Coding Style">
+<node CREATED="1488539468570" ID="ID_1233307534" MODIFIED="1488539468570" TEXT="Programme k&#xf6;nnen schnell sehr komplex werden. Daher ist es wichtig, sich an Stil-Regeln zu halten, um sie m&#xf6;glichst verst&#xe4;ndlich zu schreiben. In diesem Kurs gelten folgende Stil-Regeln:"/>
+<node CREATED="1488539468580" ID="ID_1608750282" MODIFIED="1488539487079" TEXT="1. Code sollte sich so gut wie m&#xf6;glich selbst erkl&#xe4;ren. Hierzu sind sprechende Variablen-, Funktions- und Klassennamen etc. erforderlich. Kurze Namen sind nur in kleinen G&#xfc;ltigkeitsbereichen oder bei klarer Bedeutung (z.B. y f&#xfc;r vertikale Position) erlaubt."/>
+<node CREATED="1488539468587" ID="ID_688688113" MODIFIED="1488539468587" TEXT="2. Variablen erhalten explizite Typ-Notationen und Anweisungen werden mit einem Semikolon beendet (auch wenn TypeScript diese automatisch einf&#xfc;gen bzw. inferieren kann)"/>
+<node CREATED="1488539468591" ID="ID_97559331" MODIFIED="1488539531794" TEXT="3. Variablen- und Funktionsnamen beginnen mit Kleinbuchstaben und folgen der Kamelnotation (camelCase), d.h. bei zusammengesetzten Namen beginnen die Wortteile im Inneren mit einem Gro&#xdf;buchstaben  (z.B. animalLion). Funktionsnamen beschreiben dabei eine Aktivit&#xe4;t (z.B. calculateHorizontalPosition(...)) oder Frage (z.B. isHit())"/>
+<node CREATED="1488539468594" ID="ID_1918366248" MODIFIED="1488539468594" TEXT="4. Die Namen formaler Parameter in Funktionen beginnen mit einem Unterstrich."/>
+<node CREATED="1488539468595" ID="ID_1806695145" MODIFIED="1488539513947" TEXT="5. Die Namen von Klassen, Interfaces und Modulen beginnen mit einem Gro&#xdf;buchstaben und folgen ebenfalls der Kamelnotation. (PascalCase)"/>
+<node CREATED="1488539468598" ID="ID_1118170874" MODIFIED="1488539468598" TEXT="6. Die Namen von Enumerations und deren Elemente werden durchgehend mit Gro&#xdf;buchstaben geschrieben. Wortteile werden bei Bedarf mit Unterstrich getrennt."/>
+<node CREATED="1488539468601" ID="ID_59469303" MODIFIED="1488539468601" TEXT="7. Literale Zeichenketten werden in doppelte Anf&#xfc;hrungszeichen geschrieben."/>
+<node CREATED="1488539468601" ID="ID_770207662" MODIFIED="1488539468601" TEXT="8. Kommentare werden eingesetzt, um Programmteile abzugrenzen und die Verst&#xe4;ndlichkeit zu erh&#xf6;hen. Programmteile, die von anderen Skripts genutzt werden sollen, werden im JSDoc-Format kommentiert (/** &#x2026; */)"/>
+</node>
+<node CREATED="1488540848465" FOLDED="true" ID="ID_226943766" MODIFIED="1488552897716" POSITION="right" TEXT="Analogies">
+<node CREATED="1488540857224" FOLDED="true" ID="ID_1410670011" MODIFIED="1488552211783" TEXT="namespace">
+<node CREATED="1488540906740" ID="ID_425788850" MODIFIED="1488541153712" TEXT="storage holding lots of different stuff, that gets thrown in"/>
+<node CREATED="1488541430618" FOLDED="true" ID="ID_1839686656" MODIFIED="1488541957075" TEXT="stuff can be variables, functions, arrays, classes, objects etc.">
+<node CREATED="1488541934482" ID="ID_224506479" MODIFIED="1488541945384" TEXT="basically a sequence of bits"/>
+<node CREATED="1488541945890" ID="ID_1419023467" MODIFIED="1488541955154" TEXT="to be interpreted in different ways"/>
+</node>
+</node>
+<node CREATED="1488552212444" FOLDED="true" ID="ID_1494872320" MODIFIED="1488552469496" TEXT="scope">
+<node CREATED="1488552218825" ID="ID_1937179732" MODIFIED="1488552258539" TEXT="a part of the storage with restricted access"/>
+<node CREATED="1488552261917" ID="ID_586298482" MODIFIED="1488552410993" TEXT="belongs to a function, class-instance etc."/>
+<node CREATED="1488552353330" ID="ID_1126472856" MODIFIED="1488552436026" TEXT="easy access to stuff in the scope from within"/>
+<node CREATED="1488552437275" ID="ID_189226465" MODIFIED="1488552449191" TEXT="hard or no access from without"/>
+</node>
+<node CREATED="1488550393531" FOLDED="true" ID="ID_1767142700" MODIFIED="1488550507893" TEXT="type">
+<node CREATED="1488550398160" ID="ID_1462339747" MODIFIED="1488550423628" TEXT="the kind of some stuff"/>
+<node CREATED="1488550424506" ID="ID_1705853710" MODIFIED="1488550435928" TEXT="eg. solid, liquid, gaseous"/>
+</node>
+<node CREATED="1488540943018" FOLDED="true" ID="ID_1235318146" MODIFIED="1488550622747" TEXT="variable">
+<node CREATED="1488540952832" ID="ID_693997613" MODIFIED="1488541322670" TEXT="container taylored for a specific kind of stuff"/>
+<node CREATED="1488541191719" ID="ID_464578348" MODIFIED="1488541390175" TEXT="has a name that is unique in the namespace, so the content can be found again"/>
+<node CREATED="1488541346054" ID="ID_841670419" MODIFIED="1488541380256" TEXT="gets stored somewhere in the namespace"/>
+<node CREATED="1488550517636" FOLDED="true" ID="ID_1137345622" MODIFIED="1488550621783" TEXT="variables of">
+<node CREATED="1488550530094" FOLDED="true" ID="ID_607337467" MODIFIED="1488550621213" TEXT="simple type">
+<node CREATED="1488550536923" ID="ID_1187256617" MODIFIED="1488550563760" TEXT="are standard containers holding the value itself"/>
+</node>
+<node CREATED="1488550568825" FOLDED="true" ID="ID_419208907" MODIFIED="1488550620783" TEXT="complext type">
+<node CREATED="1488550573765" ID="ID_677223513" MODIFIED="1488550609595" TEXT="hold a reference to the stuff that is stored somewhere else"/>
+</node>
+</node>
+</node>
+<node CREATED="1488541475525" FOLDED="true" ID="ID_910508875" MODIFIED="1488550672347" TEXT="function">
+<node CREATED="1488541486647" FOLDED="true" ID="ID_1025669407" MODIFIED="1488550665608" TEXT="machine, that can">
+<node CREATED="1488541632493" ID="ID_7483481" MODIFIED="1488550649076" TEXT="get stuffed with input of specific types"/>
+<node CREATED="1488541637506" ID="ID_997541342" MODIFIED="1488541677958" TEXT="do stuff, using the input if given"/>
+<node CREATED="1488541710206" ID="ID_121169498" MODIFIED="1488549769812" TEXT="create, delete or mainpulate stuff in the namespace it sits in"/>
+<node CREATED="1488541734291" ID="ID_715476741" MODIFIED="1488550662949" TEXT="produce stuff of a given type as an output"/>
+</node>
+<node CREATED="1488549713902" ID="ID_55523424" MODIFIED="1488549741805" TEXT="comes with its own little storage to temporarily hold stuff"/>
+</node>
+<node CREATED="1488541773998" FOLDED="true" ID="ID_631369418" MODIFIED="1488550678775" TEXT="parameter">
+<node CREATED="1488541782869" ID="ID_1991644007" MODIFIED="1488541833807" TEXT="variable defined in the head of a function, where stuff can be put in as the input"/>
+<node CREATED="1488549819642" ID="ID_115140925" MODIFIED="1488549853070" TEXT="parameters sit in the functions storage"/>
+</node>
+<node CREATED="1488545425134" FOLDED="true" ID="ID_60101769" MODIFIED="1488549898537" TEXT="array">
+<node CREATED="1488545434951" ID="ID_903977937" MODIFIED="1488545487151" TEXT="pile of stuff in the namespace, that can be found with a single name"/>
+<node CREATED="1488545490332" ID="ID_1750999986" MODIFIED="1488545628684" TEXT="elements are addressed with a number, starting with 0"/>
+</node>
+<node CREATED="1488545562827" FOLDED="true" ID="ID_1497333876" MODIFIED="1488549254920" TEXT="associative array">
+<node CREATED="1488545581159" ID="ID_1358236139" MODIFIED="1488545588034" TEXT="like an array"/>
+<node CREATED="1488545588925" ID="ID_1264758184" MODIFIED="1488545689471" TEXT="but elements are adresses using a key"/>
+<node CREATED="1488545690721" ID="ID_658831140" MODIFIED="1488545716964" TEXT="in most cases, the key is of type string"/>
+<node CREATED="1488545776457" ID="ID_165662565" MODIFIED="1488545816592" TEXT="this is the fundamental data structure in JavaScript, thus also called javascript-object"/>
+</node>
+<node CREATED="1488545754182" FOLDED="true" ID="ID_1773073132" MODIFIED="1488549263375" TEXT="interface">
+<node CREATED="1488545758739" ID="ID_901687684" MODIFIED="1488545773342" TEXT="a pattern for an associative array"/>
+<node CREATED="1488546051331" FOLDED="true" ID="ID_1794415964" MODIFIED="1488548911365" TEXT="for each instance of an array that implements the interface">
+<node CREATED="1488545836125" FOLDED="true" ID="ID_1395859710" MODIFIED="1488548906545" TEXT="homogenous">
+<node CREATED="1488546345951" ID="ID_1328114419" MODIFIED="1488548874235" TEXT="the interface defines a type for the keys and a type for the associated values"/>
+<node CREATED="1488545913234" ID="ID_174658119" MODIFIED="1488546372272" TEXT="no limitation to the number of elements"/>
+<node CREATED="1488545848900" ID="ID_1570236384" MODIFIED="1488546394172" TEXT="all elements are addressed with the given type of key"/>
+<node CREATED="1488546227496" ID="ID_593112127" MODIFIED="1488548659262" TEXT="all associated values are of the given type"/>
+</node>
+<node CREATED="1488546028706" FOLDED="true" ID="ID_1750772718" MODIFIED="1488548906935" TEXT="heterogenous">
+<node CREATED="1488546345951" ID="ID_956009079" MODIFIED="1488548687862" TEXT="the interface defines particular keys and a type for each associated value"/>
+<node CREATED="1488545913234" ID="ID_180432632" MODIFIED="1488548818604" TEXT="elements limited to the defined keys"/>
+</node>
+</node>
+</node>
+<node CREATED="1488549013238" FOLDED="true" ID="ID_1250809012" MODIFIED="1488552896346" TEXT="class">
+<node CREATED="1488549057133" ID="ID_961470423" MODIFIED="1488550170766" TEXT="a building plan for a studio"/>
+<node CREATED="1488549086753" ID="ID_1784073306" MODIFIED="1488552555563" TEXT="with its own storage and machines (scope and methods)"/>
+</node>
+<node CREATED="1488548917584" FOLDED="true" ID="ID_1756589026" MODIFIED="1488552541216" TEXT="method">
+<node CREATED="1488548932594" ID="ID_762219809" MODIFIED="1488548941185" TEXT="a function defined in a class"/>
+<node CREATED="1488548950344" ID="ID_1604725249" MODIFIED="1488552524435" TEXT="has access to the scope of the class using the operator &quot;this&quot;"/>
+</node>
+<node CREATED="1488549149462" FOLDED="true" ID="ID_138416857" MODIFIED="1488552567526" TEXT="object">
+<node CREATED="1488549176356" ID="ID_1746737496" MODIFIED="1488549201492" TEXT="an instance of a class"/>
+<node CREATED="1488549307182" ID="ID_1078768044" MODIFIED="1488549525719" TEXT="each object has its own storage and functions (methods), addressed using &quot;this&quot;"/>
+</node>
+</node>
+<node CREATED="1335127717958" FOLDED="true" ID="ID_598994719" LINK="DO-Hierarchy.pdf" MODIFIED="1488552751213" POSITION="right" TEXT="Document Object Model (DOM)">
+<node CREATED="1488133392440" FOLDED="true" ID="ID_1057259957" MODIFIED="1488552749903" TEXT="General">
 <node CREATED="1488133408262" FOLDED="true" ID="ID_723172963" LINK="https://www.w3.org/" MODIFIED="1488133631427" TEXT="Standardized by W3C">
 <node CREATED="1488133541068" ID="ID_1572446720" LINK="https://github.com/timbl" MODIFIED="1488133552426" TEXT="led by Tim Berners-Lee"/>
 <node CREATED="1488133617609" ID="ID_421794659" MODIFIED="1488133628481" TEXT="... the creator of the World-Wide-Web"/>
@@ -615,7 +711,7 @@
 <node CREATED="1488132670022" ID="ID_1900953414" MODIFIED="1488133402051" TEXT="...the content, structure and style of documents."/>
 <node CREATED="1488126836101" ID="ID_1977711284" MODIFIED="1488133402053" TEXT="While loading a web page, the browser creates a DOM of the page."/>
 </node>
-<node CREATED="1488126859858" FOLDED="true" ID="ID_1131907390" MODIFIED="1488191850402" TEXT="DOM is constructed as a tree of nodes">
+<node CREATED="1488126859858" FOLDED="true" ID="ID_1131907390" MODIFIED="1488552699486" TEXT="DOM is constructed as a tree of nodes">
 <node CREATED="1488132739489" ID="ID_1361287173" MODIFIED="1488132770400" TEXT="each node has a parent-node"/>
 <node CREATED="1488132754418" ID="ID_749926548" MODIFIED="1488132766210" TEXT="and can have multiple child-nodes"/>
 </node>
@@ -643,7 +739,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1327999892919" FOLDED="true" ID="ID_857216794" MODIFIED="1488192829394" POSITION="right" STYLE="fork" TEXT="Eventsystem">
+<node CREATED="1327999892919" FOLDED="true" ID="ID_857216794" MODIFIED="1488552756589" POSITION="right" STYLE="fork" TEXT="Eventsystem">
 <node CREATED="1488135332234" FOLDED="true" ID="ID_476441293" MODIFIED="1488189185747" TEXT="General">
 <node CREATED="1488135508645" ID="ID_1654863333" MODIFIED="1488135673819" TEXT="eventsystem enables the programm to react to changes in the environment"/>
 <node CREATED="1488135573567" ID="ID_855007799" MODIFIED="1488135709578" TEXT="programmer doesn&apos;t require detailled knowledge of how to detect those changes"/>
@@ -801,14 +897,14 @@
 </node>
 </node>
 </node>
-<node CREATED="1337524335428" FOLDED="true" ID="ID_1466249769" MODIFIED="1488194801362" POSITION="right" TEXT="Canvas">
-<node CREATED="1488191205727" FOLDED="true" ID="ID_1664671297" MODIFIED="1488194800549" TEXT="General">
+<node CREATED="1337524335428" FOLDED="true" ID="ID_1466249769" MODIFIED="1488552770782" POSITION="right" TEXT="Canvas">
+<node CREATED="1488191205727" FOLDED="true" ID="ID_1664671297" MODIFIED="1488552768977" TEXT="General">
 <node CREATED="1337527035322" ID="ID_248831518" MODIFIED="1488191217920" TEXT="area in document that allows pixel manipulation"/>
 <node CREATED="1488191292167" ID="ID_423812147" MODIFIED="1488192657325" TEXT="method getContext(&quot;2d&quot;) of HTMLCanvasElement ..."/>
 <node CREATED="1488192658376" ID="ID_936059937" MODIFIED="1488192743294" TEXT="... returns an object of type CanvasRenderingContext2D ..."/>
 <node CREATED="1488192747090" ID="ID_544961235" MODIFIED="1488192787051" TEXT="... that offers methods for manipulation of the canvas"/>
 <node CREATED="1488192481247" ID="ID_1014339207" MODIFIED="1488192518217" TEXT="property canvas of the object holds a reference to the HTMLCanvasElement"/>
-<node CREATED="1488191664045" FOLDED="true" ID="ID_1190806350" MODIFIED="1488193382397" TEXT="example">
+<node CREATED="1488191664045" FOLDED="true" ID="ID_1190806350" MODIFIED="1488552767489" TEXT="example">
 <node CREATED="1488191744524" FOLDED="true" ID="ID_663723335" MODIFIED="1488193380306" TEXT="var canvas: HTMLCanvasElement;">
 <node CREATED="1488191769099" ID="ID_1822153518" MODIFIED="1488191802958" TEXT="create a variable to reference to CanvasElement on the web page"/>
 </node>
@@ -826,7 +922,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1488191264660" FOLDED="true" ID="ID_1078380109" MODIFIED="1488192819592" TEXT="CanvasRenderingContext2D">
+<node CREATED="1488191264660" FOLDED="true" ID="ID_1078380109" MODIFIED="1488451315212" TEXT="CanvasRenderingContext2D">
 <node CREATED="1488187397127" FOLDED="true" ID="ID_301919378" MODIFIED="1488192818806" TEXT="Path">
 <node CREATED="1488187532887" ID="ID_1668848939" MODIFIED="1488187538036" TEXT="beginPath(): void;"/>
 <node CREATED="1488187397304" ID="ID_1497774724" MODIFIED="1488187436565" TEXT="closePath(): void;"/>
@@ -882,8 +978,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1488194813770" ID="ID_1749010838" MODIFIED="1488194820972" POSITION="right" TEXT="Object Oriented Programming"/>
-<node CREATED="1327999759946" FOLDED="true" ID="ID_1723770104" MODIFIED="1488189268955" POSITION="right" TEXT="Forms">
+<node CREATED="1327999759946" FOLDED="true" ID="ID_1723770104" MODIFIED="1488552708192" POSITION="right" TEXT="Forms">
 <node CREATED="1334519200750" FOLDED="true" ID="ID_923294015" MODIFIED="1488189163040" TEXT="form">
 <node CREATED="1334519219909" FOLDED="true" ID="ID_1214182003" MODIFIED="1488139818025" TEXT="action">
 <node CREATED="1334519234803" ID="ID_1404454779" MODIFIED="1334519315841" TEXT="URL"/>
@@ -904,7 +999,7 @@
 <node CREATED="1334507107297" ID="ID_236093342" MODIFIED="1334507109912" TEXT="readonly"/>
 <node CREATED="1334507116970" ID="ID_53703000" MODIFIED="1334507119724" TEXT="disabled"/>
 </node>
-<node CREATED="1328000141287" FOLDED="true" ID="ID_82198582" MODIFIED="1488139767158" TEXT="Formelemente">
+<node CREATED="1328000141287" FOLDED="true" ID="ID_82198582" MODIFIED="1488451323862" TEXT="Formelemente">
 <node CREATED="1334505794232" FOLDED="true" ID="ID_1784691564" MODIFIED="1334566045888" TEXT="input">
 <node CREATED="1334506159455" FOLDED="true" ID="ID_1977486225" MODIFIED="1334565797312" TEXT="type">
 <node CREATED="1334506162599" ID="ID_1529428356" MODIFIED="1334506166768" TEXT="text"/>
@@ -974,7 +1069,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1486898557142" FOLDED="true" ID="ID_180594711" LINK="https://github.com/nodejs" MODIFIED="1488189241366" POSITION="right" TEXT="Node">
+<node CREATED="1486898557142" FOLDED="true" ID="ID_180594711" LINK="https://github.com/nodejs" MODIFIED="1488552710114" POSITION="right" TEXT="Node">
 <node CREATED="1487715754165" FOLDED="true" ID="ID_1806505984" MODIFIED="1488126219149" TEXT="General">
 <node CREATED="1487713021466" ID="ID_1177815800" MODIFIED="1488126203585" TEXT="JavaScript outside of the browser"/>
 <node CREATED="1487713580628" ID="ID_366846704" LINK="https://github.com/ry" MODIFIED="1487713624374" TEXT="Developed by Ryan Dahl in 2009"/>
@@ -1073,7 +1168,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1487104916773" FOLDED="true" ID="ID_304950281" MODIFIED="1488133339902" POSITION="right" TEXT="MongoDB">
+<node CREATED="1487104916773" FOLDED="true" ID="ID_304950281" MODIFIED="1488552712829" POSITION="right" TEXT="MongoDB">
 <node CREATED="1488133319272" ID="ID_378396000" MODIFIED="1488133322318" TEXT="General"/>
 <node CREATED="1487104929733" ID="ID_1070702900" MODIFIED="1488133331394" TEXT="Shell commands"/>
 <node CREATED="1487104937556" FOLDED="true" ID="ID_1992942420" MODIFIED="1488133335774" TEXT="Node classes and interfaces">
