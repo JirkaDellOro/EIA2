@@ -1,7 +1,7 @@
 <map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
 <node CREATED="1480496236572" ID="ID_1483245584" MODIFIED="1488552592586" TEXT="EIA2">
-<node CREATED="1486640980741" FOLDED="true" ID="ID_1634475163" MODIFIED="1488192839990" POSITION="left" TEXT="References">
+<node CREATED="1486640980741" ID="ID_1634475163" MODIFIED="1488658043712" POSITION="left" TEXT="References">
 <node CREATED="1487071662786" ID="ID_517239067" LINK="DIA2Landscape.png" MODIFIED="1487071688268" TEXT="Landscape"/>
 <node CREATED="1486899143788" ID="ID_1157514353" LINK="https://git-scm.com/" MODIFIED="1486899151008" TEXT="Git"/>
 <node CREATED="1486647179592" ID="ID_896471124" LINK="https://help.github.com/" MODIFIED="1486647188178" TEXT="Github"/>
@@ -422,7 +422,7 @@
 <node CREATED="1486902652418" ID="ID_1440813983" MODIFIED="1486902654525" TEXT="checkout"/>
 </node>
 </node>
-<node CREATED="1486644726535" FOLDED="true" ID="ID_137792564" MODIFIED="1488552610247" POSITION="right" TEXT="JavaScript">
+<node CREATED="1486644726535" FOLDED="true" ID="ID_137792564" MODIFIED="1488658105222" POSITION="right" TEXT="JavaScript">
 <node CREATED="1327999957489" FOLDED="true" ID="ID_244725483" MODIFIED="1487932259757" TEXT="General">
 <node CREATED="1335116176266" FOLDED="true" ID="ID_790651252" LINK="https://github.com/brendaneich" MODIFIED="1487715319976" TEXT="developed by Brendan Eich in 1995">
 <node CREATED="1335117404239" ID="ID_1243951102" MODIFIED="1486970780195" TEXT="Founder and CTO Mozilla Foundation"/>
@@ -493,11 +493,11 @@
 </node>
 </node>
 </node>
-<node CREATED="1486645134495" FOLDED="true" ID="ID_1657274837" MODIFIED="1488539592867" TEXT="Basic vocabulary">
+<node CREATED="1486645134495" FOLDED="true" ID="ID_1657274837" MODIFIED="1488658103986" TEXT="Basic vocabulary">
 <node CREATED="1486646240632" FOLDED="true" ID="ID_440876398" MODIFIED="1487932710290" TEXT="Blocks">
 <node CREATED="1486646245596" ID="ID_101812661" MODIFIED="1486646250397" TEXT="{ }"/>
 </node>
-<node CREATED="1486645530310" FOLDED="true" ID="ID_1118591480" MODIFIED="1487932709383" TEXT="Variables">
+<node CREATED="1486645530310" FOLDED="true" ID="ID_1118591480" MODIFIED="1488658102045" TEXT="Variables">
 <node CREATED="1486646206913" ID="ID_1628243186" MODIFIED="1486646208013" TEXT="var"/>
 <node CREATED="1486646208535" ID="ID_883855520" MODIFIED="1486646209915" TEXT="let"/>
 </node>
@@ -618,64 +618,95 @@
 <node CREATED="1488539468601" ID="ID_59469303" MODIFIED="1488539468601" TEXT="7. Literale Zeichenketten werden in doppelte Anf&#xfc;hrungszeichen geschrieben."/>
 <node CREATED="1488539468601" ID="ID_770207662" MODIFIED="1488539468601" TEXT="8. Kommentare werden eingesetzt, um Programmteile abzugrenzen und die Verst&#xe4;ndlichkeit zu erh&#xf6;hen. Programmteile, die von anderen Skripts genutzt werden sollen, werden im JSDoc-Format kommentiert (/** &#x2026; */)"/>
 </node>
-<node CREATED="1488540848465" FOLDED="true" ID="ID_226943766" MODIFIED="1488552897716" POSITION="right" TEXT="Analogies">
-<node CREATED="1488540857224" FOLDED="true" ID="ID_1410670011" MODIFIED="1488552211783" TEXT="namespace">
-<node CREATED="1488540906740" ID="ID_425788850" MODIFIED="1488541153712" TEXT="storage holding lots of different stuff, that gets thrown in"/>
-<node CREATED="1488541430618" FOLDED="true" ID="ID_1839686656" MODIFIED="1488541957075" TEXT="stuff can be variables, functions, arrays, classes, objects etc.">
+<node CREATED="1488540848465" FOLDED="true" ID="ID_226943766" MODIFIED="1488659967985" POSITION="right" TEXT="Dictionary">
+<node CREATED="1488540857224" FOLDED="true" ID="ID_1410670011" MODIFIED="1488649957877" TEXT="namespace">
+<node CREATED="1488645098764" ID="ID_1571933734" MODIFIED="1488645135005" TEXT="defines a section of storage"/>
+<node CREATED="1488541430618" FOLDED="true" ID="ID_1839686656" MODIFIED="1488646109456" TEXT="to store data as variables, functions, arrays, classes, objects etc.">
 <node CREATED="1488541934482" ID="ID_224506479" MODIFIED="1488541945384" TEXT="basically a sequence of bits"/>
 <node CREATED="1488541945890" ID="ID_1419023467" MODIFIED="1488541955154" TEXT="to be interpreted in different ways"/>
 </node>
+<node CREATED="1488552261917" ID="ID_586298482" MODIFIED="1488562668874" TEXT="belongs to a function, class-instance, module etc. or is global"/>
+<node CREATED="1488552212444" FOLDED="true" ID="ID_1494872320" MODIFIED="1488645962579" TEXT="scope">
+<node CREATED="1488552437275" ID="ID_189226465" MODIFIED="1488563103825" TEXT="the namespaces accessible from a particular part of the program"/>
+<node CREATED="1488563113456" ID="ID_1015549745" MODIFIED="1488563130448" TEXT="the global namespace is accessible everywhere"/>
 </node>
-<node CREATED="1488552212444" FOLDED="true" ID="ID_1494872320" MODIFIED="1488552469496" TEXT="scope">
-<node CREATED="1488552218825" ID="ID_1937179732" MODIFIED="1488552258539" TEXT="a part of the storage with restricted access"/>
-<node CREATED="1488552261917" ID="ID_586298482" MODIFIED="1488552410993" TEXT="belongs to a function, class-instance etc."/>
-<node CREATED="1488552353330" ID="ID_1126472856" MODIFIED="1488552436026" TEXT="easy access to stuff in the scope from within"/>
-<node CREATED="1488552437275" ID="ID_189226465" MODIFIED="1488552449191" TEXT="hard or no access from without"/>
+<node CREATED="1488645062914" FOLDED="true" ID="ID_1534355324" MODIFIED="1488645268315" TEXT="Analogy">
+<node CREATED="1488540906740" ID="ID_425788850" MODIFIED="1488645077764" TEXT="storage holding lots of different stuff, that gets thrown in"/>
+<node CREATED="1488645243134" ID="ID_104046935" MODIFIED="1488645264395" TEXT="not all storages can be accessed from everywhere"/>
 </node>
-<node CREATED="1488550393531" FOLDED="true" ID="ID_1767142700" MODIFIED="1488550507893" TEXT="type">
-<node CREATED="1488550398160" ID="ID_1462339747" MODIFIED="1488550423628" TEXT="the kind of some stuff"/>
-<node CREATED="1488550424506" ID="ID_1705853710" MODIFIED="1488550435928" TEXT="eg. solid, liquid, gaseous"/>
 </node>
-<node CREATED="1488540943018" FOLDED="true" ID="ID_1235318146" MODIFIED="1488550622747" TEXT="variable">
-<node CREATED="1488540952832" ID="ID_693997613" MODIFIED="1488541322670" TEXT="container taylored for a specific kind of stuff"/>
-<node CREATED="1488541191719" ID="ID_464578348" MODIFIED="1488541390175" TEXT="has a name that is unique in the namespace, so the content can be found again"/>
-<node CREATED="1488541346054" ID="ID_841670419" MODIFIED="1488541380256" TEXT="gets stored somewhere in the namespace"/>
-<node CREATED="1488550517636" FOLDED="true" ID="ID_1137345622" MODIFIED="1488550621783" TEXT="variables of">
-<node CREATED="1488550530094" FOLDED="true" ID="ID_607337467" MODIFIED="1488550621213" TEXT="simple type">
+<node CREATED="1488550393531" FOLDED="true" ID="ID_1767142700" MODIFIED="1488649959429" TEXT="type">
+<node CREATED="1488645292394" ID="ID_1897175162" MODIFIED="1488645330535" TEXT="the meaning of data, the way to interpret a sequence of bits"/>
+<node CREATED="1488645278814" FOLDED="true" ID="ID_1825666895" MODIFIED="1488645334205" TEXT="Analogy">
+<node CREATED="1488550398160" ID="ID_1462339747" MODIFIED="1488645284825" TEXT="the kind of some stuff"/>
+<node CREATED="1488550424506" ID="ID_1705853710" MODIFIED="1488645284825" TEXT="eg. solid, liquid, gaseous"/>
+</node>
+</node>
+<node CREATED="1488540943018" FOLDED="true" ID="ID_1235318146" MODIFIED="1488649955847" TEXT="variable">
+<node CREATED="1488645461885" ID="ID_359447038" MODIFIED="1488645989502" TEXT="small piece of storage in a namespace that holds a value of a given type"/>
+<node CREATED="1488541191719" ID="ID_464578348" MODIFIED="1488646085409" TEXT="has a name unique to the namespace, by which the content can be found"/>
+<node CREATED="1488550517636" FOLDED="true" ID="ID_1137345622" MODIFIED="1488646089271" TEXT="variables of">
+<node CREATED="1488550530094" FOLDED="true" ID="ID_607337467" MODIFIED="1488645514737" TEXT="simple type">
 <node CREATED="1488550536923" ID="ID_1187256617" MODIFIED="1488550563760" TEXT="are standard containers holding the value itself"/>
 </node>
-<node CREATED="1488550568825" FOLDED="true" ID="ID_419208907" MODIFIED="1488550620783" TEXT="complext type">
-<node CREATED="1488550573765" ID="ID_677223513" MODIFIED="1488550609595" TEXT="hold a reference to the stuff that is stored somewhere else"/>
+<node CREATED="1488550568825" FOLDED="true" ID="ID_419208907" MODIFIED="1488645515197" TEXT="complext type">
+<node CREATED="1488550573765" ID="ID_677223513" MODIFIED="1488645507863" TEXT="hold a reference to data that is stored somewhere else"/>
 </node>
 </node>
+<node CREATED="1488645372225" FOLDED="true" ID="ID_339584849" MODIFIED="1488645453682" TEXT="Analogy">
+<node CREATED="1488540952832" ID="ID_693997613" MODIFIED="1488645343365" TEXT="container taylored for a specific kind of stuff"/>
+<node CREATED="1488645378235" ID="ID_686772310" MODIFIED="1488645395146" TEXT="like cardboard boxes, bottles or balloons"/>
 </node>
-<node CREATED="1488541475525" FOLDED="true" ID="ID_910508875" MODIFIED="1488550672347" TEXT="function">
-<node CREATED="1488541486647" FOLDED="true" ID="ID_1025669407" MODIFIED="1488550665608" TEXT="machine, that can">
-<node CREATED="1488541632493" ID="ID_7483481" MODIFIED="1488550649076" TEXT="get stuffed with input of specific types"/>
+</node>
+<node CREATED="1488541475525" FOLDED="true" ID="ID_910508875" MODIFIED="1488650825654" TEXT="function">
+<node CREATED="1488645594934" ID="ID_711940041" MODIFIED="1488645658046" TEXT="piece of code that can be executed arbitrarily within the program"/>
+<node CREATED="1488549713902" ID="ID_55523424" MODIFIED="1488645691993" TEXT="comes with its own namespace to temporarily hold local variables"/>
+<node CREATED="1488541191719" FOLDED="true" ID="ID_299459942" MODIFIED="1488645844434" TEXT="has a name unique in its scope, and is called to execute by this name">
+<node CREATED="1488645818263" ID="ID_52711817" MODIFIED="1488645840382" TEXT="exception: anonymous functions that are referenced in a specific context"/>
+</node>
+<node CREATED="1488645873851" ID="ID_1151275825" MODIFIED="1488646145852" TEXT="can be defined to accept data as parameters of specific type"/>
+<node CREATED="1488645898385" ID="ID_375305976" MODIFIED="1488646162989" TEXT="can be defined to return data of specific type"/>
+<node CREATED="1488645530876" FOLDED="true" ID="ID_1957521627" MODIFIED="1488646171548" TEXT="Analogy">
+<node CREATED="1488541486647" FOLDED="true" ID="ID_1025669407" MODIFIED="1488646170759" TEXT="machine, that can">
+<node CREATED="1488541632493" ID="ID_7483481" MODIFIED="1488645557752" TEXT="get stuffed with input of specific kind"/>
 <node CREATED="1488541637506" ID="ID_997541342" MODIFIED="1488541677958" TEXT="do stuff, using the input if given"/>
-<node CREATED="1488541710206" ID="ID_121169498" MODIFIED="1488549769812" TEXT="create, delete or mainpulate stuff in the namespace it sits in"/>
-<node CREATED="1488541734291" ID="ID_715476741" MODIFIED="1488550662949" TEXT="produce stuff of a given type as an output"/>
+<node CREATED="1488541710206" ID="ID_121169498" MODIFIED="1488645583803" TEXT="create, delete or mainpulate stuff in its scope"/>
+<node CREATED="1488541734291" ID="ID_715476741" MODIFIED="1488645590229" TEXT="produce stuff of a given kind as an output"/>
 </node>
-<node CREATED="1488549713902" ID="ID_55523424" MODIFIED="1488549741805" TEXT="comes with its own little storage to temporarily hold stuff"/>
 </node>
-<node CREATED="1488541773998" FOLDED="true" ID="ID_631369418" MODIFIED="1488550678775" TEXT="parameter">
-<node CREATED="1488541782869" ID="ID_1991644007" MODIFIED="1488541833807" TEXT="variable defined in the head of a function, where stuff can be put in as the input"/>
-<node CREATED="1488549819642" ID="ID_115140925" MODIFIED="1488549853070" TEXT="parameters sit in the functions storage"/>
 </node>
-<node CREATED="1488545425134" FOLDED="true" ID="ID_60101769" MODIFIED="1488549898537" TEXT="array">
-<node CREATED="1488545434951" ID="ID_903977937" MODIFIED="1488545487151" TEXT="pile of stuff in the namespace, that can be found with a single name"/>
-<node CREATED="1488545490332" ID="ID_1750999986" MODIFIED="1488545628684" TEXT="elements are addressed with a number, starting with 0"/>
+<node CREATED="1488541773998" FOLDED="true" ID="ID_631369418" MODIFIED="1488646335709" TEXT="parameter">
+<node CREATED="1488541782869" ID="ID_1991644007" MODIFIED="1488646299334" TEXT="variable defined in the head of a function, through which data can be passed to the function"/>
+<node CREATED="1488549819642" ID="ID_115140925" MODIFIED="1488646308096" TEXT="parameters sit in the functions namespace"/>
+<node CREATED="1488646185461" FOLDED="true" ID="ID_152823611" MODIFIED="1488646311321" STYLE="fork" TEXT="Analogy">
+<node CREATED="1488646194430" ID="ID_209895991" MODIFIED="1488646262574" TEXT="a slot of the machine, where stuff of a specified kind can be put in ..."/>
+<node CREATED="1488646248915" ID="ID_803236274" MODIFIED="1488646259111" TEXT="... for the machine to work with"/>
 </node>
-<node CREATED="1488545562827" FOLDED="true" ID="ID_1497333876" MODIFIED="1488549254920" TEXT="associative array">
+</node>
+<node CREATED="1488545425134" FOLDED="true" ID="ID_60101769" MODIFIED="1488647338974" TEXT="array">
+<node CREATED="1488646368912" ID="ID_1413934451" MODIFIED="1488646768794" TEXT="piece of storage in the namespace with variable size"/>
+<node CREATED="1488646768794" ID="ID_1227429663" MODIFIED="1488646768804" TEXT="that is addressed with a single name"/>
+<node CREATED="1488646460505" ID="ID_924209057" MODIFIED="1488646780156" TEXT="and devided into elements of a given type"/>
+<node CREATED="1488545490332" ID="ID_1750999986" MODIFIED="1488646459356" TEXT="elements are addressed with a number, starting with 0"/>
+<node CREATED="1488646339607" FOLDED="true" ID="ID_1740621755" MODIFIED="1488647338264" TEXT="Analogy">
+<node CREATED="1488545434951" ID="ID_903977937" MODIFIED="1488646686908" TEXT="a drawer cabinet in the storage, that can be found with a single name"/>
+<node CREATED="1488646511914" ID="ID_1087172686" MODIFIED="1488646712797" TEXT="drawers are numbered in sequence starting with 0"/>
+</node>
+</node>
+<node CREATED="1488545562827" FOLDED="true" ID="ID_1497333876" MODIFIED="1488647351744" TEXT="associative array">
 <node CREATED="1488545581159" ID="ID_1358236139" MODIFIED="1488545588034" TEXT="like an array"/>
-<node CREATED="1488545588925" ID="ID_1264758184" MODIFIED="1488545689471" TEXT="but elements are adresses using a key"/>
+<node CREATED="1488545588925" ID="ID_1264758184" MODIFIED="1488647321940" TEXT="elements are not adresses using a number, but a key"/>
 <node CREATED="1488545690721" ID="ID_658831140" MODIFIED="1488545716964" TEXT="in most cases, the key is of type string"/>
 <node CREATED="1488545776457" ID="ID_165662565" MODIFIED="1488545816592" TEXT="this is the fundamental data structure in JavaScript, thus also called javascript-object"/>
+<node CREATED="1488646802509" FOLDED="true" ID="ID_891250748" MODIFIED="1488647351124" TEXT="Analogy">
+<node CREATED="1488545434951" ID="ID_1129579136" MODIFIED="1488646686908" TEXT="a drawer cabinet in the storage, that can be found with a single name"/>
+<node CREATED="1488646511914" ID="ID_947678880" MODIFIED="1488647349704" TEXT="drawers are labelled"/>
 </node>
-<node CREATED="1488545754182" FOLDED="true" ID="ID_1773073132" MODIFIED="1488549263375" TEXT="interface">
+</node>
+<node CREATED="1488545754182" FOLDED="true" ID="ID_1773073132" MODIFIED="1488649771323" TEXT="interface">
 <node CREATED="1488545758739" ID="ID_901687684" MODIFIED="1488545773342" TEXT="a pattern for an associative array"/>
-<node CREATED="1488546051331" FOLDED="true" ID="ID_1794415964" MODIFIED="1488548911365" TEXT="for each instance of an array that implements the interface">
-<node CREATED="1488545836125" FOLDED="true" ID="ID_1395859710" MODIFIED="1488548906545" TEXT="homogenous">
+<node CREATED="1488546051331" FOLDED="true" ID="ID_1794415964" MODIFIED="1488647369254" TEXT="for each instance of an array that implements the interface">
+<node CREATED="1488545836125" FOLDED="true" ID="ID_1395859710" MODIFIED="1488647366342" TEXT="homogenous">
 <node CREATED="1488546345951" ID="ID_1328114419" MODIFIED="1488548874235" TEXT="the interface defines a type for the keys and a type for the associated values"/>
 <node CREATED="1488545913234" ID="ID_174658119" MODIFIED="1488546372272" TEXT="no limitation to the number of elements"/>
 <node CREATED="1488545848900" ID="ID_1570236384" MODIFIED="1488546394172" TEXT="all elements are addressed with the given type of key"/>
@@ -686,21 +717,110 @@
 <node CREATED="1488545913234" ID="ID_180432632" MODIFIED="1488548818604" TEXT="elements limited to the defined keys"/>
 </node>
 </node>
+<node CREATED="1488647374262" FOLDED="true" ID="ID_225681651" MODIFIED="1488647748554" TEXT="Analogy">
+<node CREATED="1488647378132" ID="ID_1293422431" MODIFIED="1488647439221" TEXT="a construction plan for a drawer cabinet with labels"/>
 </node>
-<node CREATED="1488549013238" FOLDED="true" ID="ID_1250809012" MODIFIED="1488552896346" TEXT="class">
-<node CREATED="1488549057133" ID="ID_961470423" MODIFIED="1488550170766" TEXT="a building plan for a studio"/>
-<node CREATED="1488549086753" ID="ID_1784073306" MODIFIED="1488552555563" TEXT="with its own storage and machines (scope and methods)"/>
 </node>
-<node CREATED="1488548917584" FOLDED="true" ID="ID_1756589026" MODIFIED="1488552541216" TEXT="method">
+<node CREATED="1488549013238" FOLDED="true" ID="ID_1250809012" MODIFIED="1488649785496" TEXT="class">
+<node CREATED="1488647472549" ID="ID_184538594" MODIFIED="1488647766311" TEXT="a pattern for a complex data structure ..."/>
+<node CREATED="1488647537631" ID="ID_908385488" MODIFIED="1488647781469" TEXT="... using assigned variables, then called attributes or properties ..."/>
+<node CREATED="1488647631850" ID="ID_909552275" MODIFIED="1488647787713" TEXT="... and functions, then called methods"/>
+<node CREATED="1488647794789" FOLDED="true" ID="ID_395659650" MODIFIED="1488649784665" TEXT="Analogy">
+<node CREATED="1488549057133" ID="ID_961470423" MODIFIED="1488647801191" TEXT="a building plan for a studio"/>
+<node CREATED="1488549086753" ID="ID_1784073306" MODIFIED="1488648540832" TEXT="with assigned storage and machines"/>
+</node>
+</node>
+<node CREATED="1488548917584" FOLDED="true" ID="ID_1756589026" MODIFIED="1488649788416" TEXT="method">
 <node CREATED="1488548932594" ID="ID_762219809" MODIFIED="1488548941185" TEXT="a function defined in a class"/>
-<node CREATED="1488548950344" ID="ID_1604725249" MODIFIED="1488552524435" TEXT="has access to the scope of the class using the operator &quot;this&quot;"/>
+<node CREATED="1488548950344" ID="ID_1604725249" MODIFIED="1488563546978" TEXT="has access to the namespace of the class using the operator &quot;this&quot;"/>
+<node CREATED="1488647861419" FOLDED="true" ID="ID_227187604" MODIFIED="1488648560154" TEXT="Analogy">
+<node CREATED="1488647866421" ID="ID_1603847568" MODIFIED="1488647885045" TEXT="a machine in a studio"/>
 </node>
-<node CREATED="1488549149462" FOLDED="true" ID="ID_138416857" MODIFIED="1488552567526" TEXT="object">
+</node>
+<node CREATED="1488549149462" FOLDED="true" ID="ID_138416857" MODIFIED="1488648572387" TEXT="object">
 <node CREATED="1488549176356" ID="ID_1746737496" MODIFIED="1488549201492" TEXT="an instance of a class"/>
-<node CREATED="1488549307182" ID="ID_1078768044" MODIFIED="1488549525719" TEXT="each object has its own storage and functions (methods), addressed using &quot;this&quot;"/>
+<node CREATED="1488549307182" ID="ID_1078768044" MODIFIED="1488647947434" TEXT="each object has its own namespace..."/>
+<node CREATED="1488647933445" ID="ID_499112872" MODIFIED="1488647965131" TEXT="... and addresses its data using the keyword &quot;this&quot;"/>
+<node CREATED="1488647974070" FOLDED="true" ID="ID_1433613685" MODIFIED="1488648130326" TEXT="Analogy">
+<node CREATED="1488647979498" ID="ID_1336975335" MODIFIED="1488647988428" TEXT="a studio that was actually built"/>
 </node>
 </node>
-<node CREATED="1335127717958" FOLDED="true" ID="ID_598994719" LINK="DO-Hierarchy.pdf" MODIFIED="1488552751213" POSITION="right" TEXT="Document Object Model (DOM)">
+<node CREATED="1488647736525" FOLDED="true" ID="ID_706279620" MODIFIED="1488649302060" TEXT="constructor">
+<node CREATED="1488647998434" ID="ID_1754609385" MODIFIED="1488648066528" TEXT="a special method, that is automatically called on instantiation of the object"/>
+<node CREATED="1488649264574" ID="ID_1838402044" MODIFIED="1488649299737" TEXT="identified by the name &quot;constructor&quot;, which is a keyword"/>
+<node CREATED="1488648074917" ID="ID_1114369612" MODIFIED="1488648110450" TEXT="the keyword &quot;new&quot; instantiates an object from a class"/>
+<node CREATED="1488648134173" FOLDED="true" ID="ID_1740558429" MODIFIED="1488649287937" TEXT="Analogy">
+<node CREATED="1488648143895" ID="ID_656378296" MODIFIED="1488648237324" TEXT="a machine that helps building a studio from the building plan"/>
+</node>
+</node>
+<node CREATED="1488648245981" FOLDED="true" ID="ID_1617271266" MODIFIED="1488650489914" TEXT="subclass">
+<node CREATED="1488648256194" ID="ID_1268633442" MODIFIED="1488648316969" TEXT="a pattern for an extension of a class"/>
+<node CREATED="1488648318687" ID="ID_1230490374" MODIFIED="1488648594040" TEXT="can add more attributes and methods ..."/>
+<node CREATED="1488648338608" ID="ID_1391799849" MODIFIED="1488648591528" TEXT="... or redefine them"/>
+<node CREATED="1488649241824" ID="ID_691428050" MODIFIED="1488649250638" TEXT="keyword: extends"/>
+<node CREATED="1488648361243" FOLDED="true" ID="ID_63025245" MODIFIED="1488649306240" TEXT="Analogy">
+<node CREATED="1488648370285" ID="ID_1413874215" MODIFIED="1488648485753" TEXT="extension to an existing building plan for a studio"/>
+<node CREATED="1488648487971" ID="ID_1699047386" MODIFIED="1488648508751" TEXT="more or different machines and containers"/>
+</node>
+</node>
+<node CREATED="1488648601844" FOLDED="true" ID="ID_1207105480" MODIFIED="1488650491134" TEXT="superclass">
+<node CREATED="1488648612008" ID="ID_596457535" MODIFIED="1488649994677" TEXT="the class a subclass is an extension of"/>
+<node CREATED="1488648635294" ID="ID_1057083071" MODIFIED="1488648977434" TEXT="an object of the subclass can specifically address its superclass namespace using the keyword &quot;super&quot;"/>
+<node CREATED="1488649189064" FOLDED="true" ID="ID_1352631772" MODIFIED="1488649310047" TEXT="Analogy">
+<node CREATED="1488649211827" ID="ID_1125016527" MODIFIED="1488649231628" TEXT="the building plan, that is the foundation of the extension"/>
+</node>
+</node>
+<node CREATED="1488649103775" FOLDED="true" ID="ID_1578065241" MODIFIED="1488657226169" TEXT="inheritance">
+<node CREATED="1488649112140" ID="ID_1956834348" MODIFIED="1488649148442" TEXT="a subclass inherits all the attributes and methods of the superclass"/>
+<node CREATED="1488650499573" FOLDED="true" ID="ID_1460624619" MODIFIED="1488651388880" TEXT="Analogy">
+<node CREATED="1488650519714" ID="ID_334708710" MODIFIED="1488651255856" TEXT="a studio of an architect and a comic artist ..."/>
+<node CREATED="1488650559273" ID="ID_1072902879" MODIFIED="1488651385399" TEXT="... may both come with a drawer cabinet for different paper and a printer ..."/>
+<node CREATED="1488650618981" ID="ID_1695892068" MODIFIED="1488651269382" STYLE="fork" TEXT="... which is the standard infrastructure of a general studio for drawing"/>
+</node>
+</node>
+<node CREATED="1488649006554" FOLDED="true" ID="ID_1209434837" MODIFIED="1488657227348" TEXT="polymorphism">
+<node CREATED="1488649015448" ID="ID_790138715" MODIFIED="1488649073017" TEXT="a variable of the type of a superclass..."/>
+<node CREATED="1488649035806" ID="ID_325943241" MODIFIED="1488649081565" TEXT="... can reference an instance of its subclasses ..."/>
+<node CREATED="1488649084333" ID="ID_1793886785" MODIFIED="1488649099383" TEXT="... or their subclasses etc."/>
+<node CREATED="1488650738910" FOLDED="true" ID="ID_925217020" MODIFIED="1488651248295" TEXT="Analogy">
+<node CREATED="1488650785520" ID="ID_901777222" MODIFIED="1488650786875" TEXT="an architects studio and a studio for the comic artist are still studios"/>
+<node CREATED="1488651236900" ID="ID_1049491419" MODIFIED="1488651247536" TEXT="they just have different extension"/>
+</node>
+</node>
+<node CREATED="1488649329726" FOLDED="true" ID="ID_80728896" MODIFIED="1488657229120" TEXT="access modifiers">
+<node CREATED="1488649401835" ID="ID_1321403871" MODIFIED="1488649409886" TEXT="also called visibility modifiers"/>
+<node CREATED="1488649411430" ID="ID_1109151658" MODIFIED="1488649447527" TEXT="limit the usage of attributes and methods of an object"/>
+<node CREATED="1488649592976" FOLDED="true" ID="ID_390848721" MODIFIED="1488651219871" TEXT="private">
+<node CREATED="1488649605311" ID="ID_1722391956" MODIFIED="1488649661965" TEXT="only the object of the particular class may access"/>
+</node>
+<node CREATED="1488649505983" FOLDED="true" ID="ID_1661523269" MODIFIED="1488651214981" TEXT="protected">
+<node CREATED="1488649547619" ID="ID_1029224782" MODIFIED="1488649736076" TEXT="additionally, objects of its subclasses may access"/>
+</node>
+<node CREATED="1488649454575" FOLDED="true" ID="ID_1568437544" MODIFIED="1488651216711" TEXT="public">
+<node CREATED="1488649470917" ID="ID_825544525" MODIFIED="1488649504275" TEXT="access is allowed from any part of the program"/>
+</node>
+</node>
+<node CREATED="1488649941096" FOLDED="true" ID="ID_1494250980" MODIFIED="1488657230498" TEXT="static">
+<node CREATED="1488650264412" ID="ID_1796078977" MODIFIED="1488650311473" TEXT="attributes or methods defined as static are defined not in the namespace of an object..."/>
+<node CREATED="1488650313251" ID="ID_1783659911" MODIFIED="1488650324833" TEXT="... but in the namespace of a class"/>
+<node CREATED="1488650332102" ID="ID_1884432062" MODIFIED="1488650466774" TEXT="all objects of the class share these, and they are available even if no object is instantiated"/>
+</node>
+<node CREATED="1488651097266" FOLDED="true" ID="ID_1304700782" MODIFIED="1488659171057" TEXT="module">
+<node CREATED="1488657467286" ID="ID_975619659" MODIFIED="1488657508902" TEXT="a collection of classes and functions to be used in different programs"/>
+<node CREATED="1488659151025" ID="ID_12265355" MODIFIED="1488659167077" TEXT="uses a seperate namespace"/>
+</node>
+<node CREATED="1488651125823" FOLDED="true" ID="ID_629014497" MODIFIED="1488657865733" TEXT="enumeration">
+<node CREATED="1488657645904" ID="ID_27626454" MODIFIED="1488657796356" TEXT="a set of named numeric constants, referenced by arbitrary names in code"/>
+</node>
+<node CREATED="1488651134343" FOLDED="true" ID="ID_621485402" MODIFIED="1488659965908" TEXT="exception">
+<node CREATED="1488659475496" ID="ID_1930054499" MODIFIED="1488659497949" TEXT="a block of code marked with the keyword &quot;try&quot; ..."/>
+<node CREATED="1488659499567" ID="ID_1171530887" MODIFIED="1488659530663" TEXT="... will not stop the program when a fatal error occurs ..."/>
+<node CREATED="1488659531611" ID="ID_695593514" MODIFIED="1488659589945" TEXT="... but instead skip execution and continue with the following block marked with the keyword &quot;catch&quot;."/>
+<node CREATED="1488659773367" ID="ID_941338993" MODIFIED="1488659830100" TEXT="if a block marked &quot;finally&quot; is present, it&apos;ll be executed before either the try- or the catch-block terminate"/>
+<node CREATED="1488659841505" ID="ID_260388562" MODIFIED="1488659963437" TEXT="the statement &quot;throw&quot; intentionally causes an exception and passes execution to the logically nearest catch"/>
+</node>
+</node>
+<node CREATED="1335127717958" FOLDED="true" ID="ID_598994719" LINK="DO-Hierarchy.pdf" MODIFIED="1488563153574" POSITION="right" TEXT="Document Object Model (DOM)">
 <node CREATED="1488133392440" FOLDED="true" ID="ID_1057259957" MODIFIED="1488552749903" TEXT="General">
 <node CREATED="1488133408262" FOLDED="true" ID="ID_723172963" LINK="https://www.w3.org/" MODIFIED="1488133631427" TEXT="Standardized by W3C">
 <node CREATED="1488133541068" ID="ID_1572446720" LINK="https://github.com/timbl" MODIFIED="1488133552426" TEXT="led by Tim Berners-Lee"/>
