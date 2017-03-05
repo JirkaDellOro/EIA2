@@ -618,7 +618,7 @@
 <node CREATED="1488539468601" ID="ID_59469303" MODIFIED="1488539468601" TEXT="7. Literale Zeichenketten werden in doppelte Anf&#xfc;hrungszeichen geschrieben."/>
 <node CREATED="1488539468601" ID="ID_770207662" MODIFIED="1488539468601" TEXT="8. Kommentare werden eingesetzt, um Programmteile abzugrenzen und die Verst&#xe4;ndlichkeit zu erh&#xf6;hen. Programmteile, die von anderen Skripts genutzt werden sollen, werden im JSDoc-Format kommentiert (/** &#x2026; */)"/>
 </node>
-<node CREATED="1488540848465" ID="ID_226943766" MODIFIED="1488704619064" POSITION="right" TEXT="Dictionary">
+<node CREATED="1488540848465" FOLDED="true" ID="ID_226943766" MODIFIED="1488705291340" POSITION="right" TEXT="Dictionary">
 <node CREATED="1488540857224" FOLDED="true" ID="ID_1410670011" MODIFIED="1488649957877" TEXT="namespace">
 <node CREATED="1488645098764" ID="ID_1571933734" MODIFIED="1488645135005" TEXT="defines a section of storage"/>
 <node CREATED="1488541430618" FOLDED="true" ID="ID_1839686656" MODIFIED="1488646109456" TEXT="to store data as variables, functions, arrays, classes, objects etc.">
@@ -813,55 +813,11 @@
 <node CREATED="1488704842440" ID="ID_1210266298" MODIFIED="1488704871249" TEXT="that stuff sits in a common storage"/>
 </node>
 </node>
-<node CREATED="1488651097266" FOLDED="true" ID="ID_1304700782" MODIFIED="1488705148180" TEXT="module">
-<richcontent TYPE="NOTE"><html>
-  <head>
-    
-  </head>
-  <body>
-    <table border="0" style="width: 80%; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0">
-      <tr>
-        <td valign="top" style="width: 33%; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-width: 1; border-right-width: 1; border-bottom-width: 1; border-left-width: 1">
-          <p style="margin-top: 1; margin-right: 1; margin-bottom: 1; margin-left: 1">
-            adsvasdv
-          </p>
-        </td>
-        <td valign="top" style="width: 33%; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-width: 1; border-right-width: 1; border-bottom-width: 1; border-left-width: 1">
-          <p style="margin-top: 1; margin-right: 1; margin-bottom: 1; margin-left: 1">
-            sdfvsvf
-          </p>
-        </td>
-        <td valign="top" style="width: 33%; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-width: 1; border-right-width: 1; border-bottom-width: 1; border-left-width: 1">
-          <p style="margin-top: 1; margin-right: 1; margin-bottom: 1; margin-left: 1">
-            qwre
-          </p>
-        </td>
-      </tr>
-      <tr>
-        <td valign="top" style="width: 33%; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-width: 1; border-right-width: 1; border-bottom-width: 1; border-left-width: 1">
-          <p style="margin-top: 1; margin-right: 1; margin-bottom: 1; margin-left: 1">
-            ak
-          </p>
-        </td>
-        <td valign="top" style="width: 33%; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-width: 1; border-right-width: 1; border-bottom-width: 1; border-left-width: 1">
-          <p style="margin-top: 1; margin-right: 1; margin-bottom: 1; margin-left: 1">
-            asdvlkn
-          </p>
-        </td>
-        <td valign="top" style="width: 33%; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-width: 1; border-right-width: 1; border-bottom-width: 1; border-left-width: 1">
-          <p style="margin-top: 1; margin-right: 1; margin-bottom: 1; margin-left: 1">
-            po
-          </p>
-        </td>
-      </tr>
-    </table>
-  </body>
-</html>
-</richcontent>
+<node CREATED="1488651097266" FOLDED="true" ID="ID_1304700782" MODIFIED="1488705281475" TEXT="module">
 <node CREATED="1488657467286" ID="ID_975619659" MODIFIED="1488657508902" TEXT="a collection of classes and functions to be used in different programs"/>
 <node CREATED="1488659151025" ID="ID_12265355" MODIFIED="1488659167077" TEXT="uses a seperate namespace"/>
-<node CREATED="1488704880867" FOLDED="true" ID="ID_1946492996" MODIFIED="1488704994346" TEXT="Analogy">
-<node CREATED="1488704886456" ID="ID_1163686599" MODIFIED="1488704961258" TEXT="a plan for a small town with studios, machines and stuff of different kinds ..."/>
+<node CREATED="1488704880867" FOLDED="true" ID="ID_1946492996" MODIFIED="1488705280998" TEXT="Analogy">
+<node CREATED="1488704886456" ID="ID_1163686599" MODIFIED="1488705273582" TEXT="a plan for an agglomeration of studios, machines and stuff of different kinds ..."/>
 <node CREATED="1488704943324" ID="ID_620819735" MODIFIED="1488704958838" TEXT="... and their building plans"/>
 </node>
 </node>
@@ -915,7 +871,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1327999892919" FOLDED="true" ID="ID_857216794" MODIFIED="1488552756589" POSITION="right" STYLE="fork" TEXT="Eventsystem">
+<node CREATED="1327999892919" FOLDED="true" ID="ID_857216794" MODIFIED="1488705299615" POSITION="right" STYLE="fork" TEXT="Eventsystem">
 <node CREATED="1488135332234" FOLDED="true" ID="ID_476441293" MODIFIED="1488189185747" TEXT="General">
 <node CREATED="1488135508645" ID="ID_1654863333" MODIFIED="1488135673819" TEXT="eventsystem enables the programm to react to changes in the environment"/>
 <node CREATED="1488135573567" ID="ID_855007799" MODIFIED="1488135709578" TEXT="programmer doesn&apos;t require detailled knowledge of how to detect those changes"/>
@@ -1073,7 +1029,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1337524335428" FOLDED="true" ID="ID_1466249769" MODIFIED="1488552770782" POSITION="right" TEXT="Canvas">
+<node CREATED="1337524335428" FOLDED="true" ID="ID_1466249769" MODIFIED="1488705321257" POSITION="right" TEXT="Canvas">
 <node CREATED="1488191205727" FOLDED="true" ID="ID_1664671297" MODIFIED="1488552768977" TEXT="General">
 <node CREATED="1337527035322" ID="ID_248831518" MODIFIED="1488191217920" TEXT="area in document that allows pixel manipulation"/>
 <node CREATED="1488191292167" ID="ID_423812147" MODIFIED="1488192657325" TEXT="method getContext(&quot;2d&quot;) of HTMLCanvasElement ..."/>
@@ -1154,70 +1110,79 @@
 </node>
 </node>
 </node>
-<node CREATED="1327999759946" FOLDED="true" ID="ID_1723770104" MODIFIED="1488552708192" POSITION="right" TEXT="Forms">
-<node CREATED="1334519200750" FOLDED="true" ID="ID_923294015" MODIFIED="1488189163040" TEXT="form">
-<node CREATED="1334519219909" FOLDED="true" ID="ID_1214182003" MODIFIED="1488139818025" TEXT="action">
+<node CREATED="1327999759946" FOLDED="true" ID="ID_1723770104" MODIFIED="1488707498212" POSITION="right" TEXT="Forms">
+<node CREATED="1334519200750" FOLDED="true" ID="ID_923294015" MODIFIED="1488705612775" TEXT="Form">
+<node CREATED="1488705450172" ID="ID_437560466" MODIFIED="1488705477525" TEXT="a simple system in HTML to send data"/>
+<node CREATED="1334519219909" FOLDED="true" ID="ID_1214182003" MODIFIED="1488705479770" TEXT="action">
 <node CREATED="1334519234803" ID="ID_1404454779" MODIFIED="1334519315841" TEXT="URL"/>
 <node CREATED="1334519237344" ID="ID_433694706" MODIFIED="1334519326317" TEXT="&quot;mailto:...&quot;"/>
 </node>
-<node CREATED="1334519330141" FOLDED="true" ID="ID_193150532" MODIFIED="1488139817100" TEXT="method">
-<node CREATED="1334519336706" FOLDED="true" ID="ID_1204514598" MODIFIED="1488194803350" TEXT="get">
-<node CREATED="1334519364290" ID="ID_1268918942" MODIFIED="1334519381951" TEXT="Daten werden als Zeichenkette nach ? an URL geh&#xe4;ngt"/>
+<node CREATED="1334519330141" FOLDED="true" ID="ID_193150532" MODIFIED="1488705611881" TEXT="method">
+<node CREATED="1334519336706" FOLDED="true" ID="ID_1204514598" MODIFIED="1488705601509" TEXT="get">
+<node CREATED="1334519364290" ID="ID_1268918942" MODIFIED="1488705600533" TEXT="send data as a string in the URL"/>
+<node CREATED="1488705517606" FOLDED="true" ID="ID_1384131570" MODIFIED="1488705574759" TEXT="format">
+<node CREATED="1488705526984" ID="ID_571134916" MODIFIED="1488705560612" TEXT="starts with an ? ..."/>
+<node CREATED="1488705535786" ID="ID_1764690538" MODIFIED="1488705557186" TEXT="... followed by key=value pairs ..."/>
+<node CREATED="1488705562107" ID="ID_1196878570" MODIFIED="1488705572415" TEXT="... separated by &amp;"/>
 </node>
-<node CREATED="1334519339368" FOLDED="true" ID="ID_1272162590" MODIFIED="1488194803352" TEXT="post">
-<node CREATED="1334519385571" ID="ID_344784563" MODIFIED="1334519393921" TEXT="Daten werden als eigenes Paket verschickt"/>
+</node>
+<node CREATED="1334519339368" FOLDED="true" ID="ID_1272162590" MODIFIED="1488705611109" TEXT="post">
+<node CREATED="1334519385571" ID="ID_344784563" MODIFIED="1488705610109" TEXT="send data as a separate package"/>
 </node>
 </node>
 </node>
-<node CREATED="1334506990599" FOLDED="true" ID="ID_971018488" MODIFIED="1488139820760" TEXT="allgemeine Attribute der Elemente">
+<node CREATED="1328000141287" FOLDED="true" ID="ID_82198582" MODIFIED="1488707483818" TEXT="Elements">
+<node CREATED="1334506990599" FOLDED="true" ID="ID_971018488" MODIFIED="1488706405231" TEXT="General attributes">
 <node CREATED="1334506302746" ID="ID_945818233" MODIFIED="1334506305201" TEXT="name"/>
 <node CREATED="1334506306365" ID="ID_508502768" MODIFIED="1334506314633" TEXT="value"/>
 <node CREATED="1334507107297" ID="ID_236093342" MODIFIED="1334507109912" TEXT="readonly"/>
 <node CREATED="1334507116970" ID="ID_53703000" MODIFIED="1334507119724" TEXT="disabled"/>
+<node CREATED="1337522619104" ID="ID_922842777" MODIFIED="1488706264038" TEXT="autofocus"/>
+<node CREATED="1488706402931" ID="ID_1376972707" MODIFIED="1488706404303" TEXT="form"/>
 </node>
-<node CREATED="1328000141287" FOLDED="true" ID="ID_82198582" MODIFIED="1488451323862" TEXT="Formelemente">
-<node CREATED="1334505794232" FOLDED="true" ID="ID_1784691564" MODIFIED="1334566045888" TEXT="input">
-<node CREATED="1334506159455" FOLDED="true" ID="ID_1977486225" MODIFIED="1334565797312" TEXT="type">
-<node CREATED="1334506162599" ID="ID_1529428356" MODIFIED="1334506166768" TEXT="text"/>
-<node CREATED="1334506167476" ID="ID_990667870" MODIFIED="1334506176618" TEXT="password"/>
-<node CREATED="1334506189246" ID="ID_1384952456" MODIFIED="1334506191390" TEXT="radio"/>
-<node CREATED="1334506192082" ID="ID_756254752" MODIFIED="1334506197093" TEXT="checkbox"/>
-<node CREATED="1334506234908" ID="ID_1832166133" MODIFIED="1334506237019" TEXT="button"/>
-<node CREATED="1334506211489" ID="ID_1972012314" MODIFIED="1334506214893" TEXT="submit"/>
-<node CREATED="1334506215736" ID="ID_673743819" MODIFIED="1334506217015" TEXT="reset"/>
-<node CREATED="1334506684885" ID="ID_1962430172" MODIFIED="1334506690361" TEXT="file"/>
-<node CREATED="1334506691324" ID="ID_1851764604" MODIFIED="1334506700924" TEXT="hidden"/>
+<node CREATED="1334505794232" FOLDED="true" ID="ID_1784691564" MODIFIED="1488706294531" TEXT="input">
+<node CREATED="1334506159455" FOLDED="true" ID="ID_1977486225" MODIFIED="1488706293165" TEXT="type">
+<node CREATED="1488706290656" ID="ID_1172006679" MODIFIED="1488706292021" TEXT="..."/>
 </node>
+<node CREATED="1337522678393" ID="ID_568009374" MODIFIED="1488706090995" STYLE="fork" TEXT="min/max/step/value"/>
+<node CREATED="1337522614522" ID="ID_1005226093" MODIFIED="1488706151255" TEXT="autocomplete"/>
+<node CREATED="1488706178023" ID="ID_1836600555" MODIFIED="1488706180370" TEXT="placeholder"/>
 </node>
-<node CREATED="1334519565298" FOLDED="true" ID="ID_293685875" MODIFIED="1334566045195" TEXT="button">
+<node CREATED="1334519565298" FOLDED="true" ID="ID_293685875" MODIFIED="1488706302626" TEXT="button">
+<node CREATED="1488706296672" FOLDED="true" ID="ID_1349029847" MODIFIED="1488706302214" TEXT="type">
 <node CREATED="1334519858277" ID="ID_1975534069" MODIFIED="1334519866500" TEXT="button"/>
 <node CREATED="1334519593546" ID="ID_1242046401" MODIFIED="1334519599888" TEXT="submit"/>
 <node CREATED="1334519600420" ID="ID_1038619028" MODIFIED="1334519603316" TEXT="reset"/>
 </node>
-<node CREATED="1334507061007" FOLDED="true" ID="ID_1057516175" MODIFIED="1334566044807" TEXT="textarea">
+</node>
+<node CREATED="1334507061007" FOLDED="true" ID="ID_1057516175" MODIFIED="1488706374677" TEXT="textarea">
 <node CREATED="1334507144646" ID="ID_350358004" MODIFIED="1334507150168" TEXT="rows"/>
 <node CREATED="1334507151189" ID="ID_1639948686" MODIFIED="1334507154735" TEXT="cols"/>
+<node CREATED="1488706371546" ID="ID_1395689051" MODIFIED="1488706373891" TEXT="required"/>
 </node>
-<node CREATED="1334507222067" FOLDED="true" ID="ID_624764909" MODIFIED="1334566044387" TEXT="select">
-<linktarget COLOR="#b0b0b0" DESTINATION="ID_624764909" ENDARROW="Default" ENDINCLINATION="223;-71;" ID="Arrow_ID_983963488" SOURCE="ID_759747275" STARTARROW="None" STARTINCLINATION="153;116;"/>
+<node CREATED="1334507222067" FOLDED="true" ID="ID_624764909" MODIFIED="1488706418024" TEXT="select">
+<linktarget COLOR="#b0b0b0" DESTINATION="ID_624764909" ENDARROW="Default" ENDINCLINATION="223;-57;" ID="Arrow_ID_983963488" SOURCE="ID_759747275" STARTARROW="None" STARTINCLINATION="209;115;"/>
 <linktarget COLOR="#b0b0b0" DESTINATION="ID_624764909" ENDARROW="Default" ENDINCLINATION="209;-86;" ID="Arrow_ID_187627746" SOURCE="ID_1545451728" STARTARROW="None" STARTINCLINATION="268;92;"/>
 <font NAME="SansSerif" SIZE="12"/>
 <node CREATED="1334507383343" ID="ID_770632900" MODIFIED="1334507395007" TEXT="multiple"/>
 <node CREATED="1334507395514" ID="ID_468484328" MODIFIED="1334507398228" TEXT="size"/>
 </node>
-<node CREATED="1334507239094" FOLDED="true" ID="ID_759747275" MODIFIED="1334566043902" TEXT="option">
-<arrowlink DESTINATION="ID_624764909" ENDARROW="Default" ENDINCLINATION="223;-71;" ID="Arrow_ID_983963488" STARTARROW="None" STARTINCLINATION="153;116;"/>
+<node CREATED="1334507239094" FOLDED="true" ID="ID_759747275" MODIFIED="1488706421731" TEXT="option">
+<arrowlink DESTINATION="ID_624764909" ENDARROW="Default" ENDINCLINATION="223;-57;" ID="Arrow_ID_983963488" STARTARROW="None" STARTINCLINATION="209;115;"/>
 <font NAME="SansSerif" SIZE="12"/>
 <node CREATED="1334507440477" ID="ID_1027636200" MODIFIED="1334507443142" TEXT="selected"/>
 <node CREATED="1334507443866" ID="ID_587108431" MODIFIED="1334507447564" TEXT="label"/>
 </node>
-<node CREATED="1334508430444" FOLDED="true" ID="ID_1545451728" MODIFIED="1334566043345" TEXT="optgroup">
+<node CREATED="1334508430444" FOLDED="true" ID="ID_1545451728" MODIFIED="1488706423944" TEXT="optgroup">
 <arrowlink DESTINATION="ID_624764909" ENDARROW="Default" ENDINCLINATION="209;-86;" ID="Arrow_ID_187627746" STARTARROW="None" STARTINCLINATION="268;92;"/>
 <font NAME="SansSerif" SIZE="12"/>
 <node CREATED="1334508442969" ID="ID_633120590" MODIFIED="1334508444775" TEXT="label"/>
 </node>
+<node CREATED="1337522060562" ID="ID_266724185" MODIFIED="1488705400157" TEXT="datalist"/>
+<node CREATED="1337522078992" ID="ID_916842404" MODIFIED="1488705400160" TEXT="keygen"/>
+<node CREATED="1337522081546" ID="ID_1487910225" MODIFIED="1488705400162" TEXT="output"/>
 </node>
-<node CREATED="1334505716816" FOLDED="true" ID="ID_1470840107" MODIFIED="1488139763280" TEXT="Gruppierung">
+<node CREATED="1334505716816" FOLDED="true" ID="ID_1470840107" MODIFIED="1488707486325" TEXT="Group">
 <node CREATED="1334508495991" ID="ID_301410140" MODIFIED="1334508715198" TEXT="fieldset">
 <linktarget COLOR="#b0b0b0" DESTINATION="ID_301410140" ENDARROW="Default" ENDINCLINATION="96;10;" ID="Arrow_ID_593938971" SOURCE="ID_1747248151" STARTARROW="None" STARTINCLINATION="96;10;"/>
 </node>
@@ -1225,24 +1190,9 @@
 <arrowlink DESTINATION="ID_301410140" ENDARROW="Default" ENDINCLINATION="96;10;" ID="Arrow_ID_593938971" STARTARROW="None" STARTINCLINATION="96;10;"/>
 </node>
 </node>
-<node CREATED="1334505773947" FOLDED="true" ID="ID_203537936" MODIFIED="1488139761705" TEXT="Fokus">
+<node CREATED="1334505773947" FOLDED="true" ID="ID_203537936" MODIFIED="1488707488086" TEXT="Focus">
 <node CREATED="1334520758096" ID="ID_1732902843" MODIFIED="1334520762559" TEXT="tabindex"/>
 <node CREATED="1334520793377" ID="ID_157061424" MODIFIED="1334565901585" TEXT="accesskey"/>
-</node>
-<node CREATED="1337522087938" FOLDED="true" ID="ID_1495581223" MODIFIED="1488139863675" TEXT="FormulareHTML5">
-<node CREATED="1337522036135" FOLDED="true" ID="ID_1893331838" MODIFIED="1488194803360" TEXT="Elemente">
-<node CREATED="1337522060562" ID="ID_266724185" MODIFIED="1337522078242" TEXT="datalist"/>
-<node CREATED="1337522078992" ID="ID_916842404" MODIFIED="1337522081059" TEXT="keygen"/>
-<node CREATED="1337522081546" ID="ID_1487910225" MODIFIED="1337522086415" TEXT="output"/>
-</node>
-<node CREATED="1337522302093" FOLDED="true" ID="ID_720285012" MODIFIED="1488194803361" TEXT="Attribute">
-<node CREATED="1337522614522" ID="ID_1005226093" MODIFIED="1337522618330" TEXT="autocomplete"/>
-<node CREATED="1337522619104" ID="ID_922842777" MODIFIED="1337522642047" TEXT="autofocus"/>
-<node CREATED="1337522678393" ID="ID_568009374" MODIFIED="1337523409495" STYLE="fork" TEXT="min/max/step/value"/>
-<node CREATED="1337522767067" ID="ID_163812465" MODIFIED="1337522882538" TEXT="pattern"/>
-<node CREATED="1337522792065" ID="ID_1203256625" MODIFIED="1337523405350" TEXT="email/url"/>
-<node CREATED="1337524311262" ID="ID_1911106409" MODIFIED="1337524314019" TEXT="..."/>
-</node>
 </node>
 </node>
 <node CREATED="1486898557142" FOLDED="true" ID="ID_180594711" LINK="https://github.com/nodejs" MODIFIED="1488552710114" POSITION="right" TEXT="Node">
