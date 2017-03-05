@@ -618,7 +618,7 @@
 <node CREATED="1488539468601" ID="ID_59469303" MODIFIED="1488539468601" TEXT="7. Literale Zeichenketten werden in doppelte Anf&#xfc;hrungszeichen geschrieben."/>
 <node CREATED="1488539468601" ID="ID_770207662" MODIFIED="1488539468601" TEXT="8. Kommentare werden eingesetzt, um Programmteile abzugrenzen und die Verst&#xe4;ndlichkeit zu erh&#xf6;hen. Programmteile, die von anderen Skripts genutzt werden sollen, werden im JSDoc-Format kommentiert (/** &#x2026; */)"/>
 </node>
-<node CREATED="1488540848465" FOLDED="true" ID="ID_226943766" MODIFIED="1488659967985" POSITION="right" TEXT="Dictionary">
+<node CREATED="1488540848465" ID="ID_226943766" MODIFIED="1488704619064" POSITION="right" TEXT="Dictionary">
 <node CREATED="1488540857224" FOLDED="true" ID="ID_1410670011" MODIFIED="1488649957877" TEXT="namespace">
 <node CREATED="1488645098764" ID="ID_1571933734" MODIFIED="1488645135005" TEXT="defines a section of storage"/>
 <node CREATED="1488541430618" FOLDED="true" ID="ID_1839686656" MODIFIED="1488646109456" TEXT="to store data as variables, functions, arrays, classes, objects etc.">
@@ -693,7 +693,7 @@
 <node CREATED="1488646511914" ID="ID_1087172686" MODIFIED="1488646712797" TEXT="drawers are numbered in sequence starting with 0"/>
 </node>
 </node>
-<node CREATED="1488545562827" FOLDED="true" ID="ID_1497333876" MODIFIED="1488647351744" TEXT="associative array">
+<node CREATED="1488545562827" FOLDED="true" ID="ID_1497333876" MODIFIED="1488704591344" TEXT="associative array">
 <node CREATED="1488545581159" ID="ID_1358236139" MODIFIED="1488545588034" TEXT="like an array"/>
 <node CREATED="1488545588925" ID="ID_1264758184" MODIFIED="1488647321940" TEXT="elements are not adresses using a number, but a key"/>
 <node CREATED="1488545690721" ID="ID_658831140" MODIFIED="1488545716964" TEXT="in most cases, the key is of type string"/>
@@ -703,7 +703,7 @@
 <node CREATED="1488646511914" ID="ID_947678880" MODIFIED="1488647349704" TEXT="drawers are labelled"/>
 </node>
 </node>
-<node CREATED="1488545754182" FOLDED="true" ID="ID_1773073132" MODIFIED="1488649771323" TEXT="interface">
+<node CREATED="1488545754182" FOLDED="true" ID="ID_1773073132" MODIFIED="1488704592784" TEXT="interface">
 <node CREATED="1488545758739" ID="ID_901687684" MODIFIED="1488545773342" TEXT="a pattern for an associative array"/>
 <node CREATED="1488546051331" FOLDED="true" ID="ID_1794415964" MODIFIED="1488647369254" TEXT="for each instance of an array that implements the interface">
 <node CREATED="1488545836125" FOLDED="true" ID="ID_1395859710" MODIFIED="1488647366342" TEXT="homogenous">
@@ -721,7 +721,7 @@
 <node CREATED="1488647378132" ID="ID_1293422431" MODIFIED="1488647439221" TEXT="a construction plan for a drawer cabinet with labels"/>
 </node>
 </node>
-<node CREATED="1488549013238" FOLDED="true" ID="ID_1250809012" MODIFIED="1488649785496" TEXT="class">
+<node CREATED="1488549013238" FOLDED="true" ID="ID_1250809012" MODIFIED="1488704593504" TEXT="class">
 <node CREATED="1488647472549" ID="ID_184538594" MODIFIED="1488647766311" TEXT="a pattern for a complex data structure ..."/>
 <node CREATED="1488647537631" ID="ID_908385488" MODIFIED="1488647781469" TEXT="... using assigned variables, then called attributes or properties ..."/>
 <node CREATED="1488647631850" ID="ID_909552275" MODIFIED="1488647787713" TEXT="... and functions, then called methods"/>
@@ -778,7 +778,7 @@
 <node CREATED="1488650618981" ID="ID_1695892068" MODIFIED="1488651269382" STYLE="fork" TEXT="... which is the standard infrastructure of a general studio for drawing"/>
 </node>
 </node>
-<node CREATED="1488649006554" FOLDED="true" ID="ID_1209434837" MODIFIED="1488657227348" TEXT="polymorphism">
+<node CREATED="1488649006554" FOLDED="true" ID="ID_1209434837" MODIFIED="1488704626540" TEXT="polymorphism">
 <node CREATED="1488649015448" ID="ID_790138715" MODIFIED="1488649073017" TEXT="a variable of the type of a superclass..."/>
 <node CREATED="1488649035806" ID="ID_325943241" MODIFIED="1488649081565" TEXT="... can reference an instance of its subclasses ..."/>
 <node CREATED="1488649084333" ID="ID_1793886785" MODIFIED="1488649099383" TEXT="... or their subclasses etc."/>
@@ -787,7 +787,7 @@
 <node CREATED="1488651236900" ID="ID_1049491419" MODIFIED="1488651247536" TEXT="they just have different extension"/>
 </node>
 </node>
-<node CREATED="1488649329726" FOLDED="true" ID="ID_80728896" MODIFIED="1488657229120" TEXT="access modifiers">
+<node CREATED="1488649329726" FOLDED="true" ID="ID_80728896" MODIFIED="1488704790205" TEXT="access modifiers">
 <node CREATED="1488649401835" ID="ID_1321403871" MODIFIED="1488649409886" TEXT="also called visibility modifiers"/>
 <node CREATED="1488649411430" ID="ID_1109151658" MODIFIED="1488649447527" TEXT="limit the usage of attributes and methods of an object"/>
 <node CREATED="1488649592976" FOLDED="true" ID="ID_390848721" MODIFIED="1488651219871" TEXT="private">
@@ -799,15 +799,71 @@
 <node CREATED="1488649454575" FOLDED="true" ID="ID_1568437544" MODIFIED="1488651216711" TEXT="public">
 <node CREATED="1488649470917" ID="ID_825544525" MODIFIED="1488649504275" TEXT="access is allowed from any part of the program"/>
 </node>
+<node CREATED="1488704637837" FOLDED="true" ID="ID_626066795" MODIFIED="1488704788222" TEXT="Analogy">
+<node CREATED="1488704645697" ID="ID_9852154" MODIFIED="1488704700579" TEXT="can everybody, who knows the studio, just walk in and use its stuff and machines?"/>
+<node CREATED="1488704702189" ID="ID_847373395" MODIFIED="1488704778435" TEXT="can somebody, who sits in the extension of the studio, use the stuff in the main studio?"/>
 </node>
-<node CREATED="1488649941096" FOLDED="true" ID="ID_1494250980" MODIFIED="1488657230498" TEXT="static">
+</node>
+<node CREATED="1488649941096" FOLDED="true" ID="ID_1494250980" MODIFIED="1488704872869" TEXT="static">
 <node CREATED="1488650264412" ID="ID_1796078977" MODIFIED="1488650311473" TEXT="attributes or methods defined as static are defined not in the namespace of an object..."/>
 <node CREATED="1488650313251" ID="ID_1783659911" MODIFIED="1488650324833" TEXT="... but in the namespace of a class"/>
 <node CREATED="1488650332102" ID="ID_1884432062" MODIFIED="1488650466774" TEXT="all objects of the class share these, and they are available even if no object is instantiated"/>
+<node CREATED="1488704801718" FOLDED="true" ID="ID_237779556" MODIFIED="1488704872078" TEXT="Analogy">
+<node CREATED="1488704812350" ID="ID_1231680256" MODIFIED="1488704825522" TEXT="the studios of the same kind use some common stuff"/>
+<node CREATED="1488704842440" ID="ID_1210266298" MODIFIED="1488704871249" TEXT="that stuff sits in a common storage"/>
 </node>
-<node CREATED="1488651097266" FOLDED="true" ID="ID_1304700782" MODIFIED="1488659171057" TEXT="module">
+</node>
+<node CREATED="1488651097266" FOLDED="true" ID="ID_1304700782" MODIFIED="1488705148180" TEXT="module">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <table border="0" style="width: 80%; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0">
+      <tr>
+        <td valign="top" style="width: 33%; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-width: 1; border-right-width: 1; border-bottom-width: 1; border-left-width: 1">
+          <p style="margin-top: 1; margin-right: 1; margin-bottom: 1; margin-left: 1">
+            adsvasdv
+          </p>
+        </td>
+        <td valign="top" style="width: 33%; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-width: 1; border-right-width: 1; border-bottom-width: 1; border-left-width: 1">
+          <p style="margin-top: 1; margin-right: 1; margin-bottom: 1; margin-left: 1">
+            sdfvsvf
+          </p>
+        </td>
+        <td valign="top" style="width: 33%; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-width: 1; border-right-width: 1; border-bottom-width: 1; border-left-width: 1">
+          <p style="margin-top: 1; margin-right: 1; margin-bottom: 1; margin-left: 1">
+            qwre
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" style="width: 33%; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-width: 1; border-right-width: 1; border-bottom-width: 1; border-left-width: 1">
+          <p style="margin-top: 1; margin-right: 1; margin-bottom: 1; margin-left: 1">
+            ak
+          </p>
+        </td>
+        <td valign="top" style="width: 33%; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-width: 1; border-right-width: 1; border-bottom-width: 1; border-left-width: 1">
+          <p style="margin-top: 1; margin-right: 1; margin-bottom: 1; margin-left: 1">
+            asdvlkn
+          </p>
+        </td>
+        <td valign="top" style="width: 33%; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-width: 1; border-right-width: 1; border-bottom-width: 1; border-left-width: 1">
+          <p style="margin-top: 1; margin-right: 1; margin-bottom: 1; margin-left: 1">
+            po
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+</richcontent>
 <node CREATED="1488657467286" ID="ID_975619659" MODIFIED="1488657508902" TEXT="a collection of classes and functions to be used in different programs"/>
 <node CREATED="1488659151025" ID="ID_12265355" MODIFIED="1488659167077" TEXT="uses a seperate namespace"/>
+<node CREATED="1488704880867" FOLDED="true" ID="ID_1946492996" MODIFIED="1488704994346" TEXT="Analogy">
+<node CREATED="1488704886456" ID="ID_1163686599" MODIFIED="1488704961258" TEXT="a plan for a small town with studios, machines and stuff of different kinds ..."/>
+<node CREATED="1488704943324" ID="ID_620819735" MODIFIED="1488704958838" TEXT="... and their building plans"/>
+</node>
 </node>
 <node CREATED="1488651125823" FOLDED="true" ID="ID_629014497" MODIFIED="1488657865733" TEXT="enumeration">
 <node CREATED="1488657645904" ID="ID_27626454" MODIFIED="1488657796356" TEXT="a set of named numeric constants, referenced by arbitrary names in code"/>
