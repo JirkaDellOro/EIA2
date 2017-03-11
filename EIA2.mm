@@ -1,10 +1,11 @@
 <map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
-<node CREATED="1480496236572" ID="ID_1483245584" MODIFIED="1488552592586" TEXT="EIA2">
-<node CREATED="1486640980741" FOLDED="true" ID="ID_1634475163" MODIFIED="1488707655866" POSITION="left" TEXT="References">
+<node CREATED="1480496236572" ID="ID_1483245584" MODIFIED="1488735602295" TEXT="EIA2">
+<node CREATED="1486640980741" FOLDED="true" ID="ID_1634475163" MODIFIED="1488975833739" POSITION="left" TEXT="References">
 <node CREATED="1487071662786" ID="ID_517239067" LINK="DIA2Landscape.png" MODIFIED="1487071688268" TEXT="Landscape"/>
 <node CREATED="1486899143788" ID="ID_1157514353" LINK="https://git-scm.com/" MODIFIED="1486899151008" TEXT="Git"/>
 <node CREATED="1486647179592" ID="ID_896471124" LINK="https://help.github.com/" MODIFIED="1486647188178" TEXT="Github"/>
+<node CREATED="1488975639181" ID="ID_232275419" LINK="http://semver.org/" MODIFIED="1488975650833" TEXT="Semantic Versioning"/>
 <node CREATED="1486646776223" ID="ID_1508670948" LINK="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links" MODIFIED="1486647194231" TEXT="Markdown"/>
 <node CREATED="1486642741305" ID="ID_1615126765" LINK="https://wiki.selfhtml.org/wiki/JavaScript" MODIFIED="1487715289768" TEXT="JavaScript"/>
 <node CREATED="1486646451410" ID="ID_1638781169" LINK="http://www.typescriptlang.org/" MODIFIED="1486646868704" TEXT="TypeScript"/>
@@ -18,8 +19,8 @@
 <node CREATED="1487497683702" ID="ID_1425960866" LINK="http://www.mongodbspain.com/wp-content/uploads/2014/03/MongoDBSpain-CheatSheet-p1.jpg" MODIFIED="1487497706706" TEXT="MongoDB Cheat Sheet"/>
 <node CREATED="1486647113550" ID="ID_288337743" LINK="https://devcenter.heroku.com/categories/reference" MODIFIED="1486647120659" TEXT="Heroku"/>
 </node>
-<node CREATED="1480496315340" FOLDED="true" ID="ID_1809458400" MODIFIED="1487854044689" POSITION="left" TEXT="Installations">
-<node CREATED="1485860845302" FOLDED="true" ID="ID_655899580" MODIFIED="1487083930536" TEXT="Node">
+<node CREATED="1480496315340" FOLDED="true" ID="ID_1809458400" MODIFIED="1489063035675" POSITION="left" TEXT="Installations">
+<node CREATED="1485860845302" FOLDED="true" ID="ID_655899580" MODIFIED="1488714393869" TEXT="Node">
 <node CREATED="1485860951206" ID="ID_188992718" LINK="https://nodejs.org" MODIFIED="1485860951206" TEXT="https://nodejs.org"/>
 </node>
 <node CREATED="1485856687396" FOLDED="true" ID="ID_927234325" MODIFIED="1486997327197" TEXT="Eclipse">
@@ -27,10 +28,10 @@
 <node CREATED="1485860930189" ID="ID_995691255" LINK="http://www.eclipse.org/downloads/eclipse-packages/" MODIFIED="1485860930189" TEXT="eclipse.org &gt; Downloads &gt; Eclipse-packages"/>
 <node CREATED="1486635571638" ID="ID_1364513899" MODIFIED="1486635632985" TEXT="download archive and unpack at destination of choice"/>
 </node>
-<node CREATED="1480754786292" FOLDED="true" ID="ID_172686505" MODIFIED="1486648381322" TEXT="Terminal">
+<node CREATED="1480754786292" FOLDED="true" ID="ID_172686505" MODIFIED="1488715475910" TEXT="Terminal">
 <node CREATED="1480754795203" ID="ID_1096568647" MODIFIED="1486640031609" TEXT="Rightclick on Project-&gt;start local terminal"/>
 </node>
-<node CREATED="1480516149337" FOLDED="true" ID="ID_1833133166" MODIFIED="1487854041843" TEXT="Typescript in Eclipse">
+<node CREATED="1480516149337" FOLDED="true" ID="ID_1833133166" MODIFIED="1488715477132" TEXT="Typescript in Eclipse">
 <node CREATED="1480516153875" FOLDED="true" ID="ID_733327299" MODIFIED="1486648381322" TEXT="Help -&gt; Marketplace">
 <node CREATED="1486635748448" ID="ID_1189852241" MODIFIED="1486636191464" TEXT="Search/Coose Typescript by Palantir"/>
 <node CREATED="1486636720706" ID="ID_1301763177" MODIFIED="1486636722614" TEXT="Install"/>
@@ -56,11 +57,11 @@
 <node CREATED="1480516614095" ID="ID_1491770897" MODIFIED="1487084024566" TEXT="Enable TypeScript and TSLint on every TypeScript project"/>
 <node CREATED="1480783662417" ID="ID_199230961" MODIFIED="1486636616950" TEXT="LATER: copy node.d.ts and mongo.d.ts to project"/>
 </node>
-<node CREATED="1481366319313" FOLDED="true" ID="ID_1018422859" MODIFIED="1487065183101" TEXT="Github (+pages)">
+<node CREATED="1481366319313" FOLDED="true" ID="ID_1018422859" MODIFIED="1488735602231" TEXT="Github (+pages)">
 <node CREATED="1485861115099" ID="ID_1161573746" LINK="https://github.com/" MODIFIED="1485861119226" TEXT="https://github.com/"/>
-<node CREATED="1487064623535" FOLDED="true" ID="ID_1970578546" MODIFIED="1487065119311" TEXT="create user + page">
+<node CREATED="1487064623535" FOLDED="true" ID="ID_1970578546" MODIFIED="1488735602226" TEXT="create user + page">
 <node CREATED="1487064521651" ID="ID_1556261053" MODIFIED="1487064827667" TEXT="sign up"/>
-<node CREATED="1481379368695" FOLDED="true" ID="ID_1949622762" MODIFIED="1487064667790" TEXT="start new project/create repository">
+<node CREATED="1481379368695" FOLDED="true" ID="ID_1949622762" MODIFIED="1488715385758" TEXT="start new project/create repository">
 <node CREATED="1486637326083" ID="ID_80142222" MODIFIED="1486637339938" TEXT="choose owner"/>
 <node CREATED="1486637225914" ID="ID_1904365910" MODIFIED="1486637359151" TEXT="repository name: &lt;github-username&gt;.github.io"/>
 <node CREATED="1486637237138" ID="ID_1430200366" MODIFIED="1486637239929" TEXT="with readme"/>
@@ -70,10 +71,10 @@
 <node CREATED="1486637513791" ID="ID_308324480" MODIFIED="1486637522162" TEXT="open and change index.html"/>
 <node CREATED="1481379651162" ID="ID_996895452" MODIFIED="1486637526994" TEXT="commit and test"/>
 </node>
-<node CREATED="1487065121000" FOLDED="true" ID="ID_1217104877" MODIFIED="1487065182371" TEXT="personal settings">
+<node CREATED="1487065121000" FOLDED="true" ID="ID_1217104877" MODIFIED="1488715516018" TEXT="personal settings">
 <node CREATED="1487065171751" ID="ID_1295683942" MODIFIED="1487065180791" TEXT="notifications -&gt; automatically watch"/>
 </node>
-<node CREATED="1487064672614" FOLDED="true" ID="ID_1963464231" MODIFIED="1487065003170" TEXT="create project + page">
+<node CREATED="1487064672614" FOLDED="true" ID="ID_1963464231" MODIFIED="1488735602229" TEXT="create project + page">
 <node CREATED="1487064744017" ID="ID_1327595169" MODIFIED="1487064749707" TEXT="create new repository"/>
 <node CREATED="1487064750877" ID="ID_1328069298" MODIFIED="1487064760517" TEXT="type repository name"/>
 <node CREATED="1487064776707" ID="ID_695063276" MODIFIED="1487064782267" TEXT="initialize with readme"/>
@@ -81,7 +82,7 @@
 <node CREATED="1481379659003" ID="ID_589179576" MODIFIED="1487064987450" TEXT="open &lt;username&gt;.github.io/&lt;reponame&gt; in browser"/>
 </node>
 </node>
-<node CREATED="1480509814713" FOLDED="true" ID="ID_1383250087" MODIFIED="1487064965014" TEXT="Git in Eclipse">
+<node CREATED="1480509814713" FOLDED="true" ID="ID_1383250087" MODIFIED="1488735602236" TEXT="Git in Eclipse">
 <node CREATED="1480509818754" ID="ID_1090250563" MODIFIED="1480509859841" TEXT="Import -&gt; Import projects from git -&gt; Clone URI"/>
 <node CREATED="1480509896224" FOLDED="true" ID="ID_1202015679" MODIFIED="1486648381326" TEXT="set path to github-project">
 <node CREATED="1486637091848" ID="ID_1100335640" MODIFIED="1486637121211" TEXT="copy from github under &quot;Clone or download&quot;"/>
@@ -150,8 +151,8 @@
 </node>
 </node>
 </node>
-<node CREATED="1485856789368" FOLDED="true" ID="ID_1134297312" MODIFIED="1486997371488" TEXT="Additional">
-<node CREATED="1480514471940" FOLDED="true" ID="ID_801167986" MODIFIED="1486997370269" TEXT="Connection to HFU-Server">
+<node CREATED="1485856789368" FOLDED="true" ID="ID_1134297312" MODIFIED="1488789735701" TEXT="Additional">
+<node CREATED="1480514471940" FOLDED="true" ID="ID_801167986" MODIFIED="1488789734172" TEXT="Connection to HFU-Server">
 <node CREATED="1480514722386" ID="ID_761527727" MODIFIED="1480514774110" TEXT="If necessary: Start VPN-Client outside of Eclipse"/>
 <node CREATED="1480514481888" ID="ID_1365376817" MODIFIED="1480514529974" TEXT="Open View -&gt; Remote Systems -&gt; Remote Systems"/>
 <node CREATED="1480514566151" ID="ID_1520980298" MODIFIED="1480514580243" TEXT="New Connection -&gt; SSH Only"/>
@@ -159,7 +160,7 @@
 <node CREATED="1480514663078" ID="ID_91793872" MODIFIED="1480514686756" TEXT="View &quot;MyHome&quot;, type credentials"/>
 <node CREATED="1480514792430" ID="ID_498895105" MODIFIED="1480514812954" TEXT="Browse directory, create or delete files/folders"/>
 </node>
-<node CREATED="1480514328063" FOLDED="true" ID="ID_837690955" MODIFIED="1486997368996" TEXT="SyncToServer">
+<node CREATED="1480514328063" FOLDED="true" ID="ID_837690955" MODIFIED="1488789735119" TEXT="SyncToServer">
 <node CREATED="1480514333049" ID="ID_1312229458" MODIFIED="1480514338192" TEXT="Create new project"/>
 <node CREATED="1480514339138" ID="ID_414118205" MODIFIED="1480514372390" TEXT="Export -&gt; Remote Systems -&gt; Remote File System"/>
 <node CREATED="1480514393201" ID="ID_1894602973" MODIFIED="1480515100418" TEXT="Check  Review/Synchronize"/>
@@ -171,236 +172,73 @@
 </node>
 </node>
 </node>
-<node CREATED="1481403992317" FOLDED="true" ID="ID_187226101" MODIFIED="1488451388625" POSITION="left" TEXT="Curriculum">
-<node CREATED="1481404003125" FOLDED="true" ID="ID_1041763061" MODIFIED="1488358704831" TEXT="Versioning /Safety / Recall">
+<node CREATED="1481403992317" FOLDED="true" ID="ID_187226101" MODIFIED="1489224159255" POSITION="left" TEXT="Curriculum">
+<node CREATED="1481404003125" FOLDED="true" ID="ID_1041763061" MODIFIED="1489063032941" TEXT="Versioning /Safety / Recall">
 <node CREATED="1481404017272" ID="ID_1256980336" MODIFIED="1481404024465" TEXT="get to know git"/>
 <node CREATED="1481404025274" ID="ID_1745096591" MODIFIED="1481404030279" TEXT="get to know git hub"/>
 <node CREATED="1481404031015" ID="ID_1317158703" MODIFIED="1486648609453" TEXT="recall first semester"/>
 <node CREATED="1481409931839" ID="ID_429382347" MODIFIED="1481409968816" TEXT="generate some content with typescript"/>
 </node>
-<node CREATED="1486762202465" ID="ID_1896864296" MODIFIED="1488450954635" TEXT="Tracetable / Debugger">
-<node CREATED="1488358706786" ID="ID_401747030" MODIFIED="1488358736101" TEXT="Difference Runtime, Compiletime, Designtime"/>
+<node CREATED="1486762202465" FOLDED="true" ID="ID_1896864296" MODIFIED="1489224147752" TEXT="Tracetable / Debugger">
+<node CREATED="1488358706786" ID="ID_401747030" MODIFIED="1488910223153" TEXT="difference runtime, compiletime, designtime"/>
+<node CREATED="1488204331937" ID="ID_560167572" MODIFIED="1488910410284" TEXT="console.log"/>
+<node CREATED="1488910150597" ID="ID_704172683" MODIFIED="1488910212974" TEXT="create a tracetable for a given program"/>
+<node CREATED="1489063007156" ID="ID_396138184" MODIFIED="1489063022398" TEXT="recall programming structures known from first semester"/>
+<node CREATED="1488910190679" ID="ID_303532395" MODIFIED="1488910206500" TEXT="compare to debugger"/>
+<node CREATED="1489056296313" ID="ID_363680767" MODIFIED="1489063058737" TEXT="exercise: trace complex program with new structures/commands"/>
 </node>
-<node CREATED="1486637599832" ID="ID_809730445" MODIFIED="1486637606047" TEXT="DOM / Events"/>
-<node CREATED="1486637471804" ID="ID_1801808833" MODIFIED="1486637478250" TEXT="Canvas"/>
-<node CREATED="1486637481546" ID="ID_1450108589" MODIFIED="1486637546989" TEXT="Associative Arrays"/>
+<node CREATED="1488910510768" FOLDED="true" ID="ID_107272273" MODIFIED="1489224149099" TEXT="DOM">
+<node CREATED="1488910544677" ID="ID_1370529714" MODIFIED="1488910805606" TEXT="node tree"/>
+<node CREATED="1488910537306" ID="ID_1454759972" MODIFIED="1488910543782" TEXT="class hierarchy"/>
+<node CREATED="1488969159534" ID="ID_675894034" MODIFIED="1488969172349" TEXT="createElements, appendChild"/>
+<node CREATED="1488969173957" ID="ID_340805171" MODIFIED="1488969187454" TEXT="iterate over elements/children"/>
+<node CREATED="1488969215408" ID="ID_1430564621" MODIFIED="1488969219993" TEXT="manipulate nodes"/>
+</node>
+<node CREATED="1486637599832" FOLDED="true" ID="ID_809730445" MODIFIED="1489224150357" TEXT="Events">
+<node CREATED="1488969310177" ID="ID_474591761" MODIFIED="1488969314888" TEXT="different implementations"/>
+<node CREATED="1488969331789" ID="ID_332537836" MODIFIED="1488969394093" TEXT="event-object, listeners, handlers, phases"/>
+<node CREATED="1488969406906" ID="ID_1390934079" MODIFIED="1488969464129" TEXT="listen to events at chosen nodes in the hierarchy"/>
+<node CREATED="1488969480733" ID="ID_622528389" MODIFIED="1488969489753" TEXT="use target and currentTarget"/>
+<node CREATED="1488969492489" ID="ID_428373213" MODIFIED="1488969502155" TEXT="this-binding"/>
+<node CREATED="1488969747622" FOLDED="true" ID="ID_1400678188" MODIFIED="1488970043869" TEXT="drag&amp;drop">
+<node CREATED="1488969796544" ID="ID_1255945525" MODIFIED="1488969802490" TEXT="mark element as draggable"/>
+<node CREATED="1488969808790" ID="ID_1739668553" MODIFIED="1488969824673" TEXT="set dataTransfer-object on dragstart"/>
+<node CREATED="1488969829624" ID="ID_1955924836" MODIFIED="1488969849828" TEXT="event-information is saved and accessible on drop"/>
+<node CREATED="1488969850442" ID="ID_311823784" MODIFIED="1488969870163" TEXT="allow drop on element, preventDefault on dragover"/>
+<node CREATED="1488969875301" ID="ID_851402124" MODIFIED="1488969908515" TEXT="get dataTransfer-object on drop and process"/>
+</node>
+</node>
+<node CREATED="1486637471804" FOLDED="true" ID="ID_1801808833" MODIFIED="1489224152913" TEXT="Canvas">
+<node CREATED="1488969692163" ID="ID_1770713293" MODIFIED="1488969697610" TEXT="path metaphor"/>
+<node CREATED="1488969708177" ID="ID_171944979" MODIFIED="1488969722328" TEXT="shortcuts fillRect and strokeRect"/>
+<node CREATED="1488970174413" ID="ID_1429693639" MODIFIED="1488970223087" TEXT="create functions for drawing repetitive images"/>
+</node>
+<node CREATED="1486637481546" FOLDED="true" ID="ID_1450108589" MODIFIED="1489224154660" TEXT="Associative Arrays">
+<node CREATED="1488993373229" ID="ID_1198096922" MODIFIED="1488993373229" TEXT="">
+<node CREATED="1488993387303" ID="ID_513718467" MODIFIED="1488993435481" TEXT="CSSStyleDeclaration / CSS2Properties"/>
+</node>
+</node>
 <node CREATED="1486640867059" ID="ID_565156591" MODIFIED="1488358699827" TEXT="Animation, Interaction"/>
 <node CREATED="1486638178159" ID="ID_456355481" MODIFIED="1486638188335" TEXT="Classes"/>
 <node CREATED="1486638190057" ID="ID_786435816" MODIFIED="1486638203140" TEXT="Inheritance, Polymorphism"/>
 <node CREATED="1486638209592" ID="ID_1941289311" MODIFIED="1486638228878" TEXT="Scopes and Visability"/>
-<node CREATED="1486638259326" FOLDED="true" ID="ID_1581079006" MODIFIED="1488451382933" TEXT="Forms and Queries">
-<node CREATED="1487865334139" ID="ID_719604506" LINK="https://nodejs.org/dist/latest-v7.x/docs/api/url.html#url_url_strings_and_url_objects" MODIFIED="1487865394228" TEXT="show node URL scheme in documentation"/>
-<node CREATED="1488451367173" ID="ID_1683586108" MODIFIED="1488451375521" TEXT="start server side programming with node"/>
+<node CREATED="1486638259326" FOLDED="true" ID="ID_1581079006" MODIFIED="1488975992179" TEXT="Forms and Queries">
+<node CREATED="1488969568570" ID="ID_1120198355" MODIFIED="1488969661636" TEXT="form-elements"/>
+<node CREATED="1488969586440" ID="ID_943351643" MODIFIED="1488969600544" TEXT="group radiobuttons via name"/>
+<node CREATED="1488969614278" ID="ID_1347969907" MODIFIED="1488969616636" TEXT="change-event"/>
+<node CREATED="1488969627297" ID="ID_1334695048" MODIFIED="1488969654224" TEXT="attributes without value: multiple for select, checked for checkbox"/>
+<node CREATED="1487865334139" ID="ID_719604506" LINK="https://nodejs.org/dist/latest-v7.x/docs/api/url.html#url_url_strings_and_url_objects" MODIFIED="1488969663921" TEXT="show node URL scheme in documentation"/>
+<node CREATED="1488451367173" ID="ID_1683586108" MODIFIED="1488969663921" TEXT="start server side programming with node"/>
+<node CREATED="1488971938888" ID="ID_456613430" MODIFIED="1488971977018" TEXT="find parameters in browser analysis (if possible for GET)"/>
+<node CREATED="1488204474897" ID="ID_1163170533" MODIFIED="1488204474897" TEXT="- multiple select -&gt; [] in name erzeugt Array in PHP"/>
 </node>
-<node CREATED="1486638322234" ID="ID_1397042242" MODIFIED="1486638527677" TEXT="Asynchronism"/>
+<node CREATED="1486638322234" FOLDED="true" ID="ID_1397042242" MODIFIED="1488992684475" TEXT="Asynchronism">
+<node CREATED="1488204474899" ID="ID_610530320" MODIFIED="1488972021008" TEXT="FormData for POST"/>
+</node>
 <node CREATED="1486640781962" ID="ID_539244345" MODIFIED="1487243219942" TEXT="Exceptions, Enums, Generics, Anonymous Functions"/>
 <node CREATED="1486640699737" ID="ID_684751491" MODIFIED="1486640723589" TEXT="Database"/>
 </node>
-<node CREATED="1488204302237" FOLDED="true" ID="ID_1955454365" MODIFIED="1488707674709" POSITION="left" TEXT="GiS-Curriculum">
-<node CREATED="1488204320351" FOLDED="true" ID="ID_328143328" MODIFIED="1488450949047" TEXT="Javascript">
-<node CREATED="1488204331933" MODIFIED="1488204331933" TEXT="Javascript Intro"/>
-<node CREATED="1488204331935" MODIFIED="1488204331935" TEXT="- script tags platzieren im body"/>
-<node CREATED="1488204331936" MODIFIED="1488204331936" TEXT="- Verarbeitungsfolge aufzeigen!"/>
-<node CREATED="1488204331937" MODIFIED="1488204331937" TEXT="- Ausgaben vorstellen: alert, console.log, document.write()"/>
-<node CREATED="1488204331939" MODIFIED="1488204331939" TEXT="- Element im DOM finden und eine Ausgabe dort bewerkstelligen"/>
-<node CREATED="1488204331941" MODIFIED="1488204331941" TEXT="- getElementBy...."/>
-<node CREATED="1488204331942" MODIFIED="1488204331942" TEXT="- Manipulation des Knoteninhalts mit textContent (keine Interpretation)"/>
-<node CREATED="1488204331943" MODIFIED="1488204331943" TEXT="- Manipulation des Knoteninhalts mit innerHTML (Interpretation)"/>
-<node CREATED="1488204331944" ID="ID_779294265" MODIFIED="1488204331944" TEXT="- Erzeugen neuer Knoten mit write und innerHTML"/>
-<node CREATED="1488204331945" ID="ID_1591004683" MODIFIED="1488204331945" TEXT="- Erzeugen neuer Knoten mit createElement und einf&#xfc;gen mit appendChild"/>
-</node>
-<node CREATED="1488204331947" FOLDED="true" ID="ID_1635034577" MODIFIED="1488707665341" TEXT="Events">
-<node CREATED="1488204331949" ID="ID_253977694" MODIFIED="1488204331949" TEXT="- unterschiedliche Einbindungen vorf&#xfc;hren"/>
-<node CREATED="1488204331951" ID="ID_673281518" MODIFIED="1488204331951" TEXT="- f&#xfc;r DOM-Referenz window.onload einf&#xfc;hren"/>
-<node CREATED="1488204331951" ID="ID_1879396215" MODIFIED="1488204331951" TEXT="- Event-Objekt vorstellen"/>
-<node CREATED="1488204331952" ID="ID_459301869" MODIFIED="1488204331952" TEXT="- eventListener einf&#xfc;hren"/>
-<node CREATED="1488204331953" ID="ID_207922463" MODIFIED="1488204331953" TEXT="- window.onload auf window.addEventListener(&quot;load&quot;,...) &#xe4;ndern"/>
-<node CREATED="1488204331956" ID="ID_163328853" MODIFIED="1488204331956" TEXT="- Eventphasen erkl&#xe4;ren, Schaubild an Tafel"/>
-<node CREATED="1488204331957" ID="ID_1350309925" MODIFIED="1488204331957" TEXT="- Event auf Document-Ebene abfangen"/>
-<node CREATED="1488204331957" ID="ID_1210951257" MODIFIED="1488204331957" TEXT="- Phasen nutzen um vor oder nach Target abzufangen"/>
-<node CREATED="1488204331958" ID="ID_204478191" MODIFIED="1488204331958" TEXT="- Target und currentTarget kl&#xe4;ren"/>
-<node CREATED="1488204331958" ID="ID_1955917478" MODIFIED="1488204331958" TEXT="- Komplette event-Anzeige freischalten"/>
-<node CREATED="1488204331959" ID="ID_1979677557" MODIFIED="1488204331959" TEXT="- for .. in .. Schleife kl&#xe4;ren"/>
-<node CREATED="1488204331960" ID="ID_1393518991" MODIFIED="1488204331960" TEXT="- Assoziatives Array kl&#xe4;ren"/>
-</node>
-<node CREATED="1488204365690" FOLDED="true" ID="ID_377738059" MODIFIED="1488707666394" TEXT="Formulare">
-<node CREATED="1488204365692" ID="ID_1068935922" MODIFIED="1488204365692" TEXT="- Formularelemente einf&#xfc;hren / vorf&#xfc;hren"/>
-<node CREATED="1488204365693" ID="ID_225635902" MODIFIED="1488204365693" TEXT="- name-Attribut!"/>
-<node CREATED="1488204365694" ID="ID_1316246092" MODIFIED="1488204365694" TEXT="- Radiobuttons brauchen gleichen Namen um als Gruppe zu funktionieren"/>
-<node CREATED="1488204365695" ID="ID_590779774" MODIFIED="1488204365695" TEXT="- Fieldset und Legend um Formular zu untergliedern, kann sp&#xe4;ter mit Stylesheet formatiert werden"/>
-<node CREATED="1488204365696" ID="ID_1669288384" MODIFIED="1488204365696" TEXT="- Change-Event erkl&#xe4;ren"/>
-<node CREATED="1488204365698" ID="ID_457547924" MODIFIED="1488204365698" TEXT="- Multiple bei Select, Checked bei Checkbox: Attribute ohne Wert"/>
-</node>
-<node CREATED="1488204409961" FOLDED="true" ID="ID_1355658949" MODIFIED="1488707673674" TEXT="HTML5: neue Elemente, Canvas, Drag&amp;Drop">
-<node CREATED="1488204409962" ID="ID_478203087" MODIFIED="1488204409962" TEXT="Elemente"/>
-<node CREATED="1488204409963" ID="ID_1065962374" MODIFIED="1488204409963" TEXT="- Beispielcollection vorstellen"/>
-<node CREATED="1488204409964" ID="ID_389451233" MODIFIED="1488204409964" TEXT="Leinwandelement Canvas"/>
-<node CREATED="1488204409965" ID="ID_1224274671" MODIFIED="1488204409965" TEXT="- Einbinden in HTML-DOM und dimensionieren"/>
-<node CREATED="1488204409966" ID="ID_1950861498" MODIFIED="1488204409966" TEXT="- Context ist &quot;Zeichenmaschine&quot;"/>
-<node CREATED="1488204409967" ID="ID_732306309" MODIFIED="1488204409967" TEXT="- Pfadbefehle werden nach beginPath() gesammelt und mit stroke() abgesetzt"/>
-<node CREATED="1488204409968" ID="ID_1822621237" MODIFIED="1488204409968" TEXT="- fill-Befehle werden gleich gezeichnet"/>
-<node CREATED="1488204409969" ID="ID_955982079" MODIFIED="1488204409969" TEXT="- Transformationen"/>
-<node CREATED="1488204409970" ID="ID_1421965120" MODIFIED="1488204409970" TEXT="- Text"/>
-<node CREATED="1488204409971" ID="ID_1111449163" MODIFIED="1488204409971" TEXT="- Blending Modes"/>
-<node CREATED="1488204409972" ID="ID_1287011693" MODIFIED="1488204409972" TEXT="- Masken mit clip()"/>
-<node CREATED="1488204409972" ID="ID_1976878147" MODIFIED="1488204409972" TEXT="neue Events bei HTML5, insbesondere Drag&amp;Drop"/>
-<node CREATED="1488204409973" ID="ID_1026906304" MODIFIED="1488204409973" TEXT="- Beispielcode vorstellen, &#xc4;nderungen beobachten"/>
-<node CREATED="1488204409974" ID="ID_1240706286" MODIFIED="1488204409974" TEXT="- Element als draggable markieren"/>
-<node CREATED="1488204409975" ID="ID_1607759590" MODIFIED="1488204409975" TEXT="- bei dragstart dataTransfer-Objekt beschreiben"/>
-<node CREATED="1488204409976" ID="ID_393953254" MODIFIED="1488204409976" TEXT="- Event-Information wird gespeichert und ist bei Drop verf&#xfc;gbar"/>
-<node CREATED="1488204409978" ID="ID_1967929829" MODIFIED="1488204409978" TEXT="- drop auf Element erlauben, bei dragover preventDefault ausf&#xfc;hren"/>
-<node CREATED="1488204409979" ID="ID_902978125" MODIFIED="1488204409979" TEXT="- bei drop dataTransfer-Objekt auslesen und entsprechend agieren"/>
-</node>
-<node CREATED="1488204474886" FOLDED="true" ID="ID_1278652514" MODIFIED="1488204483399" TEXT="Formular">
-<node CREATED="1488204474887" ID="ID_1666297927" MODIFIED="1488204474887" TEXT="- Formular aus Lektion 4 nehmen"/>
-<node CREATED="1488204474888" ID="ID_1316561283" MODIFIED="1488204474888" TEXT="- Um &lt;form&gt;-Tag erg&#xe4;nzen, action=die Datei selbst, method=&quot;get&quot;"/>
-<node CREATED="1488204474890" ID="ID_1374223250" MODIFIED="1488204474890" TEXT="- submit-Button einf&#xfc;gen"/>
-<node CREATED="1488204474891" ID="ID_1505997186" MODIFIED="1488204474891" TEXT="- In Firebug Netzwerknachrichten untersuchen -&gt; Parameter"/>
-<node CREATED="1488204474891" ID="ID_1144851371" MODIFIED="1488204474891" TEXT="- Per action die Daten an PHP leiten"/>
-<node CREATED="1488204474892" ID="ID_1269303313" MODIFIED="1488204474892" TEXT="- $GET, $POST, $REQUEST"/>
-<node CREATED="1488204474897" ID="ID_1905950715" MODIFIED="1488204474897" TEXT="- multiple select -&gt; [] in name erzeugt Array in PHP"/>
-<node CREATED="1488204474898" ID="ID_1757887251" MODIFIED="1488204474898" TEXT="- verschiedene Zugriffe demonstrieren"/>
-<node CREATED="1488204474899" ID="ID_360473448" MODIFIED="1488204474899" TEXT="FormData"/>
-<node CREATED="1488204474900" ID="ID_266878854" MODIFIED="1488204474900" TEXT="- ohne Header versenden, Header ist bei FormData &quot;dabei&quot;"/>
-<node CREATED="1488204474901" ID="ID_993217109" MODIFIED="1488204474901" TEXT="Asynchron"/>
-<node CREATED="1488204474902" ID="ID_1110113382" MODIFIED="1488204474902" TEXT="- dritter Parameter in XmlHttpRequest.open"/>
-</node>
-</node>
-<node CREATED="1488205145847" FOLDED="true" ID="ID_1447644901" MODIFIED="1488552693245" POSITION="left" TEXT="GiS-Exercises">
-<node CREATED="1488205477444" FOLDED="true" ID="ID_990521194" MODIFIED="1488450902958" TEXT="W15">
-<node CREATED="1488205156141" FOLDED="true" ID="ID_442267717" MODIFIED="1488450818651" TEXT="Clock">
-<node CREATED="1488205160267" ID="ID_553978611" MODIFIED="1488205160267" TEXT="Binden Sie eine Webseite in Ihre Pr&#xe4;senz ein, welche Datum und Uhrzeit anzeigt, zu welcher sie aufgerufen wurde. Die Zeit muss sich dann nicht mehr &#xe4;ndern, das k&#xf6;nnen wir sp&#xe4;ter machen. Jede Ziffer soll in einer eigenen Box angezeigt werden, so dass die Seite die Anmutung einer mechanischen Anzeigetafel bekommt. Halten Sie HTML, JS und CSS weitestgehend getrennt in eigenen Dateien."/>
-</node>
-<node CREATED="1488205183742" FOLDED="true" ID="ID_249449733" MODIFIED="1488205197139" TEXT="ExamineDom">
-<node CREATED="1488205190263" FOLDED="true" ID="ID_61159902" MODIFIED="1488205195616" TEXT="Im Lektionen-Bereich (...~del/Gis/Lektionen/...) finden Sie einen Ordner &quot;ExamineDom&quot; mit HTML, CSS und JavaScript-Code.">
-<node CREATED="1488205190265" MODIFIED="1488205190265" TEXT="Finden Sie (gerne gemeinsam im Team) heraus, was der JavaScript-Teil macht, und wie! Verfassen Sie eine entsprechende Beschreibung."/>
-<node CREATED="1488205190268" MODIFIED="1488205190268" TEXT="Erweitern Sie den Javascript-Code so, dass die Tabelle sinnvoll benannte Header bekommt und dass die Attribute der Knoten in einer weiteren Spalte in der Form &quot;name=value name=value ...&quot; ausgegeben werden."/>
-<node CREATED="1488205190270" MODIFIED="1488205190270" TEXT="Zeichnen Sie die zugeh&#xf6;rige Baumstruktur. Sie k&#xf6;nnen gerne eine Handzeichnung einscannen/abfotografieren."/>
-<node CREATED="1488205190272" MODIFIED="1488205190272" TEXT="Experimentieren Sie mit anderen HTML-Elementen innerhalb des Elementes mit der id &quot;divId&quot;"/>
-<node CREATED="1488205190273" MODIFIED="1488205190273" TEXT="Integrieren Sie die Seite auf Ihrer Website und erg&#xe4;nzen sie um die Dokumentation aus a) und die Zeichnung aus d)"/>
-</node>
-</node>
-<node CREATED="1488205223744" FOLDED="true" ID="ID_1785701052" MODIFIED="1488450833828" TEXT="Event-Box">
-<node CREATED="1488205230142" FOLDED="true" ID="ID_924432304" MODIFIED="1488450830070" TEXT="Entwickeln Sie eine TypeScript-Programmierung mit Event-Listenern in einer externen Datei (ggf. zusammen mit einer Stylesheet-Datei), so dass nach der Einbindung des entstandenen Javascript-Codes in eine HTML-Seite folgendes geschieht:">
-<node CREATED="1488205230148" MODIFIED="1488205230148" TEXT="Am Mauszeiger erscheint permanent eine Box in der Informationen zur Zeigerposition und zum darunter liegenden HTML-Element angezeigt werden. Diese Informationen sind:"/>
-<node CREATED="1488205230153" MODIFIED="1488205230153" TEXT="die Screen-Koordinaten, die Page-Koordinaten, die Client-Koordinaten, das Target, die Target-id und die CSS-Klasse des Targets"/>
-<node CREATED="1488205230157" MODIFIED="1488205230157" TEXT="Binden Sie das Script in Ihre CSS-Demo ein"/>
-<node CREATED="1488205230159" MODIFIED="1488205230159" TEXT="Bei Klick auf ein bestimmtes Element der Seite soll sich ein Attribut Ihrer Wahl des Elementes sichtbar ver&#xe4;ndern."/>
-<node CREATED="1488205230164" MODIFIED="1488205230164" TEXT="Bei Klick auf ein jedes beliebige der anderen Elemente der Seite soll sich das Attribut des bei c) anklickbaren Elementes erneut sichtbar &#xe4;ndern."/>
-</node>
-</node>
-<node CREATED="1488205244655" FOLDED="true" ID="ID_1445396503" MODIFIED="1488450835634" TEXT="Blackmailer">
-<node CREATED="1488205249740" FOLDED="true" ID="ID_1045324308" MODIFIED="1488450816148" TEXT="Programmieren Sie mit TypeScript eine kleine Blackmailer-App!">
-<node CREATED="1488205249742" ID="ID_671050651" MODIFIED="1488205249742" TEXT="Es sollen die Buchstaben A bis Z in einer Sektion der Seite einzeln formatiert zur Auswahl erscheinen"/>
-<node CREATED="1488205249744" ID="ID_509482445" MODIFIED="1488205249744" TEXT="Ein Buchstabe kann per Mausklick, sowie durch Druck auf die entsprechende Taste auf der Tastatur, ausgew&#xe4;hlt werden. Die Auswahl wird optisch hervorgehoben."/>
-<node CREATED="1488205249748" ID="ID_319832305" MODIFIED="1488205249748" TEXT="Bei erneutem Mausklick in einer zweiten Sektion der Seite erscheint dort an der Mausposition der ausgew&#xe4;hlte Buchstabe. Somit kann der User einen &quot;verwackelten&quot; Text in dieser Sektion erzeugen."/>
-<node CREATED="1488205249753" ID="ID_1776165680" MODIFIED="1488205249753" TEXT="Um einen bereits erzeugten Buchstaben zu l&#xf6;schen, gen&#xfc;gt es ihn bei gehaltener Alt-Taste anzuklicken."/>
-</node>
-</node>
-<node CREATED="1488205311377" FOLDED="true" ID="ID_1812525961" MODIFIED="1488205319047" TEXT="Schmuckladen">
-<node CREATED="1488205315829" FOLDED="true" ID="ID_1508845330" MODIFIED="1488205318414" TEXT="Gestalten Sie ein Formular f&#xfc;r einen Online-Weihnachtsbaumschmuckladen! Sehen Sie sich gerne in anderen Online-Shops um und lassen Sie sich inspirieren. Achten Sie aber darauf, das wir derzeit nur mit einem sehr schlichten Formular arbeiten. Interaktion mit grafischen Objekten behandeln wir ggf. sp&#xe4;ter. Nehmen Sie sich, wie immer, Papier und Bleistift und zeichnen Sie zun&#xe4;chst das Formular so wie Sie es sich w&#xfc;nschen auf. Es darf diesmal gerne gut aussehen, auch Formularelemente lassen sich mit CSS aufh&#xfc;bschen! Definieren Sie auch klar die einzelnen Elemente, deren Eigenschaften und die Planungen zur technischen Umsetzung und Programmierung. Folgendes muss auf jeden Fall realisiert sein:">
-<node CREATED="1488205315835" MODIFIED="1488205315835" TEXT="Der Kunde kann einen von verschiedenen Weihnachtsbaumarten ausw&#xe4;hlen."/>
-<node CREATED="1488205315836" MODIFIED="1488205315836" TEXT="Der Kunde kann einen von verschiedenen T&#xf6;pfen, Haltern oder Untersetzern ausw&#xe4;hlen."/>
-<node CREATED="1488205315837" ID="ID_625885513" MODIFIED="1488205315837" TEXT="Der Kunde kann Schmuckelemente aus vielen verschiedenen Sorten w&#xe4;hlen, also auch mehrere pro gew&#xe4;hlter Sorte."/>
-<node CREATED="1488205315841" MODIFIED="1488205315841" TEXT="Weiterhin kann er angeben, welcher Transportdienstleister gew&#xe4;hlt werden soll und wohin die Bestellung geht, sowie einen Kommentar f&#xfc;r den H&#xe4;ndler hinterlassen (textarea)."/>
-<node CREATED="1488205315845" MODIFIED="1488205315845" TEXT="Bei jeder &#xc4;nderung soll der aktuelle Zustand der Bestellung in einem daf&#xfc;r vorgesehenen Bereich auf der Seite als knappe Zusammenfassung angezeigt werden."/>
-</node>
-</node>
-<node CREATED="1488205384889" FOLDED="true" ID="ID_1329167874" MODIFIED="1488205393908" TEXT="XML/JSON">
-<node CREATED="1488205391070" FOLDED="true" ID="ID_1557381640" MODIFIED="1488205392593" TEXT="Trennen Sie bei Ihrem Online-Weihnachtsbaumschmuckladen die Daten von der Pr&#xe4;sentationsstruktur!">
-<node CREATED="1488205391072" MODIFIED="1488205391072" TEXT="Lagern Sie die Informationen zur Bestellung, die derzeit noch in der HTML-Seite oder im JS-Code eingepflegt sind, in eine XML-Datei aus. Diese soll beim Start der Seite eingelesen und die HTML-Seite zur Laufzeit entsprechend aufgebaut bzw. erg&#xe4;nzt werden."/>
-<node CREATED="1488205391077" MODIFIED="1488205391077" TEXT="Der Weihnachtsbaumschmuckh&#xe4;ndler kann also jetzt in der XML-Datei seine Baumsorten, die Dekoration und andere ver&#xe4;nderliche Informationen angeben, ohne die HTML-Datei anfassen zu m&#xfc;ssen. Auch die einzelnen Preise werden aus der XML-Datei eingelesen."/>
-<node CREATED="1488205391082" MODIFIED="1488205391082" TEXT="In der Bestell&#xfc;bersicht soll nun bei jeder &#xc4;nderung des Formulars durch den Kunden der errechnete Gesamtpreis erscheinen!"/>
-<node CREATED="1488205391086" MODIFIED="1488205391086" TEXT="Achten Sie darauf, dass sich der Kanon der Artikel jetzt stark ver&#xe4;ndern kann, neue dazukommen und andere wieder entfernt werden. Auch bei anderen Informationsgruppen kann dies geschehen."/>
-<node CREATED="1488205391090" MODIFIED="1488205391090" TEXT="Entscheiden Sie selbst&#xe4;ndig, welche Strukturen im HTML-Code verbleiben, und welche von Javascript aufgebaut werden. Es ist hilfreich bei der Entwicklung auf eine &#xfc;bersichtliche HTML-Struktur aufbauen zu k&#xf6;nnen und nicht die ganze Seite per Javascript zu generieren."/>
-</node>
-</node>
-<node CREATED="1488205410862" FOLDED="true" ID="ID_1609284649" MODIFIED="1488450838922" TEXT="Drag&amp;Drop">
-<node CREATED="1488205414780" FOLDED="true" ID="ID_652151032" MODIFIED="1488205416201" TEXT="Modifizieren Sie Ihren Online-Weihnachtsbaumschmuckladen derart, dass der gew&#xe4;hlte Weihnachtsbaum dargestellt wird und per Drag&amp;Drop geschm&#xfc;ckt werden kann. Sie k&#xf6;nnen hierzu das Canvas-Element nutzen, k&#xf6;nnen es aber auch &apos;klassisch&apos; versuchen.">
-<node CREATED="1488205414785" MODIFIED="1488205414785" TEXT="Stellen Sie sicher, dass der Nutzer weiterhin den &#xdc;berblick &#xfc;ber seine Bestellung erh&#xe4;lt."/>
-<node CREATED="1488205414787" MODIFIED="1488205414787" TEXT="Sie k&#xf6;nnen die Schmuckobjekte automatisch positionieren, oder dies dem Nutzer &#xfc;berlassen. Eine Pr&#xfc;fung der Sinnhaftigkeit ist nicht zwingend erforderlich."/>
-<node CREATED="1488205414792" MODIFIED="1488205414792" TEXT="Zur Vereinfachung k&#xf6;nnen Sie sich bei der grafischen Darstellung auf simplifizierte Darstellungen beschr&#xe4;nken."/>
-<node CREATED="1488205414796" MODIFIED="1488205414796" TEXT="Gerne d&#xfc;rfen Sie das Ganze auch weiter treiben und nat&#xfc;rlicher erscheinende Darstellungen kreieren. Hier eignen sich ggf. eher Bilder oder Vektordaten (SVG), welche Sie mit einbinden und erscheinen lassen."/>
-<node CREATED="1488205414800" MODIFIED="1488205414800" TEXT="Die Seite wird weiterhin auf Basis von XML- oder JSON-Daten aufgebaut. Dort sind nun auch Informationen zur Darstellung im Drag&amp;Drop-Context enthalten."/>
-</node>
-</node>
-<node CREATED="1488205448373" FOLDED="true" ID="ID_281509247" MODIFIED="1488205452905" TEXT="PHP">
-<node CREATED="1488205451081" MODIFIED="1488205451081" TEXT="Installieren Sie ggf. XAMPP auf Ihrem System."/>
-<node CREATED="1488205451083" MODIFIED="1488205451083" TEXT="Setzen Sie sich mit den Codes aus der Vorlesung auseinander, insbesondere mit den PHP-Dateien, die Sie hier einsehen k&#xf6;nnen: gisForm.phpgisDisplayErrorAndSource.php"/>
-<node CREATED="1488205451086" MODIFIED="1488205451086" TEXT="Schalten Sie dazu die weiteren Funktionalit&#xe4;ten von gisForm.php frei."/>
-<node CREATED="1488205451087" MODIFIED="1488205451087" TEXT="Machen Sie sich mit PHP-Dokumentationen wie W3-Schools oder php.net vertraut."/>
-<node CREATED="1488205451088" MODIFIED="1488205451088" TEXT="Lassen Sie serverseitig die Bestelldaten des Weihnachtsschmuckladen-Formulars mit PHP entgegen nehmen und diese auswerten. W&#xe4;hlen Sie selbst, welchen Stand des Shops sie hierzu heran ziehen wollen."/>
-<node CREATED="1488205451092" MODIFIED="1488205451092" TEXT="Der Server erzeugt darauf hin mit PHP eine Webseite, welche dem Nutzer eine Zusammenfassung seiner Bestellung anzeigt. Auch der Preis soll ausgegeben werden, diese k&#xf6;nnen Sie mit den Formulardaten mitschicken."/>
-<node CREATED="1488205451097" MODIFIED="1488205451097" TEXT="Die Seite soll mit Hilfe des Stylesheets der Bestellseite passend zu dem Rest gestaltet sein."/>
-<node CREATED="1488205451099" MODIFIED="1488205451099" TEXT="Binden Sie die Datei &quot;gisDisplayErrorAndSource.php&quot; in Ihre PHP-Skripte ein. Das dort hinterlegte Skriptst&#xfc;ckchen bewirkt, dass im Fehlerfall eine lesbare Ausgabe erfolgt. Au&#xdf;erdem wird durch die Angabe von &quot;printSource&quot; als Parameter in der Adresse der Quellcode angezeigt. Stellen Sie ab jetzt f&#xfc;r alle Ihre PHP-Dateien einen Link zur Verf&#xfc;gung, welcher den String &quot;printSource&quot; als Parameter &#xfc;bergibt, damit die Betreuer schnell den Sourcecode pr&#xfc;fen k&#xf6;nnen."/>
-</node>
-<node CREATED="1488205466618" FOLDED="true" ID="ID_1659850721" MODIFIED="1488205470717" TEXT="Database">
-<node CREATED="1488205469772" MODIFIED="1488205469772" TEXT="Die Bestellungen aus Ihrem Weihnachtsbaumschmuckshop sollen in Ihrer Datenbank gespeichert werden. Die bestellte Anzahl zu jedem Artikel der Bestellung muss in einzelnen Spalten gespeichert sein. Es soll nun eine weitere Webseite f&#xfc;r den Shopbetreiber erstellt werden.">
-<node CREATED="1488205469777" MODIFIED="1488205469777" TEXT="Hier kann er die Inhalte der Datenbank anzeigen lassen, so dass er die Bestellungen packen und liefern kann."/>
-<node CREATED="1488205469782" MODIFIED="1488205469782" TEXT="Zus&#xe4;tzlich soll f&#xfc;r jeden Artikel die &#xfc;ber alle Bestellungen summierte Anzahl sowie der Gesamtpreis aller Bestellungen ausgegeben werden."/>
-<node CREATED="1488205469786" MODIFIED="1488205469786" TEXT="Der Shopbetreiber kann einzelne Eintr&#xe4;ge als &quot;geliefert&quot; markieren und einzelne sowie alle l&#xf6;schen."/>
-</node>
-</node>
-</node>
-<node CREATED="1488205524944" FOLDED="true" ID="ID_1282931735" MODIFIED="1488450900731" TEXT="S14">
-<node CREATED="1488205992149" FOLDED="true" ID="ID_1683275825" MODIFIED="1488450842111" TEXT="Skatblatt">
-<node CREATED="1488205995560" ID="ID_1926512584" MODIFIED="1488205995560" TEXT="Binden Sie eine Webseite in Ihre Pr&#xe4;senz ein, welche f&#xfc;nf Spielkarten aus einem Skatblatt darstellt. Dabei m&#xfc;ssen keine Bilder erscheinen. Es gen&#xfc;gt wenn die Karten als K&#xe4;stchen erscheinen, in denen jeweils die Angabe von Farbe und Wert zu finden ist, also z.B. &quot;Pik 7&quot; oder &quot;Herz Dame&quot;. Der HTML-Code soll im Wesentlichen nur einen Aufruf einer Javascript-Funktion enthalten, welche dann die Seite aufbaut. Halten Sie HTML, JS und CSS weitestgehend getrennt in eigenen Dateien. Auf diesen Aufgabenteil bezieht sich das abzugebende Konzept."/>
-<node CREATED="1488205995614" ID="ID_1401209601" MODIFIED="1488205995614" TEXT="Bonusaufgabe: Die f&#xfc;nf anzuzeigenden Spielkarten werden zuf&#xe4;llig ausgew&#xe4;hlt!"/>
-</node>
-<node CREATED="1488206018483" FOLDED="true" ID="ID_359628502" MODIFIED="1488450899710" TEXT="Skat interaktiv">
-<node CREATED="1488206024591" ID="ID_1121893176" MODIFIED="1488450845286" TEXT="Erweitern Sie das Kartenspiel aus Aufgabe 3 um Interaktion.">
-<node CREATED="1488206024592" MODIFIED="1488206024592" TEXT="Hierzu platzieren Sie einen Ablage- und einen Nachziehstapel auf der Seite."/>
-<node CREATED="1488206024593" ID="ID_1207049304" MODIFIED="1488206024593" TEXT="Bei Klick auf eine Karte auf der Hand wird diese auf dem Ablagestapel dargestellt und verschwindet aus der Hand."/>
-<node CREATED="1488206024597" MODIFIED="1488206024597" TEXT="Bei Klick auf den Nachziehstapel erscheint eine weitere Karte auf der Hand. Diese ist entweder zuf&#xe4;llig ausgew&#xe4;hlt oder folgt einer im Code festgelegten Sequenz"/>
-</node>
-</node>
-<node CREATED="1488206201575" FOLDED="true" ID="ID_155971707" MODIFIED="1488450899065" TEXT="Blumenladen">
-<node CREATED="1488206207961" FOLDED="true" ID="ID_574201928" MODIFIED="1488206210245" TEXT="Gestalten Sie ein Formular f&#xfc;r einen Online-Blumenladen!">
-<node CREATED="1488206207963" ID="ID_1399448481" MODIFIED="1488206207963" TEXT="Nehmen Sie sich, wie immer, Papier und Bleistift und zeichnen Sie zun&#xe4;chst das Formular so wie Sie es sich w&#xfc;nschen auf. Es darf diesmal gerne gut aussehen, auch Formularelemente lassen sich mit CSS aufh&#xfc;bschen! Definieren Sie auch klar die einzelnen Elemente, deren Eigenschaften und die Planungen zur technischen Umsetzung und Programmierung. Folgendes muss auf jeden Fall realisiert sein:">
-<node CREATED="1488206207970" MODIFIED="1488206207970" TEXT="Der Kunde kann mehrere Blumen aus vielen verschiedenen Sorten w&#xe4;hlen, also auch mehrere pro gew&#xe4;hlter Sorte."/>
-<node CREATED="1488206207975" MODIFIED="1488206207975" TEXT="Weiterhin kann er zwischen unterschiedlichen, sich gegebenenfalls auch gegenseitig ausschlie&#xdf;enden Verpackungs- und Dekorationsformen w&#xe4;hlen wie Vasen oder Schleifen, und seinen Strau&#xdf; noch mit unterschiedlichem Gr&#xfc;nzeug ausstatten lassen. Weiterhin kann er angeben, welcher Transportdienstleister gew&#xe4;hlt werden soll und wohin der Strau&#xdf; geht, sowie einen Kommentar f&#xfc;r den Blumenh&#xe4;ndler hinterlassen (textarea)."/>
-<node CREATED="1488206207980" MODIFIED="1488206207980" TEXT="Bei jeder &#xc4;nderung soll der aktuelle Zustand der Wahl und der Preis in einem daf&#xfc;r vorgesehenen Bereich auf er Seite als knappe Zusammenfassung angezeigt werden."/>
-</node>
-<node CREATED="1488206207985" MODIFIED="1488206207985" TEXT="Sehen Sie sich aber auch in anderen Online-Blumenl&#xe4;den um und lassen Sie sich inspirieren. Achten Sie aber darauf, das wir derzeit nur mit einem sehr schlichten Formular arbeiten. Interaktion mit grafischen Objekten behandeln wir sp&#xe4;ter."/>
-</node>
-</node>
-<node CREATED="1488206240127" FOLDED="true" ID="ID_1965605742" MODIFIED="1488206251087" TEXT="XML/JSON">
-<node CREATED="1488206249904" MODIFIED="1488206249904" TEXT="Lagern Sie die Informationen zur Bestellung, die derzeit noch in der HTML-Seite oder im JS-Code eingepflegt sind, in eine XML-Datei aus. Diese soll beim Start der Seite eingelesen und die HTML-Seite zur Laufzeit entsprechend aufgebaut bzw. erg&#xe4;nzt werden."/>
-<node CREATED="1488206249909" MODIFIED="1488206249909" TEXT="Der Blumenh&#xe4;ndler kann also jetzt in der XML-Datei seine Blumensorten, die Dekoration und andere ver&#xe4;nderliche Informationen angeben, ohne die HTML-Datei anfassen zu m&#xfc;ssen. Auch die einzelnen Preise werden aus der XML-Datei eingelesen, die Funktionalit&#xe4;t des Formulars bleibt vollst&#xe4;ndig erhalten."/>
-<node CREATED="1488206249913" MODIFIED="1488206249913" TEXT="Achten Sie darauf, dass sich der Kanon der Blumensorten vollst&#xe4;ndig ver&#xe4;ndern kann, neue dazukommen und andere wieder entfernt werden. Auch bei anderen Informationsgruppen kann dies, je nach Aufbau Ihres Blumenladens, geschehen."/>
-<node CREATED="1488206249918" MODIFIED="1488206249918" TEXT="Entscheiden Sie selbst&#xe4;ndig, welche Strukturen im HTML-Code verbleiben, und welche von Javascript aufgebaut werden. Es ist hilfreich bei der Entwicklung auf eine &#xfc;bersichtliche HTML-Struktur aufbauen zu k&#xf6;nnen und nicht die ganze Seite per Javascript zu generieren."/>
-</node>
-<node CREATED="1488206269700" FOLDED="true" ID="ID_779116786" MODIFIED="1488450892753" TEXT="Canvas D&amp;D">
-<node CREATED="1488206282964" ID="ID_237558455" MODIFIED="1488206282964" TEXT="Aufgabe 7: Canvas, Drag &amp; Drop">
-<node CREATED="1488206282965" MODIFIED="1488206282965" TEXT="Modifizieren Sie Ihren Blumenladen derart, dass der Blumenstrau&#xdf; per Drag&amp;Drop zusammengestellt werden kann und auf dem Canvas grafisch angezeigt wird. Dabei ist es nicht erforderlich, und wahrscheinlich auch nicht sinnvoll, dass der Nutzer die Blumen genau platziert, sondern dass diese automatisch positioniert werden um eine g&#xfc;nstige grafische Ausgabe zu erm&#xf6;glichen."/>
-<node CREATED="1488206282970" MODIFIED="1488206282970" TEXT="Stellen Sie sicher, dass der Nutzer weiterhin den &#xdc;berblick &#xfc;ber seine Bestellung erh&#xe4;lt."/>
-<node CREATED="1488206282971" MODIFIED="1488206282971" TEXT="Zur Vereinfachung k&#xf6;nnen Sie sich bei der grafischen Darstellung auf farbige Kreise als Bl&#xfc;ten."/>
-<node CREATED="1488206282971" MODIFIED="1488206282971" TEXT="Gerne d&#xfc;rfen Sie nat&#xfc;rlich das Ganze auch weiter treiben und nat&#xfc;rlicher erscheinende Blumen darstellen. Hier eignen sich ggf. eher Bilder oder Vektordaten (SVG), welche Sie mit einbinden und auf dem Canvas erscheinen lassen."/>
-<node CREATED="1488206282974" MODIFIED="1488206282974" TEXT="Bonusaufgabe: Die Bestellseite wird weiterhin auf Basis der XML-Daten aufgebaut. Dort sind nun auch Informationen zur Darstellung auf dem Canvas enthalten."/>
-</node>
-<node CREATED="1488206282977" MODIFIED="1488206282977" TEXT="Hinweis: Studieren Sie das Beispiel gisDragDropCanvas aus dem Intranet! Das Canvas-CheatSheet ist derzeit auch wieder erreichbar."/>
-</node>
-<node CREATED="1488206325506" FOLDED="true" ID="ID_1116892438" MODIFIED="1488450897681" TEXT="Danach">
-<node CREATED="1488206329804" ID="ID_841317602" MODIFIED="1488206334640" TEXT="Blumenladen mit"/>
-<node CREATED="1488206335505" ID="ID_1096585845" MODIFIED="1488206336971" TEXT="PHP"/>
-<node CREATED="1488206337640" ID="ID_1129978998" MODIFIED="1488206340070" TEXT="Ajax"/>
-<node CREATED="1488206340754" ID="ID_976127974" MODIFIED="1488206343633" TEXT="Datenbank"/>
-</node>
-</node>
-<node CREATED="1488206419205" FOLDED="true" ID="ID_1660419014" MODIFIED="1488450901622" TEXT="W13">
-<node CREATED="1488206432538" FOLDED="true" ID="ID_1035811268" MODIFIED="1488358339575" TEXT="Sissa ibn Dahir">
-<node CREATED="1488206437287" ID="ID_373738375" MODIFIED="1488206437287" TEXT="Binden Sie eine Webseite in Ihre Pr&amp;auml;senz ein, welche die Situation auf dem Schachbrett nach der &lt;a href=&quot;"/>
-<node CREATED="1488206437291" ID="ID_768398618" LINK="http://de.wikipedia.org/wiki/Sissa_ibn_Dahir" MODIFIED="1488206437291" TEXT="http://de.wikipedia.org/wiki/Sissa_ibn_Dahir&quot; target=&quot;_blank&quot;&gt;Legende von Sissa ibn Dahir&lt;/a&gt; schematisch darstellt. Es soll das Schachbrett und auf jedem Feld die Anzahl der Reisk&#xf6;rner erkennbar sein. Der HTML-Code soll im Wesentlichen nur einen Aufruf einer Javascript-Funktion enthalten, welche dann die Seite aufbaut. Halten Sie HTML, JS und CSS weitestgehend getrennt in eigenen Dateien."/>
-</node>
-<node CREATED="1488206519304" FOLDED="true" ID="ID_1805092010" MODIFIED="1488358341658" TEXT="Memory">
-<node CREATED="1488206522269" ID="ID_13824244" MODIFIED="1488206522269" TEXT="Programmieren Sie ein kleines Memoryspiel in Javascript. Sie k&#xf6;nnen als Grundlage das Raster der Schachaufgabe nutzen."/>
-<node CREATED="1488206522275" ID="ID_171428478" MODIFIED="1488206522275" TEXT="Zu Beginn erscheinen die R&#xfc;cken der Memorykarten. Bei Klick auf einen R&#xfc;cken wird der Inhalt angezeigt. Ebenso f&#xfc;r eine zweite Karte. Dann werden die Inhalte verglichen und bei Gleichheit verschwinden die Karten. Bei Ungleichheit werden wieder die R&#xfc;cken angezeigt."/>
-<node CREATED="1488206522281" ID="ID_1840516332" MODIFIED="1488206540401" TEXT="Die Motive k&#xf6;nnen Bilder oder auch Worte sein. Denkbar ist auch ein kleiner Vokabeltrainer..."/>
-</node>
-<node CREATED="1488206567785" ID="ID_277935442" MODIFIED="1488206570467" TEXT="Eisladen"/>
-</node>
-</node>
-<node CREATED="1486898844788" FOLDED="true" ID="ID_1945764135" MODIFIED="1488552735985" POSITION="right" TEXT="Git">
+<node CREATED="1486898844788" FOLDED="true" ID="ID_1945764135" MODIFIED="1488714387450" POSITION="right" TEXT="Git">
 <node CREATED="1486898861640" FOLDED="true" ID="ID_1912447230" MODIFIED="1488552732040" TEXT="General">
 <node CREATED="1486898961826" ID="ID_1050781253" MODIFIED="1486899008728" TEXT="Version Control and Repository System"/>
 <node CREATED="1486899010607" ID="ID_661692839" LINK="https://github.com/torvalds" MODIFIED="1486902039077" TEXT="developed by Linus Torvalds and the Linux-Community  in 2005"/>
@@ -412,7 +250,7 @@
 <node CREATED="1486900281606" ID="ID_1743397591" MODIFIED="1486902568519" TEXT="supports synchronization of repositories on remote systems"/>
 <node CREATED="1486902872570" ID="ID_1386119070" MODIFIED="1486902898143" TEXT="file &quot;.gitignore&quot; references files not to include in repository"/>
 </node>
-<node CREATED="1486902351769" FOLDED="true" ID="ID_1620778353" MODIFIED="1488552734690" TEXT="Commands">
+<node CREATED="1486902351769" FOLDED="true" ID="ID_1620778353" MODIFIED="1488714386563" TEXT="Commands">
 <node CREATED="1486902358528" ID="ID_1197845708" MODIFIED="1486902363182" TEXT="init"/>
 <node CREATED="1486902363877" ID="ID_1066044562" MODIFIED="1486902365651" TEXT="add"/>
 <node CREATED="1486902536054" ID="ID_768872933" MODIFIED="1486902539182" TEXT="commit"/>
@@ -618,7 +456,7 @@
 <node CREATED="1488539468601" ID="ID_59469303" MODIFIED="1488539468601" TEXT="7. Literale Zeichenketten werden in doppelte Anf&#xfc;hrungszeichen geschrieben."/>
 <node CREATED="1488539468601" ID="ID_770207662" MODIFIED="1488539468601" TEXT="8. Kommentare werden eingesetzt, um Programmteile abzugrenzen und die Verst&#xe4;ndlichkeit zu erh&#xf6;hen. Programmteile, die von anderen Skripts genutzt werden sollen, werden im JSDoc-Format kommentiert (/** &#x2026; */)"/>
 </node>
-<node CREATED="1488540848465" FOLDED="true" ID="ID_226943766" MODIFIED="1488705291340" POSITION="right" TEXT="Dictionary">
+<node CREATED="1488540848465" FOLDED="true" ID="ID_226943766" MODIFIED="1488916278354" POSITION="right" TEXT="Dictionary">
 <node CREATED="1488540857224" FOLDED="true" ID="ID_1410670011" MODIFIED="1488649957877" TEXT="namespace">
 <node CREATED="1488645098764" ID="ID_1571933734" MODIFIED="1488645135005" TEXT="defines a section of storage"/>
 <node CREATED="1488541430618" FOLDED="true" ID="ID_1839686656" MODIFIED="1488646109456" TEXT="to store data as variables, functions, arrays, classes, objects etc.">
@@ -813,7 +651,7 @@
 <node CREATED="1488704842440" ID="ID_1210266298" MODIFIED="1488704871249" TEXT="that stuff sits in a common storage"/>
 </node>
 </node>
-<node CREATED="1488651097266" FOLDED="true" ID="ID_1304700782" MODIFIED="1488705281475" TEXT="module">
+<node CREATED="1488651097266" FOLDED="true" ID="ID_1304700782" MODIFIED="1488713553137" TEXT="module">
 <node CREATED="1488657467286" ID="ID_975619659" MODIFIED="1488657508902" TEXT="a collection of classes and functions to be used in different programs"/>
 <node CREATED="1488659151025" ID="ID_12265355" MODIFIED="1488659167077" TEXT="uses a seperate namespace"/>
 <node CREATED="1488704880867" FOLDED="true" ID="ID_1946492996" MODIFIED="1488705280998" TEXT="Analogy">
@@ -821,10 +659,18 @@
 <node CREATED="1488704943324" ID="ID_620819735" MODIFIED="1488704958838" TEXT="... and their building plans"/>
 </node>
 </node>
-<node CREATED="1488651125823" FOLDED="true" ID="ID_629014497" MODIFIED="1488657865733" TEXT="enumeration">
+<node CREATED="1488712874271" FOLDED="true" ID="ID_1859989992" MODIFIED="1488713692968" TEXT="generics">
+<node CREATED="1488712930501" ID="ID_35302073" MODIFIED="1488713448841" TEXT="code structure capable of working with variable types of data"/>
+<node CREATED="1488713452069" ID="ID_922589284" MODIFIED="1488713515737" TEXT="types to work with are defined when using the structure"/>
+<node CREATED="1488713560107" FOLDED="true" ID="ID_326485735" MODIFIED="1488713692318" STYLE="fork" TEXT="Analogy">
+<node CREATED="1488713576574" ID="ID_1570561335" MODIFIED="1488713652205" TEXT="building plan for a studio, which keeps some information open for later specification"/>
+<node CREATED="1488713652943" ID="ID_1473248061" MODIFIED="1488713685449" TEXT="e.g. the kind of stuff that goes into a cabinet or the kind of stuff a machine produces"/>
+</node>
+</node>
+<node CREATED="1488651125823" FOLDED="true" ID="ID_629014497" MODIFIED="1488713554517" TEXT="enumeration">
 <node CREATED="1488657645904" ID="ID_27626454" MODIFIED="1488657796356" TEXT="a set of named numeric constants, referenced by arbitrary names in code"/>
 </node>
-<node CREATED="1488651134343" FOLDED="true" ID="ID_621485402" MODIFIED="1488659965908" TEXT="exception">
+<node CREATED="1488651134343" FOLDED="true" ID="ID_621485402" MODIFIED="1488713555687" TEXT="exception">
 <node CREATED="1488659475496" ID="ID_1930054499" MODIFIED="1488659497949" TEXT="a block of code marked with the keyword &quot;try&quot; ..."/>
 <node CREATED="1488659499567" ID="ID_1171530887" MODIFIED="1488659530663" TEXT="... will not stop the program when a fatal error occurs ..."/>
 <node CREATED="1488659531611" ID="ID_695593514" MODIFIED="1488659589945" TEXT="... but instead skip execution and continue with the following block marked with the keyword &quot;catch&quot;."/>
@@ -832,8 +678,8 @@
 <node CREATED="1488659841505" ID="ID_260388562" MODIFIED="1488659963437" TEXT="the statement &quot;throw&quot; intentionally causes an exception and passes execution to the logically nearest catch"/>
 </node>
 </node>
-<node CREATED="1335127717958" FOLDED="true" ID="ID_598994719" LINK="DO-Hierarchy.pdf" MODIFIED="1488563153574" POSITION="right" TEXT="Document Object Model (DOM)">
-<node CREATED="1488133392440" FOLDED="true" ID="ID_1057259957" MODIFIED="1488552749903" TEXT="General">
+<node CREATED="1335127717958" FOLDED="true" ID="ID_598994719" LINK="DO-Hierarchy.pdf" MODIFIED="1488916287081" POSITION="right" TEXT="Document Object Model (DOM)">
+<node CREATED="1488133392440" FOLDED="true" ID="ID_1057259957" MODIFIED="1488916262333" TEXT="General">
 <node CREATED="1488133408262" FOLDED="true" ID="ID_723172963" LINK="https://www.w3.org/" MODIFIED="1488133631427" TEXT="Standardized by W3C">
 <node CREATED="1488133541068" ID="ID_1572446720" LINK="https://github.com/timbl" MODIFIED="1488133552426" TEXT="led by Tim Berners-Lee"/>
 <node CREATED="1488133617609" ID="ID_421794659" MODIFIED="1488133628481" TEXT="... the creator of the World-Wide-Web"/>
@@ -843,11 +689,11 @@
 <node CREATED="1488132670022" ID="ID_1900953414" MODIFIED="1488133402051" TEXT="...the content, structure and style of documents."/>
 <node CREATED="1488126836101" ID="ID_1977711284" MODIFIED="1488133402053" TEXT="While loading a web page, the browser creates a DOM of the page."/>
 </node>
-<node CREATED="1488126859858" FOLDED="true" ID="ID_1131907390" MODIFIED="1488552699486" TEXT="DOM is constructed as a tree of nodes">
+<node CREATED="1488126859858" FOLDED="true" ID="ID_1131907390" MODIFIED="1488916265484" TEXT="DOM is constructed as a tree of nodes">
 <node CREATED="1488132739489" ID="ID_1361287173" MODIFIED="1488132770400" TEXT="each node has a parent-node"/>
 <node CREATED="1488132754418" ID="ID_749926548" MODIFIED="1488132766210" TEXT="and can have multiple child-nodes"/>
 </node>
-<node CREATED="1335129318911" FOLDED="true" ID="ID_152896372" MODIFIED="1488133072800" TEXT="Example">
+<node CREATED="1335129318911" FOLDED="true" ID="ID_152896372" MODIFIED="1488916273065" TEXT="Example">
 <node CREATED="1335126497177" FOLDED="true" ID="ID_982665992" MODIFIED="1488139738591" TEXT="&lt;p title=&quot;testTitle&quot;&gt;&#xa;    This is a sample of some &lt;b&gt;HTML you might&lt;br&gt;&#xa;    find&lt;/b&gt; in your document&#xa;&lt;/p&gt;">
 <node CREATED="1335126665343" FOLDED="true" ID="ID_1579865554" MODIFIED="1488132824773" TEXT="P">
 <node CREATED="1335126673980" FOLDED="true" ID="ID_303322494" MODIFIED="1488139738588" TEXT="attributes">
@@ -871,7 +717,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1327999892919" FOLDED="true" ID="ID_857216794" MODIFIED="1488705299615" POSITION="right" STYLE="fork" TEXT="Eventsystem">
+<node CREATED="1327999892919" FOLDED="true" ID="ID_857216794" MODIFIED="1489224126232" POSITION="right" STYLE="fork" TEXT="Eventsystem">
 <node CREATED="1488135332234" FOLDED="true" ID="ID_476441293" MODIFIED="1488189185747" TEXT="General">
 <node CREATED="1488135508645" ID="ID_1654863333" MODIFIED="1488135673819" TEXT="eventsystem enables the programm to react to changes in the environment"/>
 <node CREATED="1488135573567" ID="ID_855007799" MODIFIED="1488135709578" TEXT="programmer doesn&apos;t require detailled knowledge of how to detect those changes"/>
@@ -896,7 +742,7 @@
 <node CREATED="1488137740158" ID="ID_780440185" MODIFIED="1488137773215" TEXT="definition for the interface EventListener"/>
 </node>
 </node>
-<node CREATED="1336926279195" FOLDED="true" ID="ID_1432987810" MODIFIED="1488189184168" TEXT="Implementation">
+<node CREATED="1336926279195" FOLDED="true" ID="ID_1432987810" MODIFIED="1488969306565" TEXT="Implementation">
 <node CREATED="1336926422747" FOLDED="true" ID="ID_1069151649" MODIFIED="1488139685159" TEXT="recommended">
 <node CREATED="1488137232892" ID="ID_610496788" MODIFIED="1488137535810" TEXT="someNode.addEventListener(type: string, listener: EventListener, useCapture?: boolean): void"/>
 </node>
@@ -910,7 +756,7 @@
 <node CREATED="1488139666115" ID="ID_640910891" MODIFIED="1488139678575" TEXT="in HTML-File"/>
 </node>
 </node>
-<node CREATED="1336940300631" FOLDED="true" ID="ID_542346031" MODIFIED="1488189187788" TEXT="Event-Object">
+<node CREATED="1336940300631" FOLDED="true" ID="ID_542346031" MODIFIED="1488969326370" TEXT="Event-Object">
 <node CREATED="1336940344682" FOLDED="true" ID="ID_1797624267" MODIFIED="1488136363492" TEXT="target">
 <node CREATED="1488136271801" FOLDED="true" ID="ID_134278284" MODIFIED="1488136362534" TEXT="node the event refers to">
 <node CREATED="1488136286738" ID="ID_266310508" MODIFIED="1488136360049" TEXT="e.g. the clicked button , the changed inputfield"/>
@@ -1029,7 +875,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1337524335428" FOLDED="true" ID="ID_1466249769" MODIFIED="1488705321257" POSITION="right" TEXT="Canvas">
+<node CREATED="1337524335428" FOLDED="true" ID="ID_1466249769" MODIFIED="1489224127779" POSITION="right" TEXT="Canvas">
 <node CREATED="1488191205727" FOLDED="true" ID="ID_1664671297" MODIFIED="1488552768977" TEXT="General">
 <node CREATED="1337527035322" ID="ID_248831518" MODIFIED="1488191217920" TEXT="area in document that allows pixel manipulation"/>
 <node CREATED="1488191292167" ID="ID_423812147" MODIFIED="1488192657325" TEXT="method getContext(&quot;2d&quot;) of HTMLCanvasElement ..."/>
@@ -1110,7 +956,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1327999759946" FOLDED="true" ID="ID_1723770104" MODIFIED="1488707844449" POSITION="right" TEXT="Forms">
+<node CREATED="1327999759946" FOLDED="true" ID="ID_1723770104" MODIFIED="1489224129222" POSITION="right" TEXT="Forms">
 <node CREATED="1334519200750" FOLDED="true" ID="ID_923294015" MODIFIED="1488705612775" TEXT="Form">
 <node CREATED="1488705450172" ID="ID_437560466" MODIFIED="1488705477525" TEXT="a simple system in HTML to send data"/>
 <node CREATED="1334519219909" FOLDED="true" ID="ID_1214182003" MODIFIED="1488705479770" TEXT="action">
@@ -1161,14 +1007,17 @@
 <node CREATED="1488706371546" ID="ID_1395689051" MODIFIED="1488706373891" TEXT="required"/>
 </node>
 <node CREATED="1334507222067" FOLDED="true" ID="ID_624764909" MODIFIED="1488707841095" TEXT="select">
+<font NAME="SansSerif" SIZE="12"/>
 <node CREATED="1334507383343" ID="ID_770632900" MODIFIED="1334507395007" TEXT="multiple"/>
 <node CREATED="1334507395514" ID="ID_468484328" MODIFIED="1334507398228" TEXT="size"/>
 </node>
 <node CREATED="1334507239094" FOLDED="true" ID="ID_759747275" MODIFIED="1488707837865" TEXT="option">
+<font NAME="SansSerif" SIZE="12"/>
 <node CREATED="1334507440477" ID="ID_1027636200" MODIFIED="1334507443142" TEXT="selected"/>
 <node CREATED="1334507443866" ID="ID_587108431" MODIFIED="1334507447564" TEXT="label"/>
 </node>
 <node CREATED="1334508430444" FOLDED="true" ID="ID_1545451728" MODIFIED="1488707841095" TEXT="optgroup">
+<font NAME="SansSerif" SIZE="12"/>
 <node CREATED="1334508442969" ID="ID_633120590" MODIFIED="1334508444775" TEXT="label"/>
 </node>
 <node CREATED="1337522060562" ID="ID_266724185" MODIFIED="1488705400157" TEXT="datalist"/>
@@ -1184,8 +1033,8 @@
 <node CREATED="1334520793377" ID="ID_157061424" MODIFIED="1334565901585" TEXT="accesskey"/>
 </node>
 </node>
-<node CREATED="1486898557142" FOLDED="true" ID="ID_180594711" LINK="https://github.com/nodejs" MODIFIED="1488552710114" POSITION="right" TEXT="Node">
-<node CREATED="1487715754165" FOLDED="true" ID="ID_1806505984" MODIFIED="1488126219149" TEXT="General">
+<node CREATED="1486898557142" FOLDED="true" ID="ID_180594711" LINK="https://github.com/nodejs" MODIFIED="1489174602847" POSITION="right" TEXT="Node">
+<node CREATED="1487715754165" FOLDED="true" ID="ID_1806505984" MODIFIED="1489174601554" TEXT="General">
 <node CREATED="1487713021466" ID="ID_1177815800" MODIFIED="1488126203585" TEXT="JavaScript outside of the browser"/>
 <node CREATED="1487713580628" ID="ID_366846704" LINK="https://github.com/ry" MODIFIED="1487713624374" TEXT="Developed by Ryan Dahl in 2009"/>
 <node CREATED="1487713801209" FOLDED="true" ID="ID_1184713679" LINK="https://github.com/v8" MODIFIED="1487715775785" TEXT="uses V8-Engine">
@@ -1283,10 +1132,37 @@
 </node>
 </node>
 </node>
-<node CREATED="1487104916773" FOLDED="true" ID="ID_304950281" MODIFIED="1488552712829" POSITION="right" TEXT="MongoDB">
-<node CREATED="1488133319272" ID="ID_378396000" MODIFIED="1488133322318" TEXT="General"/>
-<node CREATED="1487104929733" ID="ID_1070702900" MODIFIED="1488133331394" TEXT="Shell commands"/>
-<node CREATED="1487104937556" FOLDED="true" ID="ID_1992942420" MODIFIED="1488133335774" TEXT="Node classes and interfaces">
+<node CREATED="1487104916773" FOLDED="true" ID="ID_304950281" LINK="https://github.com/mongodb/mongo" MODIFIED="1489224121584" POSITION="right" TEXT="MongoDB">
+<node CREATED="1488133319272" FOLDED="true" ID="ID_378396000" MODIFIED="1489174598819" TEXT="General">
+<node CREATED="1489170788258" ID="ID_150490067" MODIFIED="1489170792585" TEXT="from humongous"/>
+<node CREATED="1489170821684" ID="ID_302364710" MODIFIED="1489170851197" TEXT="free open-source cross-platform document-oriented database"/>
+<node CREATED="1489170884954" ID="ID_1960009251" MODIFIED="1489170911986" TEXT="development started in 2007, initial release in 2009"/>
+<node CREATED="1489171389793" ID="ID_396412775" MODIFIED="1489171428022" TEXT="NoSQL, as opposed to relational"/>
+</node>
+<node CREATED="1487104929733" FOLDED="true" ID="ID_1070702900" MODIFIED="1489224120328" TEXT="Shell commands">
+<node CREATED="1489222593091" FOLDED="true" ID="ID_1148249568" MODIFIED="1489222662105" TEXT="help, db.help(), db.&lt;collection&gt;.help()">
+<node CREATED="1489222628060" ID="ID_431766397" MODIFIED="1489222660599" TEXT="show help for different areas of operation"/>
+</node>
+<node CREATED="1489222673803" FOLDED="true" ID="ID_1409361138" MODIFIED="1489222709560" STYLE="fork" TEXT="show dbs">
+<node CREATED="1489222702492" ID="ID_610571880" MODIFIED="1489222702497" TEXT="Print a list of all databases on the server."/>
+</node>
+<node CREATED="1489222723963" FOLDED="true" ID="ID_158455451" MODIFIED="1489222741773" TEXT="use &lt;db&gt;">
+<node CREATED="1489222730503" ID="ID_865250419" MODIFIED="1489222730507" TEXT="Switch current database to &lt;db&gt;. The mongo shell variable db is set to the current database."/>
+</node>
+<node CREATED="1489222755556" FOLDED="true" ID="ID_813440593" MODIFIED="1489222768728" TEXT="show collections">
+<node CREATED="1489222766836" ID="ID_358996322" MODIFIED="1489222766838" TEXT="Print a list of all collections for current database"/>
+</node>
+<node CREATED="1487104946631" ID="ID_609413450" MODIFIED="1489223017654" TEXT="db.&lt;collection&gt;.find ( query: Object )">
+<node CREATED="1487104984688" ID="ID_1433060854" MODIFIED="1487105136426" TEXT="finds all data matching the query object"/>
+</node>
+<node CREATED="1489223673559" ID="ID_115433425" MODIFIED="1489223696583" TEXT="db.&lt;collection&gt;.insert ( doc: Object)">
+<node CREATED="1489223697869" ID="ID_267079842" MODIFIED="1489223706366" TEXT="inserts a document into the collection"/>
+</node>
+<node CREATED="1489224100976" ID="ID_1142875276" MODIFIED="1489224110046" TEXT="db.&lt;collection&gt;.drop">
+<node CREATED="1489224110047" ID="ID_770446380" MODIFIED="1489224118914" TEXT="removes the collection from the database"/>
+</node>
+</node>
+<node CREATED="1487104937556" FOLDED="true" ID="ID_1992942420" MODIFIED="1489223739960" TEXT="Node classes and interfaces">
 <node CREATED="1487514437186" ID="ID_1852186695" MODIFIED="1487514592789" TEXT="as defined in module &quot;mongodb&quot;"/>
 <node CREATED="1487513955694" FOLDED="true" ID="ID_1033719456" MODIFIED="1487674598043" TEXT="MongoCallback">
 <node CREATED="1487514000759" ID="ID_1609965266" MODIFIED="1487514020510" TEXT="Many methods require a callback function as parameter"/>
@@ -1299,7 +1175,7 @@
 <node CREATED="1487600487435" ID="ID_1745791170" MODIFIED="1487600500310" TEXT="Connect to MongoDB using a url of a database"/>
 <node CREATED="1487514848806" ID="ID_447802069" MODIFIED="1487515349582" TEXT="connect (url: string, callback: MongoCallback&lt;Db&gt;)"/>
 </node>
-<node CREATED="1487105789414" FOLDED="true" ID="ID_653031388" MODIFIED="1487695544574" TEXT="Db">
+<node CREATED="1487105789414" FOLDED="true" ID="ID_653031388" MODIFIED="1489223026558" TEXT="Db">
 <node CREATED="1487600631051" ID="ID_1937478394" MODIFIED="1487600658784" TEXT="Represents a database, handling users and collections"/>
 <node CREATED="1487513543580" FOLDED="true" ID="ID_799859162" MODIFIED="1487675089954" TEXT="close( ) ">
 <node CREATED="1487513571333" ID="ID_367594626" MODIFIED="1487513584781" TEXT="Close the database and it&apos;s underlying connections"/>
@@ -1308,14 +1184,16 @@
 <node CREATED="1487514258445" ID="ID_1753032270" MODIFIED="1487514271552" TEXT="returns the collection with the given name"/>
 </node>
 </node>
-<node CREATED="1487105811281" FOLDED="true" ID="ID_36915352" MODIFIED="1487851442416" TEXT="Collection">
+<node CREATED="1487105811281" FOLDED="true" ID="ID_36915352" MODIFIED="1489223720665" TEXT="Collection">
 <node CREATED="1487600693858" ID="ID_873080621" MODIFIED="1487600774010" TEXT="Represents a collection of data, handling insertion, lookup, modification and deletion"/>
-<node CREATED="1487515470114" ID="ID_1159007885" MODIFIED="1487711172167" TEXT="insertOne ( doc: Object, callback: MongoCallback&lt;InsertOneWriteOpResult&gt;): void"/>
-<node CREATED="1487104946631" FOLDED="true" ID="ID_548922737" MODIFIED="1487711163730" TEXT="find ( query: Object ) : Cursor">
+<node CREATED="1487515470114" FOLDED="true" ID="ID_1159007885" MODIFIED="1489223719909" TEXT="insertOne ( doc: Object, callback: MongoCallback&lt;InsertOneWriteOpResult&gt;): void">
+<node CREATED="1489223643148" ID="ID_1595456874" MODIFIED="1489223719156" TEXT="inserts a document into the collection and automatically determines an id for it"/>
+</node>
+<node CREATED="1487104946631" FOLDED="true" ID="ID_548922737" MODIFIED="1489223641343" TEXT="find ( query: Object ) : Cursor">
 <node CREATED="1487104984688" ID="ID_1227585520" MODIFIED="1487105136426" TEXT="finds all data matching the query object"/>
 <node CREATED="1487105137541" ID="ID_1868019610" MODIFIED="1487105192859" TEXT="returns a cursor for iteration over results"/>
 </node>
-<node CREATED="1487515478156" FOLDED="true" ID="ID_492620773" MODIFIED="1487711180893" TEXT="findOne ( query: Object, callback: MongoCallback&lt;Object&gt; ) : void">
+<node CREATED="1487515478156" FOLDED="true" ID="ID_492620773" MODIFIED="1489223629772" TEXT="findOne ( query: Object, callback: MongoCallback&lt;Object&gt; ) : void">
 <node CREATED="1487576443513" ID="ID_790517308" MODIFIED="1487576452162" TEXT="finds the first data matching the query object "/>
 <node CREATED="1487576454317" ID="ID_844470801" MODIFIED="1487576473561" TEXT="then calls the callback function and passes the object found"/>
 </node>
@@ -1325,11 +1203,14 @@
 <node CREATED="1487674691678" ID="ID_1224378265" MODIFIED="1487674733501" TEXT="using the pattern given as the update-object"/>
 <node CREATED="1487674736431" ID="ID_1105498860" MODIFIED="1487674754785" TEXT="and the replace options"/>
 </node>
-<node CREATED="1487707170214" FOLDED="true" ID="ID_1736345212" MODIFIED="1487711212224" TEXT="remove( query: Object, callback: MongoCallback&lt;WriteOpResult&gt;): void;">
+<node CREATED="1487707170214" FOLDED="true" ID="ID_1736345212" MODIFIED="1489223310750" TEXT="remove( query: Object, callback: MongoCallback&lt;WriteOpResult&gt;): void;">
 <node CREATED="1487104984688" ID="ID_1457272926" MODIFIED="1487707223586" TEXT="removes all data matching the query object"/>
 </node>
+<node CREATED="1489223272867" FOLDED="true" ID="ID_1542711530" MODIFIED="1489223308965" TEXT="drop ( callback: MongoCallback&lt;any&gt;): void;">
+<node CREATED="1489223306273" ID="ID_578698258" MODIFIED="1489223306273" TEXT="Drop the collection from the database, removing it permanently. New accesses will create a new collection."/>
 </node>
-<node CREATED="1487105814120" FOLDED="true" ID="ID_922031714" MODIFIED="1487711086426" TEXT="Cursor">
+</node>
+<node CREATED="1487105814120" FOLDED="true" ID="ID_922031714" MODIFIED="1489223738308" TEXT="Cursor">
 <node CREATED="1487600795530" ID="ID_1119169742" MODIFIED="1487600823864" TEXT="Represents a subset of data as a result of a find-command"/>
 <node CREATED="1487674058331" FOLDED="true" ID="ID_1872856572" MODIFIED="1487674859772" TEXT="close ( callback: MongoCallback&lt;CursorResult&gt; ): void">
 <node CREATED="1487674852045" ID="ID_414456688" MODIFIED="1487674858090" TEXT="close the cursor"/>
