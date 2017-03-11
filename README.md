@@ -5,4 +5,4 @@
 [HTML-Format](https://jirkadelloro.github.io/EIA2/EIA2.mm.html)
 
 
-[Aufgaben](https://github.com/JirkaDellOro/EIA2/wiki)
+[Repository](https://github.com/JirkaDellOro/EIA2)
