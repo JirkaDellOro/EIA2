@@ -1,7 +1,7 @@
 <map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
-<node CREATED="1480496236572" ID="ID_1483245584" MODIFIED="1488735602295" TEXT="EIA2">
-<node CREATED="1486640980741" FOLDED="true" ID="ID_1634475163" MODIFIED="1488975833739" POSITION="left" TEXT="References">
+<node CREATED="1480496236572" ID="ID_1483245584" MODIFIED="1489249150457" TEXT="EIA2">
+<node CREATED="1486640980741" FOLDED="true" ID="ID_1634475163" MODIFIED="1489249150454" POSITION="left" TEXT="References">
 <node CREATED="1487071662786" ID="ID_517239067" LINK="DIA2Landscape.png" MODIFIED="1487071688268" TEXT="Landscape"/>
 <node CREATED="1486899143788" ID="ID_1157514353" LINK="https://git-scm.com/" MODIFIED="1486899151008" TEXT="Git"/>
 <node CREATED="1486647179592" ID="ID_896471124" LINK="https://help.github.com/" MODIFIED="1486647188178" TEXT="Github"/>
@@ -9,17 +9,21 @@
 <node CREATED="1486646776223" ID="ID_1508670948" LINK="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links" MODIFIED="1486647194231" TEXT="Markdown"/>
 <node CREATED="1486642741305" ID="ID_1615126765" LINK="https://wiki.selfhtml.org/wiki/JavaScript" MODIFIED="1487715289768" TEXT="JavaScript"/>
 <node CREATED="1486646451410" ID="ID_1638781169" LINK="http://www.typescriptlang.org/" MODIFIED="1486646868704" TEXT="TypeScript"/>
+<node CREATED="1488133408262" ID="ID_1412417841" LINK="https://www.w3.org/" MODIFIED="1489228354447" TEXT="W3C"/>
+<node CREATED="1489228363860" ID="ID_455361631" LINK="https://developer.mozilla.org/en-US/docs/Web" MODIFIED="1489228372498" TEXT="MDN"/>
 <node CREATED="1486898677453" ID="ID_549469088" LINK="DO-Hierarchy.pdf" MODIFIED="1486898724895" TEXT="DOM-Classes"/>
 <node CREATED="1486646521820" ID="ID_601092456" LINK="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D" MODIFIED="1486646529749" TEXT="CanvasRenderingContext2D"/>
 <node CREATED="1486898783041" ID="ID_532023666" LINK="http://www.cheat-sheets.org/saved-copy/HTML5_Canvas_Cheat_Sheet.pdf" MODIFIED="1486898794359" TEXT="HTML5 Canvas Cheat Sheet"/>
 <node CREATED="1486646759387" ID="ID_930943717" LINK="http://computergrafik.entertrain.com/" MODIFIED="1486646789571" TEXT="Computergrafik"/>
+<node CREATED="1489227486853" ID="ID_226090698" LINK="https://jirkadelloro.github.io/Trigonometer/" MODIFIED="1489248120078" TEXT="Trigonometer"/>
+<node CREATED="1489227561845" ID="ID_1153862835" LINK="https://sftp.hs-furtwangen.de/~del/Apps/Transformation/Transformation.html" MODIFIED="1489227582409" TEXT="Transformator"/>
 <node CREATED="1486646839567" ID="ID_1096405841" LINK="https://nodejs.org/dist/latest-v7.x/docs/api/" MODIFIED="1486646847001" TEXT="Node"/>
 <node CREATED="1486646999860" ID="ID_1853932105" LINK="https://docs.mongodb.com/manual/reference/method/" MODIFIED="1486647007084" TEXT="Mongo shell"/>
 <node CREATED="1486647047996" ID="ID_1550158405" LINK="http://mongodb.github.io/node-mongodb-native/2.0/api/index.html" MODIFIED="1486647062373" TEXT="Node mongodb driver"/>
 <node CREATED="1487497683702" ID="ID_1425960866" LINK="http://www.mongodbspain.com/wp-content/uploads/2014/03/MongoDBSpain-CheatSheet-p1.jpg" MODIFIED="1487497706706" TEXT="MongoDB Cheat Sheet"/>
 <node CREATED="1486647113550" ID="ID_288337743" LINK="https://devcenter.heroku.com/categories/reference" MODIFIED="1486647120659" TEXT="Heroku"/>
 </node>
-<node CREATED="1480496315340" FOLDED="true" ID="ID_1809458400" MODIFIED="1489063035675" POSITION="left" TEXT="Installations">
+<node CREATED="1480496315340" FOLDED="true" ID="ID_1809458400" MODIFIED="1489243155331" POSITION="left" TEXT="Installations">
 <node CREATED="1485860845302" FOLDED="true" ID="ID_655899580" MODIFIED="1488714393869" TEXT="Node">
 <node CREATED="1485860951206" ID="ID_188992718" LINK="https://nodejs.org" MODIFIED="1485860951206" TEXT="https://nodejs.org"/>
 </node>
@@ -31,12 +35,12 @@
 <node CREATED="1480754786292" FOLDED="true" ID="ID_172686505" MODIFIED="1488715475910" TEXT="Terminal">
 <node CREATED="1480754795203" ID="ID_1096568647" MODIFIED="1486640031609" TEXT="Rightclick on Project-&gt;start local terminal"/>
 </node>
-<node CREATED="1480516149337" FOLDED="true" ID="ID_1833133166" MODIFIED="1488715477132" TEXT="Typescript in Eclipse">
+<node CREATED="1480516149337" FOLDED="true" ID="ID_1833133166" MODIFIED="1489243154723" TEXT="Typescript in Eclipse">
 <node CREATED="1480516153875" FOLDED="true" ID="ID_733327299" MODIFIED="1486648381322" TEXT="Help -&gt; Marketplace">
 <node CREATED="1486635748448" ID="ID_1189852241" MODIFIED="1486636191464" TEXT="Search/Coose Typescript by Palantir"/>
 <node CREATED="1486636720706" ID="ID_1301763177" MODIFIED="1486636722614" TEXT="Install"/>
 </node>
-<node CREATED="1480516284596" FOLDED="true" ID="ID_854444631" MODIFIED="1487110448309" TEXT="Preferences -&gt; Typescript -&gt; Compiler">
+<node CREATED="1480516284596" FOLDED="true" ID="ID_854444631" MODIFIED="1489242075328" TEXT="Preferences -&gt; Typescript -&gt; Compiler">
 <node CREATED="1480516284596" ID="ID_996588073" MODIFIED="1487110444453" TEXT="ECMAScript target version: ES6"/>
 <node CREATED="1486636312042" ID="ID_1156932750" MODIFIED="1486636343606" TEXT="Module Code Generation: CommonJS"/>
 <node CREATED="1486636348324" ID="ID_1608158867" MODIFIED="1486636355087" TEXT="Module resolution: Classic"/>
@@ -172,14 +176,14 @@
 </node>
 </node>
 </node>
-<node CREATED="1481403992317" FOLDED="true" ID="ID_187226101" MODIFIED="1489224159255" POSITION="left" TEXT="Curriculum">
-<node CREATED="1481404003125" FOLDED="true" ID="ID_1041763061" MODIFIED="1489063032941" TEXT="Versioning /Safety / Recall">
+<node CREATED="1481403992317" FOLDED="true" ID="ID_187226101" MODIFIED="1489249150456" POSITION="left" TEXT="Curriculum">
+<node CREATED="1481404003125" FOLDED="true" ID="ID_1041763061" MODIFIED="1489243229409" TEXT="Versioning /Safety / Recall">
 <node CREATED="1481404017272" ID="ID_1256980336" MODIFIED="1481404024465" TEXT="get to know git"/>
 <node CREATED="1481404025274" ID="ID_1745096591" MODIFIED="1481404030279" TEXT="get to know git hub"/>
 <node CREATED="1481404031015" ID="ID_1317158703" MODIFIED="1486648609453" TEXT="recall first semester"/>
 <node CREATED="1481409931839" ID="ID_429382347" MODIFIED="1481409968816" TEXT="generate some content with typescript"/>
 </node>
-<node CREATED="1486762202465" FOLDED="true" ID="ID_1896864296" MODIFIED="1489224147752" TEXT="Tracetable / Debugger">
+<node CREATED="1486762202465" FOLDED="true" ID="ID_1896864296" MODIFIED="1489243507932" TEXT="Tracetable / Debugger">
 <node CREATED="1488358706786" ID="ID_401747030" MODIFIED="1488910223153" TEXT="difference runtime, compiletime, designtime"/>
 <node CREATED="1488204331937" ID="ID_560167572" MODIFIED="1488910410284" TEXT="console.log"/>
 <node CREATED="1488910150597" ID="ID_704172683" MODIFIED="1488910212974" TEXT="create a tracetable for a given program"/>
@@ -187,7 +191,10 @@
 <node CREATED="1488910190679" ID="ID_303532395" MODIFIED="1488910206500" TEXT="compare to debugger"/>
 <node CREATED="1489056296313" ID="ID_363680767" MODIFIED="1489063058737" TEXT="exercise: trace complex program with new structures/commands"/>
 </node>
-<node CREATED="1488910510768" FOLDED="true" ID="ID_107272273" MODIFIED="1489224149099" TEXT="DOM">
+<node CREATED="1488910510768" FOLDED="true" ID="ID_107272273" MODIFIED="1489243599129" TEXT="DOM">
+<node CREATED="1489243515430" FOLDED="true" ID="ID_618942026" MODIFIED="1489243596464" TEXT="examine interpretation of simple txt-file">
+<node CREATED="1489243546446" ID="ID_505479514" MODIFIED="1489243572646" TEXT="browser generates a model"/>
+</node>
 <node CREATED="1488910544677" ID="ID_1370529714" MODIFIED="1488910805606" TEXT="node tree"/>
 <node CREATED="1488910537306" ID="ID_1454759972" MODIFIED="1488910543782" TEXT="class hierarchy"/>
 <node CREATED="1488969159534" ID="ID_675894034" MODIFIED="1488969172349" TEXT="createElements, appendChild"/>
@@ -214,7 +221,7 @@
 <node CREATED="1488970174413" ID="ID_1429693639" MODIFIED="1488970223087" TEXT="create functions for drawing repetitive images"/>
 </node>
 <node CREATED="1486637481546" FOLDED="true" ID="ID_1450108589" MODIFIED="1489224154660" TEXT="Associative Arrays">
-<node CREATED="1488993373229" ID="ID_1198096922" MODIFIED="1488993373229" TEXT="">
+<node CREATED="1488993373229" FOLDED="true" ID="ID_1198096922" MODIFIED="1489230506469" TEXT="">
 <node CREATED="1488993387303" ID="ID_513718467" MODIFIED="1488993435481" TEXT="CSSStyleDeclaration / CSS2Properties"/>
 </node>
 </node>
@@ -426,7 +433,7 @@
 <node CREATED="1487932863186" MODIFIED="1487932863186" TEXT="encodeURIComponent(uriComponent: string): string"/>
 </node>
 </node>
-<node CREATED="1486646080283" FOLDED="true" ID="ID_348215621" MODIFIED="1488552611549" POSITION="right" TEXT="TypeScript">
+<node CREATED="1486646080283" FOLDED="true" ID="ID_348215621" LINK="https://github.com/Microsoft/TypeScript" MODIFIED="1489227722639" POSITION="right" TEXT="TypeScript">
 <node CREATED="1486974083503" FOLDED="true" ID="ID_1456788917" MODIFIED="1487715042275" TEXT="General">
 <node CREATED="1486974087029" ID="ID_1931694768" MODIFIED="1486974339416" TEXT="developed by Microsoft"/>
 <node CREATED="1486974339880" ID="ID_1811022442" LINK="https://github.com/ahejlsberg" MODIFIED="1486974773100" TEXT="Anders Hejlsberg (Turbo Pascal, Delphi, J++, C#, .NET)"/>
@@ -678,9 +685,9 @@
 <node CREATED="1488659841505" ID="ID_260388562" MODIFIED="1488659963437" TEXT="the statement &quot;throw&quot; intentionally causes an exception and passes execution to the logically nearest catch"/>
 </node>
 </node>
-<node CREATED="1335127717958" FOLDED="true" ID="ID_598994719" LINK="DO-Hierarchy.pdf" MODIFIED="1488916287081" POSITION="right" TEXT="Document Object Model (DOM)">
-<node CREATED="1488133392440" FOLDED="true" ID="ID_1057259957" MODIFIED="1488916262333" TEXT="General">
-<node CREATED="1488133408262" FOLDED="true" ID="ID_723172963" LINK="https://www.w3.org/" MODIFIED="1488133631427" TEXT="Standardized by W3C">
+<node CREATED="1335127717958" FOLDED="true" ID="ID_598994719" MODIFIED="1489230274961" POSITION="right" TEXT="Document Object Model (DOM)">
+<node CREATED="1488133392440" FOLDED="true" ID="ID_1057259957" MODIFIED="1489230273293" TEXT="General">
+<node CREATED="1488133408262" FOLDED="true" ID="ID_723172963" LINK="https://www.w3.org/" MODIFIED="1489227841514" TEXT="Standardized by W3C">
 <node CREATED="1488133541068" ID="ID_1572446720" LINK="https://github.com/timbl" MODIFIED="1488133552426" TEXT="led by Tim Berners-Lee"/>
 <node CREATED="1488133617609" ID="ID_421794659" MODIFIED="1488133628481" TEXT="... the creator of the World-Wide-Web"/>
 </node>
@@ -689,11 +696,11 @@
 <node CREATED="1488132670022" ID="ID_1900953414" MODIFIED="1488133402051" TEXT="...the content, structure and style of documents."/>
 <node CREATED="1488126836101" ID="ID_1977711284" MODIFIED="1488133402053" TEXT="While loading a web page, the browser creates a DOM of the page."/>
 </node>
-<node CREATED="1488126859858" FOLDED="true" ID="ID_1131907390" MODIFIED="1488916265484" TEXT="DOM is constructed as a tree of nodes">
+<node CREATED="1488126859858" FOLDED="true" ID="ID_1131907390" MODIFIED="1489227806430" TEXT="DOM is constructed as a tree of nodes">
 <node CREATED="1488132739489" ID="ID_1361287173" MODIFIED="1488132770400" TEXT="each node has a parent-node"/>
 <node CREATED="1488132754418" ID="ID_749926548" MODIFIED="1488132766210" TEXT="and can have multiple child-nodes"/>
 </node>
-<node CREATED="1335129318911" FOLDED="true" ID="ID_152896372" MODIFIED="1488916273065" TEXT="Example">
+<node CREATED="1335129318911" FOLDED="true" ID="ID_152896372" MODIFIED="1489227834789" TEXT="Example">
 <node CREATED="1335126497177" FOLDED="true" ID="ID_982665992" MODIFIED="1488139738591" TEXT="&lt;p title=&quot;testTitle&quot;&gt;&#xa;    This is a sample of some &lt;b&gt;HTML you might&lt;br&gt;&#xa;    find&lt;/b&gt; in your document&#xa;&lt;/p&gt;">
 <node CREATED="1335126665343" FOLDED="true" ID="ID_1579865554" MODIFIED="1488132824773" TEXT="P">
 <node CREATED="1335126673980" FOLDED="true" ID="ID_303322494" MODIFIED="1488139738588" TEXT="attributes">
@@ -716,6 +723,7 @@
 </node>
 </node>
 </node>
+<node CREATED="1489227756208" ID="ID_472005890" LINK="DO-Hierarchy.pdf" MODIFIED="1489227831087" TEXT="nodes are instances of classes of the DOM-Class-Hierarchy"/>
 </node>
 <node CREATED="1327999892919" FOLDED="true" ID="ID_857216794" MODIFIED="1489224126232" POSITION="right" STYLE="fork" TEXT="Eventsystem">
 <node CREATED="1488135332234" FOLDED="true" ID="ID_476441293" MODIFIED="1488189185747" TEXT="General">
@@ -875,7 +883,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1337524335428" FOLDED="true" ID="ID_1466249769" MODIFIED="1489224127779" POSITION="right" TEXT="Canvas">
+<node CREATED="1337524335428" FOLDED="true" ID="ID_1466249769" MODIFIED="1489230436592" POSITION="right" TEXT="Canvas">
 <node CREATED="1488191205727" FOLDED="true" ID="ID_1664671297" MODIFIED="1488552768977" TEXT="General">
 <node CREATED="1337527035322" ID="ID_248831518" MODIFIED="1488191217920" TEXT="area in document that allows pixel manipulation"/>
 <node CREATED="1488191292167" ID="ID_423812147" MODIFIED="1488192657325" TEXT="method getContext(&quot;2d&quot;) of HTMLCanvasElement ..."/>
@@ -900,8 +908,8 @@
 </node>
 </node>
 </node>
-<node CREATED="1488191264660" FOLDED="true" ID="ID_1078380109" MODIFIED="1488451315212" TEXT="CanvasRenderingContext2D">
-<node CREATED="1488187397127" FOLDED="true" ID="ID_301919378" MODIFIED="1488192818806" TEXT="Path">
+<node CREATED="1488191264660" FOLDED="true" ID="ID_1078380109" MODIFIED="1489230436061" TEXT="CanvasRenderingContext2D">
+<node CREATED="1488187397127" FOLDED="true" ID="ID_301919378" MODIFIED="1489230435202" TEXT="Path">
 <node CREATED="1488187532887" ID="ID_1668848939" MODIFIED="1488187538036" TEXT="beginPath(): void;"/>
 <node CREATED="1488187397304" ID="ID_1497774724" MODIFIED="1488187436565" TEXT="closePath(): void;"/>
 <node CREATED="1488187605742" ID="ID_412940008" MODIFIED="1488187618175" TEXT="isPointInPath(x: number, y: number, fillRule?: string): boolean;"/>
@@ -909,7 +917,6 @@
 <node CREATED="1488187397314" ID="ID_83906441" MODIFIED="1488187448050" TEXT="moveTo(x: number, y: number): void;"/>
 <node CREATED="1488187397312" ID="ID_586974949" MODIFIED="1488187444168" TEXT="lineTo(x: number, y: number): void;"/>
 <node CREATED="1488187397316" ID="ID_102551462" MODIFIED="1488187456333" TEXT="rect(x: number, y: number, w: number, h: number): void;"/>
-<node CREATED="1488187397305" ID="ID_1626425047" MODIFIED="1488187460549" TEXT="ellipse(x: number, y: number, radiusX: number, radiusY: number, rotation: number, startAngle: number, endAngle: number, anticlockwise?: boolean): void;"/>
 <node CREATED="1488187397188" ID="ID_1511791021" MODIFIED="1488187397188" TEXT="arc(x: number, y: number, radius: number, startAngle: number, endAngle: number, anticlockwise?: boolean): void;"/>
 <node CREATED="1488187397302" ID="ID_1755220156" MODIFIED="1488187397302" TEXT="arcTo(x1: number, y1: number, x2: number, y2: number, radius: number): void;"/>
 <node CREATED="1488187397315" ID="ID_1966991399" MODIFIED="1488187466127" TEXT="quadraticCurveTo(cpx: number, cpy: number, x: number, y: number): void;"/>
@@ -938,7 +945,7 @@
 <node CREATED="1488188562618" ID="ID_1444961706" MODIFIED="1488188562618" TEXT="setTransform(m11: number, m12: number, m21: number, m22: number, dx: number, dy: number): void;"/>
 </node>
 </node>
-<node CREATED="1337528653394" FOLDED="true" ID="ID_505588253" MODIFIED="1488192816399" TEXT="Draw">
+<node CREATED="1337528653394" FOLDED="true" ID="ID_505588253" MODIFIED="1489230283641" TEXT="Draw">
 <node CREATED="1488187847859" ID="ID_1297232905" MODIFIED="1488187866241" TEXT="fill(fillRule?: string): void;"/>
 <node CREATED="1488187861789" ID="ID_1310777474" MODIFIED="1488187866243" TEXT="stroke(path?: Path2D): void;"/>
 <node CREATED="1488187795920" ID="ID_1867441619" MODIFIED="1488187795920" TEXT="fillRect(x: number, y: number, w: number, h: number): void;"/>
@@ -1152,13 +1159,13 @@
 <node CREATED="1489222755556" FOLDED="true" ID="ID_813440593" MODIFIED="1489222768728" TEXT="show collections">
 <node CREATED="1489222766836" ID="ID_358996322" MODIFIED="1489222766838" TEXT="Print a list of all collections for current database"/>
 </node>
-<node CREATED="1487104946631" ID="ID_609413450" MODIFIED="1489223017654" TEXT="db.&lt;collection&gt;.find ( query: Object )">
+<node CREATED="1487104946631" FOLDED="true" ID="ID_609413450" MODIFIED="1489230506470" TEXT="db.&lt;collection&gt;.find ( query: Object )">
 <node CREATED="1487104984688" ID="ID_1433060854" MODIFIED="1487105136426" TEXT="finds all data matching the query object"/>
 </node>
-<node CREATED="1489223673559" ID="ID_115433425" MODIFIED="1489223696583" TEXT="db.&lt;collection&gt;.insert ( doc: Object)">
+<node CREATED="1489223673559" FOLDED="true" ID="ID_115433425" MODIFIED="1489230506471" TEXT="db.&lt;collection&gt;.insert ( doc: Object)">
 <node CREATED="1489223697869" ID="ID_267079842" MODIFIED="1489223706366" TEXT="inserts a document into the collection"/>
 </node>
-<node CREATED="1489224100976" ID="ID_1142875276" MODIFIED="1489224110046" TEXT="db.&lt;collection&gt;.drop">
+<node CREATED="1489224100976" FOLDED="true" ID="ID_1142875276" MODIFIED="1489230506471" TEXT="db.&lt;collection&gt;.drop">
 <node CREATED="1489224110047" ID="ID_770446380" MODIFIED="1489224118914" TEXT="removes the collection from the database"/>
 </node>
 </node>
