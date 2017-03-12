@@ -450,16 +450,34 @@
 <node CREATED="1486645411698" ID="ID_1538316216" MODIFIED="1489265626593" TEXT="import "/>
 </node>
 </node>
-<node CREATED="1488538765698" FOLDED="true" ID="ID_607602390" MODIFIED="1488552740980" POSITION="right" TEXT="Coding Style">
+<node CREATED="1488538765698" FOLDED="true" ID="ID_607602390" MODIFIED="1489306407141" POSITION="right" TEXT="Coding Style">
+<node CREATED="1489304852746" FOLDED="true" ID="ID_1395923549" MODIFIED="1489304859615" TEXT="Purpose">
 <node CREATED="1488539468570" ID="ID_1233307534" MODIFIED="1488539468570" TEXT="Programme k&#xf6;nnen schnell sehr komplex werden. Daher ist es wichtig, sich an Stil-Regeln zu halten, um sie m&#xf6;glichst verst&#xe4;ndlich zu schreiben. In diesem Kurs gelten folgende Stil-Regeln:"/>
-<node CREATED="1488539468580" ID="ID_1608750282" MODIFIED="1488539487079" TEXT="1. Code sollte sich so gut wie m&#xf6;glich selbst erkl&#xe4;ren. Hierzu sind sprechende Variablen-, Funktions- und Klassennamen etc. erforderlich. Kurze Namen sind nur in kleinen G&#xfc;ltigkeitsbereichen oder bei klarer Bedeutung (z.B. y f&#xfc;r vertikale Position) erlaubt."/>
-<node CREATED="1488539468587" ID="ID_688688113" MODIFIED="1488539468587" TEXT="2. Variablen erhalten explizite Typ-Notationen und Anweisungen werden mit einem Semikolon beendet (auch wenn TypeScript diese automatisch einf&#xfc;gen bzw. inferieren kann)"/>
-<node CREATED="1488539468591" ID="ID_97559331" MODIFIED="1488539531794" TEXT="3. Variablen- und Funktionsnamen beginnen mit Kleinbuchstaben und folgen der Kamelnotation (camelCase), d.h. bei zusammengesetzten Namen beginnen die Wortteile im Inneren mit einem Gro&#xdf;buchstaben  (z.B. animalLion). Funktionsnamen beschreiben dabei eine Aktivit&#xe4;t (z.B. calculateHorizontalPosition(...)) oder Frage (z.B. isHit())"/>
-<node CREATED="1488539468594" ID="ID_1918366248" MODIFIED="1488539468594" TEXT="4. Die Namen formaler Parameter in Funktionen beginnen mit einem Unterstrich."/>
-<node CREATED="1488539468595" ID="ID_1806695145" MODIFIED="1488539513947" TEXT="5. Die Namen von Klassen, Interfaces und Modulen beginnen mit einem Gro&#xdf;buchstaben und folgen ebenfalls der Kamelnotation. (PascalCase)"/>
-<node CREATED="1488539468598" ID="ID_1118170874" MODIFIED="1488539468598" TEXT="6. Die Namen von Enumerations und deren Elemente werden durchgehend mit Gro&#xdf;buchstaben geschrieben. Wortteile werden bei Bedarf mit Unterstrich getrennt."/>
-<node CREATED="1488539468601" ID="ID_59469303" MODIFIED="1488539468601" TEXT="7. Literale Zeichenketten werden in doppelte Anf&#xfc;hrungszeichen geschrieben."/>
-<node CREATED="1488539468601" ID="ID_770207662" MODIFIED="1488539468601" TEXT="8. Kommentare werden eingesetzt, um Programmteile abzugrenzen und die Verst&#xe4;ndlichkeit zu erh&#xf6;hen. Programmteile, die von anderen Skripts genutzt werden sollen, werden im JSDoc-Format kommentiert (/** &#x2026; */)"/>
+</node>
+<node CREATED="1489304878636" FOLDED="true" ID="ID_8547282" MODIFIED="1489306404408" TEXT="1. Self-explanatory">
+<node CREATED="1488539468580" ID="ID_1608750282" MODIFIED="1489304910642" TEXT="Code sollte sich so gut wie m&#xf6;glich selbst erkl&#xe4;ren. Hierzu sind sprechende Variablen-, Funktions- und Klassennamen etc. erforderlich. Kurze Namen sind nur in kleinen G&#xfc;ltigkeitsbereichen oder bei klarer Bedeutung (z.B. y f&#xfc;r vertikale Position) erlaubt."/>
+</node>
+<node CREATED="1489304920146" FOLDED="true" ID="ID_1988925687" MODIFIED="1489304939605" TEXT="2. Explicit typing and semicolons">
+<node CREATED="1488539468587" ID="ID_688688113" MODIFIED="1489304938591" TEXT="Variablen erhalten explizite Typ-Notationen und Anweisungen werden mit einem Semikolon beendet (auch wenn TypeScript diese automatisch einf&#xfc;gen bzw. inferieren kann)"/>
+</node>
+<node CREATED="1489304947856" FOLDED="true" ID="ID_136148424" MODIFIED="1489305050281" TEXT="3. camelCase for names of variables and functions, functions describe activities">
+<node CREATED="1488539468591" ID="ID_97559331" MODIFIED="1489305048737" TEXT="Variablen- und Funktionsnamen beginnen mit Kleinbuchstaben und folgen der Kamelnotation (camelCase), d.h. bei zusammengesetzten Namen beginnen die Wortteile im Inneren mit einem Gro&#xdf;buchstaben  (z.B. animalLion). Funktionsnamen beschreiben dabei eine Aktivit&#xe4;t (z.B. calculateHorizontalPosition(...)) oder Frage (z.B. isHit())"/>
+</node>
+<node CREATED="1489305067833" FOLDED="true" ID="ID_868361134" MODIFIED="1489305088109" TEXT="4. Names of formal parameters start with underscore">
+<node CREATED="1488539468594" ID="ID_1918366248" MODIFIED="1489305087419" TEXT="Die Namen formaler Parameter in Funktionen beginnen mit einem Unterstrich."/>
+</node>
+<node CREATED="1489305089785" FOLDED="true" ID="ID_1815560056" MODIFIED="1489305157393" TEXT="5. PascalCase for classes, interfaces and modules">
+<node CREATED="1488539468595" ID="ID_1806695145" MODIFIED="1489305142081" TEXT="Die Namen von Klassen, Interfaces und Modulen beginnen mit einem Gro&#xdf;buchstaben und folgen ebenfalls der Kamelnotation. (PascalCase)"/>
+</node>
+<node CREATED="1489305164314" FOLDED="true" ID="ID_1139625541" MODIFIED="1489305224934" TEXT="6. All capital letters for enums, support readability using underscores">
+<node CREATED="1488539468598" ID="ID_1118170874" MODIFIED="1489305210650" TEXT="Die Namen von Enumerations und deren Elemente werden durchgehend mit ro&#xdf;buchstaben geschrieben. Wortteile werden bei Bedarf mit Unterstrich getrennt."/>
+</node>
+<node CREATED="1489305230918" FOLDED="true" ID="ID_1132793376" MODIFIED="1489305309459" TEXT="7. Use double quotes for literal strings">
+<node CREATED="1488539468601" ID="ID_59469303" MODIFIED="1489305307630" TEXT="Literale Zeichenketten werden in doppelte Anf&#xfc;hrungszeichen geschrieben."/>
+</node>
+<node CREATED="1489305313422" FOLDED="true" ID="ID_1449255528" MODIFIED="1489305631158" TEXT="8. Use comments for separation and to support clarity. Use JSDoc-Format for reuse in other programs">
+<node CREATED="1488539468601" ID="ID_770207662" MODIFIED="1489305526121" TEXT="Kommentare werden eingesetzt, um Programmteile abzugrenzen und die Verst&#xe4;ndlichkeit zu erh&#xf6;hen. Programmteile, die von anderen Skripts genutzt werden sollen, werden im JSDoc-Format kommentiert &#xa;(/** &#x2026; */)"/>
+</node>
 </node>
 <node CREATED="1488540848465" FOLDED="true" ID="ID_226943766" MODIFIED="1488916278354" POSITION="right" TEXT="Dictionary">
 <node CREATED="1488540857224" FOLDED="true" ID="ID_1410670011" MODIFIED="1488649957877" TEXT="namespace">
