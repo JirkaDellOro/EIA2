@@ -25,7 +25,7 @@
 <node CREATED="1487497683702" ID="ID_1425960866" LINK="http://www.mongodbspain.com/wp-content/uploads/2014/03/MongoDBSpain-CheatSheet-p1.jpg" MODIFIED="1487497706706" TEXT="MongoDB Cheat Sheet"/>
 <node CREATED="1486647113550" ID="ID_288337743" LINK="https://devcenter.heroku.com/categories/reference" MODIFIED="1486647120659" TEXT="Heroku"/>
 </node>
-<node CREATED="1480496315340" FOLDED="true" ID="ID_1809458400" MODIFIED="1489487623514" POSITION="left" TEXT="Installations">
+<node CREATED="1480496315340" FOLDED="true" ID="ID_1809458400" MODIFIED="1489774983102" POSITION="left" TEXT="Installations">
 <node CREATED="1485860845302" FOLDED="true" ID="ID_655899580" MODIFIED="1488714393869" TEXT="Node">
 <node CREATED="1485860951206" ID="ID_188992718" LINK="https://nodejs.org" MODIFIED="1485860951206" TEXT="https://nodejs.org"/>
 </node>
@@ -88,12 +88,17 @@
 <node CREATED="1481379659003" ID="ID_589179576" MODIFIED="1487064987450" TEXT="open &lt;username&gt;.github.io/&lt;reponame&gt; in browser"/>
 </node>
 </node>
-<node CREATED="1480509814713" FOLDED="true" ID="ID_1383250087" MODIFIED="1489396832377" TEXT="Git in Eclipse">
+<node CREATED="1480509814713" FOLDED="true" ID="ID_1383250087" MODIFIED="1489774982402" TEXT="Git in Eclipse">
 <node CREATED="1480509818754" ID="ID_1090250563" MODIFIED="1480509859841" TEXT="Import -&gt; Import projects from git -&gt; Clone URI"/>
-<node CREATED="1480509896224" FOLDED="true" ID="ID_1202015679" MODIFIED="1489396832377" TEXT="set path to github-project">
+<node CREATED="1480509896224" FOLDED="true" ID="ID_1202015679" MODIFIED="1489774811677" TEXT="set path to github-project">
 <node CREATED="1486637091848" ID="ID_1100335640" MODIFIED="1486637121211" TEXT="copy from github under &quot;Clone or download&quot;"/>
 </node>
-<node CREATED="1480509908679" ID="ID_235944820" MODIFIED="1480509934740" TEXT="hit next 3 times"/>
+<node CREATED="1480509908679" ID="ID_235944820" MODIFIED="1489774825062" TEXT="next -&gt; select master branch -&gt; next"/>
+<node CREATED="1489774649869" FOLDED="true" ID="ID_738315722" MODIFIED="1489774975878" TEXT="Choose a directory for the local repository">
+<node CREATED="1489774833233" ID="ID_19549010" MODIFIED="1489774916981" TEXT="always working on your own machine, you can let Eclipse choose the directory"/>
+<node CREATED="1489774878593" ID="ID_334514423" MODIFIED="1489774966640" TEXT="working on a usb-stick, you may want to place the repository there as well"/>
+</node>
+<node CREATED="1489774768832" ID="ID_1172436825" MODIFIED="1489774829493" TEXT="next"/>
 <node CREATED="1480509935356" ID="ID_521567330" MODIFIED="1480509946532" TEXT="Import as general project"/>
 <node CREATED="1480509962498" ID="ID_708496661" MODIFIED="1480509968509" TEXT="next -&gt; finish"/>
 </node>
