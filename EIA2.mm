@@ -1,6 +1,6 @@
 <map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
-<node CREATED="1480496236572" ID="ID_1483245584" MODIFIED="1491553062807" TEXT="EIA2">
+<node CREATED="1480496236572" ID="ID_1483245584" MODIFIED="1491576982976" TEXT="EIA2">
 <node CREATED="1486640980741" FOLDED="true" ID="ID_1634475163" MODIFIED="1491552870661" POSITION="left" TEXT="References">
 <node CREATED="1487071662786" ID="ID_517239067" LINK="DIA2Landscape.png" MODIFIED="1487071688268" TEXT="Landscape"/>
 <node CREATED="1486899143788" ID="ID_1157514353" LINK="https://git-scm.com/" MODIFIED="1486899151008" TEXT="Git"/>
@@ -767,7 +767,7 @@
 </node>
 <node CREATED="1489227756208" ID="ID_472005890" LINK="DO-Hierarchy.pdf" MODIFIED="1489227831087" TEXT="nodes are instances of classes of the DOM-Class-Hierarchy"/>
 </node>
-<node CREATED="1327999892919" FOLDED="true" ID="ID_857216794" MODIFIED="1491564850620" POSITION="right" STYLE="fork" TEXT="Eventsystem">
+<node CREATED="1327999892919" FOLDED="true" ID="ID_857216794" MODIFIED="1491577940490" POSITION="right" STYLE="fork" TEXT="Eventsystem">
 <node CREATED="1488135332234" FOLDED="true" ID="ID_476441293" MODIFIED="1491552803920" TEXT="General">
 <node CREATED="1488135508645" ID="ID_1654863333" MODIFIED="1488135673819" TEXT="eventsystem enables the programm to react to changes in the environment"/>
 <node CREATED="1488135573567" ID="ID_855007799" MODIFIED="1488135709578" TEXT="programmer doesn&apos;t require detailled knowledge of how to detect those changes"/>
@@ -823,8 +823,62 @@
 <node CREATED="1336940449190" ID="ID_921479517" MODIFIED="1488136504715" TEXT="Eventphase"/>
 <node CREATED="1336940469592" ID="ID_1191181508" MODIFIED="1336940472606" TEXT="etc."/>
 </node>
-<node CREATED="1336915189937" FOLDED="true" ID="ID_414864396" MODIFIED="1491564850240" TEXT="DOM-Event-Types">
-<node CREATED="1336915212519" FOLDED="true" ID="ID_611332701" MODIFIED="1491563685756" TEXT="Mouse">
+<node CREATED="1336915189937" FOLDED="true" ID="ID_414864396" MODIFIED="1491577939040" TEXT="DOM-Event-Types">
+<node CREATED="1336915220117" FOLDED="true" ID="ID_575113961" MODIFIED="1491577913829" TEXT="Window/Object">
+<node CREATED="1336915683563" FOLDED="true" ID="ID_198026651" MODIFIED="1488139738626" TEXT="load">
+<node CREATED="1488134901533" ID="ID_904697080" MODIFIED="1488134906732" TEXT="loading of a file is done"/>
+</node>
+<node CREATED="1336915683570" FOLDED="true" ID="ID_1736544554" MODIFIED="1488139738629" TEXT="unload">
+<node CREATED="1488134912920" MODIFIED="1488134912920" TEXT="the page gets removed from memory"/>
+</node>
+<node CREATED="1336915683558" FOLDED="true" ID="ID_985738378" MODIFIED="1488139738630" TEXT="error">
+<node CREATED="1488134919252" MODIFIED="1488134919252" TEXT="error occurred while loading"/>
+</node>
+<node CREATED="1336915683548" FOLDED="true" ID="ID_39143410" MODIFIED="1491564830080" TEXT="abort">
+<node CREATED="1488134926292" ID="ID_147528418" MODIFIED="1488134926292" TEXT="loading is cancelled"/>
+</node>
+<node CREATED="1337526214846" ID="ID_1960938688" MODIFIED="1491577281757" TEXT="afterprint/beforeprint"/>
+<node CREATED="1337526222768" ID="ID_798188993" MODIFIED="1491563354842" TEXT="online/offline"/>
+<node CREATED="1337526228360" ID="ID_690560434" MODIFIED="1491563358852" TEXT="visible"/>
+</node>
+<node CREATED="1336915242035" FOLDED="true" ID="ID_295154285" MODIFIED="1491577937898" TEXT="Keyboard">
+<node CREATED="1336915683560" FOLDED="true" ID="ID_1677725354" MODIFIED="1488139738631" TEXT="keydown">
+<node CREATED="1488134937902" MODIFIED="1488134937902" TEXT="key was pressed"/>
+</node>
+<node CREATED="1336915683562" FOLDED="true" ID="ID_116490450" MODIFIED="1488139738631" TEXT="keyup">
+<node CREATED="1488134950154" MODIFIED="1488134950154" TEXT="key was released"/>
+</node>
+<node CREATED="1336915683561" FOLDED="true" ID="ID_728591710" MODIFIED="1488139738631" TEXT="keypress">
+<node CREATED="1488134955339" MODIFIED="1488134955339" TEXT="key is kept pressed"/>
+</node>
+</node>
+<node CREATED="1491577716943" FOLDED="true" ID="ID_1878852774" MODIFIED="1491577937038" TEXT="Pointer">
+<node CREATED="1491577720929" FOLDED="true" ID="ID_222377522" MODIFIED="1491577850657" TEXT="pointerover">
+<node CREATED="1491577734593" ID="ID_1431716350" MODIFIED="1491577734593" TEXT="fired when a pointing device is moved into an element&apos;s hit test boundaries."/>
+</node>
+<node CREATED="1491577720939" FOLDED="true" ID="ID_1947510385" MODIFIED="1491577849717" TEXT="pointerenter">
+<node CREATED="1491577748666" ID="ID_523670648" MODIFIED="1491577748666" TEXT="fired when when a pointing device is moved into the hit test boundaries of an element or one of its descendants, including as a result of a pointerdown event from a device that does not support hover (see pointerdown)."/>
+</node>
+<node CREATED="1491577720949" FOLDED="true" ID="ID_1484072912" MODIFIED="1491577849367" TEXT="pointerdown">
+<node CREATED="1491577764438" ID="ID_686518468" MODIFIED="1491577765698" TEXT="fired when a pointer becomes active."/>
+</node>
+<node CREATED="1491577720949" FOLDED="true" ID="ID_685046036" MODIFIED="1491577849037" TEXT="pointermove">
+<node CREATED="1491577777580" ID="ID_428957470" MODIFIED="1491577778270" TEXT="fired when a pointer changes coordinates."/>
+</node>
+<node CREATED="1491577720949" FOLDED="true" ID="ID_1154961256" MODIFIED="1491577848727" TEXT="pointerup">
+<node CREATED="1491577790586" ID="ID_516148224" MODIFIED="1491577796608" TEXT="fired when a pointer is no longer active."/>
+</node>
+<node CREATED="1491577720949" FOLDED="true" ID="ID_1038538898" MODIFIED="1491577848357" TEXT="pointercancel">
+<node CREATED="1491577806446" ID="ID_930766381" MODIFIED="1491577806456" TEXT="a browser fires this event if it concludes the pointer will no longer be able to generate events (for example the related device is deactived)."/>
+</node>
+<node CREATED="1491577720949" FOLDED="true" ID="ID_865241240" MODIFIED="1491577847406" TEXT="pointerout">
+<node CREATED="1491577824941" ID="ID_1545951157" MODIFIED="1491577824941" TEXT="fired for several reasons including: pointing device is moved out of the hit test boundaries of an element; firing the pointerup event for a device that does not support hover (see pointerup); after firing the pointercancel event (see pointercancel); when a pen stylus leaves the hover range detectable by the digitizer."/>
+</node>
+<node CREATED="1491577720959" FOLDED="true" ID="ID_1266574910" MODIFIED="1491577864688" TEXT="pointerleave">
+<node CREATED="1491577862178" ID="ID_1652943906" MODIFIED="1491577862178" TEXT="fired when a pointing device is moved out of the hit test boundaries of an element. For pen devices, this event is fired when the stylus leaves the hover range detectable by the digitizer."/>
+</node>
+</node>
+<node CREATED="1336915212519" FOLDED="true" ID="ID_611332701" MODIFIED="1491577926071" TEXT="Mouse">
 <node CREATED="1336915683557" FOLDED="true" ID="ID_626870894" MODIFIED="1488139738592" TEXT="dblclick">
 <node CREATED="1488134830170" MODIFIED="1488134830170" TEXT="mousebutton was pressed two times quickly"/>
 </node>
@@ -858,35 +912,21 @@
 <node CREATED="1337525834483" ID="ID_312352257" MODIFIED="1382894467779" TEXT="drop"/>
 </node>
 </node>
-<node CREATED="1336915220117" FOLDED="true" ID="ID_575113961" MODIFIED="1491564848410" TEXT="Window/Object">
-<node CREATED="1336915683563" FOLDED="true" ID="ID_198026651" MODIFIED="1488139738626" TEXT="load">
-<node CREATED="1488134901533" ID="ID_904697080" MODIFIED="1488134906732" TEXT="loading of a file is done"/>
+<node CREATED="1491576885209" FOLDED="true" ID="ID_1765111745" MODIFIED="1491577928131" TEXT="Touch">
+<node CREATED="1491576888732" FOLDED="true" ID="ID_1556732986" MODIFIED="1491576968040" TEXT="touchstart">
+<node CREATED="1491576915630" ID="ID_1236597301" MODIFIED="1491576915640" TEXT="fired when a touch point is placed on the touch surface."/>
 </node>
-<node CREATED="1336915683570" FOLDED="true" ID="ID_1736544554" MODIFIED="1488139738629" TEXT="unload">
-<node CREATED="1488134912920" MODIFIED="1488134912920" TEXT="the page gets removed from memory"/>
+<node CREATED="1491576888732" FOLDED="true" ID="ID_1073867839" MODIFIED="1491576967710" TEXT="touchmove">
+<node CREATED="1491576936397" ID="ID_848057891" MODIFIED="1491576937506" TEXT="fired when a touch point is moved along the touch surface."/>
 </node>
-<node CREATED="1336915683558" FOLDED="true" ID="ID_985738378" MODIFIED="1488139738630" TEXT="error">
-<node CREATED="1488134919252" MODIFIED="1488134919252" TEXT="error occurred while loading"/>
+<node CREATED="1491576888732" FOLDED="true" ID="ID_901997310" MODIFIED="1491576967270" TEXT="touchend">
+<node CREATED="1491576948480" ID="ID_936191366" MODIFIED="1491576949212" TEXT="fired when a touch point is removed from the touch surface."/>
 </node>
-<node CREATED="1336915683548" FOLDED="true" ID="ID_39143410" MODIFIED="1491564830080" TEXT="abort">
-<node CREATED="1488134926292" ID="ID_147528418" MODIFIED="1488134926292" TEXT="loading is cancelled"/>
-</node>
-<node CREATED="1337526214846" ID="ID_1960938688" MODIFIED="1491563342682" TEXT="print"/>
-<node CREATED="1337526222768" ID="ID_798188993" MODIFIED="1491563354842" TEXT="online/offline"/>
-<node CREATED="1337526228360" ID="ID_690560434" MODIFIED="1491563358852" TEXT="visible"/>
-</node>
-<node CREATED="1336915242035" FOLDED="true" ID="ID_295154285" MODIFIED="1491564826480" TEXT="Keyboard">
-<node CREATED="1336915683560" FOLDED="true" ID="ID_1677725354" MODIFIED="1488139738631" TEXT="keydown">
-<node CREATED="1488134937902" MODIFIED="1488134937902" TEXT="key was pressed"/>
-</node>
-<node CREATED="1336915683562" FOLDED="true" ID="ID_116490450" MODIFIED="1488139738631" TEXT="keyup">
-<node CREATED="1488134950154" MODIFIED="1488134950154" TEXT="key was released"/>
-</node>
-<node CREATED="1336915683561" FOLDED="true" ID="ID_728591710" MODIFIED="1488139738631" TEXT="keypress">
-<node CREATED="1488134955339" MODIFIED="1488134955339" TEXT="key is kept pressed"/>
+<node CREATED="1491576888732" FOLDED="true" ID="ID_681585206" MODIFIED="1491576965090" TEXT="touchcancel">
+<node CREATED="1491576958154" ID="ID_19924317" MODIFIED="1491576958155" TEXT="fired when a touch point has been disrupted in an implementation-specific manner (for example, too many touch points are created)."/>
 </node>
 </node>
-<node CREATED="1336915254303" FOLDED="true" ID="ID_1030597050" MODIFIED="1491563700157" TEXT="Form">
+<node CREATED="1336915254303" FOLDED="true" ID="ID_1030597050" MODIFIED="1491577930221" TEXT="Form">
 <node CREATED="1336915683552" ID="ID_379400667" MODIFIED="1488134964220" TEXT="change"/>
 <node CREATED="1336915683570" FOLDED="true" ID="ID_903696654" MODIFIED="1488139738632" TEXT="submit">
 <node CREATED="1488134970365" MODIFIED="1488134970365" TEXT="sending of the formdata was initiated"/>
@@ -904,7 +944,7 @@
 <node CREATED="1488134992850" MODIFIED="1488134992850" TEXT="some text was selected"/>
 </node>
 </node>
-<node CREATED="1351637683066" FOLDED="true" ID="ID_1059703350" MODIFIED="1491563710827" TEXT="Timer">
+<node CREATED="1351637683066" FOLDED="true" ID="ID_1059703350" MODIFIED="1491577931712" TEXT="Timer">
 <node CREATED="1351637701173" FOLDED="true" ID="ID_701079570" MODIFIED="1488135059450" TEXT="setInterval">
 <node CREATED="1488135010310" ID="ID_858907859" MODIFIED="1488135036665" TEXT="dispatches event continuosly in given time intervals"/>
 </node>
@@ -912,7 +952,7 @@
 <node CREATED="1488135010310" ID="ID_462097956" MODIFIED="1488135056276" TEXT="dispatches event continuosly after given time has passed"/>
 </node>
 </node>
-<node CREATED="1337526126494" FOLDED="true" ID="ID_728335372" MODIFIED="1491563675706" TEXT="Media">
+<node CREATED="1337526126494" FOLDED="true" ID="ID_728335372" MODIFIED="1491577932923" TEXT="Media">
 <node CREATED="1491563549670" FOLDED="true" ID="ID_1037023808" MODIFIED="1491563600292" TEXT="loadstart">
 <node CREATED="1491563569873" ID="ID_1266332419" MODIFIED="1491563578280" TEXT="sent when loading of the media begins."/>
 </node>
