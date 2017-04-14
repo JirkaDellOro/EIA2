@@ -1,7 +1,7 @@
 <map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
-<node CREATED="1480496236572" ID="ID_1483245584" MODIFIED="1491576982976" TEXT="EIA2">
-<node CREATED="1486640980741" FOLDED="true" ID="ID_1634475163" MODIFIED="1491552870661" POSITION="left" TEXT="References">
+<node CREATED="1480496236572" ID="ID_1483245584" MODIFIED="1492161762523" TEXT="EIA2">
+<node CREATED="1486640980741" FOLDED="true" ID="ID_1634475163" MODIFIED="1492161660953" POSITION="left" TEXT="References">
 <node CREATED="1487071662786" ID="ID_517239067" LINK="DIA2Landscape.png" MODIFIED="1487071688268" TEXT="Landscape"/>
 <node CREATED="1486899143788" ID="ID_1157514353" LINK="https://git-scm.com/" MODIFIED="1486899151008" TEXT="Git"/>
 <node CREATED="1486647179592" ID="ID_896471124" LINK="https://help.github.com/" MODIFIED="1489396750826" STYLE="fork" TEXT="Github"/>
@@ -182,7 +182,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1481403992317" FOLDED="true" ID="ID_187226101" MODIFIED="1491554658598" POSITION="left" TEXT="Curriculum">
+<node CREATED="1481403992317" FOLDED="true" ID="ID_187226101" MODIFIED="1492161582873" POSITION="left" TEXT="Curriculum">
 <node CREATED="1481404003125" FOLDED="true" ID="ID_1041763061" MODIFIED="1489517707053" TEXT="Primer">
 <node CREATED="1489398121825" ID="ID_562893010" MODIFIED="1489517594812" TEXT="Crawford"/>
 <node CREATED="1489396403880" FOLDED="true" ID="ID_160536930" MODIFIED="1489488005036" TEXT="Mindmap">
@@ -228,14 +228,15 @@
 <node CREATED="1488969875301" ID="ID_851402124" MODIFIED="1488969908515" TEXT="get dataTransfer-object on drop and process"/>
 </node>
 </node>
-<node CREATED="1486637471804" FOLDED="true" ID="ID_1801808833" MODIFIED="1491552746350" TEXT="Canvas">
+<node CREATED="1486637471804" FOLDED="true" ID="ID_1801808833" MODIFIED="1492161511033" TEXT="Canvas">
 <node CREATED="1488969692163" ID="ID_1770713293" MODIFIED="1488969697610" TEXT="path metaphor"/>
 <node CREATED="1488969708177" ID="ID_171944979" MODIFIED="1488969722328" TEXT="shortcuts fillRect and strokeRect"/>
 <node CREATED="1488970174413" ID="ID_1429693639" MODIFIED="1488970223087" TEXT="create functions for drawing repetitive images"/>
-<node CREATED="1491552724290" ID="ID_124890155" MODIFIED="1491552742920" TEXT="create images interactively using events"/>
 </node>
-<node CREATED="1486637481546" ID="ID_1450108589" MODIFIED="1491552760890" TEXT="Associative Arrays"/>
-<node CREATED="1486640867059" ID="ID_565156591" MODIFIED="1488358699827" TEXT="Animation, Interaction"/>
+<node CREATED="1486637481546" FOLDED="true" ID="ID_1450108589" MODIFIED="1492161508753" TEXT="Associative Arrays">
+<node CREATED="1491552724290" ID="ID_124890155" MODIFIED="1491552742920" TEXT="create images interactively using events"/>
+<node CREATED="1492161459353" ID="ID_837487270" MODIFIED="1492161482583" TEXT="animate objects -&gt; store properties"/>
+</node>
 <node CREATED="1486638178159" ID="ID_456355481" MODIFIED="1486638188335" TEXT="Classes"/>
 <node CREATED="1486638190057" ID="ID_786435816" MODIFIED="1486638203140" TEXT="Inheritance, Polymorphism"/>
 <node CREATED="1486638209592" ID="ID_1941289311" MODIFIED="1486638228878" TEXT="Scopes and Visability"/>
@@ -505,8 +506,8 @@
 <node CREATED="1488539468601" ID="ID_770207662" MODIFIED="1489305526121" TEXT="Kommentare werden eingesetzt, um Programmteile abzugrenzen und die Verst&#xe4;ndlichkeit zu erh&#xf6;hen. Programmteile, die von anderen Skripts genutzt werden sollen, werden im JSDoc-Format kommentiert &#xa;(/** &#x2026; */)"/>
 </node>
 </node>
-<node CREATED="1488540848465" FOLDED="true" ID="ID_226943766" MODIFIED="1489396303143" POSITION="right" TEXT="Dictionary">
-<node CREATED="1488540857224" FOLDED="true" ID="ID_1410670011" MODIFIED="1488649957877" TEXT="namespace">
+<node CREATED="1488540848465" FOLDED="true" ID="ID_226943766" MODIFIED="1492161765733" POSITION="right" TEXT="Dictionary">
+<node CREATED="1488540857224" FOLDED="true" ID="ID_1410670011" MODIFIED="1492161702813" TEXT="namespace">
 <node CREATED="1488645098764" ID="ID_1571933734" MODIFIED="1488645135005" TEXT="defines a section of storage"/>
 <node CREATED="1488541430618" FOLDED="true" ID="ID_1839686656" MODIFIED="1488646109456" TEXT="to store data as variables, functions, arrays, classes, objects etc.">
 <node CREATED="1488541934482" ID="ID_224506479" MODIFIED="1488541945384" TEXT="basically a sequence of bits"/>
@@ -517,19 +518,19 @@
 <node CREATED="1488552437275" ID="ID_189226465" MODIFIED="1488563103825" TEXT="the namespaces accessible from a particular part of the program"/>
 <node CREATED="1488563113456" ID="ID_1015549745" MODIFIED="1488563130448" TEXT="the global namespace is accessible everywhere"/>
 </node>
-<node CREATED="1488645062914" FOLDED="true" ID="ID_1534355324" MODIFIED="1488645268315" TEXT="Analogy">
+<node CREATED="1488645062914" FOLDED="true" ID="ID_1534355324" MODIFIED="1492161701953" TEXT="Analogy">
 <node CREATED="1488540906740" ID="ID_425788850" MODIFIED="1488645077764" TEXT="storage holding lots of different stuff, that gets thrown in"/>
 <node CREATED="1488645243134" ID="ID_104046935" MODIFIED="1488645264395" TEXT="not all storages can be accessed from everywhere"/>
 </node>
 </node>
-<node CREATED="1488550393531" FOLDED="true" ID="ID_1767142700" MODIFIED="1488649959429" TEXT="type">
+<node CREATED="1488550393531" FOLDED="true" ID="ID_1767142700" MODIFIED="1492161705633" TEXT="type">
 <node CREATED="1488645292394" ID="ID_1897175162" MODIFIED="1488645330535" TEXT="the meaning of data, the way to interpret a sequence of bits"/>
 <node CREATED="1488645278814" FOLDED="true" ID="ID_1825666895" MODIFIED="1488645334205" TEXT="Analogy">
 <node CREATED="1488550398160" ID="ID_1462339747" MODIFIED="1488645284825" TEXT="the kind of some stuff"/>
 <node CREATED="1488550424506" ID="ID_1705853710" MODIFIED="1488645284825" TEXT="eg. solid, liquid, gaseous"/>
 </node>
 </node>
-<node CREATED="1488540943018" FOLDED="true" ID="ID_1235318146" MODIFIED="1488649955847" TEXT="variable">
+<node CREATED="1488540943018" FOLDED="true" ID="ID_1235318146" MODIFIED="1492161708093" TEXT="variable">
 <node CREATED="1488645461885" ID="ID_359447038" MODIFIED="1488645989502" TEXT="small piece of storage in a namespace that holds a value of a given type"/>
 <node CREATED="1488541191719" ID="ID_464578348" MODIFIED="1488646085409" TEXT="has a name unique to the namespace, by which the content can be found"/>
 <node CREATED="1488550517636" FOLDED="true" ID="ID_1137345622" MODIFIED="1488646089271" TEXT="variables of">
@@ -545,7 +546,7 @@
 <node CREATED="1488645378235" ID="ID_686772310" MODIFIED="1488645395146" TEXT="like cardboard boxes, bottles or balloons"/>
 </node>
 </node>
-<node CREATED="1488541475525" FOLDED="true" ID="ID_910508875" MODIFIED="1488650825654" TEXT="function">
+<node CREATED="1488541475525" FOLDED="true" ID="ID_910508875" MODIFIED="1492161711303" TEXT="function">
 <node CREATED="1488645594934" ID="ID_711940041" MODIFIED="1488645658046" TEXT="piece of code that can be executed arbitrarily within the program"/>
 <node CREATED="1488549713902" ID="ID_55523424" MODIFIED="1488645691993" TEXT="comes with its own namespace to temporarily hold local variables"/>
 <node CREATED="1488541191719" FOLDED="true" ID="ID_299459942" MODIFIED="1488645844434" TEXT="has a name unique in its scope, and is called to execute by this name">
@@ -562,7 +563,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1488541773998" FOLDED="true" ID="ID_631369418" MODIFIED="1488646335709" TEXT="parameter">
+<node CREATED="1488541773998" FOLDED="true" ID="ID_631369418" MODIFIED="1492161719953" TEXT="parameter">
 <node CREATED="1488541782869" ID="ID_1991644007" MODIFIED="1488646299334" TEXT="variable defined in the head of a function, through which data can be passed to the function"/>
 <node CREATED="1488549819642" ID="ID_115140925" MODIFIED="1488646308096" TEXT="parameters sit in the functions namespace"/>
 <node CREATED="1488646185461" FOLDED="true" ID="ID_152823611" MODIFIED="1488646311321" STYLE="fork" TEXT="Analogy">
@@ -570,7 +571,7 @@
 <node CREATED="1488646248915" ID="ID_803236274" MODIFIED="1488646259111" TEXT="... for the machine to work with"/>
 </node>
 </node>
-<node CREATED="1488545425134" FOLDED="true" ID="ID_60101769" MODIFIED="1488647338974" TEXT="array">
+<node CREATED="1488545425134" FOLDED="true" ID="ID_60101769" MODIFIED="1492161726623" TEXT="array">
 <node CREATED="1488646368912" ID="ID_1413934451" MODIFIED="1488646768794" TEXT="piece of storage in the namespace with variable size"/>
 <node CREATED="1488646768794" ID="ID_1227429663" MODIFIED="1488646768804" TEXT="that is addressed with a single name"/>
 <node CREATED="1488646460505" ID="ID_924209057" MODIFIED="1488646780156" TEXT="and devided into elements of a given type"/>
@@ -580,17 +581,17 @@
 <node CREATED="1488646511914" ID="ID_1087172686" MODIFIED="1488646712797" TEXT="drawers are numbered in sequence starting with 0"/>
 </node>
 </node>
-<node CREATED="1488545562827" FOLDED="true" ID="ID_1497333876" MODIFIED="1488704591344" TEXT="associative array">
+<node CREATED="1488545562827" FOLDED="true" ID="ID_1497333876" MODIFIED="1492161728863" TEXT="associative array">
 <node CREATED="1488545581159" ID="ID_1358236139" MODIFIED="1488545588034" TEXT="like an array"/>
 <node CREATED="1488545588925" ID="ID_1264758184" MODIFIED="1488647321940" TEXT="elements are not adresses using a number, but a key"/>
 <node CREATED="1488545690721" ID="ID_658831140" MODIFIED="1488545716964" TEXT="in most cases, the key is of type string"/>
 <node CREATED="1488545776457" ID="ID_165662565" MODIFIED="1488545816592" TEXT="this is the fundamental data structure in JavaScript, thus also called javascript-object"/>
-<node CREATED="1488646802509" FOLDED="true" ID="ID_891250748" MODIFIED="1488647351124" TEXT="Analogy">
+<node CREATED="1488646802509" FOLDED="true" ID="ID_891250748" MODIFIED="1492161601273" TEXT="Analogy">
 <node CREATED="1488545434951" ID="ID_1129579136" MODIFIED="1488646686908" TEXT="a drawer cabinet in the storage, that can be found with a single name"/>
 <node CREATED="1488646511914" ID="ID_947678880" MODIFIED="1488647349704" TEXT="drawers are labelled"/>
 </node>
 </node>
-<node CREATED="1488545754182" FOLDED="true" ID="ID_1773073132" MODIFIED="1488704592784" TEXT="interface">
+<node CREATED="1488545754182" FOLDED="true" ID="ID_1773073132" MODIFIED="1492161732333" TEXT="interface">
 <node CREATED="1488545758739" ID="ID_901687684" MODIFIED="1488545773342" TEXT="a pattern for an associative array"/>
 <node CREATED="1488546051331" FOLDED="true" ID="ID_1794415964" MODIFIED="1488647369254" TEXT="for each instance of an array that implements the interface">
 <node CREATED="1488545836125" FOLDED="true" ID="ID_1395859710" MODIFIED="1488647366342" TEXT="homogenous">
@@ -608,7 +609,7 @@
 <node CREATED="1488647378132" ID="ID_1293422431" MODIFIED="1488647439221" TEXT="a construction plan for a drawer cabinet with labels"/>
 </node>
 </node>
-<node CREATED="1488549013238" FOLDED="true" ID="ID_1250809012" MODIFIED="1488704593504" TEXT="class">
+<node CREATED="1488549013238" FOLDED="true" ID="ID_1250809012" MODIFIED="1492161734283" TEXT="class">
 <node CREATED="1488647472549" ID="ID_184538594" MODIFIED="1488647766311" TEXT="a pattern for a complex data structure ..."/>
 <node CREATED="1488647537631" ID="ID_908385488" MODIFIED="1488647781469" TEXT="... using assigned variables, then called attributes or properties ..."/>
 <node CREATED="1488647631850" ID="ID_909552275" MODIFIED="1488647787713" TEXT="... and functions, then called methods"/>
@@ -617,26 +618,26 @@
 <node CREATED="1488549086753" ID="ID_1784073306" MODIFIED="1488648540832" TEXT="with assigned storage and machines"/>
 </node>
 </node>
-<node CREATED="1488548917584" FOLDED="true" ID="ID_1756589026" MODIFIED="1488649788416" TEXT="method">
+<node CREATED="1488548917584" FOLDED="true" ID="ID_1756589026" MODIFIED="1492161739553" TEXT="method">
 <node CREATED="1488548932594" ID="ID_762219809" MODIFIED="1488548941185" TEXT="a function defined in a class"/>
 <node CREATED="1488548950344" ID="ID_1604725249" MODIFIED="1488563546978" TEXT="has access to the namespace of the class using the operator &quot;this&quot;"/>
 <node CREATED="1488647861419" FOLDED="true" ID="ID_227187604" MODIFIED="1488648560154" TEXT="Analogy">
 <node CREATED="1488647866421" ID="ID_1603847568" MODIFIED="1488647885045" TEXT="a machine in a studio"/>
 </node>
 </node>
-<node CREATED="1488549149462" FOLDED="true" ID="ID_138416857" MODIFIED="1488648572387" TEXT="object">
+<node CREATED="1488549149462" FOLDED="true" ID="ID_138416857" MODIFIED="1492161742772" TEXT="object">
 <node CREATED="1488549176356" ID="ID_1746737496" MODIFIED="1488549201492" TEXT="an instance of a class"/>
 <node CREATED="1488549307182" ID="ID_1078768044" MODIFIED="1488647947434" TEXT="each object has its own namespace..."/>
 <node CREATED="1488647933445" ID="ID_499112872" MODIFIED="1488647965131" TEXT="... and addresses its data using the keyword &quot;this&quot;"/>
-<node CREATED="1488647974070" FOLDED="true" ID="ID_1433613685" MODIFIED="1488648130326" TEXT="Analogy">
+<node CREATED="1488647974070" FOLDED="true" ID="ID_1433613685" MODIFIED="1492161687893" TEXT="Analogy">
 <node CREATED="1488647979498" ID="ID_1336975335" MODIFIED="1488647988428" TEXT="a studio that was actually built"/>
 </node>
 </node>
-<node CREATED="1488647736525" FOLDED="true" ID="ID_706279620" MODIFIED="1488649302060" TEXT="constructor">
+<node CREATED="1488647736525" FOLDED="true" ID="ID_706279620" MODIFIED="1492161762523" TEXT="constructor">
 <node CREATED="1488647998434" ID="ID_1754609385" MODIFIED="1488648066528" TEXT="a special method, that is automatically called on instantiation of the object"/>
 <node CREATED="1488649264574" ID="ID_1838402044" MODIFIED="1488649299737" TEXT="identified by the name &quot;constructor&quot;, which is a keyword"/>
 <node CREATED="1488648074917" ID="ID_1114369612" MODIFIED="1488648110450" TEXT="the keyword &quot;new&quot; instantiates an object from a class"/>
-<node CREATED="1488648134173" FOLDED="true" ID="ID_1740558429" MODIFIED="1488649287937" TEXT="Analogy">
+<node CREATED="1488648134173" FOLDED="true" ID="ID_1740558429" MODIFIED="1492161762523" TEXT="Analogy">
 <node CREATED="1488648143895" ID="ID_656378296" MODIFIED="1488648237324" TEXT="a machine that helps building a studio from the building plan"/>
 </node>
 </node>
@@ -767,7 +768,7 @@
 </node>
 <node CREATED="1489227756208" ID="ID_472005890" LINK="DO-Hierarchy.pdf" MODIFIED="1489227831087" TEXT="nodes are instances of classes of the DOM-Class-Hierarchy"/>
 </node>
-<node CREATED="1327999892919" FOLDED="true" ID="ID_857216794" MODIFIED="1491577940490" POSITION="right" STYLE="fork" TEXT="Eventsystem">
+<node CREATED="1327999892919" FOLDED="true" ID="ID_857216794" MODIFIED="1491578549836" POSITION="right" STYLE="fork" TEXT="Eventsystem">
 <node CREATED="1488135332234" FOLDED="true" ID="ID_476441293" MODIFIED="1491552803920" TEXT="General">
 <node CREATED="1488135508645" ID="ID_1654863333" MODIFIED="1488135673819" TEXT="eventsystem enables the programm to react to changes in the environment"/>
 <node CREATED="1488135573567" ID="ID_855007799" MODIFIED="1488135709578" TEXT="programmer doesn&apos;t require detailled knowledge of how to detect those changes"/>
@@ -823,12 +824,12 @@
 <node CREATED="1336940449190" ID="ID_921479517" MODIFIED="1488136504715" TEXT="Eventphase"/>
 <node CREATED="1336940469592" ID="ID_1191181508" MODIFIED="1336940472606" TEXT="etc."/>
 </node>
-<node CREATED="1336915189937" FOLDED="true" ID="ID_414864396" MODIFIED="1491577939040" TEXT="DOM-Event-Types">
-<node CREATED="1336915220117" FOLDED="true" ID="ID_575113961" MODIFIED="1491577913829" TEXT="Window/Object">
-<node CREATED="1336915683563" FOLDED="true" ID="ID_198026651" MODIFIED="1488139738626" TEXT="load">
+<node CREATED="1336915189937" FOLDED="true" ID="ID_414864396" MODIFIED="1491578549416" TEXT="DOM-Event-Types">
+<node CREATED="1336915220117" FOLDED="true" ID="ID_575113961" MODIFIED="1491578473852" TEXT="Window/Object">
+<node CREATED="1336915683563" FOLDED="true" ID="ID_198026651" MODIFIED="1491578467422" TEXT="load">
 <node CREATED="1488134901533" ID="ID_904697080" MODIFIED="1488134906732" TEXT="loading of a file is done"/>
 </node>
-<node CREATED="1336915683570" FOLDED="true" ID="ID_1736544554" MODIFIED="1488139738629" TEXT="unload">
+<node CREATED="1336915683570" FOLDED="true" ID="ID_1736544554" MODIFIED="1491578469462" TEXT="unload">
 <node CREATED="1488134912920" MODIFIED="1488134912920" TEXT="the page gets removed from memory"/>
 </node>
 <node CREATED="1336915683558" FOLDED="true" ID="ID_985738378" MODIFIED="1488139738630" TEXT="error">
@@ -841,7 +842,7 @@
 <node CREATED="1337526222768" ID="ID_798188993" MODIFIED="1491563354842" TEXT="online/offline"/>
 <node CREATED="1337526228360" ID="ID_690560434" MODIFIED="1491563358852" TEXT="visible"/>
 </node>
-<node CREATED="1336915242035" FOLDED="true" ID="ID_295154285" MODIFIED="1491577937898" TEXT="Keyboard">
+<node CREATED="1336915242035" FOLDED="true" ID="ID_295154285" MODIFIED="1491578474952" TEXT="Keyboard">
 <node CREATED="1336915683560" FOLDED="true" ID="ID_1677725354" MODIFIED="1488139738631" TEXT="keydown">
 <node CREATED="1488134937902" MODIFIED="1488134937902" TEXT="key was pressed"/>
 </node>
@@ -852,7 +853,7 @@
 <node CREATED="1488134955339" MODIFIED="1488134955339" TEXT="key is kept pressed"/>
 </node>
 </node>
-<node CREATED="1491577716943" FOLDED="true" ID="ID_1878852774" MODIFIED="1491577937038" TEXT="Pointer">
+<node CREATED="1491577716943" FOLDED="true" ID="ID_1878852774" MODIFIED="1491578485723" TEXT="Pointer">
 <node CREATED="1491577720929" FOLDED="true" ID="ID_222377522" MODIFIED="1491577850657" TEXT="pointerover">
 <node CREATED="1491577734593" ID="ID_1431716350" MODIFIED="1491577734593" TEXT="fired when a pointing device is moved into an element&apos;s hit test boundaries."/>
 </node>
@@ -862,7 +863,7 @@
 <node CREATED="1491577720949" FOLDED="true" ID="ID_1484072912" MODIFIED="1491577849367" TEXT="pointerdown">
 <node CREATED="1491577764438" ID="ID_686518468" MODIFIED="1491577765698" TEXT="fired when a pointer becomes active."/>
 </node>
-<node CREATED="1491577720949" FOLDED="true" ID="ID_685046036" MODIFIED="1491577849037" TEXT="pointermove">
+<node CREATED="1491577720949" FOLDED="true" ID="ID_685046036" MODIFIED="1491578479062" TEXT="pointermove">
 <node CREATED="1491577777580" ID="ID_428957470" MODIFIED="1491577778270" TEXT="fired when a pointer changes coordinates."/>
 </node>
 <node CREATED="1491577720949" FOLDED="true" ID="ID_1154961256" MODIFIED="1491577848727" TEXT="pointerup">
@@ -871,14 +872,14 @@
 <node CREATED="1491577720949" FOLDED="true" ID="ID_1038538898" MODIFIED="1491577848357" TEXT="pointercancel">
 <node CREATED="1491577806446" ID="ID_930766381" MODIFIED="1491577806456" TEXT="a browser fires this event if it concludes the pointer will no longer be able to generate events (for example the related device is deactived)."/>
 </node>
-<node CREATED="1491577720949" FOLDED="true" ID="ID_865241240" MODIFIED="1491577847406" TEXT="pointerout">
+<node CREATED="1491577720949" FOLDED="true" ID="ID_865241240" MODIFIED="1491578483893" TEXT="pointerout">
 <node CREATED="1491577824941" ID="ID_1545951157" MODIFIED="1491577824941" TEXT="fired for several reasons including: pointing device is moved out of the hit test boundaries of an element; firing the pointerup event for a device that does not support hover (see pointerup); after firing the pointercancel event (see pointercancel); when a pen stylus leaves the hover range detectable by the digitizer."/>
 </node>
-<node CREATED="1491577720959" FOLDED="true" ID="ID_1266574910" MODIFIED="1491577864688" TEXT="pointerleave">
+<node CREATED="1491577720959" FOLDED="true" ID="ID_1266574910" MODIFIED="1491578485023" TEXT="pointerleave">
 <node CREATED="1491577862178" ID="ID_1652943906" MODIFIED="1491577862178" TEXT="fired when a pointing device is moved out of the hit test boundaries of an element. For pen devices, this event is fired when the stylus leaves the hover range detectable by the digitizer."/>
 </node>
 </node>
-<node CREATED="1336915212519" FOLDED="true" ID="ID_611332701" MODIFIED="1491577926071" TEXT="Mouse">
+<node CREATED="1336915212519" FOLDED="true" ID="ID_611332701" MODIFIED="1491578489052" TEXT="Mouse">
 <node CREATED="1336915683557" FOLDED="true" ID="ID_626870894" MODIFIED="1488139738592" TEXT="dblclick">
 <node CREATED="1488134830170" MODIFIED="1488134830170" TEXT="mousebutton was pressed two times quickly"/>
 </node>
@@ -912,7 +913,7 @@
 <node CREATED="1337525834483" ID="ID_312352257" MODIFIED="1382894467779" TEXT="drop"/>
 </node>
 </node>
-<node CREATED="1491576885209" FOLDED="true" ID="ID_1765111745" MODIFIED="1491577928131" TEXT="Touch">
+<node CREATED="1491576885209" FOLDED="true" ID="ID_1765111745" MODIFIED="1491578490071" TEXT="Touch">
 <node CREATED="1491576888732" FOLDED="true" ID="ID_1556732986" MODIFIED="1491576968040" TEXT="touchstart">
 <node CREATED="1491576915630" ID="ID_1236597301" MODIFIED="1491576915640" TEXT="fired when a touch point is placed on the touch surface."/>
 </node>
@@ -926,7 +927,7 @@
 <node CREATED="1491576958154" ID="ID_19924317" MODIFIED="1491576958155" TEXT="fired when a touch point has been disrupted in an implementation-specific manner (for example, too many touch points are created)."/>
 </node>
 </node>
-<node CREATED="1336915254303" FOLDED="true" ID="ID_1030597050" MODIFIED="1491577930221" TEXT="Form">
+<node CREATED="1336915254303" FOLDED="true" ID="ID_1030597050" MODIFIED="1491578491203" TEXT="Form">
 <node CREATED="1336915683552" ID="ID_379400667" MODIFIED="1488134964220" TEXT="change"/>
 <node CREATED="1336915683570" FOLDED="true" ID="ID_903696654" MODIFIED="1488139738632" TEXT="submit">
 <node CREATED="1488134970365" MODIFIED="1488134970365" TEXT="sending of the formdata was initiated"/>
@@ -944,7 +945,7 @@
 <node CREATED="1488134992850" MODIFIED="1488134992850" TEXT="some text was selected"/>
 </node>
 </node>
-<node CREATED="1351637683066" FOLDED="true" ID="ID_1059703350" MODIFIED="1491577931712" TEXT="Timer">
+<node CREATED="1351637683066" FOLDED="true" ID="ID_1059703350" MODIFIED="1491578492173" TEXT="Timer">
 <node CREATED="1351637701173" FOLDED="true" ID="ID_701079570" MODIFIED="1488135059450" TEXT="setInterval">
 <node CREATED="1488135010310" ID="ID_858907859" MODIFIED="1488135036665" TEXT="dispatches event continuosly in given time intervals"/>
 </node>
@@ -952,7 +953,7 @@
 <node CREATED="1488135010310" ID="ID_462097956" MODIFIED="1488135056276" TEXT="dispatches event continuosly after given time has passed"/>
 </node>
 </node>
-<node CREATED="1337526126494" FOLDED="true" ID="ID_728335372" MODIFIED="1491577932923" TEXT="Media">
+<node CREATED="1337526126494" FOLDED="true" ID="ID_728335372" MODIFIED="1491578493083" TEXT="Media">
 <node CREATED="1491563549670" FOLDED="true" ID="ID_1037023808" MODIFIED="1491563600292" TEXT="loadstart">
 <node CREATED="1491563569873" ID="ID_1266332419" MODIFIED="1491563578280" TEXT="sent when loading of the media begins."/>
 </node>
