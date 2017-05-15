@@ -516,7 +516,7 @@
 <node CREATED="1488539468601" ID="ID_770207662" MODIFIED="1489305526121" TEXT="Kommentare werden eingesetzt, um Programmteile abzugrenzen und die Verst&#xe4;ndlichkeit zu erh&#xf6;hen. Programmteile, die von anderen Skripts genutzt werden sollen, werden im JSDoc-Format kommentiert &#xa;(/** &#x2026; */)"/>
 </node>
 </node>
-<node CREATED="1488540848465" FOLDED="true" ID="ID_226943766" MODIFIED="1492161765733" POSITION="right" TEXT="Dictionary">
+<node CREATED="1488540848465" FOLDED="true" ID="ID_226943766" MODIFIED="1494881408948" POSITION="right" TEXT="Dictionary">
 <node CREATED="1488540857224" FOLDED="true" ID="ID_1410670011" MODIFIED="1492161702813" TEXT="namespace">
 <node CREATED="1488645098764" ID="ID_1571933734" MODIFIED="1488645135005" TEXT="defines a section of storage"/>
 <node CREATED="1488541430618" FOLDED="true" ID="ID_1839686656" MODIFIED="1488646109456" TEXT="to store data as variables, functions, arrays, classes, objects etc.">
@@ -711,9 +711,9 @@
 <node CREATED="1488704842440" ID="ID_1210266298" MODIFIED="1488704871249" TEXT="that stuff sits in a common storage"/>
 </node>
 </node>
-<node CREATED="1488651097266" FOLDED="true" ID="ID_1304700782" MODIFIED="1488713553137" TEXT="module">
+<node CREATED="1488651097266" FOLDED="true" ID="ID_1304700782" MODIFIED="1494881407131" TEXT="module">
 <node CREATED="1488657467286" ID="ID_975619659" MODIFIED="1488657508902" TEXT="a collection of classes and functions to be used in different programs"/>
-<node CREATED="1488659151025" ID="ID_12265355" MODIFIED="1488659167077" TEXT="uses a seperate namespace"/>
+<node CREATED="1488659151025" ID="ID_12265355" MODIFIED="1494881406148" TEXT="uses a separate namespace"/>
 <node CREATED="1488704880867" FOLDED="true" ID="ID_1946492996" MODIFIED="1488705280998" TEXT="Analogy">
 <node CREATED="1488704886456" ID="ID_1163686599" MODIFIED="1488705273582" TEXT="a plan for an agglomeration of studios, machines and stuff of different kinds ..."/>
 <node CREATED="1488704943324" ID="ID_620819735" MODIFIED="1488704958838" TEXT="... and their building plans"/>
