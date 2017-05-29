@@ -5,7 +5,7 @@
 	"author" : "enter your name here",
 	"main" : "filename-of-main-script.js",
 	"scripts" : {
-		"start" : "filename-of-start-script.js"
+		"start" : "node filename-of-start-script.js"
 	},
 	"engines" : {
 		"node" : "5.8.0"
