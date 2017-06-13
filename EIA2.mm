@@ -1157,8 +1157,8 @@
 <node CREATED="1334520793377" ID="ID_157061424" MODIFIED="1334565901585" TEXT="accesskey"/>
 </node>
 </node>
-<node CREATED="1486898557142" FOLDED="true" ID="ID_180594711" LINK="https://github.com/nodejs" MODIFIED="1496092181907" POSITION="right" TEXT="Node">
-<node CREATED="1487715754165" FOLDED="true" ID="ID_1806505984" MODIFIED="1489174601554" TEXT="General">
+<node CREATED="1486898557142" FOLDED="true" ID="ID_180594711" LINK="https://github.com/nodejs" MODIFIED="1497338240258" POSITION="right" TEXT="Node">
+<node CREATED="1487715754165" FOLDED="true" ID="ID_1806505984" MODIFIED="1497337700686" TEXT="General">
 <node CREATED="1487713021466" ID="ID_1177815800" MODIFIED="1488126203585" TEXT="JavaScript outside of the browser"/>
 <node CREATED="1487713580628" ID="ID_366846704" LINK="https://github.com/ry" MODIFIED="1487713624374" TEXT="Developed by Ryan Dahl in 2009"/>
 <node CREATED="1487713801209" FOLDED="true" ID="ID_1184713679" LINK="https://github.com/v8" MODIFIED="1487715775785" TEXT="uses V8-Engine">
@@ -1168,12 +1168,12 @@
 </node>
 <node CREATED="1487715701728" ID="ID_1824008398" MODIFIED="1487715743888" TEXT="Non-blocking server communication"/>
 </node>
-<node CREATED="1487713133990" FOLDED="true" ID="ID_1465681007" MODIFIED="1496092181513" TEXT="Core modules and classes">
-<node CREATED="1487942501631" FOLDED="true" ID="ID_739320235" MODIFIED="1487945541470" TEXT="Console">
+<node CREATED="1487713133990" FOLDED="true" ID="ID_1465681007" MODIFIED="1497338239118" TEXT="Core modules and classes">
+<node CREATED="1487942501631" FOLDED="true" ID="ID_739320235" MODIFIED="1497338233242" TEXT="Console">
 <node CREATED="1487945153554" ID="ID_735847575" MODIFIED="1487945169817" TEXT="log ( message?: any, ...optionalParams: any[] ): void;"/>
 <node CREATED="1487945516287" ID="ID_494132204" MODIFIED="1487945525177" TEXT="instance console is global object"/>
 </node>
-<node CREATED="1487846273404" FOLDED="true" ID="ID_1160571799" MODIFIED="1496091013718" TEXT="Process">
+<node CREATED="1487846273404" FOLDED="true" ID="ID_1160571799" MODIFIED="1497338234523" TEXT="Process">
 <node CREATED="1487930551425" FOLDED="true" ID="ID_1351971233" MODIFIED="1487945539925" TEXT="General">
 <node CREATED="1487930495807" ID="ID_236877998" MODIFIED="1487945538681" TEXT="instance process global object"/>
 <node CREATED="1487930520979" ID="ID_1672949625" MODIFIED="1487930534353" TEXT="provides information about, and control over, the current Node.js process. As a global, it is "/>
@@ -1194,58 +1194,58 @@
 <node CREATED="1487942003799" ID="ID_948592777" MODIFIED="1487942439666" TEXT="same:  on ( eventName: string, callback: Function ): Process"/>
 </node>
 </node>
-<node CREATED="1487846225267" FOLDED="true" ID="ID_1599157961" MODIFIED="1496092175165" TEXT="HTTP">
-<node CREATED="1487712997547" ID="ID_1252712938" MODIFIED="1487712997547" TEXT="import http = require(&quot;http&quot;);"/>
-<node CREATED="1487857375729" FOLDED="true" ID="ID_93213959" MODIFIED="1496091973099" TEXT="createServer( ): Server;">
+<node CREATED="1487846225267" FOLDED="true" ID="ID_1599157961" MODIFIED="1497338237125" TEXT="HTTP">
+<node CREATED="1487712997547" ID="ID_1252712938" MODIFIED="1497337941112" TEXT="import Http = require(&quot;http&quot;);"/>
+<node CREATED="1487857375729" FOLDED="true" ID="ID_93213959" MODIFIED="1497338157174" TEXT="createServer( ): Http.Server;">
 <node CREATED="1487851172758" ID="ID_1597848479" MODIFIED="1487857388007" TEXT="creates and returns an instance of Server"/>
-<node CREATED="1496091908980" FOLDED="true" ID="ID_1622895074" MODIFIED="1496091969339" TEXT="Alternative">
-<node CREATED="1487857375729" ID="ID_1915392497" MODIFIED="1496091793809" TEXT="createServer(requestListener?: ( request: IncomingMessage, response: ServerResponse ) =&gt; void ): Server;"/>
+<node CREATED="1496091908980" FOLDED="true" ID="ID_1622895074" MODIFIED="1497338148438" TEXT="Alternative">
+<node CREATED="1487857375729" ID="ID_1915392497" MODIFIED="1497338144174" TEXT="createServer(requestListener?: ( request: Http.IncomingMessage, response: Http.ServerResponse ) =&gt; void ): Http.Server;"/>
 <node CREATED="1496091935027" ID="ID_471496842" MODIFIED="1496091968586" TEXT="creates the server and immediatley installs the listener"/>
 </node>
 </node>
-<node CREATED="1487846381290" FOLDED="true" ID="ID_787673964" MODIFIED="1496092159004" TEXT="Server">
-<node CREATED="1487852362460" FOLDED="true" ID="ID_1159021398" MODIFIED="1496092130990" TEXT="listen ( port: number ): Server;">
+<node CREATED="1487846381290" FOLDED="true" ID="ID_787673964" MODIFIED="1497338171019" TEXT="Server">
+<node CREATED="1487852362460" FOLDED="true" ID="ID_1159021398" MODIFIED="1497338163287" TEXT="listen ( port: number ): Http.Server;">
 <node CREATED="1487852658406" ID="ID_570094961" MODIFIED="1487852888699" TEXT="tells the serverinstance to listen on the given port"/>
-<node CREATED="1496092079268" FOLDED="true" ID="ID_136912850" MODIFIED="1496092130362" TEXT="alternative">
+<node CREATED="1496092079268" FOLDED="true" ID="ID_136912850" MODIFIED="1497338010458" TEXT="alternative">
 <node CREATED="1496092095848" ID="ID_1052023017" MODIFIED="1496092109805" TEXT="listen ( port: number, handler: Function)"/>
 <node CREATED="1496092112295" ID="ID_696804565" MODIFIED="1496092126735" TEXT="immediately installs a listener"/>
 </node>
 </node>
-<node CREATED="1496091657211" FOLDED="true" ID="ID_328709224" MODIFIED="1496092157767" TEXT="addListener(event: string, handler: Function)">
-<node CREATED="1496091723120" FOLDED="true" ID="ID_515246925" MODIFIED="1496092134766" TEXT="&quot;listening&quot;">
+<node CREATED="1496091657211" FOLDED="true" ID="ID_328709224" MODIFIED="1497338170499" TEXT="addListener(event: string, handler: Function)">
+<node CREATED="1496091723120" FOLDED="true" ID="ID_515246925" MODIFIED="1497338168068" TEXT="&quot;listening&quot;">
 <node CREATED="1496091740648" ID="ID_396582242" MODIFIED="1496091778187" TEXT="server bound to a port"/>
 <node CREATED="1496091986810" ID="ID_1332072470" MODIFIED="1496092000423" TEXT="no parameters required in handler"/>
 </node>
-<node CREATED="1496091756176" FOLDED="true" ID="ID_1616449774" MODIFIED="1496092157219" TEXT="&quot;request&quot;">
+<node CREATED="1496091756176" FOLDED="true" ID="ID_1616449774" MODIFIED="1497338169247" TEXT="&quot;request&quot;">
 <node CREATED="1496091762084" ID="ID_1419365090" MODIFIED="1496091771788" TEXT="incoming message"/>
-<node CREATED="1487857375729" FOLDED="true" ID="ID_1260959481" MODIFIED="1496092156679" TEXT="required parameters in handler">
-<node CREATED="1496092051928" ID="ID_202583899" MODIFIED="1496092051928" TEXT="request: IncomingMessage, response: ServerResponse"/>
+<node CREATED="1487857375729" FOLDED="true" ID="ID_1260959481" MODIFIED="1497338051364" TEXT="required parameters in handler">
+<node CREATED="1496092051928" ID="ID_202583899" MODIFIED="1497338049620" TEXT="request: Http.IncomingMessage, response: Http.ServerResponse"/>
 </node>
 </node>
 </node>
 </node>
-<node CREATED="1487846464461" FOLDED="true" ID="ID_888001343" MODIFIED="1496092164264" TEXT="IncomingMessage">
+<node CREATED="1487846464461" FOLDED="true" ID="ID_888001343" MODIFIED="1497338177582" TEXT="IncomingMessage">
 <node CREATED="1487857896846" ID="ID_1450966403" MODIFIED="1487860970915" TEXT="created automatically by the server and sent as the first parameter to the requestListener"/>
-<node CREATED="1487857976466" FOLDED="true" ID="ID_1927897937" MODIFIED="1496088494036" TEXT="method: string">
+<node CREATED="1487857976466" FOLDED="true" ID="ID_1927897937" MODIFIED="1497338174487" TEXT="method: string">
 <node CREATED="1487857980239" ID="ID_963159251" MODIFIED="1487857988629" TEXT="&quot;GET&quot;, &quot;POST&quot;, etc."/>
 </node>
-<node CREATED="1487858040760" FOLDED="true" ID="ID_711522344" MODIFIED="1496088506276" TEXT="url: string">
+<node CREATED="1487858040760" FOLDED="true" ID="ID_711522344" MODIFIED="1497338176913" TEXT="url: string">
 <node CREATED="1487863305014" ID="ID_145873630" MODIFIED="1487863452494" TEXT="the path including the search-string the server was requested with"/>
 </node>
 </node>
-<node CREATED="1487846468660" FOLDED="true" ID="ID_1299194322" MODIFIED="1496092173722" TEXT="ServerResponse">
+<node CREATED="1487846468660" FOLDED="true" ID="ID_1299194322" MODIFIED="1497338187113" TEXT="ServerResponse">
 <node CREATED="1487857896846" ID="ID_1976436422" MODIFIED="1487860963061" TEXT="created automatically by the server and sent as the second parameter to the requestListener"/>
-<node CREATED="1487863834984" FOLDED="true" ID="ID_244408433" MODIFIED="1496091005266" TEXT="setHeader ( name: string, value: string | string[ ] ): void;">
+<node CREATED="1487863834984" FOLDED="true" ID="ID_244408433" MODIFIED="1497338183331" TEXT="setHeader ( name: string, value: string | string[ ] ): void;">
 <node CREATED="1487863846278" ID="ID_1156891937" MODIFIED="1487863862978" TEXT="writes a header to the response stream"/>
 <node CREATED="1487863896618" ID="ID_346008731" MODIFIED="1487863908352" TEXT="e.g. setHeader(&quot;content-type&quot;, &quot;text/html&quot;)"/>
 </node>
-<node CREATED="1487864084403" FOLDED="true" ID="ID_1447491920" MODIFIED="1487864953604" TEXT="write ( text: string, callback?: Function ): boolean;">
+<node CREATED="1487864084403" FOLDED="true" ID="ID_1447491920" MODIFIED="1497338184695" TEXT="write ( text: string, callback?: Function ): boolean;">
 <node CREATED="1487864256489" ID="ID_1239824632" MODIFIED="1487864283072" TEXT="This sends a string to the response body"/>
 <node CREATED="1487864273922" ID="ID_281083878" MODIFIED="1487864273923" TEXT="This method may be called multiple times to provide successive parts of the body."/>
 <node CREATED="1487864300145" ID="ID_1736701202" MODIFIED="1487864335107" TEXT="returns true, when the string was successfully integrated"/>
 <node CREATED="1487864336571" ID="ID_1642735792" MODIFIED="1487864349545" TEXT="by default, the encoding is utf-8"/>
 </node>
-<node CREATED="1487864084403" FOLDED="true" ID="ID_1931327398" MODIFIED="1487927364265" TEXT="end ( text: string, callback?: Function ): void;">
+<node CREATED="1487864084403" FOLDED="true" ID="ID_1931327398" MODIFIED="1497338185861" TEXT="end ( text: string, callback?: Function ): void;">
 <node CREATED="1487864300145" ID="ID_433957067" MODIFIED="1487864868326" TEXT="same as write, but completes the response body"/>
 <node CREATED="1487864869326" ID="ID_1349724287" MODIFIED="1487864875285" TEXT="and signals the server to send the response to the client"/>
 <node CREATED="1487864903804" ID="ID_1191924959" MODIFIED="1487864945896" TEXT="Thus, this method must be called on each response!"/>
@@ -1253,12 +1253,12 @@
 </node>
 </node>
 </node>
-<node CREATED="1487846234499" FOLDED="true" ID="ID_63437870" MODIFIED="1487930457964" TEXT="URL">
-<node CREATED="1487712997547" ID="ID_463251638" MODIFIED="1487846239942" TEXT="import url = require(&quot;url&quot;);"/>
-<node CREATED="1487928425870" ID="ID_240797238" MODIFIED="1487928454648" TEXT="parse ( urlStr: string, parseQueryString?: boolean): Url;"/>
-<node CREATED="1487929365492" FOLDED="true" ID="ID_300672623" MODIFIED="1487930173939" TEXT="example">
-<node CREATED="1487927374502" ID="ID_138941839" MODIFIED="1487929877246" TEXT="url.parse( &quot;http://user:pass@host.com:8080/p/a/t/h?query=string#anchor&quot;, true)"/>
-<node CREATED="1487929301594" FOLDED="true" ID="ID_1262877184" MODIFIED="1487930169408" TEXT="returns Url">
+<node CREATED="1487846234499" FOLDED="true" ID="ID_63437870" MODIFIED="1497338238432" TEXT="URL">
+<node CREATED="1487712997547" ID="ID_463251638" MODIFIED="1497337993552" TEXT="import Url = require(&quot;url&quot;);"/>
+<node CREATED="1487928425870" ID="ID_240797238" MODIFIED="1497338202051" TEXT="parse ( urlStr: string, parseQueryString?: boolean): Url.Url;"/>
+<node CREATED="1487929365492" FOLDED="true" ID="ID_300672623" MODIFIED="1497338224186" TEXT="example">
+<node CREATED="1487927374502" ID="ID_138941839" MODIFIED="1497338212757" TEXT="Url.parse( &quot;http://user:pass@host.com:8080/p/a/t/h?query=string#anchor&quot;, true)"/>
+<node CREATED="1487929301594" FOLDED="true" ID="ID_1262877184" MODIFIED="1497338222999" TEXT="returns Url.Url">
 <node CREATED="1487929301609" ID="ID_1084515379" MODIFIED="1487929604350" TEXT="href: &apos;http://user:pass@host.com:8080/p/a/t/h?query=string#anchor&apos;"/>
 <node CREATED="1487929301599" ID="ID_1653581823" MODIFIED="1487929609335" TEXT="slashes: true"/>
 <node CREATED="1487929301597" ID="ID_35896300" MODIFIED="1487929613938" TEXT="protocol: &apos;http:&apos;"/>
