@@ -916,7 +916,7 @@ start with Heroku
 </ul>
 </li>
 <li><span id="show1_3_11" class="foldclosed" onClick="show_folder('1_3_11')" style="POSITION: absolute">+</span> <span id="hide1_3_11" class="foldopened" onClick="hide_folder('1_3_11')">-</span>
-Asynchronism
+Request/Response
 <ul id="fold1_3_11" style="POSITION: relative; VISIBILITY: visible;"><li>add http-Server and create response
 
 </li>
@@ -927,6 +927,9 @@ Asynchronism
 </a>
 
 </li>
+<li>include protocoll http:// when typing url with query in address bar
+
+</li>
 <li>FormData for POST, just to mention but stick with GET
 
 </li>
@@ -935,10 +938,38 @@ Asynchronism
 </li>
 <li><span id="show1_3_12" class="foldclosed" onClick="show_folder('1_3_12')" style="POSITION: absolute">+</span> <span id="hide1_3_12" class="foldopened" onClick="hide_folder('1_3_12')">-</span>
 Database
-<ul id="fold1_3_12" style="POSITION: relative; VISIBILITY: visible;"><li>anonymous and nested functions
+<ul id="fold1_3_12" style="POSITION: relative; VISIBILITY: visible;"><li>copy node_modules into project, create database-folder
 
 </li>
-<li>start Mongo
+<li>add "mongodb": "2.2.12" as dependency in package
+
+</li>
+<li><span id="show1_3_12_1" class="foldclosed" onClick="show_folder('1_3_12_1')" style="POSITION: absolute">+</span> <span id="hide1_3_12_1" class="foldopened" onClick="hide_folder('1_3_12_1')">-</span>
+start mongod in terminal
+<ul id="fold1_3_12_1" style="POSITION: relative; VISIBILITY: visible;"><li>"C:/Program Files/.../mongod.exe" --dbpath [database-folder]
+
+</li>
+<li>see port and other messages
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_3_12_2" class="foldclosed" onClick="show_folder('1_3_12_2')" style="POSITION: absolute">+</span> <span id="hide1_3_12_2" class="foldopened" onClick="hide_folder('1_3_12_2')">-</span>
+start shell in system console
+<ul id="fold1_3_12_2" style="POSITION: relative; VISIBILITY: visible;"><li>type some commands
+
+</li>
+<li>see response in terminal
+
+</li>
+
+</ul>
+</li>
+<li>examine node-code for database communication
+
+</li>
+<li>anonymous and nested functions
 
 </li>
 
@@ -3634,7 +3665,10 @@ General
 </li>
 <li><span id="show1_14_2" class="foldclosed" onClick="show_folder('1_14_2')" style="POSITION: absolute">+</span> <span id="hide1_14_2" class="foldopened" onClick="hide_folder('1_14_2')">-</span>
 Shell commands
-<ul id="fold1_14_2" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_14_2_1" class="foldclosed" onClick="show_folder('1_14_2_1')" style="POSITION: absolute">+</span> <span id="hide1_14_2_1" class="foldopened" onClick="hide_folder('1_14_2_1')">-</span>
+<ul id="fold1_14_2" style="POSITION: relative; VISIBILITY: visible;"><li>use system console to type curly brackets
+
+</li>
+<li><span id="show1_14_2_1" class="foldclosed" onClick="show_folder('1_14_2_1')" style="POSITION: absolute">+</span> <span id="hide1_14_2_1" class="foldopened" onClick="hide_folder('1_14_2_1')">-</span>
 help, db.help(), db.&lt;collection&gt;.help()
 <ul id="fold1_14_2_1" style="POSITION: relative; VISIBILITY: visible;"><li>show help for different areas of operation
 
@@ -3685,6 +3719,14 @@ db.&lt;collection&gt;.insert ( doc: Object)
 <li><span id="show1_14_2_7" class="foldclosed" onClick="show_folder('1_14_2_7')" style="POSITION: absolute">+</span> <span id="hide1_14_2_7" class="foldopened" onClick="hide_folder('1_14_2_7')">-</span>
 db.&lt;collection&gt;.drop
 <ul id="fold1_14_2_7" style="POSITION: relative; VISIBILITY: visible;"><li>removes the collection from the database
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_14_2_8" class="foldclosed" onClick="show_folder('1_14_2_8')" style="POSITION: absolute">+</span> <span id="hide1_14_2_8" class="foldopened" onClick="hide_folder('1_14_2_8')">-</span>
+db.dropDatabase()
+<ul id="fold1_14_2_8" style="POSITION: relative; VISIBILITY: visible;"><li>delete current database
 
 </li>
 
