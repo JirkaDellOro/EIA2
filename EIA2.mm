@@ -182,7 +182,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1481403992317" FOLDED="true" ID="ID_187226101" MODIFIED="1497820613403" POSITION="left" TEXT="Curriculum">
+<node CREATED="1481403992317" FOLDED="true" ID="ID_187226101" MODIFIED="1497820935730" POSITION="left" TEXT="Curriculum">
 <node CREATED="1481404003125" FOLDED="true" ID="ID_1041763061" MODIFIED="1497820221328" TEXT="Primer">
 <node CREATED="1489398121825" ID="ID_562893010" MODIFIED="1489517594812" TEXT="Crawford"/>
 <node CREATED="1489396403880" FOLDED="true" ID="ID_160536930" MODIFIED="1489488005036" TEXT="Mindmap">
@@ -270,12 +270,13 @@
 <node CREATED="1496087481477" ID="ID_434406269" MODIFIED="1496087501924" TEXT="call app via http -&gt; server missing"/>
 </node>
 </node>
-<node CREATED="1486638322234" FOLDED="true" ID="ID_1397042242" MODIFIED="1497820189561" TEXT="Request/Response">
+<node CREATED="1486638322234" FOLDED="true" ID="ID_1397042242" MODIFIED="1497820753881" TEXT="Request/Response">
 <node CREATED="1496087503229" ID="ID_1139780898" MODIFIED="1496163808725" TEXT="add http-Server and create response"/>
 <node CREATED="1488971938888" ID="ID_456613430" MODIFIED="1496075711766" TEXT="find parameters in browser analysis (if possible for GET)"/>
 <node CREATED="1487865334139" ID="ID_719604506" LINK="https://nodejs.org/dist/latest-v7.x/docs/api/url.html#url_url_strings_and_url_objects" MODIFIED="1494764076199" TEXT="show node URL scheme in documentation"/>
 <node CREATED="1497365195315" ID="ID_170664290" MODIFIED="1497365226438" TEXT="include protocoll http:// when typing url with query in address bar"/>
 <node CREATED="1488204474899" ID="ID_610530320" MODIFIED="1494764020484" TEXT="FormData for POST, just to mention but stick with GET"/>
+<node CREATED="1497820734597" ID="ID_1831989974" MODIFIED="1497820751836" TEXT="Ajax via XMLHttpRequest (Fetch-API?)"/>
 </node>
 <node CREATED="1486640699737" FOLDED="true" ID="ID_684751491" MODIFIED="1497820611757" STYLE="fork" TEXT="Database">
 <node CREATED="1497819236269" ID="ID_1981209427" MODIFIED="1497819473011" TEXT="copy node_modules into project, create database-folder"/>
