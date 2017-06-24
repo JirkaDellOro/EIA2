@@ -1,7 +1,7 @@
 <map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
 <node CREATED="1480496236572" ID="ID_1483245584" MODIFIED="1492161762523" TEXT="EIA2">
-<node CREATED="1486640980741" FOLDED="true" ID="ID_1634475163" MODIFIED="1492161660953" POSITION="left" TEXT="References">
+<node CREATED="1486640980741" FOLDED="true" ID="ID_1634475163" MODIFIED="1498287475526" POSITION="left" TEXT="References">
 <node CREATED="1487071662786" ID="ID_517239067" LINK="DIA2Landscape.png" MODIFIED="1487071688268" TEXT="Landscape"/>
 <node CREATED="1486899143788" ID="ID_1157514353" LINK="https://git-scm.com/" MODIFIED="1486899151008" TEXT="Git"/>
 <node CREATED="1486647179592" ID="ID_896471124" LINK="https://help.github.com/" MODIFIED="1489396750826" STYLE="fork" TEXT="Github"/>
@@ -23,14 +23,15 @@
 <node CREATED="1486647047996" ID="ID_1550158405" LINK="http://mongodb.github.io/node-mongodb-native/2.0/api/index.html" MODIFIED="1486647062373" TEXT="Node mongodb driver"/>
 <node CREATED="1487497683702" ID="ID_1425960866" LINK="http://www.mongodbspain.com/wp-content/uploads/2014/03/MongoDBSpain-CheatSheet-p1.jpg" MODIFIED="1487497706706" TEXT="MongoDB Cheat Sheet"/>
 <node CREATED="1486647113550" ID="ID_288337743" LINK="https://devcenter.heroku.com/categories/reference" MODIFIED="1486647120659" TEXT="Heroku"/>
+<node CREATED="1498287456658" ID="ID_540395138" LINK="https://docs.npmjs.com/files/package.json" MODIFIED="1498287470333" TEXT="Package.json"/>
 </node>
-<node CREATED="1480496315340" FOLDED="true" ID="ID_1809458400" MODIFIED="1489911552992" POSITION="left" TEXT="Installations">
+<node CREATED="1480496315340" FOLDED="true" ID="ID_1809458400" MODIFIED="1498287179342" POSITION="left" TEXT="Installations">
 <node CREATED="1485860845302" FOLDED="true" ID="ID_655899580" MODIFIED="1488714393869" TEXT="Node">
 <node CREATED="1485860951206" ID="ID_188992718" LINK="https://nodejs.org" MODIFIED="1485860951206" TEXT="https://nodejs.org"/>
 </node>
-<node CREATED="1485856687396" FOLDED="true" ID="ID_927234325" MODIFIED="1486997327197" TEXT="Eclipse">
+<node CREATED="1485856687396" ID="ID_927234325" MODIFIED="1498252973399" TEXT="Eclipse">
 <node CREATED="1485856693472" ID="ID_1923863265" MODIFIED="1486635540690" TEXT="Eclipse IDE for JavaScript and Web Developers"/>
-<node CREATED="1485860930189" ID="ID_995691255" LINK="http://www.eclipse.org/downloads/eclipse-packages/" MODIFIED="1485860930189" TEXT="eclipse.org &gt; Downloads &gt; Eclipse-packages"/>
+<node CREATED="1485860930189" ID="ID_995691255" LINK="http://www.eclipse.org/downloads/eclipse-packages/" MODIFIED="1498252979715" STYLE="fork" TEXT="eclipse.org &gt; Downloads &gt; Eclipse-packages"/>
 <node CREATED="1486635571638" ID="ID_1364513899" MODIFIED="1486635632985" TEXT="download archive and unpack at destination of choice"/>
 </node>
 <node CREATED="1480754786292" FOLDED="true" ID="ID_172686505" MODIFIED="1488715475910" TEXT="Terminal">
@@ -101,14 +102,14 @@
 <node CREATED="1480509935356" ID="ID_521567330" MODIFIED="1480509946532" TEXT="Import as general project"/>
 <node CREATED="1480509962498" ID="ID_708496661" MODIFIED="1480509968509" TEXT="next -&gt; finish"/>
 </node>
-<node CREATED="1481135588184" FOLDED="true" ID="ID_1870446335" MODIFIED="1489396835099" TEXT="Heroku">
+<node CREATED="1481135588184" FOLDED="true" ID="ID_1870446335" MODIFIED="1498287176937" TEXT="Heroku">
 <node CREATED="1485861188746" ID="ID_172783826" LINK="https://www.heroku.com/" MODIFIED="1485861191514" TEXT="https://www.heroku.com/"/>
 <node CREATED="1486647363334" ID="ID_1229163055" MODIFIED="1486647369163" TEXT="Create free account"/>
 <node CREATED="1486647371165" ID="ID_317625523" MODIFIED="1486647391269" TEXT="select language Node.js"/>
 <node CREATED="1486647457953" ID="ID_733622006" MODIFIED="1486647511158" TEXT="create new app using &quot;new&quot;-button"/>
 <node CREATED="1485861492243" ID="ID_1875958241" MODIFIED="1486647550233" TEXT="connect app to Github-project"/>
 <node CREATED="1486647583934" ID="ID_247289639" MODIFIED="1486647596269" TEXT="authorize Heroku to access repositories"/>
-<node CREATED="1487083632822" FOLDED="true" ID="ID_1016684076" LINK="package.json" MODIFIED="1489396835099" TEXT="package.json">
+<node CREATED="1487083632822" FOLDED="true" ID="ID_1016684076" LINK="package.json" MODIFIED="1498253029576" TEXT="package.json">
 <node CREATED="1481137260176" ID="ID_701812945" MODIFIED="1487083666223" TEXT="download to your project"/>
 <node CREATED="1487083667032" ID="ID_156476317" MODIFIED="1487083674273" TEXT="modifiy it properly"/>
 <node CREATED="1487083675001" ID="ID_839089964" MODIFIED="1487083687103" TEXT="sync to Github"/>
