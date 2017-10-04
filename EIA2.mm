@@ -1,7 +1,7 @@
 <map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
 <node CREATED="1480496236572" ID="ID_1483245584" MODIFIED="1492161762523" TEXT="EIA2">
-<node CREATED="1486640980741" FOLDED="true" ID="ID_1634475163" MODIFIED="1498287475526" POSITION="left" TEXT="References">
+<node CREATED="1486640980741" FOLDED="true" ID="ID_1634475163" MODIFIED="1507120498850" POSITION="left" TEXT="References">
 <node CREATED="1487071662786" ID="ID_517239067" LINK="DIA2Landscape.png" MODIFIED="1487071688268" TEXT="Landscape"/>
 <node CREATED="1486899143788" ID="ID_1157514353" LINK="https://git-scm.com/" MODIFIED="1486899151008" TEXT="Git"/>
 <node CREATED="1486647179592" ID="ID_896471124" LINK="https://help.github.com/" MODIFIED="1489396750826" STYLE="fork" TEXT="Github"/>
@@ -25,11 +25,11 @@
 <node CREATED="1486647113550" ID="ID_288337743" LINK="https://devcenter.heroku.com/categories/reference" MODIFIED="1486647120659" TEXT="Heroku"/>
 <node CREATED="1498287456658" ID="ID_540395138" LINK="https://docs.npmjs.com/files/package.json" MODIFIED="1498287470333" TEXT="Package.json"/>
 </node>
-<node CREATED="1480496315340" FOLDED="true" ID="ID_1809458400" MODIFIED="1498287179342" POSITION="left" TEXT="Installations">
+<node CREATED="1480496315340" FOLDED="true" ID="ID_1809458400" MODIFIED="1507120495070" POSITION="left" TEXT="Installations">
 <node CREATED="1485860845302" FOLDED="true" ID="ID_655899580" MODIFIED="1488714393869" TEXT="Node">
 <node CREATED="1485860951206" ID="ID_188992718" LINK="https://nodejs.org" MODIFIED="1485860951206" TEXT="https://nodejs.org"/>
 </node>
-<node CREATED="1485856687396" ID="ID_927234325" MODIFIED="1498252973399" TEXT="Eclipse">
+<node CREATED="1485856687396" FOLDED="true" ID="ID_927234325" MODIFIED="1507120494007" TEXT="Eclipse">
 <node CREATED="1485856693472" ID="ID_1923863265" MODIFIED="1486635540690" TEXT="Eclipse IDE for JavaScript and Web Developers"/>
 <node CREATED="1485860930189" ID="ID_995691255" LINK="http://www.eclipse.org/downloads/eclipse-packages/" MODIFIED="1498252979715" STYLE="fork" TEXT="eclipse.org &gt; Downloads &gt; Eclipse-packages"/>
 <node CREATED="1486635571638" ID="ID_1364513899" MODIFIED="1486635632985" TEXT="download archive and unpack at destination of choice"/>
@@ -183,8 +183,8 @@
 </node>
 </node>
 </node>
-<node CREATED="1481403992317" FOLDED="true" ID="ID_187226101" MODIFIED="1497820935730" POSITION="left" TEXT="Curriculum">
-<node CREATED="1481404003125" FOLDED="true" ID="ID_1041763061" MODIFIED="1497820221328" TEXT="Primer">
+<node CREATED="1481403992317" FOLDED="true" ID="ID_187226101" MODIFIED="1507131919313" POSITION="left" TEXT="Curriculum">
+<node CREATED="1481404003125" FOLDED="true" ID="ID_1041763061" MODIFIED="1507131814711" TEXT="Primer">
 <node CREATED="1489398121825" ID="ID_562893010" MODIFIED="1489517594812" TEXT="Crawford"/>
 <node CREATED="1489396403880" FOLDED="true" ID="ID_160536930" MODIFIED="1489488005036" TEXT="Mindmap">
 <node CREATED="1489396408036" ID="ID_1945591059" MODIFIED="1489396416914" TEXT="where to find"/>
@@ -196,7 +196,12 @@
 <node CREATED="1481404031015" ID="ID_1317158703" MODIFIED="1486648609453" TEXT="recall first semester"/>
 <node CREATED="1481409931839" ID="ID_429382347" MODIFIED="1481409968816" TEXT="generate some content with typescript"/>
 </node>
-<node CREATED="1486762202465" FOLDED="true" ID="ID_1896864296" MODIFIED="1490084701613" TEXT="Tracetable / Debugger">
+<node CREATED="1486637471804" FOLDED="true" ID="ID_1801808833" MODIFIED="1507120157578" TEXT="Canvas">
+<node CREATED="1488969692163" ID="ID_1770713293" MODIFIED="1488969697610" TEXT="path metaphor"/>
+<node CREATED="1488969708177" ID="ID_171944979" MODIFIED="1488969722328" TEXT="shortcuts fillRect and strokeRect"/>
+<node CREATED="1488970174413" ID="ID_1429693639" MODIFIED="1488970223087" TEXT="create functions for drawing repetitive images"/>
+</node>
+<node CREATED="1486762202465" FOLDED="true" ID="ID_1896864296" MODIFIED="1507128642804" TEXT="Tracetable / Debugger">
 <node CREATED="1488358706786" ID="ID_401747030" MODIFIED="1488910223153" TEXT="difference runtime, compiletime, designtime"/>
 <node CREATED="1488204331937" ID="ID_560167572" MODIFIED="1488910410284" TEXT="console.log"/>
 <node CREATED="1488910150597" ID="ID_704172683" MODIFIED="1488910212974" TEXT="create a tracetable for a given program"/>
@@ -205,7 +210,23 @@
 <node CREATED="1490084092754" ID="ID_217851082" MODIFIED="1490084099334" TEXT="create activity diagram"/>
 <node CREATED="1489056296313" ID="ID_363680767" MODIFIED="1489063058737" TEXT="exercise: trace complex program with new structures/commands"/>
 </node>
-<node CREATED="1488910510768" FOLDED="true" ID="ID_107272273" MODIFIED="1490084704415" TEXT="DOM">
+<node CREATED="1486637481546" FOLDED="true" ID="ID_1450108589" MODIFIED="1507120429617" TEXT="Associative Arrays">
+<node CREATED="1491552724290" FOLDED="true" ID="ID_124890155" MODIFIED="1507120427583" TEXT="create images interactively using events">
+<node CREATED="1507120412955" ID="ID_1938973894" MODIFIED="1507120417694" TEXT="Timeout"/>
+<node CREATED="1507120418393" ID="ID_1818275087" MODIFIED="1507120419490" TEXT="Click"/>
+<node CREATED="1507120420135" ID="ID_542775380" MODIFIED="1507120425193" TEXT="Touch"/>
+</node>
+<node CREATED="1492161459353" ID="ID_837487270" MODIFIED="1492161482583" TEXT="animate objects -&gt; store properties"/>
+</node>
+<node CREATED="1486638178159" FOLDED="true" ID="ID_456355481" MODIFIED="1507120297069" STYLE="fork" TEXT="Classes">
+<node CREATED="1494763801960" ID="ID_1977825127" MODIFIED="1494763813549" TEXT="refactor interfaces to classes"/>
+<node CREATED="1494763814434" ID="ID_283043979" MODIFIED="1494763818503" TEXT="and add methods"/>
+</node>
+<node CREATED="1486638190057" FOLDED="true" ID="ID_786435816" MODIFIED="1507120185791" TEXT="Inheritance, Polymorphism">
+<node CREATED="1494763827970" ID="ID_1864189067" MODIFIED="1494763839566" TEXT="identify common properties and behaviours"/>
+<node CREATED="1494763841512" ID="ID_146002707" MODIFIED="1494763857035" TEXT="and create super- and subclasses"/>
+</node>
+<node CREATED="1488910510768" FOLDED="true" ID="ID_107272273" MODIFIED="1507120292709" TEXT="DOM">
 <node CREATED="1489243515430" FOLDED="true" ID="ID_618942026" MODIFIED="1490084111221" TEXT="examine interpretation of simple txt-file">
 <node CREATED="1489243546446" ID="ID_505479514" MODIFIED="1489243572646" TEXT="browser generates a model"/>
 </node>
@@ -215,36 +236,19 @@
 <node CREATED="1488969173957" ID="ID_340805171" MODIFIED="1488969187454" TEXT="iterate over elements/children"/>
 <node CREATED="1488969215408" ID="ID_1430564621" MODIFIED="1488969219993" TEXT="manipulate nodes"/>
 </node>
-<node CREATED="1486637599832" FOLDED="true" ID="ID_809730445" MODIFIED="1491552709370" TEXT="Events">
+<node CREATED="1486637599832" FOLDED="true" ID="ID_809730445" MODIFIED="1507120355650" TEXT="Events">
 <node CREATED="1488969310177" ID="ID_474591761" MODIFIED="1488969314888" TEXT="different implementations"/>
 <node CREATED="1488969331789" ID="ID_332537836" MODIFIED="1488969394093" TEXT="event-object, listeners, handlers, phases"/>
 <node CREATED="1488969406906" ID="ID_1390934079" MODIFIED="1488969464129" TEXT="listen to events at chosen nodes in the hierarchy"/>
 <node CREATED="1488969480733" ID="ID_622528389" MODIFIED="1488969489753" TEXT="use target and currentTarget"/>
 <node CREATED="1488969492489" ID="ID_428373213" MODIFIED="1488969502155" TEXT="this-binding"/>
-<node CREATED="1488969747622" FOLDED="true" ID="ID_1400678188" MODIFIED="1488970043869" TEXT="drag&amp;drop">
+<node CREATED="1488969747622" FOLDED="true" ID="ID_1400678188" MODIFIED="1507120354250" TEXT="drag&amp;drop">
 <node CREATED="1488969796544" ID="ID_1255945525" MODIFIED="1488969802490" TEXT="mark element as draggable"/>
 <node CREATED="1488969808790" ID="ID_1739668553" MODIFIED="1488969824673" TEXT="set dataTransfer-object on dragstart"/>
 <node CREATED="1488969829624" ID="ID_1955924836" MODIFIED="1488969849828" TEXT="event-information is saved and accessible on drop"/>
 <node CREATED="1488969850442" ID="ID_311823784" MODIFIED="1488969870163" TEXT="allow drop on element, preventDefault on dragover"/>
 <node CREATED="1488969875301" ID="ID_851402124" MODIFIED="1488969908515" TEXT="get dataTransfer-object on drop and process"/>
 </node>
-</node>
-<node CREATED="1486637471804" FOLDED="true" ID="ID_1801808833" MODIFIED="1492161511033" TEXT="Canvas">
-<node CREATED="1488969692163" ID="ID_1770713293" MODIFIED="1488969697610" TEXT="path metaphor"/>
-<node CREATED="1488969708177" ID="ID_171944979" MODIFIED="1488969722328" TEXT="shortcuts fillRect and strokeRect"/>
-<node CREATED="1488970174413" ID="ID_1429693639" MODIFIED="1488970223087" TEXT="create functions for drawing repetitive images"/>
-</node>
-<node CREATED="1486637481546" FOLDED="true" ID="ID_1450108589" MODIFIED="1497820234050" TEXT="Associative Arrays">
-<node CREATED="1491552724290" ID="ID_124890155" MODIFIED="1491552742920" TEXT="create images interactively using events"/>
-<node CREATED="1492161459353" ID="ID_837487270" MODIFIED="1492161482583" TEXT="animate objects -&gt; store properties"/>
-</node>
-<node CREATED="1486638178159" FOLDED="true" ID="ID_456355481" MODIFIED="1497820141678" STYLE="fork" TEXT="Classes">
-<node CREATED="1494763801960" ID="ID_1977825127" MODIFIED="1494763813549" TEXT="refactor interfaces to classes"/>
-<node CREATED="1494763814434" ID="ID_283043979" MODIFIED="1494763818503" TEXT="and add methods"/>
-</node>
-<node CREATED="1486638190057" FOLDED="true" ID="ID_786435816" MODIFIED="1497820143305" TEXT="Inheritance, Polymorphism">
-<node CREATED="1494763827970" ID="ID_1864189067" MODIFIED="1494763839566" TEXT="identify common properties and behaviours"/>
-<node CREATED="1494763841512" ID="ID_146002707" MODIFIED="1494763857035" TEXT="and create super- and subclasses"/>
 </node>
 <node CREATED="1486638259326" FOLDED="true" ID="ID_1581079006" MODIFIED="1497820147309" TEXT="Forms and Queries">
 <node CREATED="1488969568570" ID="ID_1120198355" MODIFIED="1488969661636" TEXT="form-elements"/>
@@ -521,23 +525,23 @@
 <node CREATED="1486645411698" ID="ID_1538316216" MODIFIED="1489265626593" TEXT="import "/>
 </node>
 </node>
-<node CREATED="1488538765698" FOLDED="true" ID="ID_607602390" MODIFIED="1489396300569" POSITION="right" TEXT="Coding Style">
-<node CREATED="1489304852746" FOLDED="true" ID="ID_1395923549" MODIFIED="1489304859615" TEXT="Purpose">
+<node CREATED="1488538765698" FOLDED="true" ID="ID_607602390" MODIFIED="1507131894190" POSITION="right" TEXT="Coding Style">
+<node CREATED="1489304852746" FOLDED="true" ID="ID_1395923549" MODIFIED="1507131835291" TEXT="Purpose">
 <node CREATED="1488539468570" ID="ID_1233307534" MODIFIED="1488539468570" TEXT="Programme k&#xf6;nnen schnell sehr komplex werden. Daher ist es wichtig, sich an Stil-Regeln zu halten, um sie m&#xf6;glichst verst&#xe4;ndlich zu schreiben. In diesem Kurs gelten folgende Stil-Regeln:"/>
 </node>
-<node CREATED="1489304878636" FOLDED="true" ID="ID_8547282" MODIFIED="1489306404408" TEXT="1. Self-explanatory">
+<node CREATED="1489304878636" FOLDED="true" ID="ID_8547282" MODIFIED="1507131837281" TEXT="1. Self-explanatory">
 <node CREATED="1488539468580" ID="ID_1608750282" MODIFIED="1489304910642" TEXT="Code sollte sich so gut wie m&#xf6;glich selbst erkl&#xe4;ren. Hierzu sind sprechende Variablen-, Funktions- und Klassennamen etc. erforderlich. Kurze Namen sind nur in kleinen G&#xfc;ltigkeitsbereichen oder bei klarer Bedeutung (z.B. y f&#xfc;r vertikale Position) erlaubt."/>
 </node>
-<node CREATED="1489304920146" FOLDED="true" ID="ID_1988925687" MODIFIED="1489304939605" TEXT="2. Explicit typing and semicolons">
+<node CREATED="1489304920146" FOLDED="true" ID="ID_1988925687" MODIFIED="1507131843572" TEXT="2. Explicit typing and semicolons">
 <node CREATED="1488539468587" ID="ID_688688113" MODIFIED="1489304938591" TEXT="Variablen erhalten explizite Typ-Notationen und Anweisungen werden mit einem Semikolon beendet (auch wenn TypeScript diese automatisch einf&#xfc;gen bzw. inferieren kann)"/>
 </node>
-<node CREATED="1489304947856" FOLDED="true" ID="ID_136148424" MODIFIED="1489305050281" TEXT="3. camelCase for names of variables and functions, functions describe activities">
+<node CREATED="1489304947856" FOLDED="true" ID="ID_136148424" MODIFIED="1507131883512" TEXT="3. camelCase for names of variables and functions, functions describe activities">
 <node CREATED="1488539468591" ID="ID_97559331" MODIFIED="1489305048737" TEXT="Variablen- und Funktionsnamen beginnen mit Kleinbuchstaben und folgen der Kamelnotation (camelCase), d.h. bei zusammengesetzten Namen beginnen die Wortteile im Inneren mit einem Gro&#xdf;buchstaben  (z.B. animalLion). Funktionsnamen beschreiben dabei eine Aktivit&#xe4;t (z.B. calculateHorizontalPosition(...)) oder Frage (z.B. isHit())"/>
 </node>
-<node CREATED="1489305067833" FOLDED="true" ID="ID_868361134" MODIFIED="1489305088109" TEXT="4. Names of formal parameters start with underscore">
+<node CREATED="1489305067833" FOLDED="true" ID="ID_868361134" MODIFIED="1507131890360" TEXT="4. Names of formal parameters start with underscore">
 <node CREATED="1488539468594" ID="ID_1918366248" MODIFIED="1489305087419" TEXT="Die Namen formaler Parameter in Funktionen beginnen mit einem Unterstrich."/>
 </node>
-<node CREATED="1489305089785" FOLDED="true" ID="ID_1815560056" MODIFIED="1489305157393" TEXT="5. PascalCase for classes, interfaces and modules">
+<node CREATED="1489305089785" FOLDED="true" ID="ID_1815560056" MODIFIED="1507131892133" TEXT="5. PascalCase for classes, interfaces and modules">
 <node CREATED="1488539468595" ID="ID_1806695145" MODIFIED="1489305142081" TEXT="Die Namen von Klassen, Interfaces und Modulen beginnen mit einem Gro&#xdf;buchstaben und folgen ebenfalls der Kamelnotation. (PascalCase)"/>
 </node>
 <node CREATED="1489305164314" FOLDED="true" ID="ID_1139625541" MODIFIED="1489305224934" TEXT="6. All capital letters for enums, support readability using underscores">
@@ -550,7 +554,7 @@
 <node CREATED="1488539468601" ID="ID_770207662" MODIFIED="1489305526121" TEXT="Kommentare werden eingesetzt, um Programmteile abzugrenzen und die Verst&#xe4;ndlichkeit zu erh&#xf6;hen. Programmteile, die von anderen Skripts genutzt werden sollen, werden im JSDoc-Format kommentiert &#xa;(/** &#x2026; */)"/>
 </node>
 </node>
-<node CREATED="1488540848465" FOLDED="true" ID="ID_226943766" MODIFIED="1494881408948" POSITION="right" TEXT="Dictionary">
+<node CREATED="1488540848465" FOLDED="true" ID="ID_226943766" MODIFIED="1499275294200" POSITION="right" TEXT="Dictionary">
 <node CREATED="1488540857224" FOLDED="true" ID="ID_1410670011" MODIFIED="1492161702813" TEXT="namespace">
 <node CREATED="1488645098764" ID="ID_1571933734" MODIFIED="1488645135005" TEXT="defines a section of storage"/>
 <node CREATED="1488541430618" FOLDED="true" ID="ID_1839686656" MODIFIED="1488646109456" TEXT="to store data as variables, functions, arrays, classes, objects etc.">
@@ -567,22 +571,32 @@
 <node CREATED="1488645243134" ID="ID_104046935" MODIFIED="1488645264395" TEXT="not all storages can be accessed from everywhere"/>
 </node>
 </node>
-<node CREATED="1488550393531" FOLDED="true" ID="ID_1767142700" MODIFIED="1492161705633" TEXT="type">
+<node CREATED="1488550393531" FOLDED="true" ID="ID_1767142700" MODIFIED="1499274561990" TEXT="type">
 <node CREATED="1488645292394" ID="ID_1897175162" MODIFIED="1488645330535" TEXT="the meaning of data, the way to interpret a sequence of bits"/>
-<node CREATED="1488645278814" FOLDED="true" ID="ID_1825666895" MODIFIED="1488645334205" TEXT="Analogy">
+<node CREATED="1488645278814" FOLDED="true" ID="ID_1825666895" MODIFIED="1499274557401" TEXT="Analogy">
 <node CREATED="1488550398160" ID="ID_1462339747" MODIFIED="1488645284825" TEXT="the kind of some stuff"/>
 <node CREATED="1488550424506" ID="ID_1705853710" MODIFIED="1488645284825" TEXT="eg. solid, liquid, gaseous"/>
 </node>
 </node>
-<node CREATED="1488540943018" FOLDED="true" ID="ID_1235318146" MODIFIED="1492161708093" TEXT="variable">
+<node CREATED="1488540943018" FOLDED="true" ID="ID_1235318146" MODIFIED="1499275292768" TEXT="variable">
 <node CREATED="1488645461885" ID="ID_359447038" MODIFIED="1488645989502" TEXT="small piece of storage in a namespace that holds a value of a given type"/>
 <node CREATED="1488541191719" ID="ID_464578348" MODIFIED="1488646085409" TEXT="has a name unique to the namespace, by which the content can be found"/>
-<node CREATED="1488550517636" FOLDED="true" ID="ID_1137345622" MODIFIED="1488646089271" TEXT="variables of">
-<node CREATED="1488550530094" FOLDED="true" ID="ID_607337467" MODIFIED="1488645514737" TEXT="simple type">
+<node CREATED="1488550517636" FOLDED="true" ID="ID_1137345622" MODIFIED="1499275290861" TEXT="variables of">
+<node CREATED="1488550530094" FOLDED="true" ID="ID_607337467" MODIFIED="1499275290193" TEXT="simple type">
 <node CREATED="1488550536923" ID="ID_1187256617" MODIFIED="1488550563760" TEXT="are standard containers holding the value itself"/>
 </node>
-<node CREATED="1488550568825" FOLDED="true" ID="ID_419208907" MODIFIED="1488645515197" TEXT="complext type">
+<node CREATED="1488550568825" FOLDED="true" ID="ID_419208907" MODIFIED="1499275289900" TEXT="complex type">
 <node CREATED="1488550573765" ID="ID_677223513" MODIFIED="1488645507863" TEXT="hold a reference to data that is stored somewhere else"/>
+</node>
+</node>
+<node CREATED="1499274718059" FOLDED="true" ID="ID_92885564" MODIFIED="1499275291321" TEXT="test type">
+<node CREATED="1499274727722" FOLDED="true" ID="ID_653736640" MODIFIED="1499275288606" TEXT="typeof">
+<node CREATED="1499274732772" ID="ID_1272228439" MODIFIED="1499274755010" TEXT="returns the type of a simple variable"/>
+<node CREATED="1499275082194" ID="ID_1188500301" MODIFIED="1499275172889" TEXT="symbol, function, object for variables of other types"/>
+<node CREATED="1499275119371" ID="ID_1404288715" MODIFIED="1499275123999" TEXT="or undefined"/>
+</node>
+<node CREATED="1499274757260" FOLDED="true" ID="ID_72424551" MODIFIED="1499275287971" TEXT="instanceof">
+<node CREATED="1499274762259" ID="ID_717128943" MODIFIED="1499275278755" TEXT="checks the type of a class instance against a given class"/>
 </node>
 </node>
 <node CREATED="1488645372225" FOLDED="true" ID="ID_339584849" MODIFIED="1488645453682" TEXT="Analogy">
@@ -590,7 +604,7 @@
 <node CREATED="1488645378235" ID="ID_686772310" MODIFIED="1488645395146" TEXT="like cardboard boxes, bottles or balloons"/>
 </node>
 </node>
-<node CREATED="1488541475525" FOLDED="true" ID="ID_910508875" MODIFIED="1492161711303" TEXT="function">
+<node CREATED="1488541475525" FOLDED="true" ID="ID_910508875" MODIFIED="1499274550940" TEXT="function">
 <node CREATED="1488645594934" ID="ID_711940041" MODIFIED="1488645658046" TEXT="piece of code that can be executed arbitrarily within the program"/>
 <node CREATED="1488549713902" ID="ID_55523424" MODIFIED="1488645691993" TEXT="comes with its own namespace to temporarily hold local variables"/>
 <node CREATED="1488541191719" FOLDED="true" ID="ID_299459942" MODIFIED="1488645844434" TEXT="has a name unique in its scope, and is called to execute by this name">
@@ -653,7 +667,7 @@
 <node CREATED="1488647378132" ID="ID_1293422431" MODIFIED="1488647439221" TEXT="a construction plan for a drawer cabinet with labels"/>
 </node>
 </node>
-<node CREATED="1488549013238" FOLDED="true" ID="ID_1250809012" MODIFIED="1492161734283" TEXT="class">
+<node CREATED="1488549013238" FOLDED="true" ID="ID_1250809012" MODIFIED="1499274541331" TEXT="class">
 <node CREATED="1488647472549" ID="ID_184538594" MODIFIED="1488647766311" TEXT="a pattern for a complex data structure ..."/>
 <node CREATED="1488647537631" ID="ID_908385488" MODIFIED="1488647781469" TEXT="... using assigned variables, then called attributes or properties ..."/>
 <node CREATED="1488647631850" ID="ID_909552275" MODIFIED="1488647787713" TEXT="... and functions, then called methods"/>
@@ -772,47 +786,87 @@
 <node CREATED="1488659841505" ID="ID_260388562" MODIFIED="1488659963437" TEXT="the statement &quot;throw&quot; intentionally causes an exception and passes execution to the logically nearest catch"/>
 </node>
 </node>
-<node CREATED="1335127717958" FOLDED="true" ID="ID_598994719" MODIFIED="1491552796270" POSITION="right" TEXT="Document Object Model (DOM)">
-<node CREATED="1488133392440" FOLDED="true" ID="ID_1057259957" MODIFIED="1489230273293" TEXT="General">
-<node CREATED="1488133408262" FOLDED="true" ID="ID_723172963" LINK="https://www.w3.org/" MODIFIED="1489227841514" TEXT="Standardized by W3C">
-<node CREATED="1488133541068" ID="ID_1572446720" LINK="https://github.com/timbl" MODIFIED="1488133552426" TEXT="led by Tim Berners-Lee"/>
-<node CREATED="1488133617609" ID="ID_421794659" MODIFIED="1488133628481" TEXT="... the creator of the World-Wide-Web"/>
+<node CREATED="1337524335428" FOLDED="true" ID="ID_1466249769" MODIFIED="1507120247361" POSITION="right" TEXT="Canvas">
+<node CREATED="1488191205727" FOLDED="true" ID="ID_1664671297" MODIFIED="1507120236529" TEXT="General">
+<node CREATED="1337527035322" ID="ID_248831518" MODIFIED="1488191217920" TEXT="area in document that allows pixel manipulation"/>
+<node CREATED="1488191292167" ID="ID_423812147" MODIFIED="1488192657325" TEXT="method getContext(&quot;2d&quot;) of HTMLCanvasElement ..."/>
+<node CREATED="1488192658376" ID="ID_936059937" MODIFIED="1488192743294" TEXT="... returns an object of type CanvasRenderingContext2D ..."/>
+<node CREATED="1488192747090" ID="ID_544961235" MODIFIED="1488192787051" TEXT="... that offers methods for manipulation of the canvas"/>
+<node CREATED="1488192481247" ID="ID_1014339207" MODIFIED="1488192518217" TEXT="property canvas of the object holds a reference to the HTMLCanvasElement"/>
+<node CREATED="1488191664045" FOLDED="true" ID="ID_1190806350" MODIFIED="1488552767489" TEXT="example">
+<node CREATED="1488191744524" FOLDED="true" ID="ID_663723335" MODIFIED="1488193380306" TEXT="var canvas: HTMLCanvasElement;">
+<node CREATED="1488191769099" ID="ID_1822153518" MODIFIED="1488191802958" TEXT="create a variable to reference to CanvasElement on the web page"/>
 </node>
-<node CREATED="1488126813612" ID="ID_228064884" MODIFIED="1488133402048" TEXT="platform- and language-neutral interface"/>
-<node CREATED="1488132645878" ID="ID_364777668" MODIFIED="1488133402050" TEXT="allows programs and scripts to dynamically access and update..."/>
-<node CREATED="1488132670022" ID="ID_1900953414" MODIFIED="1488133402051" TEXT="...the content, structure and style of documents."/>
-<node CREATED="1488126836101" ID="ID_1977711284" MODIFIED="1488133402053" TEXT="While loading a web page, the browser creates a DOM of the page."/>
+<node CREATED="1488191744526" FOLDED="true" ID="ID_1217783441" MODIFIED="1488192291770" TEXT="var crc2: CanvasRenderingContext2D;">
+<node CREATED="1488192054661" ID="ID_1792987222" MODIFIED="1488192077409" TEXT="create a variable to reference the render-api-object"/>
 </node>
-<node CREATED="1488126859858" FOLDED="true" ID="ID_1131907390" MODIFIED="1489227806430" TEXT="DOM is constructed as a tree of nodes">
-<node CREATED="1488132739489" ID="ID_1361287173" MODIFIED="1488132770400" TEXT="each node has a parent-node"/>
-<node CREATED="1488132754418" ID="ID_749926548" MODIFIED="1488132766210" TEXT="and can have multiple child-nodes"/>
+<node CREATED="1488191744527" FOLDED="true" ID="ID_1194610971" MODIFIED="1488192291478" TEXT="canvas = document.getElementsByTagName(&quot;canvas&quot;)[0];">
+<node CREATED="1488192086987" ID="ID_1767251064" MODIFIED="1488192104935" TEXT="define canvas as the first canvas-element found"/>
 </node>
-<node CREATED="1335129318911" FOLDED="true" ID="ID_152896372" MODIFIED="1489227834789" TEXT="Example">
-<node CREATED="1335126497177" FOLDED="true" ID="ID_982665992" MODIFIED="1488139738591" TEXT="&lt;p title=&quot;testTitle&quot;&gt;&#xa;    This is a sample of some &lt;b&gt;HTML you might&lt;br&gt;&#xa;    find&lt;/b&gt; in your document&#xa;&lt;/p&gt;">
-<node CREATED="1335126665343" FOLDED="true" ID="ID_1579865554" MODIFIED="1488132824773" TEXT="P">
-<node CREATED="1335126673980" FOLDED="true" ID="ID_303322494" MODIFIED="1488139738588" TEXT="attributes">
-<node CREATED="1335126764758" FOLDED="true" ID="ID_1260163533" MODIFIED="1488139738587" TEXT="title">
-<node CREATED="1335126772752" ID="ID_1021506366" MODIFIED="1335126778504" TEXT="&quot;testTitle&quot;"/>
+<node CREATED="1488191744528" FOLDED="true" ID="ID_247128531" MODIFIED="1488192291210" TEXT="crc2 = canvas.getContext(&quot;2d&quot;);">
+<node CREATED="1488192108679" ID="ID_150709825" MODIFIED="1488192220539" TEXT="define crc2 as the api-object for this canvas"/>
 </node>
-</node>
-<node CREATED="1335126784472" FOLDED="true" ID="ID_1781947912" MODIFIED="1488132823271" TEXT="childNodes">
-<node CREATED="1335126918771" ID="ID_914530570" MODIFIED="1335126929761" TEXT="&quot;This is a sample of some&quot;"/>
-<node CREATED="1335126930607" FOLDED="true" ID="ID_1233141638" MODIFIED="1488132822556" TEXT="B">
-<node CREATED="1335126979890" ID="ID_925045844" MODIFIED="1335126987209" TEXT="attributes"/>
-<node CREATED="1335126958122" FOLDED="true" ID="ID_1821150425" MODIFIED="1488132822047" TEXT="childNodes">
-<node CREATED="1335126989745" ID="ID_1036772484" MODIFIED="1335127001628" TEXT="&quot;HTML you might&quot;"/>
-<node CREATED="1488127208640" ID="ID_1082802590" MODIFIED="1488127212146" TEXT="&lt;br&gt;"/>
-<node CREATED="1488127213164" ID="ID_1752927420" MODIFIED="1488127218280" TEXT="&quot;find&quot;"/>
-</node>
-</node>
-<node CREATED="1335126939195" ID="ID_434422931" MODIFIED="1335127006742" TEXT="&quot;in your document&quot;"/>
+<node CREATED="1488192229158" FOLDED="true" ID="ID_1248409096" MODIFIED="1488193381389" TEXT="console.log ( crc2.canvas == canvas );">
+<node CREATED="1488192263390" ID="ID_1204740162" MODIFIED="1488192288741" TEXT="check back if everything fits"/>
 </node>
 </node>
 </node>
+<node CREATED="1488191264660" FOLDED="true" ID="ID_1078380109" MODIFIED="1507120238750" TEXT="CanvasRenderingContext2D">
+<node CREATED="1488187397127" FOLDED="true" ID="ID_301919378" MODIFIED="1491552839961" TEXT="Path">
+<node CREATED="1488187532887" ID="ID_1668848939" MODIFIED="1488187538036" TEXT="beginPath(): void;"/>
+<node CREATED="1488187397304" ID="ID_1497774724" MODIFIED="1488187436565" TEXT="closePath(): void;"/>
+<node CREATED="1488187605742" ID="ID_412940008" MODIFIED="1488187618175" TEXT="isPointInPath(x: number, y: number, fillRule?: string): boolean;"/>
+<node CREATED="1488187635630" ID="ID_1579975797" MODIFIED="1488187640209" TEXT="clip(fillRule?: string): void;"/>
+<node CREATED="1488187397314" ID="ID_83906441" MODIFIED="1488187448050" TEXT="moveTo(x: number, y: number): void;"/>
+<node CREATED="1488187397312" ID="ID_586974949" MODIFIED="1488187444168" TEXT="lineTo(x: number, y: number): void;"/>
+<node CREATED="1488187397316" ID="ID_102551462" MODIFIED="1488187456333" TEXT="rect(x: number, y: number, w: number, h: number): void;"/>
+<node CREATED="1488187397188" ID="ID_1511791021" MODIFIED="1488187397188" TEXT="arc(x: number, y: number, radius: number, startAngle: number, endAngle: number, anticlockwise?: boolean): void;"/>
+<node CREATED="1488187397302" ID="ID_1755220156" MODIFIED="1488187397302" TEXT="arcTo(x1: number, y1: number, x2: number, y2: number, radius: number): void;"/>
+<node CREATED="1488187397315" ID="ID_1966991399" MODIFIED="1488187466127" TEXT="quadraticCurveTo(cpx: number, cpy: number, x: number, y: number): void;"/>
+<node CREATED="1488187397303" ID="ID_836156589" MODIFIED="1488187397303" TEXT="bezierCurveTo(cp1x: number, cp1y: number, cp2x: number, cp2y: number, x: number, y: number): void;"/>
 </node>
-<node CREATED="1489227756208" ID="ID_472005890" LINK="DO-Hierarchy.pdf" MODIFIED="1489227831087" TEXT="nodes are instances of classes of the DOM-Class-Hierarchy"/>
+<node CREATED="1337528762331" FOLDED="true" ID="ID_804773048" MODIFIED="1491552886881" TEXT="State">
+<node CREATED="1488188481438" ID="ID_317252191" MODIFIED="1488188978436" TEXT="save(): void;"/>
+<node CREATED="1488188481436" ID="ID_182378928" MODIFIED="1488188978438" TEXT="restore(): void;"/>
+<node CREATED="1337528766902" FOLDED="true" ID="ID_1093657696" MODIFIED="1488188983309" TEXT="Line">
+<node CREATED="1488187745247" ID="ID_1848287957" MODIFIED="1488187745247" TEXT="lineWidth: number;"/>
+<node CREATED="1488187986293" MODIFIED="1488187986293" TEXT="strokeStyle: string | CanvasGradient | CanvasPattern;"/>
 </node>
-<node CREATED="1327999892919" FOLDED="true" ID="ID_857216794" MODIFIED="1491578549836" POSITION="right" STYLE="fork" TEXT="Eventsystem">
+<node CREATED="1337528775408" FOLDED="true" ID="ID_1643131067" MODIFIED="1491552884311" TEXT="Fill / Gradient">
+<node CREATED="1488187723185" MODIFIED="1488187723185" TEXT="fillStyle: string | CanvasGradient | CanvasPattern;"/>
+<node CREATED="1488188011564" ID="ID_985381419" MODIFIED="1488188011564" TEXT="createLinearGradient(x0: number, y0: number, x1: number, y1: number): CanvasGradient;"/>
+</node>
+<node CREATED="1488187959990" FOLDED="true" ID="ID_885959023" MODIFIED="1488188934360" TEXT="Text">
+<node CREATED="1488187963460" ID="ID_38867097" MODIFIED="1488187963460" TEXT="font: string;"/>
+<node CREATED="1488188099306" ID="ID_1253961340" MODIFIED="1488188099306" TEXT="textAlign: string;"/>
+</node>
+<node CREATED="1337527818432" FOLDED="true" ID="ID_795392375" MODIFIED="1488188973708" TEXT="Transformation">
+<node CREATED="1488188481437" ID="ID_1572080781" MODIFIED="1488188481437" TEXT="rotate(angle: number): void;"/>
+<node CREATED="1488188481440" ID="ID_97373584" MODIFIED="1488188481440" TEXT="scale(x: number, y: number): void;"/>
+<node CREATED="1488188537797" ID="ID_1675169158" MODIFIED="1488188537797" TEXT="transform(m11: number, m12: number, m21: number, m22: number, dx: number, dy: number): void;"/>
+<node CREATED="1488188537798" ID="ID_965088636" MODIFIED="1488188537798" TEXT="translate(x: number, y: number): void;"/>
+<node CREATED="1488188562618" ID="ID_1444961706" MODIFIED="1488188562618" TEXT="setTransform(m11: number, m12: number, m21: number, m22: number, dx: number, dy: number): void;"/>
+</node>
+</node>
+<node CREATED="1337528653394" FOLDED="true" ID="ID_505588253" MODIFIED="1496091703168" TEXT="Draw">
+<node CREATED="1488187847859" ID="ID_1297232905" MODIFIED="1488187866241" TEXT="fill(fillRule?: string): void;"/>
+<node CREATED="1488187861789" ID="ID_1310777474" MODIFIED="1488187866243" TEXT="stroke(path?: Path2D): void;"/>
+<node CREATED="1488187795920" ID="ID_1867441619" MODIFIED="1488187795920" TEXT="fillRect(x: number, y: number, w: number, h: number): void;"/>
+<node CREATED="1488187819555" ID="ID_200995888" MODIFIED="1488187819555" TEXT="strokeRect(x: number, y: number, w: number, h: number): void;"/>
+<node CREATED="1488187834737" ID="ID_1478354845" MODIFIED="1488187834737" TEXT="clearRect(x: number, y: number, w: number, h: number): void;"/>
+</node>
+<node CREATED="1337529383895" FOLDED="true" ID="ID_1277387801" MODIFIED="1491552846111" TEXT="Image">
+<node CREATED="1488188259344" ID="ID_1516363573" MODIFIED="1488188259344" TEXT="getImageData(sx: number, sy: number, sw: number, sh: number): ImageData;"/>
+<node CREATED="1488188386102" ID="ID_1581825427" MODIFIED="1488188386102" TEXT="putImageData(imagedata: ImageData, dx: number, dy: number, dirtyX?: number, dirtyY?: number, dirtyWidth?: number, dirtyHeight?: number): void;"/>
+</node>
+<node CREATED="1337529423236" FOLDED="true" ID="ID_974773514" MODIFIED="1491552847151" TEXT="Text">
+<node CREATED="1337529507381" ID="ID_5803029" MODIFIED="1337529507381" TEXT="fillText(text,x,y,maxWidth)"/>
+<node CREATED="1337529507382" ID="ID_1185477943" MODIFIED="1337529507382" TEXT="strokeText(text,x,y,maxWidth)"/>
+<node CREATED="1337529507382" ID="ID_1150423360" MODIFIED="1337529507382" TEXT="measureText(text).width"/>
+</node>
+</node>
+</node>
+<node CREATED="1327999892919" FOLDED="true" ID="ID_857216794" MODIFIED="1507120254383" POSITION="right" STYLE="fork" TEXT="Eventsystem">
 <node CREATED="1488135332234" FOLDED="true" ID="ID_476441293" MODIFIED="1491552803920" TEXT="General">
 <node CREATED="1488135508645" ID="ID_1654863333" MODIFIED="1488135673819" TEXT="eventsystem enables the programm to react to changes in the environment"/>
 <node CREATED="1488135573567" ID="ID_855007799" MODIFIED="1488135709578" TEXT="programmer doesn&apos;t require detailled knowledge of how to detect those changes"/>
@@ -1016,85 +1070,45 @@
 </node>
 </node>
 </node>
-<node CREATED="1337524335428" FOLDED="true" ID="ID_1466249769" MODIFIED="1496091704297" POSITION="right" TEXT="Canvas">
-<node CREATED="1488191205727" FOLDED="true" ID="ID_1664671297" MODIFIED="1491552835641" TEXT="General">
-<node CREATED="1337527035322" ID="ID_248831518" MODIFIED="1488191217920" TEXT="area in document that allows pixel manipulation"/>
-<node CREATED="1488191292167" ID="ID_423812147" MODIFIED="1488192657325" TEXT="method getContext(&quot;2d&quot;) of HTMLCanvasElement ..."/>
-<node CREATED="1488192658376" ID="ID_936059937" MODIFIED="1488192743294" TEXT="... returns an object of type CanvasRenderingContext2D ..."/>
-<node CREATED="1488192747090" ID="ID_544961235" MODIFIED="1488192787051" TEXT="... that offers methods for manipulation of the canvas"/>
-<node CREATED="1488192481247" ID="ID_1014339207" MODIFIED="1488192518217" TEXT="property canvas of the object holds a reference to the HTMLCanvasElement"/>
-<node CREATED="1488191664045" FOLDED="true" ID="ID_1190806350" MODIFIED="1488552767489" TEXT="example">
-<node CREATED="1488191744524" FOLDED="true" ID="ID_663723335" MODIFIED="1488193380306" TEXT="var canvas: HTMLCanvasElement;">
-<node CREATED="1488191769099" ID="ID_1822153518" MODIFIED="1488191802958" TEXT="create a variable to reference to CanvasElement on the web page"/>
+<node CREATED="1335127717958" FOLDED="true" ID="ID_598994719" MODIFIED="1491552796270" POSITION="right" TEXT="Document Object Model (DOM)">
+<node CREATED="1488133392440" FOLDED="true" ID="ID_1057259957" MODIFIED="1489230273293" TEXT="General">
+<node CREATED="1488133408262" FOLDED="true" ID="ID_723172963" LINK="https://www.w3.org/" MODIFIED="1489227841514" TEXT="Standardized by W3C">
+<node CREATED="1488133541068" ID="ID_1572446720" LINK="https://github.com/timbl" MODIFIED="1488133552426" TEXT="led by Tim Berners-Lee"/>
+<node CREATED="1488133617609" ID="ID_421794659" MODIFIED="1488133628481" TEXT="... the creator of the World-Wide-Web"/>
 </node>
-<node CREATED="1488191744526" FOLDED="true" ID="ID_1217783441" MODIFIED="1488192291770" TEXT="var crc2: CanvasRenderingContext2D;">
-<node CREATED="1488192054661" ID="ID_1792987222" MODIFIED="1488192077409" TEXT="create a variable to reference the render-api-object"/>
+<node CREATED="1488126813612" ID="ID_228064884" MODIFIED="1488133402048" TEXT="platform- and language-neutral interface"/>
+<node CREATED="1488132645878" ID="ID_364777668" MODIFIED="1488133402050" TEXT="allows programs and scripts to dynamically access and update..."/>
+<node CREATED="1488132670022" ID="ID_1900953414" MODIFIED="1488133402051" TEXT="...the content, structure and style of documents."/>
+<node CREATED="1488126836101" ID="ID_1977711284" MODIFIED="1488133402053" TEXT="While loading a web page, the browser creates a DOM of the page."/>
 </node>
-<node CREATED="1488191744527" FOLDED="true" ID="ID_1194610971" MODIFIED="1488192291478" TEXT="canvas = document.getElementsByTagName(&quot;canvas&quot;)[0];">
-<node CREATED="1488192086987" ID="ID_1767251064" MODIFIED="1488192104935" TEXT="define canvas as the first canvas-element found"/>
+<node CREATED="1488126859858" FOLDED="true" ID="ID_1131907390" MODIFIED="1489227806430" TEXT="DOM is constructed as a tree of nodes">
+<node CREATED="1488132739489" ID="ID_1361287173" MODIFIED="1488132770400" TEXT="each node has a parent-node"/>
+<node CREATED="1488132754418" ID="ID_749926548" MODIFIED="1488132766210" TEXT="and can have multiple child-nodes"/>
 </node>
-<node CREATED="1488191744528" FOLDED="true" ID="ID_247128531" MODIFIED="1488192291210" TEXT="crc2 = canvas.getContext(&quot;2d&quot;);">
-<node CREATED="1488192108679" ID="ID_150709825" MODIFIED="1488192220539" TEXT="define crc2 as the api-object for this canvas"/>
-</node>
-<node CREATED="1488192229158" FOLDED="true" ID="ID_1248409096" MODIFIED="1488193381389" TEXT="console.log ( crc2.canvas == canvas );">
-<node CREATED="1488192263390" ID="ID_1204740162" MODIFIED="1488192288741" TEXT="check back if everything fits"/>
-</node>
+<node CREATED="1335129318911" FOLDED="true" ID="ID_152896372" MODIFIED="1489227834789" TEXT="Example">
+<node CREATED="1335126497177" FOLDED="true" ID="ID_982665992" MODIFIED="1488139738591" TEXT="&lt;p title=&quot;testTitle&quot;&gt;&#xa;    This is a sample of some &lt;b&gt;HTML you might&lt;br&gt;&#xa;    find&lt;/b&gt; in your document&#xa;&lt;/p&gt;">
+<node CREATED="1335126665343" FOLDED="true" ID="ID_1579865554" MODIFIED="1488132824773" TEXT="P">
+<node CREATED="1335126673980" FOLDED="true" ID="ID_303322494" MODIFIED="1488139738588" TEXT="attributes">
+<node CREATED="1335126764758" FOLDED="true" ID="ID_1260163533" MODIFIED="1488139738587" TEXT="title">
+<node CREATED="1335126772752" ID="ID_1021506366" MODIFIED="1335126778504" TEXT="&quot;testTitle&quot;"/>
 </node>
 </node>
-<node CREATED="1488191264660" FOLDED="true" ID="ID_1078380109" MODIFIED="1496091703620" TEXT="CanvasRenderingContext2D">
-<node CREATED="1488187397127" FOLDED="true" ID="ID_301919378" MODIFIED="1491552839961" TEXT="Path">
-<node CREATED="1488187532887" ID="ID_1668848939" MODIFIED="1488187538036" TEXT="beginPath(): void;"/>
-<node CREATED="1488187397304" ID="ID_1497774724" MODIFIED="1488187436565" TEXT="closePath(): void;"/>
-<node CREATED="1488187605742" ID="ID_412940008" MODIFIED="1488187618175" TEXT="isPointInPath(x: number, y: number, fillRule?: string): boolean;"/>
-<node CREATED="1488187635630" ID="ID_1579975797" MODIFIED="1488187640209" TEXT="clip(fillRule?: string): void;"/>
-<node CREATED="1488187397314" ID="ID_83906441" MODIFIED="1488187448050" TEXT="moveTo(x: number, y: number): void;"/>
-<node CREATED="1488187397312" ID="ID_586974949" MODIFIED="1488187444168" TEXT="lineTo(x: number, y: number): void;"/>
-<node CREATED="1488187397316" ID="ID_102551462" MODIFIED="1488187456333" TEXT="rect(x: number, y: number, w: number, h: number): void;"/>
-<node CREATED="1488187397188" ID="ID_1511791021" MODIFIED="1488187397188" TEXT="arc(x: number, y: number, radius: number, startAngle: number, endAngle: number, anticlockwise?: boolean): void;"/>
-<node CREATED="1488187397302" ID="ID_1755220156" MODIFIED="1488187397302" TEXT="arcTo(x1: number, y1: number, x2: number, y2: number, radius: number): void;"/>
-<node CREATED="1488187397315" ID="ID_1966991399" MODIFIED="1488187466127" TEXT="quadraticCurveTo(cpx: number, cpy: number, x: number, y: number): void;"/>
-<node CREATED="1488187397303" ID="ID_836156589" MODIFIED="1488187397303" TEXT="bezierCurveTo(cp1x: number, cp1y: number, cp2x: number, cp2y: number, x: number, y: number): void;"/>
-</node>
-<node CREATED="1337528762331" FOLDED="true" ID="ID_804773048" MODIFIED="1491552886881" TEXT="State">
-<node CREATED="1488188481438" ID="ID_317252191" MODIFIED="1488188978436" TEXT="save(): void;"/>
-<node CREATED="1488188481436" ID="ID_182378928" MODIFIED="1488188978438" TEXT="restore(): void;"/>
-<node CREATED="1337528766902" FOLDED="true" ID="ID_1093657696" MODIFIED="1488188983309" TEXT="Line">
-<node CREATED="1488187745247" ID="ID_1848287957" MODIFIED="1488187745247" TEXT="lineWidth: number;"/>
-<node CREATED="1488187986293" MODIFIED="1488187986293" TEXT="strokeStyle: string | CanvasGradient | CanvasPattern;"/>
-</node>
-<node CREATED="1337528775408" FOLDED="true" ID="ID_1643131067" MODIFIED="1491552884311" TEXT="Fill / Gradient">
-<node CREATED="1488187723185" MODIFIED="1488187723185" TEXT="fillStyle: string | CanvasGradient | CanvasPattern;"/>
-<node CREATED="1488188011564" ID="ID_985381419" MODIFIED="1488188011564" TEXT="createLinearGradient(x0: number, y0: number, x1: number, y1: number): CanvasGradient;"/>
-</node>
-<node CREATED="1488187959990" FOLDED="true" ID="ID_885959023" MODIFIED="1488188934360" TEXT="Text">
-<node CREATED="1488187963460" ID="ID_38867097" MODIFIED="1488187963460" TEXT="font: string;"/>
-<node CREATED="1488188099306" ID="ID_1253961340" MODIFIED="1488188099306" TEXT="textAlign: string;"/>
-</node>
-<node CREATED="1337527818432" FOLDED="true" ID="ID_795392375" MODIFIED="1488188973708" TEXT="Transformation">
-<node CREATED="1488188481437" ID="ID_1572080781" MODIFIED="1488188481437" TEXT="rotate(angle: number): void;"/>
-<node CREATED="1488188481440" ID="ID_97373584" MODIFIED="1488188481440" TEXT="scale(x: number, y: number): void;"/>
-<node CREATED="1488188537797" ID="ID_1675169158" MODIFIED="1488188537797" TEXT="transform(m11: number, m12: number, m21: number, m22: number, dx: number, dy: number): void;"/>
-<node CREATED="1488188537798" ID="ID_965088636" MODIFIED="1488188537798" TEXT="translate(x: number, y: number): void;"/>
-<node CREATED="1488188562618" ID="ID_1444961706" MODIFIED="1488188562618" TEXT="setTransform(m11: number, m12: number, m21: number, m22: number, dx: number, dy: number): void;"/>
+<node CREATED="1335126784472" FOLDED="true" ID="ID_1781947912" MODIFIED="1488132823271" TEXT="childNodes">
+<node CREATED="1335126918771" ID="ID_914530570" MODIFIED="1335126929761" TEXT="&quot;This is a sample of some&quot;"/>
+<node CREATED="1335126930607" FOLDED="true" ID="ID_1233141638" MODIFIED="1488132822556" TEXT="B">
+<node CREATED="1335126979890" ID="ID_925045844" MODIFIED="1335126987209" TEXT="attributes"/>
+<node CREATED="1335126958122" FOLDED="true" ID="ID_1821150425" MODIFIED="1488132822047" TEXT="childNodes">
+<node CREATED="1335126989745" ID="ID_1036772484" MODIFIED="1335127001628" TEXT="&quot;HTML you might&quot;"/>
+<node CREATED="1488127208640" ID="ID_1082802590" MODIFIED="1488127212146" TEXT="&lt;br&gt;"/>
+<node CREATED="1488127213164" ID="ID_1752927420" MODIFIED="1488127218280" TEXT="&quot;find&quot;"/>
 </node>
 </node>
-<node CREATED="1337528653394" FOLDED="true" ID="ID_505588253" MODIFIED="1496091703168" TEXT="Draw">
-<node CREATED="1488187847859" ID="ID_1297232905" MODIFIED="1488187866241" TEXT="fill(fillRule?: string): void;"/>
-<node CREATED="1488187861789" ID="ID_1310777474" MODIFIED="1488187866243" TEXT="stroke(path?: Path2D): void;"/>
-<node CREATED="1488187795920" ID="ID_1867441619" MODIFIED="1488187795920" TEXT="fillRect(x: number, y: number, w: number, h: number): void;"/>
-<node CREATED="1488187819555" ID="ID_200995888" MODIFIED="1488187819555" TEXT="strokeRect(x: number, y: number, w: number, h: number): void;"/>
-<node CREATED="1488187834737" ID="ID_1478354845" MODIFIED="1488187834737" TEXT="clearRect(x: number, y: number, w: number, h: number): void;"/>
-</node>
-<node CREATED="1337529383895" FOLDED="true" ID="ID_1277387801" MODIFIED="1491552846111" TEXT="Image">
-<node CREATED="1488188259344" ID="ID_1516363573" MODIFIED="1488188259344" TEXT="getImageData(sx: number, sy: number, sw: number, sh: number): ImageData;"/>
-<node CREATED="1488188386102" ID="ID_1581825427" MODIFIED="1488188386102" TEXT="putImageData(imagedata: ImageData, dx: number, dy: number, dirtyX?: number, dirtyY?: number, dirtyWidth?: number, dirtyHeight?: number): void;"/>
-</node>
-<node CREATED="1337529423236" FOLDED="true" ID="ID_974773514" MODIFIED="1491552847151" TEXT="Text">
-<node CREATED="1337529507381" ID="ID_5803029" MODIFIED="1337529507381" TEXT="fillText(text,x,y,maxWidth)"/>
-<node CREATED="1337529507382" ID="ID_1185477943" MODIFIED="1337529507382" TEXT="strokeText(text,x,y,maxWidth)"/>
-<node CREATED="1337529507382" ID="ID_1150423360" MODIFIED="1337529507382" TEXT="measureText(text).width"/>
+<node CREATED="1335126939195" ID="ID_434422931" MODIFIED="1335127006742" TEXT="&quot;in your document&quot;"/>
 </node>
 </node>
+</node>
+</node>
+<node CREATED="1489227756208" ID="ID_472005890" LINK="DO-Hierarchy.pdf" MODIFIED="1489227831087" TEXT="nodes are instances of classes of the DOM-Class-Hierarchy"/>
 </node>
 <node CREATED="1327999759946" FOLDED="true" ID="ID_1723770104" MODIFIED="1496091707903" POSITION="right" TEXT="Forms">
 <node CREATED="1334519200750" FOLDED="true" ID="ID_923294015" MODIFIED="1488705612775" TEXT="Form">
