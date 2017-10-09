@@ -8,7 +8,7 @@
 		"start" : "node filename-of-start-script.js"
 	},
 	"engines" : {
-		"node" : "5.8.0"
+		"node" : "6.11.1"
 	},
 	"dependencies" : {
 	}
