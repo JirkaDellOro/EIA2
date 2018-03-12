@@ -14,7 +14,7 @@
 		"label-undefined": true,
 		"max-line-length": [false, 140],
 		"member-ordering": [true, "static-before-instance", "variables-before-functions"],
-		"no-any": false,
+		"no-any": true,
 		"no-arg": true,
 		"no-bitwise": true,
 		"no-console": [false, "debug", "info", "time", "timeEnd", "trace"],
@@ -35,7 +35,7 @@
 		"no-trailing-whitespace": false,
 		"no-unreachable": true,
 		"no-unused-expression": true,
-		"no-unused-variable": false,
+		"no-unused-variable": true,
 		"no-use-before-declare": true,
 		"no-var-requires": false,
 		"no-conditional-assignment": true,
@@ -56,7 +56,7 @@
 			}
 		],
 		"use-strict": [false, "check-module", "check-function"],
-		"variable-name": [true, "allow-leading-underscore"],
+		"variable-name": [true, "check-format", "allow-leading-underscore"],
 		"whitespace": [true, "check-branch", "check-decl", "check-operator", "check-separator", "check-type"]
 	}
 }
