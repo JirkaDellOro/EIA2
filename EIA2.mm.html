@@ -1,0 +1,4042 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>EIA2</title>
+<style type="text/css">
+    li { list-style: none;  margin: 0; }
+    p { margin: 0; }
+    span.foldopened { color: white; font-size: xx-small;
+    border-width: 1; font-family: monospace; padding: 0em 0.25em 0em 0.25em; background: #e0e0e0;
+    VISIBILITY: visible;
+    cursor:pointer; }
+
+
+    span.foldclosed { color: #666666; font-size: xx-small;
+    border-width: 1; font-family: monospace; padding: 0em 0.25em 0em 0.25em; background: #e0e0e0;
+    VISIBILITY: hidden;
+    cursor:pointer; }
+
+    span.foldspecial { color: #666666; font-size: xx-small; border-style: none solid solid none;
+    border-color: #CCCCCC; border-width: 1; font-family: sans-serif; padding: 0em 0.1em 0em 0.1em; background: #e0e0e0;
+    cursor:pointer; }
+
+    span.l { color: red; font-weight: bold; }
+
+    a.mapnode:link {text-decoration: none; color: black; }
+    a.mapnode:visited {text-decoration: none; color: black; }
+    a.mapnode:active {text-decoration: none; color: black; }
+    a.mapnode:hover {text-decoration: none; color: black; background: #eeeee0; }
+
+</style>
+<!-- ^ Position is not set to relative / absolute here because of Mozilla -->
+</head>
+<body>
+
+<script type="text/javascript">
+   // Here we implement folding. It works fine with MSIE5.5, MSIE6.0 and
+   // Mozilla 0.9.6.
+
+   if (document.layers) {
+      //Netscape 4 specific code
+      pre = 'document.';
+      post = ''; }
+   if (document.getElementById) {
+      //Netscape 6 specific code
+      pre = 'document.getElementById("';
+      post = '").style'; }
+   if (document.all) {
+      //IE4+ specific code
+      pre = 'document.all.';
+      post = '.style'; }
+
+function layer_exists(layer) {
+   try {
+      eval(pre + layer + post);
+      return true; }
+   catch (error) {
+      return false; }}
+
+function show_layer(layer) {
+   eval(pre + layer + post).position = 'relative'; 
+   eval(pre + layer + post).visibility = 'visible'; }
+
+function hide_layer(layer) {
+   eval(pre + layer + post).visibility = 'hidden';
+   eval(pre + layer + post).position = 'absolute'; }
+
+function hide_folder(folder) {
+    hide_folding_layer(folder)
+    show_layer('show'+folder);
+
+    scrollBy(0,0); // This is a work around to make it work in Browsers (Explorer, Mozilla)
+}
+
+function show_folder(folder) {
+    // Precondition: all subfolders are folded
+
+    show_layer('hide'+folder);
+    hide_layer('show'+folder);
+    show_layer('fold'+folder);
+
+    scrollBy(0,0); // This is a work around to make it work in Browsers (Explorer, Mozilla)
+
+    var i;
+    for (i=1; layer_exists('fold'+folder+'_'+i); ++i) {
+       show_layer('show'+folder+'_'+i); }
+}
+function show_folder_completely(folder) {
+    // Precondition: all subfolders are folded
+
+    show_layer('hide'+folder);
+    hide_layer('show'+folder);
+    show_layer('fold'+folder);
+
+    scrollBy(0,0); // This is a work around to make it work in Browsers (Explorer, Mozilla)
+
+    var i;
+    for (i=1; layer_exists('fold'+folder+'_'+i); ++i) {
+       show_folder_completely(folder+'_'+i); }
+}
+
+
+
+function hide_folding_layer(folder) {
+   var i;
+   for (i=1; layer_exists('fold'+folder+'_'+i); ++i) {
+       hide_folding_layer(folder+'_'+i); }
+
+   hide_layer('hide'+folder);
+   hide_layer('show'+folder);
+   hide_layer('fold'+folder);
+
+   scrollBy(0,0); // This is a work around to make it work in Browsers (Explorer, Mozilla)
+}
+
+function fold_document() {
+   var i;
+   var folder = '1';
+   for (i=1; layer_exists('fold'+folder+'_'+i); ++i) {
+       hide_folder(folder+'_'+i); }
+}
+
+function unfold_document() {
+   var i;
+   var folder = '1';
+   for (i=1; layer_exists('fold'+folder+'_'+i); ++i) {
+       show_folder_completely(folder+'_'+i); }
+}
+
+</script>
+<SPAN class="foldspecial" onclick="fold_document()">All +</SPAN>
+<SPAN class="foldspecial" onclick="unfold_document()">All -</SPAN>
+<p>EIA2
+<ul><li><span id="show1_1" class="foldclosed" onClick="show_folder('1_1')" style="POSITION: absolute">+</span> <span id="hide1_1" class="foldopened" onClick="hide_folder('1_1')">-</span>
+References
+<ul id="fold1_1" style="POSITION: relative; VISIBILITY: visible;"><li><a href="DIA2Landscape.png" target="_blank"><span class=l>~</span>&nbsp;Landscape
+</a>
+
+</li>
+<li><a href="https://git-scm.com/" target="_blank"><span class=l>~</span>&nbsp;Git
+</a>
+
+</li>
+<li><a href="https://help.github.com/" target="_blank"><span class=l>~</span>&nbsp;Github
+</a>
+
+</li>
+<li><a href="http://semver.org/" target="_blank"><span class=l>~</span>&nbsp;Semantic Versioning
+</a>
+
+</li>
+<li><a href="http://www.highscore.de/uml/" target="_blank"><span class=l>~</span>&nbsp;UML
+</a>
+
+</li>
+<li><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links" target="_blank"><span class=l>~</span>&nbsp;Markdown
+</a>
+
+</li>
+<li><a href="https://wiki.selfhtml.org/wiki/JavaScript" target="_blank"><span class=l>~</span>&nbsp;JavaScript
+</a>
+
+</li>
+<li><a href="http://www.typescriptlang.org/" target="_blank"><span class=l>~</span>&nbsp;TypeScript
+</a>
+
+</li>
+<li><a href="https://www.w3.org/" target="_blank"><span class=l>~</span>&nbsp;W3C
+</a>
+
+</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web" target="_blank"><span class=l>~</span>&nbsp;MDN
+</a>
+
+</li>
+<li><a href="DO-Hierarchy.pdf" target="_blank"><span class=l>~</span>&nbsp;DOM-Classes
+</a>
+
+</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D" target="_blank"><span class=l>~</span>&nbsp;CanvasRenderingContext2D
+</a>
+
+</li>
+<li><a href="http://www.cheat-sheets.org/saved-copy/HTML5_Canvas_Cheat_Sheet.pdf" target="_blank"><span class=l>~</span>&nbsp;HTML5 Canvas Cheat Sheet
+</a>
+
+</li>
+<li><a href="http://computergrafik.entertrain.com/" target="_blank"><span class=l>~</span>&nbsp;Computergrafik
+</a>
+
+</li>
+<li><a href="https://jirkadelloro.github.io/Trigonometer/" target="_blank"><span class=l>~</span>&nbsp;Trigonometer
+</a>
+
+</li>
+<li><a href="https://sftp.hs-furtwangen.de/~del/Apps/Transformation/Transformation.html" target="_blank"><span class=l>~</span>&nbsp;Transformator
+</a>
+
+</li>
+<li><a href="https://nodejs.org/dist/latest-v7.x/docs/api/" target="_blank"><span class=l>~</span>&nbsp;Node
+</a>
+
+</li>
+<li><a href="https://docs.mongodb.com/manual/reference/method/" target="_blank"><span class=l>~</span>&nbsp;Mongo shell
+</a>
+
+</li>
+<li><a href="http://mongodb.github.io/node-mongodb-native/2.0/api/index.html" target="_blank"><span class=l>~</span>&nbsp;Node mongodb driver
+</a>
+
+</li>
+<li><a href="http://www.mongodbspain.com/wp-content/uploads/2014/03/MongoDBSpain-CheatSheet-p1.jpg" target="_blank"><span class=l>~</span>&nbsp;MongoDB Cheat Sheet
+</a>
+
+</li>
+<li><a href="https://devcenter.heroku.com/categories/reference" target="_blank"><span class=l>~</span>&nbsp;Heroku
+</a>
+
+</li>
+<li><a href="https://docs.npmjs.com/files/package.json" target="_blank"><span class=l>~</span>&nbsp;Package.json
+</a>
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2" class="foldclosed" onClick="show_folder('1_2')" style="POSITION: absolute">+</span> <span id="hide1_2" class="foldopened" onClick="hide_folder('1_2')">-</span>
+Installations
+<ul id="fold1_2" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_2_1" class="foldclosed" onClick="show_folder('1_2_1')" style="POSITION: absolute">+</span> <span id="hide1_2_1" class="foldopened" onClick="hide_folder('1_2_1')">-</span>
+Node
+<ul id="fold1_2_1" style="POSITION: relative; VISIBILITY: visible;"><li><a href="https://nodejs.org" target="_blank"><span class=l>~</span>&nbsp;https://nodejs.org
+</a>
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2_2" class="foldclosed" onClick="show_folder('1_2_2')" style="POSITION: absolute">+</span> <span id="hide1_2_2" class="foldopened" onClick="hide_folder('1_2_2')">-</span>
+Eclipse
+<ul id="fold1_2_2" style="POSITION: relative; VISIBILITY: visible;"><li>Eclipse IDE for JavaScript and Web Developers
+
+</li>
+<li><a href="http://www.eclipse.org/downloads/eclipse-packages/" target="_blank"><span class=l>~</span>&nbsp;eclipse.org &gt; Downloads &gt; Eclipse-packages
+</a>
+
+</li>
+<li>download archive and unpack at destination of choice
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2_3" class="foldclosed" onClick="show_folder('1_2_3')" style="POSITION: absolute">+</span> <span id="hide1_2_3" class="foldopened" onClick="hide_folder('1_2_3')">-</span>
+Terminal
+<ul id="fold1_2_3" style="POSITION: relative; VISIBILITY: visible;"><li>Rightclick on Project-&gt;start local terminal
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2_4" class="foldclosed" onClick="show_folder('1_2_4')" style="POSITION: absolute">+</span> <span id="hide1_2_4" class="foldopened" onClick="hide_folder('1_2_4')">-</span>
+Typescript in Eclipse
+<ul id="fold1_2_4" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_2_4_1" class="foldclosed" onClick="show_folder('1_2_4_1')" style="POSITION: absolute">+</span> <span id="hide1_2_4_1" class="foldopened" onClick="hide_folder('1_2_4_1')">-</span>
+Help -&gt; Marketplace
+<ul id="fold1_2_4_1" style="POSITION: relative; VISIBILITY: visible;"><li>Search/Coose Typescript by Palantir
+
+</li>
+<li>Install
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2_4_2" class="foldclosed" onClick="show_folder('1_2_4_2')" style="POSITION: absolute">+</span> <span id="hide1_2_4_2" class="foldopened" onClick="hide_folder('1_2_4_2')">-</span>
+Preferences -&gt; Typescript -&gt; Compiler
+<ul id="fold1_2_4_2" style="POSITION: relative; VISIBILITY: visible;"><li>ECMAScript target version: ES6
+
+</li>
+<li>Module Code Generation: CommonJS
+
+</li>
+<li>Module resolution: Classic
+
+</li>
+<li><span id="show1_2_4_2_1" class="foldclosed" onClick="show_folder('1_2_4_2_1')" style="POSITION: absolute">+</span> <span id="hide1_2_4_2_1" class="foldopened" onClick="hide_folder('1_2_4_2_1')">-</span>
+Check
+<ul id="fold1_2_4_2_1" style="POSITION: relative; VISIBILITY: visible;"><li>Do not emit outputs...
+
+</li>
+<li>Report error on expressions...
+
+</li>
+<li>Compile all...
+
+</li>
+<li>Generate correspondig...
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2_4_3" class="foldclosed" onClick="show_folder('1_2_4_3')" style="POSITION: absolute">+</span> <span id="hide1_2_4_3" class="foldopened" onClick="hide_folder('1_2_4_3')">-</span>
+Help -&gt; Install new software
+<ul id="fold1_2_4_3" style="POSITION: relative; VISIBILITY: visible;"><li>Coose tslint from http://eclipse-update.palantir.com/eclipse-tslint
+
+</li>
+<li>Install
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2_4_4" class="foldclosed" onClick="show_folder('1_2_4_4')" style="POSITION: absolute">+</span> <span id="hide1_2_4_4" class="foldopened" onClick="hide_folder('1_2_4_4')">-</span>
+<a href="tslint.json" target="_blank"><span class=l>~</span>&nbsp;tslint.json
+</a>
+<ul id="fold1_2_4_4" style="POSITION: relative; VISIBILITY: visible;"><li>download to every TypeScript project
+
+</li>
+
+</ul>
+</li>
+<li>Enable TypeScript and TSLint on every TypeScript project
+
+</li>
+<li>LATER: copy node.d.ts and mongo.d.ts to project
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2_5" class="foldclosed" onClick="show_folder('1_2_5')" style="POSITION: absolute">+</span> <span id="hide1_2_5" class="foldopened" onClick="hide_folder('1_2_5')">-</span>
+Github (+pages)
+<ul id="fold1_2_5" style="POSITION: relative; VISIBILITY: visible;"><li><a href="https://github.com/" target="_blank"><span class=l>~</span>&nbsp;https://github.com/
+</a>
+
+</li>
+<li><span id="show1_2_5_1" class="foldclosed" onClick="show_folder('1_2_5_1')" style="POSITION: absolute">+</span> <span id="hide1_2_5_1" class="foldopened" onClick="hide_folder('1_2_5_1')">-</span>
+create user + page
+<ul id="fold1_2_5_1" style="POSITION: relative; VISIBILITY: visible;"><li>sign up
+
+</li>
+<li><span id="show1_2_5_1_1" class="foldclosed" onClick="show_folder('1_2_5_1_1')" style="POSITION: absolute">+</span> <span id="hide1_2_5_1_1" class="foldopened" onClick="hide_folder('1_2_5_1_1')">-</span>
+start new project/create repository
+<ul id="fold1_2_5_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>choose owner
+
+</li>
+<li>repository name: &lt;github-username&gt;.github.io
+
+</li>
+<li>with readme
+
+</li>
+
+</ul>
+</li>
+<li>open &lt;username&gt;.github.io in browser
+
+</li>
+<li>create index.html
+
+</li>
+<li>open and change index.html
+
+</li>
+<li>commit and test
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2_5_2" class="foldclosed" onClick="show_folder('1_2_5_2')" style="POSITION: absolute">+</span> <span id="hide1_2_5_2" class="foldopened" onClick="hide_folder('1_2_5_2')">-</span>
+personal settings
+<ul id="fold1_2_5_2" style="POSITION: relative; VISIBILITY: visible;"><li>notifications -&gt; automatically watch
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2_5_3" class="foldclosed" onClick="show_folder('1_2_5_3')" style="POSITION: absolute">+</span> <span id="hide1_2_5_3" class="foldopened" onClick="hide_folder('1_2_5_3')">-</span>
+create project + page
+<ul id="fold1_2_5_3" style="POSITION: relative; VISIBILITY: visible;"><li>create new repository
+
+</li>
+<li>type repository name
+
+</li>
+<li>initialize with readme
+
+</li>
+<li>settings -&gt; GitHub Pages -&gt; Source -&gt; Master Branch -&gt; Save
+
+</li>
+<li>open &lt;username&gt;.github.io/&lt;reponame&gt; in browser
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2_6" class="foldclosed" onClick="show_folder('1_2_6')" style="POSITION: absolute">+</span> <span id="hide1_2_6" class="foldopened" onClick="hide_folder('1_2_6')">-</span>
+Git in Eclipse
+<ul id="fold1_2_6" style="POSITION: relative; VISIBILITY: visible;"><li>Import -&gt; Import projects from git -&gt; Clone URI
+
+</li>
+<li><span id="show1_2_6_1" class="foldclosed" onClick="show_folder('1_2_6_1')" style="POSITION: absolute">+</span> <span id="hide1_2_6_1" class="foldopened" onClick="hide_folder('1_2_6_1')">-</span>
+set path to github-project
+<ul id="fold1_2_6_1" style="POSITION: relative; VISIBILITY: visible;"><li>copy from github under "Clone or download"
+
+</li>
+
+</ul>
+</li>
+<li>next -&gt; select master branch -&gt; next
+
+</li>
+<li><span id="show1_2_6_2" class="foldclosed" onClick="show_folder('1_2_6_2')" style="POSITION: absolute">+</span> <span id="hide1_2_6_2" class="foldopened" onClick="hide_folder('1_2_6_2')">-</span>
+Choose a directory for the local repository
+<ul id="fold1_2_6_2" style="POSITION: relative; VISIBILITY: visible;"><li>always working on your own machine, you can let Eclipse choose the directory
+
+</li>
+<li>working on a usb-stick, you may want to place the repository there as well
+
+</li>
+
+</ul>
+</li>
+<li>next
+
+</li>
+<li>Import as general project
+
+</li>
+<li>next -&gt; finish
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2_7" class="foldclosed" onClick="show_folder('1_2_7')" style="POSITION: absolute">+</span> <span id="hide1_2_7" class="foldopened" onClick="hide_folder('1_2_7')">-</span>
+Heroku
+<ul id="fold1_2_7" style="POSITION: relative; VISIBILITY: visible;"><li><a href="https://www.heroku.com/" target="_blank"><span class=l>~</span>&nbsp;https://www.heroku.com/
+</a>
+
+</li>
+<li>Create free account
+
+</li>
+<li>select language Node.js
+
+</li>
+<li>create new app using "new"-button
+
+</li>
+<li>connect app to Github-project
+
+</li>
+<li>authorize Heroku to access repositories
+
+</li>
+<li><span id="show1_2_7_1" class="foldclosed" onClick="show_folder('1_2_7_1')" style="POSITION: absolute">+</span> <span id="hide1_2_7_1" class="foldopened" onClick="hide_folder('1_2_7_1')">-</span>
+<a href="package.json" target="_blank"><span class=l>~</span>&nbsp;package.json
+</a>
+<ul id="fold1_2_7_1" style="POSITION: relative; VISIBILITY: visible;"><li>download to your project
+
+</li>
+<li>modifiy it properly
+
+</li>
+<li>sync to Github
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2_8" class="foldclosed" onClick="show_folder('1_2_8')" style="POSITION: absolute">+</span> <span id="hide1_2_8" class="foldopened" onClick="hide_folder('1_2_8')">-</span>
+MongoDB
+<ul id="fold1_2_8" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_2_8_1" class="foldclosed" onClick="show_folder('1_2_8_1')" style="POSITION: absolute">+</span> <span id="hide1_2_8_1" class="foldopened" onClick="hide_folder('1_2_8_1')">-</span>
+local
+<ul id="fold1_2_8_1" style="POSITION: relative; VISIBILITY: visible;"><li><a href="https://www.mongodb.com/download-center" target="_blank"><span class=l>~</span>&nbsp;https://www.mongodb.com/download-center
+</a>
+
+</li>
+<li>Install Community Server
+
+</li>
+<li>Create database folder in project
+
+</li>
+<li><span id="show1_2_8_1_1" class="foldclosed" onClick="show_folder('1_2_8_1_1')" style="POSITION: absolute">+</span> <span id="hide1_2_8_1_1" class="foldopened" onClick="hide_folder('1_2_8_1_1')">-</span>
+In Eclipse, configure MongoServer as external tool
+<ul id="fold1_2_8_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>Run -&gt; External Tools -&gt; External Tool Configurations -&gt; New Launch Configuration
+
+</li>
+<li>Name it "Start MongoDB"
+
+</li>
+<li><span id="show1_2_8_1_1_1" class="foldclosed" onClick="show_folder('1_2_8_1_1_1')" style="POSITION: absolute">+</span> <span id="hide1_2_8_1_1_1" class="foldopened" onClick="hide_folder('1_2_8_1_1_1')">-</span>
+Main
+<ul id="fold1_2_8_1_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>Location -&gt; Browse Filesystem -&gt; find mongod.exe in installation
+
+</li>
+<li>Working Directory -&gt; Browse Workspace -&gt; select workspace
+
+</li>
+<li>Arguments: --dbpath [database folder]
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2_8_1_1_2" class="foldclosed" onClick="show_folder('1_2_8_1_1_2')" style="POSITION: absolute">+</span> <span id="hide1_2_8_1_1_2" class="foldopened" onClick="hide_folder('1_2_8_1_1_2')">-</span>
+Build
+<ul id="fold1_2_8_1_1_2" style="POSITION: relative; VISIBILITY: visible;"><li>disable "Build before launch"
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2_8_1_1_3" class="foldclosed" onClick="show_folder('1_2_8_1_1_3')" style="POSITION: absolute">+</span> <span id="hide1_2_8_1_1_3" class="foldopened" onClick="hide_folder('1_2_8_1_1_3')">-</span>
+Common
+<ul id="fold1_2_8_1_1_3" style="POSITION: relative; VISIBILITY: visible;"><li>Check "Display in favorites menu"
+
+</li>
+
+</ul>
+</li>
+<li>Start with run-button
+
+</li>
+<li>observe console in Eclipse
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2_8_1_2" class="foldclosed" onClick="show_folder('1_2_8_1_2')" style="POSITION: absolute">+</span> <span id="hide1_2_8_1_2" class="foldopened" onClick="hide_folder('1_2_8_1_2')">-</span>
+Install node driver for mongodb
+<ul id="fold1_2_8_1_2" style="POSITION: relative; VISIBILITY: visible;"><li>open terminal on project
+
+</li>
+<li>type "npm install mongodb"
+
+</li>
+<li>globally requires admin rights...
+
+</li>
+<li>folder "node_modules" appears in project
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2_8_2" class="foldclosed" onClick="show_folder('1_2_8_2')" style="POSITION: absolute">+</span> <span id="hide1_2_8_2" class="foldopened" onClick="hide_folder('1_2_8_2')">-</span>
+remote
+<ul id="fold1_2_8_2" style="POSITION: relative; VISIBILITY: visible;"><li><a href="https://mlab.com/" target="_blank"><span class=l>~</span>&nbsp;https://mlab.com/
+</a>
+
+</li>
+<li>create account
+
+</li>
+<li><span id="show1_2_8_2_1" class="foldclosed" onClick="show_folder('1_2_8_2_1')" style="POSITION: absolute">+</span> <span id="hide1_2_8_2_1" class="foldopened" onClick="hide_folder('1_2_8_2_1')">-</span>
+create database
+<ul id="fold1_2_8_2_1" style="POSITION: relative; VISIBILITY: visible;"><li>create new MongoDB deployment
+
+</li>
+<li>choose amazon and server in Ireland
+
+</li>
+<li>choose single node and sandbox
+
+</li>
+<li>choose database name
+
+</li>
+<li>hit "create new mongoDB deployment "
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2_8_2_2" class="foldclosed" onClick="show_folder('1_2_8_2_2')" style="POSITION: absolute">+</span> <span id="hide1_2_8_2_2" class="foldopened" onClick="hide_folder('1_2_8_2_2')">-</span>
+create user
+<ul id="fold1_2_8_2_2" style="POSITION: relative; VISIBILITY: visible;"><li>at https://mlab.com/home
+
+</li>
+<li>click name of database
+
+</li>
+<li>select users and "add database user"
+
+</li>
+<li>enter username and password
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2_9" class="foldclosed" onClick="show_folder('1_2_9')" style="POSITION: absolute">+</span> <span id="hide1_2_9" class="foldopened" onClick="hide_folder('1_2_9')">-</span>
+Additional
+<ul id="fold1_2_9" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_2_9_1" class="foldclosed" onClick="show_folder('1_2_9_1')" style="POSITION: absolute">+</span> <span id="hide1_2_9_1" class="foldopened" onClick="hide_folder('1_2_9_1')">-</span>
+Connection to HFU-Server
+<ul id="fold1_2_9_1" style="POSITION: relative; VISIBILITY: visible;"><li>If necessary: Start VPN-Client outside of Eclipse
+
+</li>
+<li>Open View -&gt; Remote Systems -&gt; Remote Systems
+
+</li>
+<li>New Connection -&gt; SSH Only
+
+</li>
+<li>Host: ssh.hs-furtwangen.de
+
+</li>
+<li>View "MyHome", type credentials
+
+</li>
+<li>Browse directory, create or delete files/folders
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2_9_2" class="foldclosed" onClick="show_folder('1_2_9_2')" style="POSITION: absolute">+</span> <span id="hide1_2_9_2" class="foldopened" onClick="hide_folder('1_2_9_2')">-</span>
+SyncToServer
+<ul id="fold1_2_9_2" style="POSITION: relative; VISIBILITY: visible;"><li>Create new project
+
+</li>
+<li>Export -&gt; Remote Systems -&gt; Remote File System
+
+</li>
+<li>Check &nbsp;Review/Synchronize
+
+</li>
+<li>save exportsetting in project
+
+</li>
+<li>Select destination: Connection and target folder
+
+</li>
+<li>Add View Team-&gt;Synchronize
+
+</li>
+<li>Choose right-click "put" or switch to sync-perspective to upload
+
+</li>
+<li>After restart of Eclipse: rightclick on exportsettings-file and chose export to remote system
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_3" class="foldclosed" onClick="show_folder('1_3')" style="POSITION: absolute">+</span> <span id="hide1_3" class="foldopened" onClick="hide_folder('1_3')">-</span>
+Curriculum
+<ul id="fold1_3" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_3_1" class="foldclosed" onClick="show_folder('1_3_1')" style="POSITION: absolute">+</span> <span id="hide1_3_1" class="foldopened" onClick="hide_folder('1_3_1')">-</span>
+Primer
+<ul id="fold1_3_1" style="POSITION: relative; VISIBILITY: visible;"><li>Crawford
+
+</li>
+<li><span id="show1_3_1_1" class="foldclosed" onClick="show_folder('1_3_1_1')" style="POSITION: absolute">+</span> <span id="hide1_3_1_1" class="foldopened" onClick="hide_folder('1_3_1_1')">-</span>
+Mindmap
+<ul id="fold1_3_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>where to find
+
+</li>
+<li>all left branches
+
+</li>
+
+</ul>
+</li>
+<li>Landscape
+
+</li>
+<li>right branches Git, JS, TS, CodingStyle, Dictionary
+
+</li>
+<li>get to know git and github
+
+</li>
+<li>recall first semester
+
+</li>
+<li>generate some content with typescript
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_3_2" class="foldclosed" onClick="show_folder('1_3_2')" style="POSITION: absolute">+</span> <span id="hide1_3_2" class="foldopened" onClick="hide_folder('1_3_2')">-</span>
+Tracetable / Debugger
+<ul id="fold1_3_2" style="POSITION: relative; VISIBILITY: visible;"><li>difference runtime, compiletime, designtime
+
+</li>
+<li>console.log
+
+</li>
+<li>create a tracetable for a given program
+
+</li>
+<li>recall programming structures known from first semester
+
+</li>
+<li>compare to debugger
+
+</li>
+<li>create activity diagram
+
+</li>
+<li>exercise: trace complex program with new structures/commands
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_3_3" class="foldclosed" onClick="show_folder('1_3_3')" style="POSITION: absolute">+</span> <span id="hide1_3_3" class="foldopened" onClick="hide_folder('1_3_3')">-</span>
+DOM
+<ul id="fold1_3_3" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_3_3_1" class="foldclosed" onClick="show_folder('1_3_3_1')" style="POSITION: absolute">+</span> <span id="hide1_3_3_1" class="foldopened" onClick="hide_folder('1_3_3_1')">-</span>
+examine interpretation of simple txt-file
+<ul id="fold1_3_3_1" style="POSITION: relative; VISIBILITY: visible;"><li>browser generates a model
+
+</li>
+
+</ul>
+</li>
+<li>node tree
+
+</li>
+<li>class hierarchy
+
+</li>
+<li>createElements, appendChild
+
+</li>
+<li>iterate over elements/children
+
+</li>
+<li>manipulate nodes
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_3_4" class="foldclosed" onClick="show_folder('1_3_4')" style="POSITION: absolute">+</span> <span id="hide1_3_4" class="foldopened" onClick="hide_folder('1_3_4')">-</span>
+Events
+<ul id="fold1_3_4" style="POSITION: relative; VISIBILITY: visible;"><li>different implementations
+
+</li>
+<li>event-object, listeners, handlers, phases
+
+</li>
+<li>listen to events at chosen nodes in the hierarchy
+
+</li>
+<li>use target and currentTarget
+
+</li>
+<li>this-binding
+
+</li>
+<li><span id="show1_3_4_1" class="foldclosed" onClick="show_folder('1_3_4_1')" style="POSITION: absolute">+</span> <span id="hide1_3_4_1" class="foldopened" onClick="hide_folder('1_3_4_1')">-</span>
+drag&amp;drop
+<ul id="fold1_3_4_1" style="POSITION: relative; VISIBILITY: visible;"><li>mark element as draggable
+
+</li>
+<li>set dataTransfer-object on dragstart
+
+</li>
+<li>event-information is saved and accessible on drop
+
+</li>
+<li>allow drop on element, preventDefault on dragover
+
+</li>
+<li>get dataTransfer-object on drop and process
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_3_5" class="foldclosed" onClick="show_folder('1_3_5')" style="POSITION: absolute">+</span> <span id="hide1_3_5" class="foldopened" onClick="hide_folder('1_3_5')">-</span>
+Forms and Queries
+<ul id="fold1_3_5" style="POSITION: relative; VISIBILITY: visible;"><li>form-elements
+
+</li>
+<li>group radiobuttons via name
+
+</li>
+<li>change-event
+
+</li>
+<li>attributes without value: multiple for select, checked for checkbox
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_3_6" class="foldclosed" onClick="show_folder('1_3_6')" style="POSITION: absolute">+</span> <span id="hide1_3_6" class="foldopened" onClick="hide_folder('1_3_6')">-</span>
+Server Side
+<ul id="fold1_3_6" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_3_6_1" class="foldclosed" onClick="show_folder('1_3_6_1')" style="POSITION: absolute">+</span> <span id="hide1_3_6_1" class="foldopened" onClick="hide_folder('1_3_6_1')">-</span>
+start with Node.js
+<ul id="fold1_3_6_1" style="POSITION: relative; VISIBILITY: visible;"><li>create new repository on Github
+
+</li>
+<li>create new project in workspace linked to it
+
+</li>
+<li>call compiled js-file with node
+
+</li>
+<li>add node.d.ts to project
+
+</li>
+<li><span id="show1_3_6_1_1" class="foldclosed" onClick="show_folder('1_3_6_1_1')" style="POSITION: absolute">+</span> <span id="hide1_3_6_1_1" class="foldopened" onClick="hide_folder('1_3_6_1_1')">-</span>
+examine process
+<ul id="fold1_3_6_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>argv
+
+</li>
+<li>env
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_3_6_2" class="foldclosed" onClick="show_folder('1_3_6_2')" style="POSITION: absolute">+</span> <span id="hide1_3_6_2" class="foldopened" onClick="hide_folder('1_3_6_2')">-</span>
+start with Heroku
+<ul id="fold1_3_6_2" style="POSITION: relative; VISIBILITY: visible;"><li>start new app in Heroku
+
+</li>
+<li>connect to repository and branch
+
+</li>
+<li>deploy app and view log
+
+</li>
+<li>add and edit package.json
+
+</li>
+<li>call app via http -&gt; server missing
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_3_7" class="foldclosed" onClick="show_folder('1_3_7')" style="POSITION: absolute">+</span> <span id="hide1_3_7" class="foldopened" onClick="hide_folder('1_3_7')">-</span>
+Request/Response
+<ul id="fold1_3_7" style="POSITION: relative; VISIBILITY: visible;"><li>add http-Server and create response
+
+</li>
+<li>find parameters in browser analysis (if possible for GET)
+
+</li>
+<li><a href="https://nodejs.org/dist/latest-v7.x/docs/api/url.html#url_url_strings_and_url_objects" target="_blank"><span class=l>~</span>&nbsp;show node URL scheme in documentation
+</a>
+
+</li>
+<li>include protocoll http:// when typing url with query in address bar
+
+</li>
+<li>FormData for POST, just to mention but stick with GET
+
+</li>
+<li>Ajax via XMLHttpRequest (Fetch-API?)
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_3_8" class="foldclosed" onClick="show_folder('1_3_8')" style="POSITION: absolute">+</span> <span id="hide1_3_8" class="foldopened" onClick="hide_folder('1_3_8')">-</span>
+Database
+<ul id="fold1_3_8" style="POSITION: relative; VISIBILITY: visible;"><li>copy node_modules into project, create database-folder
+
+</li>
+<li>add "mongodb": "2.2.12" as dependency in package
+
+</li>
+<li><span id="show1_3_8_1" class="foldclosed" onClick="show_folder('1_3_8_1')" style="POSITION: absolute">+</span> <span id="hide1_3_8_1" class="foldopened" onClick="hide_folder('1_3_8_1')">-</span>
+start mongod in terminal
+<ul id="fold1_3_8_1" style="POSITION: relative; VISIBILITY: visible;"><li>"C:/Program Files/.../mongod.exe" --dbpath [database-folder]
+
+</li>
+<li>see port and other messages
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_3_8_2" class="foldclosed" onClick="show_folder('1_3_8_2')" style="POSITION: absolute">+</span> <span id="hide1_3_8_2" class="foldopened" onClick="hide_folder('1_3_8_2')">-</span>
+start shell in system console
+<ul id="fold1_3_8_2" style="POSITION: relative; VISIBILITY: visible;"><li>type some commands
+
+</li>
+<li>see response in terminal
+
+</li>
+
+</ul>
+</li>
+<li>examine node-code for database communication
+
+</li>
+<li>anonymous and nested functions
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_3_9" class="foldclosed" onClick="show_folder('1_3_9')" style="POSITION: absolute">+</span> <span id="hide1_3_9" class="foldopened" onClick="hide_folder('1_3_9')">-</span>
+Canvas
+<ul id="fold1_3_9" style="POSITION: relative; VISIBILITY: visible;"><li>path metaphor
+
+</li>
+<li>shortcuts fillRect and strokeRect
+
+</li>
+<li>create functions for drawing repetitive images
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_3_10" class="foldclosed" onClick="show_folder('1_3_10')" style="POSITION: absolute">+</span> <span id="hide1_3_10" class="foldopened" onClick="hide_folder('1_3_10')">-</span>
+Associative Arrays
+<ul id="fold1_3_10" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_3_10_1" class="foldclosed" onClick="show_folder('1_3_10_1')" style="POSITION: absolute">+</span> <span id="hide1_3_10_1" class="foldopened" onClick="hide_folder('1_3_10_1')">-</span>
+create images interactively using events
+<ul id="fold1_3_10_1" style="POSITION: relative; VISIBILITY: visible;"><li>Timeout
+
+</li>
+<li>Click
+
+</li>
+<li>Touch
+
+</li>
+
+</ul>
+</li>
+<li>animate objects -&gt; store properties
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_3_11" class="foldclosed" onClick="show_folder('1_3_11')" style="POSITION: absolute">+</span> <span id="hide1_3_11" class="foldopened" onClick="hide_folder('1_3_11')">-</span>
+Classes
+<ul id="fold1_3_11" style="POSITION: relative; VISIBILITY: visible;"><li>refactor interfaces to classes
+
+</li>
+<li>and add methods
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_3_12" class="foldclosed" onClick="show_folder('1_3_12')" style="POSITION: absolute">+</span> <span id="hide1_3_12" class="foldopened" onClick="hide_folder('1_3_12')">-</span>
+Inheritance, Polymorphism
+<ul id="fold1_3_12" style="POSITION: relative; VISIBILITY: visible;"><li>identify common properties and behaviours
+
+</li>
+<li>and create super- and subclasses
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_3_13" class="foldclosed" onClick="show_folder('1_3_13')" style="POSITION: absolute">+</span> <span id="hide1_3_13" class="foldopened" onClick="hide_folder('1_3_13')">-</span>
+Additional
+<ul id="fold1_3_13" style="POSITION: relative; VISIBILITY: visible;"><li>Scopes and Visibility
+
+</li>
+<li>Exceptions
+
+</li>
+<li>Enums
+
+</li>
+<li>Generics 
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_4" class="foldclosed" onClick="show_folder('1_4')" style="POSITION: absolute">+</span> <span id="hide1_4" class="foldopened" onClick="hide_folder('1_4')">-</span>
+Git
+<ul id="fold1_4" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_4_1" class="foldclosed" onClick="show_folder('1_4_1')" style="POSITION: absolute">+</span> <span id="hide1_4_1" class="foldopened" onClick="hide_folder('1_4_1')">-</span>
+General
+<ul id="fold1_4_1" style="POSITION: relative; VISIBILITY: visible;"><li>Version Control and Repository System
+
+</li>
+<li><a href="https://github.com/torvalds" target="_blank"><span class=l>~</span>&nbsp;developed by Linus Torvalds and the Linux-Community &nbsp;in 2005
+</a>
+
+</li>
+<li><span id="show1_4_1_1" class="foldclosed" onClick="show_folder('1_4_1_1')" style="POSITION: absolute">+</span> <span id="hide1_4_1_1" class="foldopened" onClick="hide_folder('1_4_1_1')">-</span>
+creates local copies of source files
+<ul id="fold1_4_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>in database ".git"
+
+</li>
+
+</ul>
+</li>
+<li>allows for multiple branches
+
+</li>
+<li>workflow: modify -&gt; stage -&gt; commit
+
+</li>
+<li>supports synchronization of repositories on remote systems
+
+</li>
+<li>file ".gitignore" references files not to include in repository
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_4_2" class="foldclosed" onClick="show_folder('1_4_2')" style="POSITION: absolute">+</span> <span id="hide1_4_2" class="foldopened" onClick="hide_folder('1_4_2')">-</span>
+Commands
+<ul id="fold1_4_2" style="POSITION: relative; VISIBILITY: visible;"><li>init
+
+</li>
+<li>add
+
+</li>
+<li>commit
+
+</li>
+<li>branch
+
+</li>
+<li>pull
+
+</li>
+<li>push
+
+</li>
+<li>checkout
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_4_3" class="foldclosed" onClick="show_folder('1_4_3')" style="POSITION: absolute">+</span> <span id="hide1_4_3" class="foldopened" onClick="hide_folder('1_4_3')">-</span>
+in Eclipse
+<ul id="fold1_4_3" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_4_3_1" class="foldclosed" onClick="show_folder('1_4_3_1')" style="POSITION: absolute">+</span> <span id="hide1_4_3_1" class="foldopened" onClick="hide_folder('1_4_3_1')">-</span>
+Strg+# opens window "Git Staging"
+<ul id="fold1_4_3_1" style="POSITION: relative; VISIBILITY: visible;"><li>stage
+
+</li>
+<li>commit or
+
+</li>
+<li>commit and push
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_4_3_2" class="foldclosed" onClick="show_folder('1_4_3_2')" style="POSITION: absolute">+</span> <span id="hide1_4_3_2" class="foldopened" onClick="hide_folder('1_4_3_2')">-</span>
+pull/push/other
+<ul id="fold1_4_3_2" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_4_3_2_1" class="foldclosed" onClick="show_folder('1_4_3_2_1')" style="POSITION: absolute">+</span> <span id="hide1_4_3_2_1" class="foldopened" onClick="hide_folder('1_4_3_2_1')">-</span>
+right mousebutton on project
+<ul id="fold1_4_3_2_1" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_4_3_2_1_1" class="foldclosed" onClick="show_folder('1_4_3_2_1_1')" style="POSITION: absolute">+</span> <span id="hide1_4_3_2_1_1" class="foldopened" onClick="hide_folder('1_4_3_2_1_1')">-</span>
+-&gt; Team
+<ul id="fold1_4_3_2_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>-&gt; Push to upstream
+
+</li>
+<li>-&gt; Pull
+
+</li>
+<li>-&gt; other
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5" class="foldclosed" onClick="show_folder('1_5')" style="POSITION: absolute">+</span> <span id="hide1_5" class="foldopened" onClick="hide_folder('1_5')">-</span>
+JavaScript
+<ul id="fold1_5" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_5_1" class="foldclosed" onClick="show_folder('1_5_1')" style="POSITION: absolute">+</span> <span id="hide1_5_1" class="foldopened" onClick="hide_folder('1_5_1')">-</span>
+General
+<ul id="fold1_5_1" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_5_1_1" class="foldclosed" onClick="show_folder('1_5_1_1')" style="POSITION: absolute">+</span> <span id="hide1_5_1_1" class="foldopened" onClick="hide_folder('1_5_1_1')">-</span>
+<a href="https://github.com/brendaneich" target="_blank"><span class=l>~</span>&nbsp;developed by Brendan Eich in 1995
+</a>
+<ul id="fold1_5_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>Founder and CTO Mozilla Foundation
+
+</li>
+<li>Mocha -&gt; LiveScript -&gt; JavaScript
+
+</li>
+<li><span id="show1_5_1_1_1" class="foldclosed" onClick="show_folder('1_5_1_1_1')" style="POSITION: absolute">+</span> <span id="hide1_5_1_1_1" class="foldopened" onClick="hide_folder('1_5_1_1_1')">-</span>
+Standardized as ECMA-Script
+<ul id="fold1_5_1_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>European Computer Manufacturers Association
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_1_2" class="foldclosed" onClick="show_folder('1_5_1_2')" style="POSITION: absolute">+</span> <span id="hide1_5_1_2" class="foldopened" onClick="hide_folder('1_5_1_2')">-</span>
+Features and limitations
+<ul id="fold1_5_1_2" style="POSITION: relative; VISIBILITY: visible;"><li>dynamic and implicit typing
+
+</li>
+<li>prototype based
+
+</li>
+<li>wide spread and growing
+
+</li>
+<li>huge community and a multitude of libraries
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_1_3" class="foldclosed" onClick="show_folder('1_5_1_3')" style="POSITION: absolute">+</span> <span id="hide1_5_1_3" class="foldopened" onClick="hide_folder('1_5_1_3')">-</span>
+Requires runtime environment
+<ul id="fold1_5_1_3" style="POSITION: relative; VISIBILITY: visible;"><li>Browser
+
+</li>
+<li>Node
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_1_4" class="foldclosed" onClick="show_folder('1_5_1_4')" style="POSITION: absolute">+</span> <span id="hide1_5_1_4" class="foldopened" onClick="hide_folder('1_5_1_4')">-</span>
+Fields of application
+<ul id="fold1_5_1_4" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_5_1_4_1" class="foldclosed" onClick="show_folder('1_5_1_4_1')" style="POSITION: absolute">+</span> <span id="hide1_5_1_4_1" class="foldopened" onClick="hide_folder('1_5_1_4_1')">-</span>
+Mobile Apps
+<ul id="fold1_5_1_4_1" style="POSITION: relative; VISIBILITY: visible;"><li>Phonegap
+
+</li>
+<li>Cordova
+
+</li>
+<li>Titanium
+
+</li>
+<li>NativeScript
+
+</li>
+<li>...
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_1_4_2" class="foldclosed" onClick="show_folder('1_5_1_4_2')" style="POSITION: absolute">+</span> <span id="hide1_5_1_4_2" class="foldopened" onClick="hide_folder('1_5_1_4_2')">-</span>
+Desktop
+<ul id="fold1_5_1_4_2" style="POSITION: relative; VISIBILITY: visible;"><li>Electron
+
+</li>
+<li>Titanium
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_1_4_3" class="foldclosed" onClick="show_folder('1_5_1_4_3')" style="POSITION: absolute">+</span> <span id="hide1_5_1_4_3" class="foldopened" onClick="hide_folder('1_5_1_4_3')">-</span>
+Server-Programming
+<ul id="fold1_5_1_4_3" style="POSITION: relative; VISIBILITY: visible;"><li>Node.js
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_1_4_4" class="foldclosed" onClick="show_folder('1_5_1_4_4')" style="POSITION: absolute">+</span> <span id="hide1_5_1_4_4" class="foldopened" onClick="hide_folder('1_5_1_4_4')">-</span>
+Game-Engines
+<ul id="fold1_5_1_4_4" style="POSITION: relative; VISIBILITY: visible;"><li>Flash
+
+</li>
+<li>Unity
+
+</li>
+<li>Phaser
+
+</li>
+<li>CreateJS
+
+</li>
+<li>Cocos
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_1_4_5" class="foldclosed" onClick="show_folder('1_5_1_4_5')" style="POSITION: absolute">+</span> <span id="hide1_5_1_4_5" class="foldopened" onClick="hide_folder('1_5_1_4_5')">-</span>
+Physical Computing
+<ul id="fold1_5_1_4_5" style="POSITION: relative; VISIBILITY: visible;"><li><a href="https://github.com/ecto/duino" target="_blank"><span class=l>~</span>&nbsp;Duino
+</a>
+
+</li>
+<li><a href="https://github.com/rwaldron/johnny-five" target="_blank"><span class=l>~</span>&nbsp;Jonny Five
+</a>
+
+</li>
+<li><a href="http://www.voodootikigod.com/nodebots-the-rise-of-js-robotics/" target="_blank"><span class=l>~</span>&nbsp;Node.js-SerialPort
+</a>
+
+</li>
+<li><a href="http://breakoutjs.com/" target="_blank"><span class=l>~</span>&nbsp;Breakout.js
+</a>
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_1_4_6" class="foldclosed" onClick="show_folder('1_5_1_4_6')" style="POSITION: absolute">+</span> <span id="hide1_5_1_4_6" class="foldopened" onClick="hide_folder('1_5_1_4_6')">-</span>
+WebGL
+<ul id="fold1_5_1_4_6" style="POSITION: relative; VISIBILITY: visible;"><li><a href="https://github.com/mrdoob/three.js/" target="_blank"><span class=l>~</span>&nbsp;Three.js
+</a>
+
+</li>
+<li>Processing.js
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_1_4_7" class="foldclosed" onClick="show_folder('1_5_1_4_7')" style="POSITION: absolute">+</span> <span id="hide1_5_1_4_7" class="foldopened" onClick="hide_folder('1_5_1_4_7')">-</span>
+Music
+<ul id="fold1_5_1_4_7" style="POSITION: relative; VISIBILITY: visible;"><li>TimbreJS
+
+</li>
+<li>SoundJS
+
+</li>
+<li>MidiJS
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_1_4_8" class="foldclosed" onClick="show_folder('1_5_1_4_8')" style="POSITION: absolute">+</span> <span id="hide1_5_1_4_8" class="foldopened" onClick="hide_folder('1_5_1_4_8')">-</span>
+Controller
+<ul id="fold1_5_1_4_8" style="POSITION: relative; VISIBILITY: visible;"><li><a href="https://wiki.mozilla.org/GamepadAPI" target="_blank"><span class=l>~</span>&nbsp;GamePad-API
+</a>
+
+</li>
+<li>LeapMotion
+
+</li>
+<li>Kinect
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_1_4_9" class="foldclosed" onClick="show_folder('1_5_1_4_9')" style="POSITION: absolute">+</span> <span id="hide1_5_1_4_9" class="foldopened" onClick="hide_folder('1_5_1_4_9')">-</span>
+Emscripten
+<ul id="fold1_5_1_4_9" style="POSITION: relative; VISIBILITY: visible;"><li>Running other languages in browser
+
+</li>
+<li>e.g. Ruby, Python
+
+</li>
+<li>Mozilla
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_1_4_10" class="foldclosed" onClick="show_folder('1_5_1_4_10')" style="POSITION: absolute">+</span> <span id="hide1_5_1_4_10" class="foldopened" onClick="hide_folder('1_5_1_4_10')">-</span>
+Real-Time Communication
+<ul id="fold1_5_1_4_10" style="POSITION: relative; VISIBILITY: visible;"><li>WebRTC
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_2" class="foldclosed" onClick="show_folder('1_5_2')" style="POSITION: absolute">+</span> <span id="hide1_5_2" class="foldopened" onClick="hide_folder('1_5_2')">-</span>
+Basic vocabulary
+<ul id="fold1_5_2" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_5_2_1" class="foldclosed" onClick="show_folder('1_5_2_1')" style="POSITION: absolute">+</span> <span id="hide1_5_2_1" class="foldopened" onClick="hide_folder('1_5_2_1')">-</span>
+Blocks
+<ul id="fold1_5_2_1" style="POSITION: relative; VISIBILITY: visible;"><li>{ }
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_2_2" class="foldclosed" onClick="show_folder('1_5_2_2')" style="POSITION: absolute">+</span> <span id="hide1_5_2_2" class="foldopened" onClick="hide_folder('1_5_2_2')">-</span>
+Variables
+<ul id="fold1_5_2_2" style="POSITION: relative; VISIBILITY: visible;"><li>var
+
+</li>
+<li>let
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_2_3" class="foldclosed" onClick="show_folder('1_5_2_3')" style="POSITION: absolute">+</span> <span id="hide1_5_2_3" class="foldopened" onClick="hide_folder('1_5_2_3')">-</span>
+Types
+<ul id="fold1_5_2_3" style="POSITION: relative; VISIBILITY: visible;"><li>void
+
+</li>
+<li>number
+
+</li>
+<li>string
+
+</li>
+<li>boolean
+
+</li>
+<li>Array
+
+</li>
+<li>Object
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_2_4" class="foldclosed" onClick="show_folder('1_5_2_4')" style="POSITION: absolute">+</span> <span id="hide1_5_2_4" class="foldopened" onClick="hide_folder('1_5_2_4')">-</span>
+Values
+<ul id="fold1_5_2_4" style="POSITION: relative; VISIBILITY: visible;"><li>true
+
+</li>
+<li>false
+
+</li>
+<li>undefined
+
+</li>
+<li>null
+
+</li>
+<li>NaN
+
+</li>
+<li>Infinity
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_2_5" class="foldclosed" onClick="show_folder('1_5_2_5')" style="POSITION: absolute">+</span> <span id="hide1_5_2_5" class="foldopened" onClick="hide_folder('1_5_2_5')">-</span>
+Conditions
+<ul id="fold1_5_2_5" style="POSITION: relative; VISIBILITY: visible;"><li>if
+
+</li>
+<li>else
+
+</li>
+<li>switch
+
+</li>
+<li>case
+
+</li>
+<li>default 	
+
+</li>
+<li>break
+
+</li>
+<li>? :
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_2_6" class="foldclosed" onClick="show_folder('1_5_2_6')" style="POSITION: absolute">+</span> <span id="hide1_5_2_6" class="foldopened" onClick="hide_folder('1_5_2_6')">-</span>
+Loops
+<ul id="fold1_5_2_6" style="POSITION: relative; VISIBILITY: visible;"><li>do
+
+</li>
+<li>while
+
+</li>
+<li>for
+
+</li>
+<li>in
+
+</li>
+<li>of
+
+</li>
+<li>break
+
+</li>
+<li>continue 
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_2_7" class="foldclosed" onClick="show_folder('1_5_2_7')" style="POSITION: absolute">+</span> <span id="hide1_5_2_7" class="foldopened" onClick="hide_folder('1_5_2_7')">-</span>
+Functions
+<ul id="fold1_5_2_7" style="POSITION: relative; VISIBILITY: visible;"><li>function 
+
+</li>
+<li> return
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_2_8" class="foldclosed" onClick="show_folder('1_5_2_8')" style="POSITION: absolute">+</span> <span id="hide1_5_2_8" class="foldopened" onClick="hide_folder('1_5_2_8')">-</span>
+Exceptions
+<ul id="fold1_5_2_8" style="POSITION: relative; VISIBILITY: visible;"><li>try
+
+</li>
+<li>catch
+
+</li>
+<li>finally
+
+</li>
+<li>throw
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_2_9" class="foldclosed" onClick="show_folder('1_5_2_9')" style="POSITION: absolute">+</span> <span id="hide1_5_2_9" class="foldopened" onClick="hide_folder('1_5_2_9')">-</span>
+OOP
+<ul id="fold1_5_2_9" style="POSITION: relative; VISIBILITY: visible;"><li>class
+
+</li>
+<li>new
+
+</li>
+<li>extends
+
+</li>
+<li>super
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_3" class="foldclosed" onClick="show_folder('1_5_3')" style="POSITION: absolute">+</span> <span id="hide1_5_3" class="foldopened" onClick="hide_folder('1_5_3')">-</span>
+Predefined objects/classes
+<ul id="fold1_5_3" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_5_3_1" class="foldclosed" onClick="show_folder('1_5_3_1')" style="POSITION: absolute">+</span> <span id="hide1_5_3_1" class="foldopened" onClick="hide_folder('1_5_3_1')">-</span>
+Standard
+<ul id="fold1_5_3_1" style="POSITION: relative; VISIBILITY: visible;"><li>Array
+
+</li>
+<li>Date
+
+</li>
+<li>Math
+
+</li>
+<li>String
+
+</li>
+<li>Function
+
+</li>
+<li>JSON
+
+</li>
+<li>...
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_3_2" class="foldclosed" onClick="show_folder('1_5_3_2')" style="POSITION: absolute">+</span> <span id="hide1_5_3_2" class="foldopened" onClick="hide_folder('1_5_3_2')">-</span>
+Browser
+<ul id="fold1_5_3_2" style="POSITION: relative; VISIBILITY: visible;"><li>Navigator
+
+</li>
+<li>Screen
+
+</li>
+<li><span id="show1_5_3_2_1" class="foldclosed" onClick="show_folder('1_5_3_2_1')" style="POSITION: absolute">+</span> <span id="hide1_5_3_2_1" class="foldopened" onClick="hide_folder('1_5_3_2_1')">-</span>
+Window
+<ul id="fold1_5_3_2_1" style="POSITION: relative; VISIBILITY: visible;"><li>Location
+
+</li>
+<li>History
+
+</li>
+<li>Document
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_3_2_2" class="foldclosed" onClick="show_folder('1_5_3_2_2')" style="POSITION: absolute">+</span> <span id="hide1_5_3_2_2" class="foldopened" onClick="hide_folder('1_5_3_2_2')">-</span>
+Document
+<ul id="fold1_5_3_2_2" style="POSITION: relative; VISIBILITY: visible;"><li>Access to all elements in the document
+
+</li>
+<li>Elements kann bei created, altered and destroyed
+
+</li>
+<li>Different classes for different elements using inheritance
+
+</li>
+<li>Tree structure with parent-children-relationships
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5_4" class="foldclosed" onClick="show_folder('1_5_4')" style="POSITION: absolute">+</span> <span id="hide1_5_4" class="foldopened" onClick="hide_folder('1_5_4')">-</span>
+Global functions
+<ul id="fold1_5_4" style="POSITION: relative; VISIBILITY: visible;"><li>parseInt(value: string, radix?: number): number | NaN
+
+</li>
+<li>parseFloat(value: string): number | NaN
+
+</li>
+<li>decodeURIComponent(encodedURIComponent: string): string
+
+</li>
+<li>encodeURIComponent(uriComponent: string): string
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_6" class="foldclosed" onClick="show_folder('1_6')" style="POSITION: absolute">+</span> <span id="hide1_6" class="foldopened" onClick="hide_folder('1_6')">-</span>
+<a href="https://github.com/Microsoft/TypeScript" target="_blank"><span class=l>~</span>&nbsp;TypeScript
+</a>
+<ul id="fold1_6" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_6_1" class="foldclosed" onClick="show_folder('1_6_1')" style="POSITION: absolute">+</span> <span id="hide1_6_1" class="foldopened" onClick="hide_folder('1_6_1')">-</span>
+General
+<ul id="fold1_6_1" style="POSITION: relative; VISIBILITY: visible;"><li>developed by Microsoft
+
+</li>
+<li><a href="https://github.com/ahejlsberg" target="_blank"><span class=l>~</span>&nbsp;Anders Hejlsberg (Turbo Pascal, Delphi, J++, C#, .NET)
+</a>
+
+</li>
+<li>Superset of JavaScript (ECMA-Script)
+
+</li>
+<li>explicit and static typing possible (+ one dynamic type)
+
+</li>
+<li>implements upcoming ECMA-Standards and more
+
+</li>
+<li>transpiles to JavaScript and is compatible
+
+</li>
+<li>developed for big, complex and scalable applications
+
+</li>
+<li>supported by IDEs like Eclipse
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_6_2" class="foldclosed" onClick="show_folder('1_6_2')" style="POSITION: absolute">+</span> <span id="hide1_6_2" class="foldopened" onClick="hide_folder('1_6_2')">-</span>
+Additional Vocabulary
+<ul id="fold1_6_2" style="POSITION: relative; VISIBILITY: visible;"><li>interface
+
+</li>
+<li>export 
+
+</li>
+<li>import 
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_7" class="foldclosed" onClick="show_folder('1_7')" style="POSITION: absolute">+</span> <span id="hide1_7" class="foldopened" onClick="hide_folder('1_7')">-</span>
+Coding Style
+<ul id="fold1_7" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_7_1" class="foldclosed" onClick="show_folder('1_7_1')" style="POSITION: absolute">+</span> <span id="hide1_7_1" class="foldopened" onClick="hide_folder('1_7_1')">-</span>
+Purpose
+<ul id="fold1_7_1" style="POSITION: relative; VISIBILITY: visible;"><li><p>Programme k&ouml;nnen schnell sehr komplex werden. Daher ist es wichtig, sich an Stil-Regeln zu halten, um sie m&ouml;glichst verst&auml;ndlich zu schreiben. In diesem Kurs gelten folgende Stil-Regeln:
+</li>
+</ul>
+</li>
+<li><span id="show1_7_2" class="foldclosed" onClick="show_folder('1_7_2')" style="POSITION: absolute">+</span> <span id="hide1_7_2" class="foldopened" onClick="hide_folder('1_7_2')">-</span>
+1. Self-explanatory
+<ul id="fold1_7_2" style="POSITION: relative; VISIBILITY: visible;"><li><p>Code sollte sich so gut wie m&ouml;glich selbst erkl&auml;ren. Hierzu sind sprechende Variablen-, Funktions- und Klassennamen etc. erforderlich. Kurze Namen sind nur in kleinen G&uuml;ltigkeitsbereichen oder bei klarer Bedeutung (z.B. y f&uuml;r vertikale Position) erlaubt.
+</li>
+</ul>
+</li>
+<li><span id="show1_7_3" class="foldclosed" onClick="show_folder('1_7_3')" style="POSITION: absolute">+</span> <span id="hide1_7_3" class="foldopened" onClick="hide_folder('1_7_3')">-</span>
+2. Explicit typing and semicolons
+<ul id="fold1_7_3" style="POSITION: relative; VISIBILITY: visible;"><li><p>Variablen erhalten explizite Typ-Notationen und Anweisungen werden mit einem Semikolon beendet (auch wenn TypeScript diese automatisch einf&uuml;gen bzw. inferieren kann)
+</li>
+</ul>
+</li>
+<li><span id="show1_7_4" class="foldclosed" onClick="show_folder('1_7_4')" style="POSITION: absolute">+</span> <span id="hide1_7_4" class="foldopened" onClick="hide_folder('1_7_4')">-</span>
+3. camelCase for names of variables and functions, functions describe activities
+<ul id="fold1_7_4" style="POSITION: relative; VISIBILITY: visible;"><li><p>Variablen- und Funktionsnamen beginnen mit Kleinbuchstaben und folgen der Kamelnotation (camelCase), d.h. bei zusammengesetzten Namen beginnen die Wortteile im Inneren mit einem Gro&szlig;buchstaben &nbsp;(z.B. animalLion). Funktionsnamen beschreiben dabei eine Aktivit&auml;t (z.B. calculateHorizontalPosition(...)) oder Frage (z.B. isHit())
+</li>
+</ul>
+</li>
+<li><span id="show1_7_5" class="foldclosed" onClick="show_folder('1_7_5')" style="POSITION: absolute">+</span> <span id="hide1_7_5" class="foldopened" onClick="hide_folder('1_7_5')">-</span>
+4. Names of formal parameters start with underscore
+<ul id="fold1_7_5" style="POSITION: relative; VISIBILITY: visible;"><li>Die Namen formaler Parameter in Funktionen beginnen mit einem Unterstrich.
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_7_6" class="foldclosed" onClick="show_folder('1_7_6')" style="POSITION: absolute">+</span> <span id="hide1_7_6" class="foldopened" onClick="hide_folder('1_7_6')">-</span>
+5. PascalCase for classes, interfaces and modules
+<ul id="fold1_7_6" style="POSITION: relative; VISIBILITY: visible;"><li><p>Die Namen von Klassen, Interfaces und Modulen beginnen mit einem Gro&szlig;buchstaben und folgen ebenfalls der Kamelnotation. (PascalCase)
+</li>
+</ul>
+</li>
+<li><span id="show1_7_7" class="foldclosed" onClick="show_folder('1_7_7')" style="POSITION: absolute">+</span> <span id="hide1_7_7" class="foldopened" onClick="hide_folder('1_7_7')">-</span>
+6. All capital letters for enums, support readability using underscores
+<ul id="fold1_7_7" style="POSITION: relative; VISIBILITY: visible;"><li><p>Die Namen von Enumerations und deren Elemente werden durchgehend mit ro&szlig;buchstaben geschrieben. Wortteile werden bei Bedarf mit Unterstrich getrennt.
+</li>
+</ul>
+</li>
+<li><span id="show1_7_8" class="foldclosed" onClick="show_folder('1_7_8')" style="POSITION: absolute">+</span> <span id="hide1_7_8" class="foldopened" onClick="hide_folder('1_7_8')">-</span>
+7. Use double quotes for literal strings
+<ul id="fold1_7_8" style="POSITION: relative; VISIBILITY: visible;"><li>Literale Zeichenketten werden in doppelte Anf&uuml;hrungszeichen geschrieben.
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_7_9" class="foldclosed" onClick="show_folder('1_7_9')" style="POSITION: absolute">+</span> <span id="hide1_7_9" class="foldopened" onClick="hide_folder('1_7_9')">-</span>
+8. Use comments for separation and to support clarity. Use JSDoc-Format for reuse in other programs
+<ul id="fold1_7_9" style="POSITION: relative; VISIBILITY: visible;"><li><p>Kommentare werden eingesetzt, um Programmteile abzugrenzen und die Verst&auml;ndlichkeit zu erh&ouml;hen. Programmteile, die von anderen Skripts genutzt werden sollen, werden im JSDoc-Format kommentiert 
+<br>
+(/** &#8230;&nbsp;*/)
+</li>
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_8" class="foldclosed" onClick="show_folder('1_8')" style="POSITION: absolute">+</span> <span id="hide1_8" class="foldopened" onClick="hide_folder('1_8')">-</span>
+Dictionary
+<ul id="fold1_8" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_8_1" class="foldclosed" onClick="show_folder('1_8_1')" style="POSITION: absolute">+</span> <span id="hide1_8_1" class="foldopened" onClick="hide_folder('1_8_1')">-</span>
+namespace
+<ul id="fold1_8_1" style="POSITION: relative; VISIBILITY: visible;"><li>defines a section of storage
+
+</li>
+<li><span id="show1_8_1_1" class="foldclosed" onClick="show_folder('1_8_1_1')" style="POSITION: absolute">+</span> <span id="hide1_8_1_1" class="foldopened" onClick="hide_folder('1_8_1_1')">-</span>
+to store data as variables, functions, arrays, classes, objects etc.
+<ul id="fold1_8_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>basically a sequence of bits
+
+</li>
+<li>to be interpreted in different ways
+
+</li>
+
+</ul>
+</li>
+<li>belongs to a function, class-instance, module etc. or is global
+
+</li>
+<li><span id="show1_8_1_2" class="foldclosed" onClick="show_folder('1_8_1_2')" style="POSITION: absolute">+</span> <span id="hide1_8_1_2" class="foldopened" onClick="hide_folder('1_8_1_2')">-</span>
+scope
+<ul id="fold1_8_1_2" style="POSITION: relative; VISIBILITY: visible;"><li>the namespaces accessible from a particular part of the program
+
+</li>
+<li>the global namespace is accessible everywhere
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_8_1_3" class="foldclosed" onClick="show_folder('1_8_1_3')" style="POSITION: absolute">+</span> <span id="hide1_8_1_3" class="foldopened" onClick="hide_folder('1_8_1_3')">-</span>
+Analogy
+<ul id="fold1_8_1_3" style="POSITION: relative; VISIBILITY: visible;"><li>storage holding lots of different stuff, that gets thrown in
+
+</li>
+<li>not all storages can be accessed from everywhere
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_8_2" class="foldclosed" onClick="show_folder('1_8_2')" style="POSITION: absolute">+</span> <span id="hide1_8_2" class="foldopened" onClick="hide_folder('1_8_2')">-</span>
+type
+<ul id="fold1_8_2" style="POSITION: relative; VISIBILITY: visible;"><li>the meaning of data, the way to interpret a sequence of bits
+
+</li>
+<li><span id="show1_8_2_1" class="foldclosed" onClick="show_folder('1_8_2_1')" style="POSITION: absolute">+</span> <span id="hide1_8_2_1" class="foldopened" onClick="hide_folder('1_8_2_1')">-</span>
+Analogy
+<ul id="fold1_8_2_1" style="POSITION: relative; VISIBILITY: visible;"><li>the kind of some stuff
+
+</li>
+<li>eg. solid, liquid, gaseous
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_8_3" class="foldclosed" onClick="show_folder('1_8_3')" style="POSITION: absolute">+</span> <span id="hide1_8_3" class="foldopened" onClick="hide_folder('1_8_3')">-</span>
+variable
+<ul id="fold1_8_3" style="POSITION: relative; VISIBILITY: visible;"><li>small piece of storage in a namespace that holds a value of a given type
+
+</li>
+<li>has a name unique to the namespace, by which the content can be found
+
+</li>
+<li><span id="show1_8_3_1" class="foldclosed" onClick="show_folder('1_8_3_1')" style="POSITION: absolute">+</span> <span id="hide1_8_3_1" class="foldopened" onClick="hide_folder('1_8_3_1')">-</span>
+variables of
+<ul id="fold1_8_3_1" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_8_3_1_1" class="foldclosed" onClick="show_folder('1_8_3_1_1')" style="POSITION: absolute">+</span> <span id="hide1_8_3_1_1" class="foldopened" onClick="hide_folder('1_8_3_1_1')">-</span>
+simple type
+<ul id="fold1_8_3_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>are standard containers holding the value itself
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_8_3_1_2" class="foldclosed" onClick="show_folder('1_8_3_1_2')" style="POSITION: absolute">+</span> <span id="hide1_8_3_1_2" class="foldopened" onClick="hide_folder('1_8_3_1_2')">-</span>
+complex type
+<ul id="fold1_8_3_1_2" style="POSITION: relative; VISIBILITY: visible;"><li>hold a reference to data that is stored somewhere else
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_8_3_2" class="foldclosed" onClick="show_folder('1_8_3_2')" style="POSITION: absolute">+</span> <span id="hide1_8_3_2" class="foldopened" onClick="hide_folder('1_8_3_2')">-</span>
+test type
+<ul id="fold1_8_3_2" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_8_3_2_1" class="foldclosed" onClick="show_folder('1_8_3_2_1')" style="POSITION: absolute">+</span> <span id="hide1_8_3_2_1" class="foldopened" onClick="hide_folder('1_8_3_2_1')">-</span>
+typeof
+<ul id="fold1_8_3_2_1" style="POSITION: relative; VISIBILITY: visible;"><li>returns the type of a simple variable
+
+</li>
+<li>symbol, function, object for variables of other types
+
+</li>
+<li>or undefined
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_8_3_2_2" class="foldclosed" onClick="show_folder('1_8_3_2_2')" style="POSITION: absolute">+</span> <span id="hide1_8_3_2_2" class="foldopened" onClick="hide_folder('1_8_3_2_2')">-</span>
+instanceof
+<ul id="fold1_8_3_2_2" style="POSITION: relative; VISIBILITY: visible;"><li>checks the type of a class instance against a given class
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_8_3_3" class="foldclosed" onClick="show_folder('1_8_3_3')" style="POSITION: absolute">+</span> <span id="hide1_8_3_3" class="foldopened" onClick="hide_folder('1_8_3_3')">-</span>
+Analogy
+<ul id="fold1_8_3_3" style="POSITION: relative; VISIBILITY: visible;"><li>container taylored for a specific kind of stuff
+
+</li>
+<li>like cardboard boxes, bottles or balloons
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_8_4" class="foldclosed" onClick="show_folder('1_8_4')" style="POSITION: absolute">+</span> <span id="hide1_8_4" class="foldopened" onClick="hide_folder('1_8_4')">-</span>
+function
+<ul id="fold1_8_4" style="POSITION: relative; VISIBILITY: visible;"><li>piece of code that can be executed arbitrarily within the program
+
+</li>
+<li>comes with its own namespace to temporarily hold local variables
+
+</li>
+<li><span id="show1_8_4_1" class="foldclosed" onClick="show_folder('1_8_4_1')" style="POSITION: absolute">+</span> <span id="hide1_8_4_1" class="foldopened" onClick="hide_folder('1_8_4_1')">-</span>
+has a name unique in its scope, and is called to execute by this name
+<ul id="fold1_8_4_1" style="POSITION: relative; VISIBILITY: visible;"><li>exception: anonymous functions that are referenced in a specific context
+
+</li>
+
+</ul>
+</li>
+<li>can be defined to accept data as parameters of specific type
+
+</li>
+<li>can be defined to return data of specific type
+
+</li>
+<li><span id="show1_8_4_2" class="foldclosed" onClick="show_folder('1_8_4_2')" style="POSITION: absolute">+</span> <span id="hide1_8_4_2" class="foldopened" onClick="hide_folder('1_8_4_2')">-</span>
+Analogy
+<ul id="fold1_8_4_2" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_8_4_2_1" class="foldclosed" onClick="show_folder('1_8_4_2_1')" style="POSITION: absolute">+</span> <span id="hide1_8_4_2_1" class="foldopened" onClick="hide_folder('1_8_4_2_1')">-</span>
+machine, that can
+<ul id="fold1_8_4_2_1" style="POSITION: relative; VISIBILITY: visible;"><li>get stuffed with input of specific kind
+
+</li>
+<li>do stuff, using the input if given
+
+</li>
+<li>create, delete or mainpulate stuff in its scope
+
+</li>
+<li>produce stuff of a given kind as an output
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_8_5" class="foldclosed" onClick="show_folder('1_8_5')" style="POSITION: absolute">+</span> <span id="hide1_8_5" class="foldopened" onClick="hide_folder('1_8_5')">-</span>
+parameter
+<ul id="fold1_8_5" style="POSITION: relative; VISIBILITY: visible;"><li>variable defined in the head of a function, through which data can be passed to the function
+
+</li>
+<li>parameters sit in the functions namespace
+
+</li>
+<li><span id="show1_8_5_1" class="foldclosed" onClick="show_folder('1_8_5_1')" style="POSITION: absolute">+</span> <span id="hide1_8_5_1" class="foldopened" onClick="hide_folder('1_8_5_1')">-</span>
+Analogy
+<ul id="fold1_8_5_1" style="POSITION: relative; VISIBILITY: visible;"><li>a slot of the machine, where stuff of a specified kind can be put in ...
+
+</li>
+<li>... for the machine to work with
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_8_6" class="foldclosed" onClick="show_folder('1_8_6')" style="POSITION: absolute">+</span> <span id="hide1_8_6" class="foldopened" onClick="hide_folder('1_8_6')">-</span>
+array
+<ul id="fold1_8_6" style="POSITION: relative; VISIBILITY: visible;"><li>piece of storage in the namespace with variable size
+
+</li>
+<li>that is addressed with a single name
+
+</li>
+<li>and devided into elements of a given type
+
+</li>
+<li>elements are addressed with a number, starting with 0
+
+</li>
+<li><span id="show1_8_6_1" class="foldclosed" onClick="show_folder('1_8_6_1')" style="POSITION: absolute">+</span> <span id="hide1_8_6_1" class="foldopened" onClick="hide_folder('1_8_6_1')">-</span>
+Analogy
+<ul id="fold1_8_6_1" style="POSITION: relative; VISIBILITY: visible;"><li>a drawer cabinet in the storage, that can be found with a single name
+
+</li>
+<li>drawers are numbered in sequence starting with 0
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_8_7" class="foldclosed" onClick="show_folder('1_8_7')" style="POSITION: absolute">+</span> <span id="hide1_8_7" class="foldopened" onClick="hide_folder('1_8_7')">-</span>
+associative array
+<ul id="fold1_8_7" style="POSITION: relative; VISIBILITY: visible;"><li>like an array
+
+</li>
+<li>elements are not adresses using a number, but a key
+
+</li>
+<li>in most cases, the key is of type string
+
+</li>
+<li>this is the fundamental data structure in JavaScript, thus also called javascript-object
+
+</li>
+<li><span id="show1_8_7_1" class="foldclosed" onClick="show_folder('1_8_7_1')" style="POSITION: absolute">+</span> <span id="hide1_8_7_1" class="foldopened" onClick="hide_folder('1_8_7_1')">-</span>
+Analogy
+<ul id="fold1_8_7_1" style="POSITION: relative; VISIBILITY: visible;"><li>a drawer cabinet in the storage, that can be found with a single name
+
+</li>
+<li>drawers are labelled
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_8_8" class="foldclosed" onClick="show_folder('1_8_8')" style="POSITION: absolute">+</span> <span id="hide1_8_8" class="foldopened" onClick="hide_folder('1_8_8')">-</span>
+interface
+<ul id="fold1_8_8" style="POSITION: relative; VISIBILITY: visible;"><li>a pattern for an associative array
+
+</li>
+<li><span id="show1_8_8_1" class="foldclosed" onClick="show_folder('1_8_8_1')" style="POSITION: absolute">+</span> <span id="hide1_8_8_1" class="foldopened" onClick="hide_folder('1_8_8_1')">-</span>
+for each instance of an array that implements the interface
+<ul id="fold1_8_8_1" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_8_8_1_1" class="foldclosed" onClick="show_folder('1_8_8_1_1')" style="POSITION: absolute">+</span> <span id="hide1_8_8_1_1" class="foldopened" onClick="hide_folder('1_8_8_1_1')">-</span>
+homogenous
+<ul id="fold1_8_8_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>the interface defines a type for the keys and a type for the associated values
+
+</li>
+<li>no limitation to the number of elements
+
+</li>
+<li>all elements are addressed with the given type of key
+
+</li>
+<li>all associated values are of the given type
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_8_8_1_2" class="foldclosed" onClick="show_folder('1_8_8_1_2')" style="POSITION: absolute">+</span> <span id="hide1_8_8_1_2" class="foldopened" onClick="hide_folder('1_8_8_1_2')">-</span>
+heterogenous
+<ul id="fold1_8_8_1_2" style="POSITION: relative; VISIBILITY: visible;"><li>the interface defines particular keys and a type for each associated value
+
+</li>
+<li>elements limited to the defined keys
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_8_8_2" class="foldclosed" onClick="show_folder('1_8_8_2')" style="POSITION: absolute">+</span> <span id="hide1_8_8_2" class="foldopened" onClick="hide_folder('1_8_8_2')">-</span>
+Analogy
+<ul id="fold1_8_8_2" style="POSITION: relative; VISIBILITY: visible;"><li>a construction plan for a drawer cabinet with labels
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_8_9" class="foldclosed" onClick="show_folder('1_8_9')" style="POSITION: absolute">+</span> <span id="hide1_8_9" class="foldopened" onClick="hide_folder('1_8_9')">-</span>
+class
+<ul id="fold1_8_9" style="POSITION: relative; VISIBILITY: visible;"><li>a pattern for a complex data structure ...
+
+</li>
+<li>... using assigned variables, then called attributes or properties ...
+
+</li>
+<li>... and functions, then called methods
+
+</li>
+<li><span id="show1_8_9_1" class="foldclosed" onClick="show_folder('1_8_9_1')" style="POSITION: absolute">+</span> <span id="hide1_8_9_1" class="foldopened" onClick="hide_folder('1_8_9_1')">-</span>
+Analogy
+<ul id="fold1_8_9_1" style="POSITION: relative; VISIBILITY: visible;"><li>a building plan for a studio
+
+</li>
+<li>with assigned storage and machines
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_8_10" class="foldclosed" onClick="show_folder('1_8_10')" style="POSITION: absolute">+</span> <span id="hide1_8_10" class="foldopened" onClick="hide_folder('1_8_10')">-</span>
+method
+<ul id="fold1_8_10" style="POSITION: relative; VISIBILITY: visible;"><li>a function defined in a class
+
+</li>
+<li>has access to the namespace of the class using the operator "this"
+
+</li>
+<li><span id="show1_8_10_1" class="foldclosed" onClick="show_folder('1_8_10_1')" style="POSITION: absolute">+</span> <span id="hide1_8_10_1" class="foldopened" onClick="hide_folder('1_8_10_1')">-</span>
+Analogy
+<ul id="fold1_8_10_1" style="POSITION: relative; VISIBILITY: visible;"><li>a machine in a studio
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_8_11" class="foldclosed" onClick="show_folder('1_8_11')" style="POSITION: absolute">+</span> <span id="hide1_8_11" class="foldopened" onClick="hide_folder('1_8_11')">-</span>
+object
+<ul id="fold1_8_11" style="POSITION: relative; VISIBILITY: visible;"><li>an instance of a class
+
+</li>
+<li>each object has its own namespace...
+
+</li>
+<li>... and addresses its data using the keyword "this"
+
+</li>
+<li><span id="show1_8_11_1" class="foldclosed" onClick="show_folder('1_8_11_1')" style="POSITION: absolute">+</span> <span id="hide1_8_11_1" class="foldopened" onClick="hide_folder('1_8_11_1')">-</span>
+Analogy
+<ul id="fold1_8_11_1" style="POSITION: relative; VISIBILITY: visible;"><li>a studio that was actually built
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_8_12" class="foldclosed" onClick="show_folder('1_8_12')" style="POSITION: absolute">+</span> <span id="hide1_8_12" class="foldopened" onClick="hide_folder('1_8_12')">-</span>
+constructor
+<ul id="fold1_8_12" style="POSITION: relative; VISIBILITY: visible;"><li>a special method, that is automatically called on instantiation of the object
+
+</li>
+<li>identified by the name "constructor", which is a keyword
+
+</li>
+<li>the keyword "new" instantiates an object from a class
+
+</li>
+<li><span id="show1_8_12_1" class="foldclosed" onClick="show_folder('1_8_12_1')" style="POSITION: absolute">+</span> <span id="hide1_8_12_1" class="foldopened" onClick="hide_folder('1_8_12_1')">-</span>
+Analogy
+<ul id="fold1_8_12_1" style="POSITION: relative; VISIBILITY: visible;"><li>a machine that helps building a studio from the building plan
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_8_13" class="foldclosed" onClick="show_folder('1_8_13')" style="POSITION: absolute">+</span> <span id="hide1_8_13" class="foldopened" onClick="hide_folder('1_8_13')">-</span>
+subclass
+<ul id="fold1_8_13" style="POSITION: relative; VISIBILITY: visible;"><li>a pattern for an extension of a class
+
+</li>
+<li>can add more attributes and methods ...
+
+</li>
+<li>... or redefine them
+
+</li>
+<li>keyword: extends
+
+</li>
+<li><span id="show1_8_13_1" class="foldclosed" onClick="show_folder('1_8_13_1')" style="POSITION: absolute">+</span> <span id="hide1_8_13_1" class="foldopened" onClick="hide_folder('1_8_13_1')">-</span>
+Analogy
+<ul id="fold1_8_13_1" style="POSITION: relative; VISIBILITY: visible;"><li>extension to an existing building plan for a studio
+
+</li>
+<li>more or different machines and containers
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_8_14" class="foldclosed" onClick="show_folder('1_8_14')" style="POSITION: absolute">+</span> <span id="hide1_8_14" class="foldopened" onClick="hide_folder('1_8_14')">-</span>
+superclass
+<ul id="fold1_8_14" style="POSITION: relative; VISIBILITY: visible;"><li><p>the class a subclass is an extension of
+<p>an object of the subclass can specifically address its superclass namespace using the keyword "super"
+<p><span id="show1_8_14_1" class="foldclosed" onClick="show_folder('1_8_14_1')" style="POSITION: absolute">+</span> <span id="hide1_8_14_1" class="foldopened" onClick="hide_folder('1_8_14_1')">-</span>
+Analogy
+<ul id="fold1_8_14_1" style="POSITION: relative; VISIBILITY: visible;"><li>the building plan, that is the foundation of the extension
+
+</li>
+
+</ul></li>
+</ul>
+</li>
+<li><span id="show1_8_15" class="foldclosed" onClick="show_folder('1_8_15')" style="POSITION: absolute">+</span> <span id="hide1_8_15" class="foldopened" onClick="hide_folder('1_8_15')">-</span>
+inheritance
+<ul id="fold1_8_15" style="POSITION: relative; VISIBILITY: visible;"><li>a subclass inherits all the attributes and methods of the superclass
+
+</li>
+<li><span id="show1_8_15_1" class="foldclosed" onClick="show_folder('1_8_15_1')" style="POSITION: absolute">+</span> <span id="hide1_8_15_1" class="foldopened" onClick="hide_folder('1_8_15_1')">-</span>
+Analogy
+<ul id="fold1_8_15_1" style="POSITION: relative; VISIBILITY: visible;"><li>a studio of an architect and a comic artist ...
+
+</li>
+<li>... may both come with a drawer cabinet for different paper and a printer ...
+
+</li>
+<li>... which is the standard infrastructure of a general studio for drawing
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_8_16" class="foldclosed" onClick="show_folder('1_8_16')" style="POSITION: absolute">+</span> <span id="hide1_8_16" class="foldopened" onClick="hide_folder('1_8_16')">-</span>
+polymorphism
+<ul id="fold1_8_16" style="POSITION: relative; VISIBILITY: visible;"><li>a variable of the type of a superclass...
+
+</li>
+<li>... can reference an instance of its subclasses ...
+
+</li>
+<li>... or their subclasses etc.
+
+</li>
+<li><span id="show1_8_16_1" class="foldclosed" onClick="show_folder('1_8_16_1')" style="POSITION: absolute">+</span> <span id="hide1_8_16_1" class="foldopened" onClick="hide_folder('1_8_16_1')">-</span>
+Analogy
+<ul id="fold1_8_16_1" style="POSITION: relative; VISIBILITY: visible;"><li>an architects studio and a studio for the comic artist are still studios
+
+</li>
+<li>they just have different extension
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_8_17" class="foldclosed" onClick="show_folder('1_8_17')" style="POSITION: absolute">+</span> <span id="hide1_8_17" class="foldopened" onClick="hide_folder('1_8_17')">-</span>
+access modifiers
+<ul id="fold1_8_17" style="POSITION: relative; VISIBILITY: visible;"><li>also called visibility modifiers
+
+</li>
+<li>limit the usage of attributes and methods of an object
+
+</li>
+<li><span id="show1_8_17_1" class="foldclosed" onClick="show_folder('1_8_17_1')" style="POSITION: absolute">+</span> <span id="hide1_8_17_1" class="foldopened" onClick="hide_folder('1_8_17_1')">-</span>
+private
+<ul id="fold1_8_17_1" style="POSITION: relative; VISIBILITY: visible;"><li>only the object of the particular class may access
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_8_17_2" class="foldclosed" onClick="show_folder('1_8_17_2')" style="POSITION: absolute">+</span> <span id="hide1_8_17_2" class="foldopened" onClick="hide_folder('1_8_17_2')">-</span>
+protected
+<ul id="fold1_8_17_2" style="POSITION: relative; VISIBILITY: visible;"><li>additionally, objects of its subclasses may access
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_8_17_3" class="foldclosed" onClick="show_folder('1_8_17_3')" style="POSITION: absolute">+</span> <span id="hide1_8_17_3" class="foldopened" onClick="hide_folder('1_8_17_3')">-</span>
+public
+<ul id="fold1_8_17_3" style="POSITION: relative; VISIBILITY: visible;"><li>access is allowed from any part of the program
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_8_17_4" class="foldclosed" onClick="show_folder('1_8_17_4')" style="POSITION: absolute">+</span> <span id="hide1_8_17_4" class="foldopened" onClick="hide_folder('1_8_17_4')">-</span>
+Analogy
+<ul id="fold1_8_17_4" style="POSITION: relative; VISIBILITY: visible;"><li>can everybody, who knows the studio, just walk in and use its stuff and machines?
+
+</li>
+<li>can somebody, who sits in the extension of the studio, use the stuff in the main studio?
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_8_18" class="foldclosed" onClick="show_folder('1_8_18')" style="POSITION: absolute">+</span> <span id="hide1_8_18" class="foldopened" onClick="hide_folder('1_8_18')">-</span>
+static
+<ul id="fold1_8_18" style="POSITION: relative; VISIBILITY: visible;"><li>attributes or methods defined as static are defined not in the namespace of an object...
+
+</li>
+<li>... but in the namespace of a class
+
+</li>
+<li>all objects of the class share these, and they are available even if no object is instantiated
+
+</li>
+<li><span id="show1_8_18_1" class="foldclosed" onClick="show_folder('1_8_18_1')" style="POSITION: absolute">+</span> <span id="hide1_8_18_1" class="foldopened" onClick="hide_folder('1_8_18_1')">-</span>
+Analogy
+<ul id="fold1_8_18_1" style="POSITION: relative; VISIBILITY: visible;"><li>the studios of the same kind use some common stuff
+
+</li>
+<li>that stuff sits in a common storage
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_8_19" class="foldclosed" onClick="show_folder('1_8_19')" style="POSITION: absolute">+</span> <span id="hide1_8_19" class="foldopened" onClick="hide_folder('1_8_19')">-</span>
+module
+<ul id="fold1_8_19" style="POSITION: relative; VISIBILITY: visible;"><li>a collection of classes and functions to be used in different programs
+
+</li>
+<li>uses a separate namespace
+
+</li>
+<li><span id="show1_8_19_1" class="foldclosed" onClick="show_folder('1_8_19_1')" style="POSITION: absolute">+</span> <span id="hide1_8_19_1" class="foldopened" onClick="hide_folder('1_8_19_1')">-</span>
+Analogy
+<ul id="fold1_8_19_1" style="POSITION: relative; VISIBILITY: visible;"><li>a plan for an agglomeration of studios, machines and stuff of different kinds ...
+
+</li>
+<li>... and their building plans
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_8_20" class="foldclosed" onClick="show_folder('1_8_20')" style="POSITION: absolute">+</span> <span id="hide1_8_20" class="foldopened" onClick="hide_folder('1_8_20')">-</span>
+generics
+<ul id="fold1_8_20" style="POSITION: relative; VISIBILITY: visible;"><li>code structure capable of working with variable types of data
+
+</li>
+<li>types to work with are defined when using the structure
+
+</li>
+<li><span id="show1_8_20_1" class="foldclosed" onClick="show_folder('1_8_20_1')" style="POSITION: absolute">+</span> <span id="hide1_8_20_1" class="foldopened" onClick="hide_folder('1_8_20_1')">-</span>
+Analogy
+<ul id="fold1_8_20_1" style="POSITION: relative; VISIBILITY: visible;"><li>building plan for a studio, which keeps some information open for later specification
+
+</li>
+<li>e.g. the kind of stuff that goes into a cabinet or the kind of stuff a machine produces
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_8_21" class="foldclosed" onClick="show_folder('1_8_21')" style="POSITION: absolute">+</span> <span id="hide1_8_21" class="foldopened" onClick="hide_folder('1_8_21')">-</span>
+enumeration
+<ul id="fold1_8_21" style="POSITION: relative; VISIBILITY: visible;"><li>a set of named numeric constants, referenced by arbitrary names in code
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_8_22" class="foldclosed" onClick="show_folder('1_8_22')" style="POSITION: absolute">+</span> <span id="hide1_8_22" class="foldopened" onClick="hide_folder('1_8_22')">-</span>
+exception
+<ul id="fold1_8_22" style="POSITION: relative; VISIBILITY: visible;"><li><p>a block of code marked with the keyword "try" ...
+<p>... will not stop the program when a fatal error occurs ...
+<p>... but instead skip execution and continue with the following block marked with the keyword "catch".
+<p>if a block marked "finally" is present, it'll be executed before either the try- or the catch-block terminate
+<p>the statement "throw" intentionally causes an exception and passes execution to the logically nearest catch
+</li>
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9" class="foldclosed" onClick="show_folder('1_9')" style="POSITION: absolute">+</span> <span id="hide1_9" class="foldopened" onClick="hide_folder('1_9')">-</span>
+Eventsystem
+<ul id="fold1_9" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_9_1" class="foldclosed" onClick="show_folder('1_9_1')" style="POSITION: absolute">+</span> <span id="hide1_9_1" class="foldopened" onClick="hide_folder('1_9_1')">-</span>
+General
+<ul id="fold1_9_1" style="POSITION: relative; VISIBILITY: visible;"><li>eventsystem enables the programm to react to changes in the environment
+
+</li>
+<li>programmer doesn't require detailled knowledge of how to detect those changes
+
+</li>
+<li>when a change happens, an "event gets dispatched"
+
+</li>
+<li>event triggers listener-functions, that were explicitly registered for it
+
+</li>
+<li><span id="show1_9_1_1" class="foldclosed" onClick="show_folder('1_9_1_1')" style="POSITION: absolute">+</span> <span id="hide1_9_1_1" class="foldopened" onClick="hide_folder('1_9_1_1')">-</span>
+events like mouseclicks or keypresses travel through the DOM in three phases
+<ul id="fold1_9_1_1" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_9_1_1_1" class="foldclosed" onClick="show_folder('1_9_1_1_1')" style="POSITION: absolute">+</span> <span id="hide1_9_1_1_1" class="foldopened" onClick="hide_folder('1_9_1_1_1')">-</span>
+capture
+<ul id="fold1_9_1_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>gets passed from the window into the branch of the DOM tree ...
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_1_1_2" class="foldclosed" onClick="show_folder('1_9_1_1_2')" style="POSITION: absolute">+</span> <span id="hide1_9_1_1_2" class="foldopened" onClick="hide_folder('1_9_1_1_2')">-</span>
+target
+<ul id="fold1_9_1_1_2" style="POSITION: relative; VISIBILITY: visible;"><li>... where the node is located the event refers to ...
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_1_1_3" class="foldclosed" onClick="show_folder('1_9_1_1_3')" style="POSITION: absolute">+</span> <span id="hide1_9_1_1_3" class="foldopened" onClick="hide_folder('1_9_1_1_3')">-</span>
+bubble
+<ul id="fold1_9_1_1_3" style="POSITION: relative; VISIBILITY: visible;"><li>then gets passed back until it reaches the window again
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_1_2" class="foldclosed" onClick="show_folder('1_9_1_2')" style="POSITION: absolute">+</span> <span id="hide1_9_1_2" class="foldopened" onClick="hide_folder('1_9_1_2')">-</span>
+information about the event is passed as parameter to the listener function
+<ul id="fold1_9_1_2" style="POSITION: relative; VISIBILITY: visible;"><li>in case of DOM-Event as Event-Object
+
+</li>
+<li><span id="show1_9_1_2_1" class="foldclosed" onClick="show_folder('1_9_1_2_1')" style="POSITION: absolute">+</span> <span id="hide1_9_1_2_1" class="foldopened" onClick="hide_folder('1_9_1_2_1')">-</span>
+function should accept this as parameter
+<ul id="fold1_9_1_2_1" style="POSITION: relative; VISIBILITY: visible;"><li>eg. function handler ( event: Event ): void
+
+</li>
+
+</ul>
+</li>
+<li>definition for the interface EventListener
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_2" class="foldclosed" onClick="show_folder('1_9_2')" style="POSITION: absolute">+</span> <span id="hide1_9_2" class="foldopened" onClick="hide_folder('1_9_2')">-</span>
+Implementation
+<ul id="fold1_9_2" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_9_2_1" class="foldclosed" onClick="show_folder('1_9_2_1')" style="POSITION: absolute">+</span> <span id="hide1_9_2_1" class="foldopened" onClick="hide_folder('1_9_2_1')">-</span>
+recommended
+<ul id="fold1_9_2_1" style="POSITION: relative; VISIBILITY: visible;"><li>someNode.addEventListener(type: string, listener: EventListener, useCapture?: boolean): void
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_2_2" class="foldclosed" onClick="show_folder('1_9_2_2')" style="POSITION: absolute">+</span> <span id="hide1_9_2_2" class="foldopened" onClick="hide_folder('1_9_2_2')">-</span>
+acceptable
+<ul id="fold1_9_2_2" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_9_2_2_1" class="foldclosed" onClick="show_folder('1_9_2_2_1')" style="POSITION: absolute">+</span> <span id="hide1_9_2_2_1" class="foldopened" onClick="hide_folder('1_9_2_2_1')">-</span>
+someHTMLElement.onclick = listener;
+<ul id="fold1_9_2_2_1" style="POSITION: relative; VISIBILITY: visible;"><li>there can be only one...
+
+</li>
+<li>no control over phase
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_2_3" class="foldclosed" onClick="show_folder('1_9_2_3')" style="POSITION: absolute">+</span> <span id="hide1_9_2_3" class="foldopened" onClick="hide_folder('1_9_2_3')">-</span>
+discouraged
+<ul id="fold1_9_2_3" style="POSITION: relative; VISIBILITY: visible;"><li>in HTML-File
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_3" class="foldclosed" onClick="show_folder('1_9_3')" style="POSITION: absolute">+</span> <span id="hide1_9_3" class="foldopened" onClick="hide_folder('1_9_3')">-</span>
+Event-Object
+<ul id="fold1_9_3" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_9_3_1" class="foldclosed" onClick="show_folder('1_9_3_1')" style="POSITION: absolute">+</span> <span id="hide1_9_3_1" class="foldopened" onClick="hide_folder('1_9_3_1')">-</span>
+target
+<ul id="fold1_9_3_1" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_9_3_1_1" class="foldclosed" onClick="show_folder('1_9_3_1_1')" style="POSITION: absolute">+</span> <span id="hide1_9_3_1_1" class="foldopened" onClick="hide_folder('1_9_3_1_1')">-</span>
+node the event refers to
+<ul id="fold1_9_3_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>e.g. the clicked button , the changed inputfield
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_3_2" class="foldclosed" onClick="show_folder('1_9_3_2')" style="POSITION: absolute">+</span> <span id="hide1_9_3_2" class="foldopened" onClick="hide_folder('1_9_3_2')">-</span>
+currentTarget
+<ul id="fold1_9_3_2" style="POSITION: relative; VISIBILITY: visible;"><li>the node the currently processed listener was added to
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_3_3" class="foldclosed" onClick="show_folder('1_9_3_3')" style="POSITION: absolute">+</span> <span id="hide1_9_3_3" class="foldopened" onClick="hide_folder('1_9_3_3')">-</span>
+type
+<ul id="fold1_9_3_3" style="POSITION: relative; VISIBILITY: visible;"><li>see DOM-Event-Types
+
+</li>
+
+</ul>
+</li>
+<li>Mouseposition relative to several coordinate systems
+
+</li>
+<li>Keyboardcodes
+
+</li>
+<li>Eventphase
+
+</li>
+<li>etc.
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_4" class="foldclosed" onClick="show_folder('1_9_4')" style="POSITION: absolute">+</span> <span id="hide1_9_4" class="foldopened" onClick="hide_folder('1_9_4')">-</span>
+DOM-Event-Types
+<ul id="fold1_9_4" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_9_4_1" class="foldclosed" onClick="show_folder('1_9_4_1')" style="POSITION: absolute">+</span> <span id="hide1_9_4_1" class="foldopened" onClick="hide_folder('1_9_4_1')">-</span>
+Window/Object
+<ul id="fold1_9_4_1" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_9_4_1_1" class="foldclosed" onClick="show_folder('1_9_4_1_1')" style="POSITION: absolute">+</span> <span id="hide1_9_4_1_1" class="foldopened" onClick="hide_folder('1_9_4_1_1')">-</span>
+load
+<ul id="fold1_9_4_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>loading of a file is done
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_4_1_2" class="foldclosed" onClick="show_folder('1_9_4_1_2')" style="POSITION: absolute">+</span> <span id="hide1_9_4_1_2" class="foldopened" onClick="hide_folder('1_9_4_1_2')">-</span>
+unload
+<ul id="fold1_9_4_1_2" style="POSITION: relative; VISIBILITY: visible;"><li>the page gets removed from memory
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_4_1_3" class="foldclosed" onClick="show_folder('1_9_4_1_3')" style="POSITION: absolute">+</span> <span id="hide1_9_4_1_3" class="foldopened" onClick="hide_folder('1_9_4_1_3')">-</span>
+error
+<ul id="fold1_9_4_1_3" style="POSITION: relative; VISIBILITY: visible;"><li>error occurred while loading
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_4_1_4" class="foldclosed" onClick="show_folder('1_9_4_1_4')" style="POSITION: absolute">+</span> <span id="hide1_9_4_1_4" class="foldopened" onClick="hide_folder('1_9_4_1_4')">-</span>
+abort
+<ul id="fold1_9_4_1_4" style="POSITION: relative; VISIBILITY: visible;"><li>loading is cancelled
+
+</li>
+
+</ul>
+</li>
+<li>afterprint/beforeprint
+
+</li>
+<li>online/offline
+
+</li>
+<li>visible
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_4_2" class="foldclosed" onClick="show_folder('1_9_4_2')" style="POSITION: absolute">+</span> <span id="hide1_9_4_2" class="foldopened" onClick="hide_folder('1_9_4_2')">-</span>
+Keyboard
+<ul id="fold1_9_4_2" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_9_4_2_1" class="foldclosed" onClick="show_folder('1_9_4_2_1')" style="POSITION: absolute">+</span> <span id="hide1_9_4_2_1" class="foldopened" onClick="hide_folder('1_9_4_2_1')">-</span>
+keydown
+<ul id="fold1_9_4_2_1" style="POSITION: relative; VISIBILITY: visible;"><li>key was pressed
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_4_2_2" class="foldclosed" onClick="show_folder('1_9_4_2_2')" style="POSITION: absolute">+</span> <span id="hide1_9_4_2_2" class="foldopened" onClick="hide_folder('1_9_4_2_2')">-</span>
+keyup
+<ul id="fold1_9_4_2_2" style="POSITION: relative; VISIBILITY: visible;"><li>key was released
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_4_2_3" class="foldclosed" onClick="show_folder('1_9_4_2_3')" style="POSITION: absolute">+</span> <span id="hide1_9_4_2_3" class="foldopened" onClick="hide_folder('1_9_4_2_3')">-</span>
+keypress
+<ul id="fold1_9_4_2_3" style="POSITION: relative; VISIBILITY: visible;"><li>key is kept pressed
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_4_3" class="foldclosed" onClick="show_folder('1_9_4_3')" style="POSITION: absolute">+</span> <span id="hide1_9_4_3" class="foldopened" onClick="hide_folder('1_9_4_3')">-</span>
+Pointer
+<ul id="fold1_9_4_3" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_9_4_3_1" class="foldclosed" onClick="show_folder('1_9_4_3_1')" style="POSITION: absolute">+</span> <span id="hide1_9_4_3_1" class="foldopened" onClick="hide_folder('1_9_4_3_1')">-</span>
+pointerover
+<ul id="fold1_9_4_3_1" style="POSITION: relative; VISIBILITY: visible;"><li>fired when a pointing device is moved into an element's hit test boundaries.
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_4_3_2" class="foldclosed" onClick="show_folder('1_9_4_3_2')" style="POSITION: absolute">+</span> <span id="hide1_9_4_3_2" class="foldopened" onClick="hide_folder('1_9_4_3_2')">-</span>
+pointerenter
+<ul id="fold1_9_4_3_2" style="POSITION: relative; VISIBILITY: visible;"><li><p>fired when when a pointing device is moved into the hit test boundaries of an element or one of its descendants, including as a result of a pointerdown event from a device that does not support hover (see pointerdown).
+</li>
+</ul>
+</li>
+<li><span id="show1_9_4_3_3" class="foldclosed" onClick="show_folder('1_9_4_3_3')" style="POSITION: absolute">+</span> <span id="hide1_9_4_3_3" class="foldopened" onClick="hide_folder('1_9_4_3_3')">-</span>
+pointerdown
+<ul id="fold1_9_4_3_3" style="POSITION: relative; VISIBILITY: visible;"><li>fired when a pointer becomes active.
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_4_3_4" class="foldclosed" onClick="show_folder('1_9_4_3_4')" style="POSITION: absolute">+</span> <span id="hide1_9_4_3_4" class="foldopened" onClick="hide_folder('1_9_4_3_4')">-</span>
+pointermove
+<ul id="fold1_9_4_3_4" style="POSITION: relative; VISIBILITY: visible;"><li>fired when a pointer changes coordinates.
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_4_3_5" class="foldclosed" onClick="show_folder('1_9_4_3_5')" style="POSITION: absolute">+</span> <span id="hide1_9_4_3_5" class="foldopened" onClick="hide_folder('1_9_4_3_5')">-</span>
+pointerup
+<ul id="fold1_9_4_3_5" style="POSITION: relative; VISIBILITY: visible;"><li>fired when a pointer is no longer active.
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_4_3_6" class="foldclosed" onClick="show_folder('1_9_4_3_6')" style="POSITION: absolute">+</span> <span id="hide1_9_4_3_6" class="foldopened" onClick="hide_folder('1_9_4_3_6')">-</span>
+pointercancel
+<ul id="fold1_9_4_3_6" style="POSITION: relative; VISIBILITY: visible;"><li><p>a browser fires this event if it concludes the pointer will no longer be able to generate events (for example the related device is deactived).
+</li>
+</ul>
+</li>
+<li><span id="show1_9_4_3_7" class="foldclosed" onClick="show_folder('1_9_4_3_7')" style="POSITION: absolute">+</span> <span id="hide1_9_4_3_7" class="foldopened" onClick="hide_folder('1_9_4_3_7')">-</span>
+pointerout
+<ul id="fold1_9_4_3_7" style="POSITION: relative; VISIBILITY: visible;"><li><p>fired for several reasons including: pointing device is moved out of the hit test boundaries of an element; firing the pointerup event for a device that does not support hover (see pointerup); after firing the pointercancel event (see pointercancel); when a pen stylus leaves the hover range detectable by the digitizer.
+</li>
+</ul>
+</li>
+<li><span id="show1_9_4_3_8" class="foldclosed" onClick="show_folder('1_9_4_3_8')" style="POSITION: absolute">+</span> <span id="hide1_9_4_3_8" class="foldopened" onClick="hide_folder('1_9_4_3_8')">-</span>
+pointerleave
+<ul id="fold1_9_4_3_8" style="POSITION: relative; VISIBILITY: visible;"><li><p>fired when a pointing device is moved out of the hit test boundaries of an element. For pen devices, this event is fired when the stylus leaves the hover range detectable by the digitizer.
+</li>
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_4_4" class="foldclosed" onClick="show_folder('1_9_4_4')" style="POSITION: absolute">+</span> <span id="hide1_9_4_4" class="foldopened" onClick="hide_folder('1_9_4_4')">-</span>
+Mouse
+<ul id="fold1_9_4_4" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_9_4_4_1" class="foldclosed" onClick="show_folder('1_9_4_4_1')" style="POSITION: absolute">+</span> <span id="hide1_9_4_4_1" class="foldopened" onClick="hide_folder('1_9_4_4_1')">-</span>
+dblclick
+<ul id="fold1_9_4_4_1" style="POSITION: relative; VISIBILITY: visible;"><li>mousebutton was pressed two times quickly
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_4_4_2" class="foldclosed" onClick="show_folder('1_9_4_4_2')" style="POSITION: absolute">+</span> <span id="hide1_9_4_4_2" class="foldopened" onClick="hide_folder('1_9_4_4_2')">-</span>
+click
+<ul id="fold1_9_4_4_2" style="POSITION: relative; VISIBILITY: visible;"><li>mousebutton was pressed and released quickly
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_4_4_3" class="foldclosed" onClick="show_folder('1_9_4_4_3')" style="POSITION: absolute">+</span> <span id="hide1_9_4_4_3" class="foldopened" onClick="hide_folder('1_9_4_4_3')">-</span>
+mousedown
+<ul id="fold1_9_4_4_3" style="POSITION: relative; VISIBILITY: visible;"><li>mousebutton was pressed
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_4_4_4" class="foldclosed" onClick="show_folder('1_9_4_4_4')" style="POSITION: absolute">+</span> <span id="hide1_9_4_4_4" class="foldopened" onClick="hide_folder('1_9_4_4_4')">-</span>
+mouseup
+<ul id="fold1_9_4_4_4" style="POSITION: relative; VISIBILITY: visible;"><li>mousebutton was released
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_4_4_5" class="foldclosed" onClick="show_folder('1_9_4_4_5')" style="POSITION: absolute">+</span> <span id="hide1_9_4_4_5" class="foldopened" onClick="hide_folder('1_9_4_4_5')">-</span>
+mouseover
+<ul id="fold1_9_4_4_5" style="POSITION: relative; VISIBILITY: visible;"><li>mousecursor hovers over element listener is attached to
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_4_4_6" class="foldclosed" onClick="show_folder('1_9_4_4_6')" style="POSITION: absolute">+</span> <span id="hide1_9_4_4_6" class="foldopened" onClick="hide_folder('1_9_4_4_6')">-</span>
+mouseout
+<ul id="fold1_9_4_4_6" style="POSITION: relative; VISIBILITY: visible;"><li>mousecursor left element the listener is attached to
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_4_4_7" class="foldclosed" onClick="show_folder('1_9_4_4_7')" style="POSITION: absolute">+</span> <span id="hide1_9_4_4_7" class="foldopened" onClick="hide_folder('1_9_4_4_7')">-</span>
+mousemove
+<ul id="fold1_9_4_4_7" style="POSITION: relative; VISIBILITY: visible;"><li>mousecursor has moved
+
+</li>
+
+</ul>
+</li>
+<li>mousewheel
+
+</li>
+<li>scroll
+
+</li>
+<li><span id="show1_9_4_4_8" class="foldclosed" onClick="show_folder('1_9_4_4_8')" style="POSITION: absolute">+</span> <span id="hide1_9_4_4_8" class="foldopened" onClick="hide_folder('1_9_4_4_8')">-</span>
+drag&amp;drop
+<ul id="fold1_9_4_4_8" style="POSITION: relative; VISIBILITY: visible;"><li>drag
+
+</li>
+<li>dragend
+
+</li>
+<li>dragenter
+
+</li>
+<li>dragleave
+
+</li>
+<li>dragover
+
+</li>
+<li>dragstart
+
+</li>
+<li>drop
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_4_5" class="foldclosed" onClick="show_folder('1_9_4_5')" style="POSITION: absolute">+</span> <span id="hide1_9_4_5" class="foldopened" onClick="hide_folder('1_9_4_5')">-</span>
+Touch
+<ul id="fold1_9_4_5" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_9_4_5_1" class="foldclosed" onClick="show_folder('1_9_4_5_1')" style="POSITION: absolute">+</span> <span id="hide1_9_4_5_1" class="foldopened" onClick="hide_folder('1_9_4_5_1')">-</span>
+touchstart
+<ul id="fold1_9_4_5_1" style="POSITION: relative; VISIBILITY: visible;"><li>fired when a touch point is placed on the touch surface.
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_4_5_2" class="foldclosed" onClick="show_folder('1_9_4_5_2')" style="POSITION: absolute">+</span> <span id="hide1_9_4_5_2" class="foldopened" onClick="hide_folder('1_9_4_5_2')">-</span>
+touchmove
+<ul id="fold1_9_4_5_2" style="POSITION: relative; VISIBILITY: visible;"><li>fired when a touch point is moved along the touch surface.
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_4_5_3" class="foldclosed" onClick="show_folder('1_9_4_5_3')" style="POSITION: absolute">+</span> <span id="hide1_9_4_5_3" class="foldopened" onClick="hide_folder('1_9_4_5_3')">-</span>
+touchend
+<ul id="fold1_9_4_5_3" style="POSITION: relative; VISIBILITY: visible;"><li>fired when a touch point is removed from the touch surface.
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_4_5_4" class="foldclosed" onClick="show_folder('1_9_4_5_4')" style="POSITION: absolute">+</span> <span id="hide1_9_4_5_4" class="foldopened" onClick="hide_folder('1_9_4_5_4')">-</span>
+touchcancel
+<ul id="fold1_9_4_5_4" style="POSITION: relative; VISIBILITY: visible;"><li><p>fired when a touch point has been disrupted in an implementation-specific manner (for example, too many touch points are created).
+</li>
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_4_6" class="foldclosed" onClick="show_folder('1_9_4_6')" style="POSITION: absolute">+</span> <span id="hide1_9_4_6" class="foldopened" onClick="hide_folder('1_9_4_6')">-</span>
+Form
+<ul id="fold1_9_4_6" style="POSITION: relative; VISIBILITY: visible;"><li>change
+
+</li>
+<li><span id="show1_9_4_6_1" class="foldclosed" onClick="show_folder('1_9_4_6_1')" style="POSITION: absolute">+</span> <span id="hide1_9_4_6_1" class="foldopened" onClick="hide_folder('1_9_4_6_1')">-</span>
+submit
+<ul id="fold1_9_4_6_1" style="POSITION: relative; VISIBILITY: visible;"><li>sending of the formdata was initiated
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_4_6_2" class="foldclosed" onClick="show_folder('1_9_4_6_2')" style="POSITION: absolute">+</span> <span id="hide1_9_4_6_2" class="foldopened" onClick="hide_folder('1_9_4_6_2')">-</span>
+reset
+<ul id="fold1_9_4_6_2" style="POSITION: relative; VISIBILITY: visible;"><li>reset of form was initiated
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_4_6_3" class="foldclosed" onClick="show_folder('1_9_4_6_3')" style="POSITION: absolute">+</span> <span id="hide1_9_4_6_3" class="foldopened" onClick="hide_folder('1_9_4_6_3')">-</span>
+focus
+<ul id="fold1_9_4_6_3" style="POSITION: relative; VISIBILITY: visible;"><li>form element got focus
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_4_6_4" class="foldclosed" onClick="show_folder('1_9_4_6_4')" style="POSITION: absolute">+</span> <span id="hide1_9_4_6_4" class="foldopened" onClick="hide_folder('1_9_4_6_4')">-</span>
+blur
+<ul id="fold1_9_4_6_4" style="POSITION: relative; VISIBILITY: visible;"><li>form element left focus
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_4_6_5" class="foldclosed" onClick="show_folder('1_9_4_6_5')" style="POSITION: absolute">+</span> <span id="hide1_9_4_6_5" class="foldopened" onClick="hide_folder('1_9_4_6_5')">-</span>
+select
+<ul id="fold1_9_4_6_5" style="POSITION: relative; VISIBILITY: visible;"><li>some text was selected
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_4_7" class="foldclosed" onClick="show_folder('1_9_4_7')" style="POSITION: absolute">+</span> <span id="hide1_9_4_7" class="foldopened" onClick="hide_folder('1_9_4_7')">-</span>
+Timer
+<ul id="fold1_9_4_7" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_9_4_7_1" class="foldclosed" onClick="show_folder('1_9_4_7_1')" style="POSITION: absolute">+</span> <span id="hide1_9_4_7_1" class="foldopened" onClick="hide_folder('1_9_4_7_1')">-</span>
+setInterval
+<ul id="fold1_9_4_7_1" style="POSITION: relative; VISIBILITY: visible;"><li>dispatches event continuosly in given time intervals
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_4_7_2" class="foldclosed" onClick="show_folder('1_9_4_7_2')" style="POSITION: absolute">+</span> <span id="hide1_9_4_7_2" class="foldopened" onClick="hide_folder('1_9_4_7_2')">-</span>
+setTimeout
+<ul id="fold1_9_4_7_2" style="POSITION: relative; VISIBILITY: visible;"><li>dispatches event continuosly after given time has passed
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_4_8" class="foldclosed" onClick="show_folder('1_9_4_8')" style="POSITION: absolute">+</span> <span id="hide1_9_4_8" class="foldopened" onClick="hide_folder('1_9_4_8')">-</span>
+Media
+<ul id="fold1_9_4_8" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_9_4_8_1" class="foldclosed" onClick="show_folder('1_9_4_8_1')" style="POSITION: absolute">+</span> <span id="hide1_9_4_8_1" class="foldopened" onClick="hide_folder('1_9_4_8_1')">-</span>
+loadstart
+<ul id="fold1_9_4_8_1" style="POSITION: relative; VISIBILITY: visible;"><li>sent when loading of the media begins.
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_4_8_2" class="foldclosed" onClick="show_folder('1_9_4_8_2')" style="POSITION: absolute">+</span> <span id="hide1_9_4_8_2" class="foldopened" onClick="hide_folder('1_9_4_8_2')">-</span>
+pause
+<ul id="fold1_9_4_8_2" style="POSITION: relative; VISIBILITY: visible;"><li>sent when playback is paused.
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_4_8_3" class="foldclosed" onClick="show_folder('1_9_4_8_3')" style="POSITION: absolute">+</span> <span id="hide1_9_4_8_3" class="foldopened" onClick="hide_folder('1_9_4_8_3')">-</span>
+play
+<ul id="fold1_9_4_8_3" style="POSITION: relative; VISIBILITY: visible;"><li><p>sent when playback of the media starts after having been paused; that is, when playback is resumed after a prior pause event.
+</li>
+</ul>
+</li>
+<li><span id="show1_9_4_8_4" class="foldclosed" onClick="show_folder('1_9_4_8_4')" style="POSITION: absolute">+</span> <span id="hide1_9_4_8_4" class="foldopened" onClick="hide_folder('1_9_4_8_4')">-</span>
+playing
+<ul id="fold1_9_4_8_4" style="POSITION: relative; VISIBILITY: visible;"><li><p>sent when the media begins to play (either for the first time, after having been paused, or after ending and then restarting).
+</li>
+</ul>
+</li>
+<li><span id="show1_9_4_8_5" class="foldclosed" onClick="show_folder('1_9_4_8_5')" style="POSITION: absolute">+</span> <span id="hide1_9_4_8_5" class="foldopened" onClick="hide_folder('1_9_4_8_5')">-</span>
+progress
+<ul id="fold1_9_4_8_5" style="POSITION: relative; VISIBILITY: visible;"><li><p>sent periodically to inform interested parties of progress downloading the media. Information about the current amount of the media that has been downloaded is available in the media element's buffered attribute.
+</li>
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_10" class="foldclosed" onClick="show_folder('1_10')" style="POSITION: absolute">+</span> <span id="hide1_10" class="foldopened" onClick="hide_folder('1_10')">-</span>
+Document Object Model (DOM)
+<ul id="fold1_10" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_10_1" class="foldclosed" onClick="show_folder('1_10_1')" style="POSITION: absolute">+</span> <span id="hide1_10_1" class="foldopened" onClick="hide_folder('1_10_1')">-</span>
+General
+<ul id="fold1_10_1" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_10_1_1" class="foldclosed" onClick="show_folder('1_10_1_1')" style="POSITION: absolute">+</span> <span id="hide1_10_1_1" class="foldopened" onClick="hide_folder('1_10_1_1')">-</span>
+<a href="https://www.w3.org/" target="_blank"><span class=l>~</span>&nbsp;Standardized by W3C
+</a>
+<ul id="fold1_10_1_1" style="POSITION: relative; VISIBILITY: visible;"><li><a href="https://github.com/timbl" target="_blank"><span class=l>~</span>&nbsp;led by Tim Berners-Lee
+</a>
+
+</li>
+<li>... the creator of the World-Wide-Web
+
+</li>
+
+</ul>
+</li>
+<li>platform- and language-neutral interface
+
+</li>
+<li>allows programs and scripts to dynamically access and update...
+
+</li>
+<li>...the content, structure and style of documents.
+
+</li>
+<li>While loading a web page, the browser creates a DOM of the page.
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_10_2" class="foldclosed" onClick="show_folder('1_10_2')" style="POSITION: absolute">+</span> <span id="hide1_10_2" class="foldopened" onClick="hide_folder('1_10_2')">-</span>
+DOM is constructed as a tree of nodes
+<ul id="fold1_10_2" style="POSITION: relative; VISIBILITY: visible;"><li>each node has a parent-node
+
+</li>
+<li>and can have multiple child-nodes
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_10_3" class="foldclosed" onClick="show_folder('1_10_3')" style="POSITION: absolute">+</span> <span id="hide1_10_3" class="foldopened" onClick="hide_folder('1_10_3')">-</span>
+Example
+<ul id="fold1_10_3" style="POSITION: relative; VISIBILITY: visible;"><li><p><span id="show1_10_3_1" class="foldclosed" onClick="show_folder('1_10_3_1')" style="POSITION: absolute">+</span> <span id="hide1_10_3_1" class="foldopened" onClick="hide_folder('1_10_3_1')">-</span>
+&lt;p title="testTitle"&gt;
+<br>
+ &nbsp;&nbsp;&nbsp;This is a sample of some &lt;b&gt;HTML you might&lt;br&gt;
+<br>
+ &nbsp;&nbsp;&nbsp;find&lt;/b&gt; in your document
+<br>
+&lt;/p&gt;
+<ul id="fold1_10_3_1" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_10_3_1_1" class="foldclosed" onClick="show_folder('1_10_3_1_1')" style="POSITION: absolute">+</span> <span id="hide1_10_3_1_1" class="foldopened" onClick="hide_folder('1_10_3_1_1')">-</span>
+P
+<ul id="fold1_10_3_1_1" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_10_3_1_1_1" class="foldclosed" onClick="show_folder('1_10_3_1_1_1')" style="POSITION: absolute">+</span> <span id="hide1_10_3_1_1_1" class="foldopened" onClick="hide_folder('1_10_3_1_1_1')">-</span>
+attributes
+<ul id="fold1_10_3_1_1_1" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_10_3_1_1_1_1" class="foldclosed" onClick="show_folder('1_10_3_1_1_1_1')" style="POSITION: absolute">+</span> <span id="hide1_10_3_1_1_1_1" class="foldopened" onClick="hide_folder('1_10_3_1_1_1_1')">-</span>
+title
+<ul id="fold1_10_3_1_1_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>"testTitle"
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_10_3_1_1_2" class="foldclosed" onClick="show_folder('1_10_3_1_1_2')" style="POSITION: absolute">+</span> <span id="hide1_10_3_1_1_2" class="foldopened" onClick="hide_folder('1_10_3_1_1_2')">-</span>
+childNodes
+<ul id="fold1_10_3_1_1_2" style="POSITION: relative; VISIBILITY: visible;"><li>"This is a sample of some"
+
+</li>
+<li><span id="show1_10_3_1_1_2_1" class="foldclosed" onClick="show_folder('1_10_3_1_1_2_1')" style="POSITION: absolute">+</span> <span id="hide1_10_3_1_1_2_1" class="foldopened" onClick="hide_folder('1_10_3_1_1_2_1')">-</span>
+B
+<ul id="fold1_10_3_1_1_2_1" style="POSITION: relative; VISIBILITY: visible;"><li>attributes
+
+</li>
+<li><span id="show1_10_3_1_1_2_1_1" class="foldclosed" onClick="show_folder('1_10_3_1_1_2_1_1')" style="POSITION: absolute">+</span> <span id="hide1_10_3_1_1_2_1_1" class="foldopened" onClick="hide_folder('1_10_3_1_1_2_1_1')">-</span>
+childNodes
+<ul id="fold1_10_3_1_1_2_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>"HTML you might"
+
+</li>
+<li>&lt;br&gt;
+
+</li>
+<li>"find"
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li>"in your document"
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul></li>
+</ul>
+</li>
+<li><a href="DO-Hierarchy.pdf" target="_blank"><span class=l>~</span>&nbsp;nodes are instances of classes of the DOM-Class-Hierarchy
+</a>
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_11" class="foldclosed" onClick="show_folder('1_11')" style="POSITION: absolute">+</span> <span id="hide1_11" class="foldopened" onClick="hide_folder('1_11')">-</span>
+Forms
+<ul id="fold1_11" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_11_1" class="foldclosed" onClick="show_folder('1_11_1')" style="POSITION: absolute">+</span> <span id="hide1_11_1" class="foldopened" onClick="hide_folder('1_11_1')">-</span>
+Form
+<ul id="fold1_11_1" style="POSITION: relative; VISIBILITY: visible;"><li>a simple system in HTML to send data
+
+</li>
+<li><span id="show1_11_1_1" class="foldclosed" onClick="show_folder('1_11_1_1')" style="POSITION: absolute">+</span> <span id="hide1_11_1_1" class="foldopened" onClick="hide_folder('1_11_1_1')">-</span>
+action
+<ul id="fold1_11_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>URL
+
+</li>
+<li>"mailto:..."
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_11_1_2" class="foldclosed" onClick="show_folder('1_11_1_2')" style="POSITION: absolute">+</span> <span id="hide1_11_1_2" class="foldopened" onClick="hide_folder('1_11_1_2')">-</span>
+method
+<ul id="fold1_11_1_2" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_11_1_2_1" class="foldclosed" onClick="show_folder('1_11_1_2_1')" style="POSITION: absolute">+</span> <span id="hide1_11_1_2_1" class="foldopened" onClick="hide_folder('1_11_1_2_1')">-</span>
+get
+<ul id="fold1_11_1_2_1" style="POSITION: relative; VISIBILITY: visible;"><li>send data as a string in the URL
+
+</li>
+<li><span id="show1_11_1_2_1_1" class="foldclosed" onClick="show_folder('1_11_1_2_1_1')" style="POSITION: absolute">+</span> <span id="hide1_11_1_2_1_1" class="foldopened" onClick="hide_folder('1_11_1_2_1_1')">-</span>
+format
+<ul id="fold1_11_1_2_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>starts with an ? ...
+
+</li>
+<li>... followed by key=value pairs ...
+
+</li>
+<li>... separated by &amp;
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_11_1_2_2" class="foldclosed" onClick="show_folder('1_11_1_2_2')" style="POSITION: absolute">+</span> <span id="hide1_11_1_2_2" class="foldopened" onClick="hide_folder('1_11_1_2_2')">-</span>
+post
+<ul id="fold1_11_1_2_2" style="POSITION: relative; VISIBILITY: visible;"><li>send data as a separate package
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_11_2" class="foldclosed" onClick="show_folder('1_11_2')" style="POSITION: absolute">+</span> <span id="hide1_11_2" class="foldopened" onClick="hide_folder('1_11_2')">-</span>
+Elements
+<ul id="fold1_11_2" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_11_2_1" class="foldclosed" onClick="show_folder('1_11_2_1')" style="POSITION: absolute">+</span> <span id="hide1_11_2_1" class="foldopened" onClick="hide_folder('1_11_2_1')">-</span>
+General attributes
+<ul id="fold1_11_2_1" style="POSITION: relative; VISIBILITY: visible;"><li>name
+
+</li>
+<li>value
+
+</li>
+<li>readonly
+
+</li>
+<li>disabled
+
+</li>
+<li>autofocus
+
+</li>
+<li>form
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_11_2_2" class="foldclosed" onClick="show_folder('1_11_2_2')" style="POSITION: absolute">+</span> <span id="hide1_11_2_2" class="foldopened" onClick="hide_folder('1_11_2_2')">-</span>
+input
+<ul id="fold1_11_2_2" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_11_2_2_1" class="foldclosed" onClick="show_folder('1_11_2_2_1')" style="POSITION: absolute">+</span> <span id="hide1_11_2_2_1" class="foldopened" onClick="hide_folder('1_11_2_2_1')">-</span>
+type
+<ul id="fold1_11_2_2_1" style="POSITION: relative; VISIBILITY: visible;"><li>...
+
+</li>
+
+</ul>
+</li>
+<li>min/max/step/value
+
+</li>
+<li>autocomplete
+
+</li>
+<li>placeholder
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_11_2_3" class="foldclosed" onClick="show_folder('1_11_2_3')" style="POSITION: absolute">+</span> <span id="hide1_11_2_3" class="foldopened" onClick="hide_folder('1_11_2_3')">-</span>
+button
+<ul id="fold1_11_2_3" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_11_2_3_1" class="foldclosed" onClick="show_folder('1_11_2_3_1')" style="POSITION: absolute">+</span> <span id="hide1_11_2_3_1" class="foldopened" onClick="hide_folder('1_11_2_3_1')">-</span>
+type
+<ul id="fold1_11_2_3_1" style="POSITION: relative; VISIBILITY: visible;"><li>button
+
+</li>
+<li>submit
+
+</li>
+<li>reset
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_11_2_4" class="foldclosed" onClick="show_folder('1_11_2_4')" style="POSITION: absolute">+</span> <span id="hide1_11_2_4" class="foldopened" onClick="hide_folder('1_11_2_4')">-</span>
+textarea
+<ul id="fold1_11_2_4" style="POSITION: relative; VISIBILITY: visible;"><li>rows
+
+</li>
+<li>cols
+
+</li>
+<li>required
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_11_2_5" class="foldclosed" onClick="show_folder('1_11_2_5')" style="POSITION: absolute">+</span> <span id="hide1_11_2_5" class="foldopened" onClick="hide_folder('1_11_2_5')">-</span>
+select
+<ul id="fold1_11_2_5" style="POSITION: relative; VISIBILITY: visible;"><li>multiple
+
+</li>
+<li>size
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_11_2_6" class="foldclosed" onClick="show_folder('1_11_2_6')" style="POSITION: absolute">+</span> <span id="hide1_11_2_6" class="foldopened" onClick="hide_folder('1_11_2_6')">-</span>
+option
+<ul id="fold1_11_2_6" style="POSITION: relative; VISIBILITY: visible;"><li>selected
+
+</li>
+<li>label
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_11_2_7" class="foldclosed" onClick="show_folder('1_11_2_7')" style="POSITION: absolute">+</span> <span id="hide1_11_2_7" class="foldopened" onClick="hide_folder('1_11_2_7')">-</span>
+optgroup
+<ul id="fold1_11_2_7" style="POSITION: relative; VISIBILITY: visible;"><li>label
+
+</li>
+
+</ul>
+</li>
+<li>datalist
+
+</li>
+<li>keygen
+
+</li>
+<li>output
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_11_3" class="foldclosed" onClick="show_folder('1_11_3')" style="POSITION: absolute">+</span> <span id="hide1_11_3" class="foldopened" onClick="hide_folder('1_11_3')">-</span>
+Group
+<ul id="fold1_11_3" style="POSITION: relative; VISIBILITY: visible;"><li>fieldset
+
+</li>
+<li>legend
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_11_4" class="foldclosed" onClick="show_folder('1_11_4')" style="POSITION: absolute">+</span> <span id="hide1_11_4" class="foldopened" onClick="hide_folder('1_11_4')">-</span>
+Focus
+<ul id="fold1_11_4" style="POSITION: relative; VISIBILITY: visible;"><li>tabindex
+
+</li>
+<li>accesskey
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_12" class="foldclosed" onClick="show_folder('1_12')" style="POSITION: absolute">+</span> <span id="hide1_12" class="foldopened" onClick="hide_folder('1_12')">-</span>
+<a href="https://github.com/nodejs" target="_blank"><span class=l>~</span>&nbsp;Node
+</a>
+<ul id="fold1_12" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_12_1" class="foldclosed" onClick="show_folder('1_12_1')" style="POSITION: absolute">+</span> <span id="hide1_12_1" class="foldopened" onClick="hide_folder('1_12_1')">-</span>
+General
+<ul id="fold1_12_1" style="POSITION: relative; VISIBILITY: visible;"><li>JavaScript outside of the browser
+
+</li>
+<li><a href="https://github.com/ry" target="_blank"><span class=l>~</span>&nbsp;Developed by Ryan Dahl in 2009
+</a>
+
+</li>
+<li><span id="show1_12_1_1" class="foldclosed" onClick="show_folder('1_12_1_1')" style="POSITION: absolute">+</span> <span id="hide1_12_1_1" class="foldopened" onClick="hide_folder('1_12_1_1')">-</span>
+<a href="https://github.com/v8" target="_blank"><span class=l>~</span>&nbsp;uses V8-Engine
+</a>
+<ul id="fold1_12_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>developed by Google in 2008
+
+</li>
+<li>open source, C++
+
+</li>
+<li>compiles JavaScript to native machine code
+
+</li>
+
+</ul>
+</li>
+<li>Non-blocking server communication
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_12_2" class="foldclosed" onClick="show_folder('1_12_2')" style="POSITION: absolute">+</span> <span id="hide1_12_2" class="foldopened" onClick="hide_folder('1_12_2')">-</span>
+Core modules and classes
+<ul id="fold1_12_2" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_12_2_1" class="foldclosed" onClick="show_folder('1_12_2_1')" style="POSITION: absolute">+</span> <span id="hide1_12_2_1" class="foldopened" onClick="hide_folder('1_12_2_1')">-</span>
+Console
+<ul id="fold1_12_2_1" style="POSITION: relative; VISIBILITY: visible;"><li>log ( message?: any, ...optionalParams: any[] ): void;
+
+</li>
+<li>instance console is global object
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_12_2_2" class="foldclosed" onClick="show_folder('1_12_2_2')" style="POSITION: absolute">+</span> <span id="hide1_12_2_2" class="foldopened" onClick="hide_folder('1_12_2_2')">-</span>
+Process
+<ul id="fold1_12_2_2" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_12_2_2_1" class="foldclosed" onClick="show_folder('1_12_2_2_1')" style="POSITION: absolute">+</span> <span id="hide1_12_2_2_1" class="foldopened" onClick="hide_folder('1_12_2_2_1')">-</span>
+General
+<ul id="fold1_12_2_2_1" style="POSITION: relative; VISIBILITY: visible;"><li>instance process global object
+
+</li>
+<li>provides information about, and control over, the current Node.js process. As a global, it is 
+
+</li>
+<li>always available to Node.js applications without using require().
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_12_2_2_2" class="foldclosed" onClick="show_folder('1_12_2_2_2')" style="POSITION: absolute">+</span> <span id="hide1_12_2_2_2" class="foldopened" onClick="hide_folder('1_12_2_2_2')">-</span>
+argv
+<ul id="fold1_12_2_2_2" style="POSITION: relative; VISIBILITY: visible;"><li>an array of strings passed to node when the application was started
+
+</li>
+<li>element 0 is the path to the node instance running the app
+
+</li>
+<li>element 1 is the path to the js-file being executed
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_12_2_2_3" class="foldclosed" onClick="show_folder('1_12_2_2_3')" style="POSITION: absolute">+</span> <span id="hide1_12_2_2_3" class="foldopened" onClick="hide_folder('1_12_2_2_3')">-</span>
+env
+<ul id="fold1_12_2_2_3" style="POSITION: relative; VISIBILITY: visible;"><li>information about the environment
+
+</li>
+<li>e.g. PORT
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_12_2_2_4" class="foldclosed" onClick="show_folder('1_12_2_2_4')" style="POSITION: absolute">+</span> <span id="hide1_12_2_2_4" class="foldopened" onClick="hide_folder('1_12_2_2_4')">-</span>
+addListener ( eventName: string, callback: Function ): Process
+<ul id="fold1_12_2_2_4" style="POSITION: relative; VISIBILITY: visible;"><li>registers a callback function for a process-event
+
+</li>
+<li>event "beforeExit" can be used to cleanup before application finishes
+
+</li>
+<li>same: &nbsp;on ( eventName: string, callback: Function ): Process
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_12_2_3" class="foldclosed" onClick="show_folder('1_12_2_3')" style="POSITION: absolute">+</span> <span id="hide1_12_2_3" class="foldopened" onClick="hide_folder('1_12_2_3')">-</span>
+HTTP
+<ul id="fold1_12_2_3" style="POSITION: relative; VISIBILITY: visible;"><li>import Http = require("http");
+
+</li>
+<li><span id="show1_12_2_3_1" class="foldclosed" onClick="show_folder('1_12_2_3_1')" style="POSITION: absolute">+</span> <span id="hide1_12_2_3_1" class="foldopened" onClick="hide_folder('1_12_2_3_1')">-</span>
+createServer( ): Http.Server;
+<ul id="fold1_12_2_3_1" style="POSITION: relative; VISIBILITY: visible;"><li>creates and returns an instance of Server
+
+</li>
+<li><span id="show1_12_2_3_1_1" class="foldclosed" onClick="show_folder('1_12_2_3_1_1')" style="POSITION: absolute">+</span> <span id="hide1_12_2_3_1_1" class="foldopened" onClick="hide_folder('1_12_2_3_1_1')">-</span>
+Alternative
+<ul id="fold1_12_2_3_1_1" style="POSITION: relative; VISIBILITY: visible;"><li><p>createServer(requestListener?: ( request: Http.IncomingMessage, response: Http.ServerResponse ) =&gt; void ): Http.Server;
+<p>creates the server and immediatley installs the listener
+</li>
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_12_2_3_2" class="foldclosed" onClick="show_folder('1_12_2_3_2')" style="POSITION: absolute">+</span> <span id="hide1_12_2_3_2" class="foldopened" onClick="hide_folder('1_12_2_3_2')">-</span>
+Server
+<ul id="fold1_12_2_3_2" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_12_2_3_2_1" class="foldclosed" onClick="show_folder('1_12_2_3_2_1')" style="POSITION: absolute">+</span> <span id="hide1_12_2_3_2_1" class="foldopened" onClick="hide_folder('1_12_2_3_2_1')">-</span>
+listen ( port: number ): Http.Server;
+<ul id="fold1_12_2_3_2_1" style="POSITION: relative; VISIBILITY: visible;"><li>tells the serverinstance to listen on the given port
+
+</li>
+<li><span id="show1_12_2_3_2_1_1" class="foldclosed" onClick="show_folder('1_12_2_3_2_1_1')" style="POSITION: absolute">+</span> <span id="hide1_12_2_3_2_1_1" class="foldopened" onClick="hide_folder('1_12_2_3_2_1_1')">-</span>
+alternative
+<ul id="fold1_12_2_3_2_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>listen ( port: number, handler: Function)
+
+</li>
+<li>immediately installs a listener
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_12_2_3_2_2" class="foldclosed" onClick="show_folder('1_12_2_3_2_2')" style="POSITION: absolute">+</span> <span id="hide1_12_2_3_2_2" class="foldopened" onClick="hide_folder('1_12_2_3_2_2')">-</span>
+addListener(event: string, handler: Function)
+<ul id="fold1_12_2_3_2_2" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_12_2_3_2_2_1" class="foldclosed" onClick="show_folder('1_12_2_3_2_2_1')" style="POSITION: absolute">+</span> <span id="hide1_12_2_3_2_2_1" class="foldopened" onClick="hide_folder('1_12_2_3_2_2_1')">-</span>
+"listening"
+<ul id="fold1_12_2_3_2_2_1" style="POSITION: relative; VISIBILITY: visible;"><li>server bound to a port
+
+</li>
+<li>no parameters required in handler
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_12_2_3_2_2_2" class="foldclosed" onClick="show_folder('1_12_2_3_2_2_2')" style="POSITION: absolute">+</span> <span id="hide1_12_2_3_2_2_2" class="foldopened" onClick="hide_folder('1_12_2_3_2_2_2')">-</span>
+"request"
+<ul id="fold1_12_2_3_2_2_2" style="POSITION: relative; VISIBILITY: visible;"><li>incoming message
+
+</li>
+<li><span id="show1_12_2_3_2_2_2_1" class="foldclosed" onClick="show_folder('1_12_2_3_2_2_2_1')" style="POSITION: absolute">+</span> <span id="hide1_12_2_3_2_2_2_1" class="foldopened" onClick="hide_folder('1_12_2_3_2_2_2_1')">-</span>
+required parameters in handler
+<ul id="fold1_12_2_3_2_2_2_1" style="POSITION: relative; VISIBILITY: visible;"><li>request: Http.IncomingMessage, response: Http.ServerResponse
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_12_2_3_3" class="foldclosed" onClick="show_folder('1_12_2_3_3')" style="POSITION: absolute">+</span> <span id="hide1_12_2_3_3" class="foldopened" onClick="hide_folder('1_12_2_3_3')">-</span>
+IncomingMessage
+<ul id="fold1_12_2_3_3" style="POSITION: relative; VISIBILITY: visible;"><li>created automatically by the server and sent as the first parameter to the requestListener
+
+</li>
+<li><span id="show1_12_2_3_3_1" class="foldclosed" onClick="show_folder('1_12_2_3_3_1')" style="POSITION: absolute">+</span> <span id="hide1_12_2_3_3_1" class="foldopened" onClick="hide_folder('1_12_2_3_3_1')">-</span>
+method: string
+<ul id="fold1_12_2_3_3_1" style="POSITION: relative; VISIBILITY: visible;"><li>"GET", "POST", etc.
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_12_2_3_3_2" class="foldclosed" onClick="show_folder('1_12_2_3_3_2')" style="POSITION: absolute">+</span> <span id="hide1_12_2_3_3_2" class="foldopened" onClick="hide_folder('1_12_2_3_3_2')">-</span>
+url: string
+<ul id="fold1_12_2_3_3_2" style="POSITION: relative; VISIBILITY: visible;"><li>the path including the search-string the server was requested with
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_12_2_3_4" class="foldclosed" onClick="show_folder('1_12_2_3_4')" style="POSITION: absolute">+</span> <span id="hide1_12_2_3_4" class="foldopened" onClick="hide_folder('1_12_2_3_4')">-</span>
+ServerResponse
+<ul id="fold1_12_2_3_4" style="POSITION: relative; VISIBILITY: visible;"><li>created automatically by the server and sent as the second parameter to the requestListener
+
+</li>
+<li><span id="show1_12_2_3_4_1" class="foldclosed" onClick="show_folder('1_12_2_3_4_1')" style="POSITION: absolute">+</span> <span id="hide1_12_2_3_4_1" class="foldopened" onClick="hide_folder('1_12_2_3_4_1')">-</span>
+setHeader ( name: string, value: string | string[ ] ): void;
+<ul id="fold1_12_2_3_4_1" style="POSITION: relative; VISIBILITY: visible;"><li>writes a header to the response stream
+
+</li>
+<li>e.g. setHeader("content-type", "text/html")
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_12_2_3_4_2" class="foldclosed" onClick="show_folder('1_12_2_3_4_2')" style="POSITION: absolute">+</span> <span id="hide1_12_2_3_4_2" class="foldopened" onClick="hide_folder('1_12_2_3_4_2')">-</span>
+write ( text: string, callback?: Function ): boolean;
+<ul id="fold1_12_2_3_4_2" style="POSITION: relative; VISIBILITY: visible;"><li>This sends a string to the response body
+
+</li>
+<li>This method may be called multiple times to provide successive parts of the body.
+
+</li>
+<li>returns true, when the string was successfully integrated
+
+</li>
+<li>by default, the encoding is utf-8
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_12_2_3_4_3" class="foldclosed" onClick="show_folder('1_12_2_3_4_3')" style="POSITION: absolute">+</span> <span id="hide1_12_2_3_4_3" class="foldopened" onClick="hide_folder('1_12_2_3_4_3')">-</span>
+end ( text: string, callback?: Function ): void;
+<ul id="fold1_12_2_3_4_3" style="POSITION: relative; VISIBILITY: visible;"><li>same as write, but completes the response body
+
+</li>
+<li>and signals the server to send the response to the client
+
+</li>
+<li>Thus, this method must be called on each response!
+
+</li>
+<li>no return value
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_12_2_4" class="foldclosed" onClick="show_folder('1_12_2_4')" style="POSITION: absolute">+</span> <span id="hide1_12_2_4" class="foldopened" onClick="hide_folder('1_12_2_4')">-</span>
+URL
+<ul id="fold1_12_2_4" style="POSITION: relative; VISIBILITY: visible;"><li>import Url = require("url");
+
+</li>
+<li>parse ( urlStr: string, parseQueryString?: boolean): Url.Url;
+
+</li>
+<li><span id="show1_12_2_4_1" class="foldclosed" onClick="show_folder('1_12_2_4_1')" style="POSITION: absolute">+</span> <span id="hide1_12_2_4_1" class="foldopened" onClick="hide_folder('1_12_2_4_1')">-</span>
+example
+<ul id="fold1_12_2_4_1" style="POSITION: relative; VISIBILITY: visible;"><li>Url.parse( "http://user:pass@host.com:8080/p/a/t/h?query=string#anchor", true)
+
+</li>
+<li><span id="show1_12_2_4_1_1" class="foldclosed" onClick="show_folder('1_12_2_4_1_1')" style="POSITION: absolute">+</span> <span id="hide1_12_2_4_1_1" class="foldopened" onClick="hide_folder('1_12_2_4_1_1')">-</span>
+returns Url.Url
+<ul id="fold1_12_2_4_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>href: 'http://user:pass@host.com:8080/p/a/t/h?query=string#anchor'
+
+</li>
+<li>slashes: true
+
+</li>
+<li>protocol: 'http:'
+
+</li>
+<li>auth: 'user:pass'
+
+</li>
+<li>host: 'host.com:8080'
+
+</li>
+<li>hostname: 'host.com'
+
+</li>
+<li>port: '8080'
+
+</li>
+<li>path: '/p/a/t/h?query=string'
+
+</li>
+<li>pathname: '/p/a/t/h'
+
+</li>
+<li>search: '?query=string'
+
+</li>
+<li>query: { query: 'string' }
+
+</li>
+<li>hash: '#anchor'
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_13" class="foldclosed" onClick="show_folder('1_13')" style="POSITION: absolute">+</span> <span id="hide1_13" class="foldopened" onClick="hide_folder('1_13')">-</span>
+<a href="https://github.com/mongodb/mongo" target="_blank"><span class=l>~</span>&nbsp;MongoDB
+</a>
+<ul id="fold1_13" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_13_1" class="foldclosed" onClick="show_folder('1_13_1')" style="POSITION: absolute">+</span> <span id="hide1_13_1" class="foldopened" onClick="hide_folder('1_13_1')">-</span>
+General
+<ul id="fold1_13_1" style="POSITION: relative; VISIBILITY: visible;"><li>from humongous
+
+</li>
+<li>free open-source cross-platform document-oriented database
+
+</li>
+<li>development started in 2007, initial release in 2009
+
+</li>
+<li>NoSQL, as opposed to relational
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_13_2" class="foldclosed" onClick="show_folder('1_13_2')" style="POSITION: absolute">+</span> <span id="hide1_13_2" class="foldopened" onClick="hide_folder('1_13_2')">-</span>
+Shell commands
+<ul id="fold1_13_2" style="POSITION: relative; VISIBILITY: visible;"><li>use system console to type curly brackets
+
+</li>
+<li><span id="show1_13_2_1" class="foldclosed" onClick="show_folder('1_13_2_1')" style="POSITION: absolute">+</span> <span id="hide1_13_2_1" class="foldopened" onClick="hide_folder('1_13_2_1')">-</span>
+help, db.help(), db.&lt;collection&gt;.help()
+<ul id="fold1_13_2_1" style="POSITION: relative; VISIBILITY: visible;"><li>show help for different areas of operation
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_13_2_2" class="foldclosed" onClick="show_folder('1_13_2_2')" style="POSITION: absolute">+</span> <span id="hide1_13_2_2" class="foldopened" onClick="hide_folder('1_13_2_2')">-</span>
+show dbs
+<ul id="fold1_13_2_2" style="POSITION: relative; VISIBILITY: visible;"><li>Print a list of all databases on the server.
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_13_2_3" class="foldclosed" onClick="show_folder('1_13_2_3')" style="POSITION: absolute">+</span> <span id="hide1_13_2_3" class="foldopened" onClick="hide_folder('1_13_2_3')">-</span>
+use &lt;db&gt;
+<ul id="fold1_13_2_3" style="POSITION: relative; VISIBILITY: visible;"><li>Switch current database to &lt;db&gt;. The mongo shell variable db is set to the current database.
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_13_2_4" class="foldclosed" onClick="show_folder('1_13_2_4')" style="POSITION: absolute">+</span> <span id="hide1_13_2_4" class="foldopened" onClick="hide_folder('1_13_2_4')">-</span>
+show collections
+<ul id="fold1_13_2_4" style="POSITION: relative; VISIBILITY: visible;"><li>Print a list of all collections for current database
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_13_2_5" class="foldclosed" onClick="show_folder('1_13_2_5')" style="POSITION: absolute">+</span> <span id="hide1_13_2_5" class="foldopened" onClick="hide_folder('1_13_2_5')">-</span>
+db.&lt;collection&gt;.find ( query: Object )
+<ul id="fold1_13_2_5" style="POSITION: relative; VISIBILITY: visible;"><li>finds all data matching the query object
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_13_2_6" class="foldclosed" onClick="show_folder('1_13_2_6')" style="POSITION: absolute">+</span> <span id="hide1_13_2_6" class="foldopened" onClick="hide_folder('1_13_2_6')">-</span>
+db.&lt;collection&gt;.insert ( doc: Object)
+<ul id="fold1_13_2_6" style="POSITION: relative; VISIBILITY: visible;"><li>inserts a document into the collection
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_13_2_7" class="foldclosed" onClick="show_folder('1_13_2_7')" style="POSITION: absolute">+</span> <span id="hide1_13_2_7" class="foldopened" onClick="hide_folder('1_13_2_7')">-</span>
+db.&lt;collection&gt;.drop
+<ul id="fold1_13_2_7" style="POSITION: relative; VISIBILITY: visible;"><li>removes the collection from the database
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_13_2_8" class="foldclosed" onClick="show_folder('1_13_2_8')" style="POSITION: absolute">+</span> <span id="hide1_13_2_8" class="foldopened" onClick="hide_folder('1_13_2_8')">-</span>
+db.dropDatabase()
+<ul id="fold1_13_2_8" style="POSITION: relative; VISIBILITY: visible;"><li>delete current database
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_13_3" class="foldclosed" onClick="show_folder('1_13_3')" style="POSITION: absolute">+</span> <span id="hide1_13_3" class="foldopened" onClick="hide_folder('1_13_3')">-</span>
+Node classes and interfaces
+<ul id="fold1_13_3" style="POSITION: relative; VISIBILITY: visible;"><li>as defined in module "mongodb"
+
+</li>
+<li><span id="show1_13_3_1" class="foldclosed" onClick="show_folder('1_13_3_1')" style="POSITION: absolute">+</span> <span id="hide1_13_3_1" class="foldopened" onClick="hide_folder('1_13_3_1')">-</span>
+MongoCallback
+<ul id="fold1_13_3_1" style="POSITION: relative; VISIBILITY: visible;"><li>Many methods require a callback function as parameter
+
+</li>
+<li><span id="show1_13_3_1_1" class="foldclosed" onClick="show_folder('1_13_3_1_1')" style="POSITION: absolute">+</span> <span id="hide1_13_3_1_1" class="foldopened" onClick="hide_folder('1_13_3_1_1')">-</span>
+of type MongoCallback&lt;T&gt;
+<ul id="fold1_13_3_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>function (error: MongoError, result: T): void;
+
+</li>
+<li>where T is the type of the actual data
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_13_3_2" class="foldclosed" onClick="show_folder('1_13_3_2')" style="POSITION: absolute">+</span> <span id="hide1_13_3_2" class="foldopened" onClick="hide_folder('1_13_3_2')">-</span>
+MongoClient
+<ul id="fold1_13_3_2" style="POSITION: relative; VISIBILITY: visible;"><li>Connect to MongoDB using a url of a database
+
+</li>
+<li>connect (url: string, callback: MongoCallback&lt;Db&gt;)
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_13_3_3" class="foldclosed" onClick="show_folder('1_13_3_3')" style="POSITION: absolute">+</span> <span id="hide1_13_3_3" class="foldopened" onClick="hide_folder('1_13_3_3')">-</span>
+Db
+<ul id="fold1_13_3_3" style="POSITION: relative; VISIBILITY: visible;"><li>Represents a database, handling users and collections
+
+</li>
+<li><span id="show1_13_3_3_1" class="foldclosed" onClick="show_folder('1_13_3_3_1')" style="POSITION: absolute">+</span> <span id="hide1_13_3_3_1" class="foldopened" onClick="hide_folder('1_13_3_3_1')">-</span>
+close( ) 
+<ul id="fold1_13_3_3_1" style="POSITION: relative; VISIBILITY: visible;"><li>Close the database and it's underlying connections
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_13_3_3_2" class="foldclosed" onClick="show_folder('1_13_3_3_2')" style="POSITION: absolute">+</span> <span id="hide1_13_3_3_2" class="foldopened" onClick="hide_folder('1_13_3_3_2')">-</span>
+collection( name:string )
+<ul id="fold1_13_3_3_2" style="POSITION: relative; VISIBILITY: visible;"><li>returns the collection with the given name
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_13_3_4" class="foldclosed" onClick="show_folder('1_13_3_4')" style="POSITION: absolute">+</span> <span id="hide1_13_3_4" class="foldopened" onClick="hide_folder('1_13_3_4')">-</span>
+Collection
+<ul id="fold1_13_3_4" style="POSITION: relative; VISIBILITY: visible;"><li><p>Represents a collection of data, handling insertion, lookup, modification and deletion
+<p><span id="show1_13_3_4_1" class="foldclosed" onClick="show_folder('1_13_3_4_1')" style="POSITION: absolute">+</span> <span id="hide1_13_3_4_1" class="foldopened" onClick="hide_folder('1_13_3_4_1')">-</span>
+insertOne ( doc: Object, callback: MongoCallback&lt;InsertOneWriteOpResult&gt;): void
+<ul id="fold1_13_3_4_1" style="POSITION: relative; VISIBILITY: visible;"><li>inserts a document into the collection and automatically determines an id for it
+
+</li>
+
+</ul><p><span id="show1_13_3_4_2" class="foldclosed" onClick="show_folder('1_13_3_4_2')" style="POSITION: absolute">+</span> <span id="hide1_13_3_4_2" class="foldopened" onClick="hide_folder('1_13_3_4_2')">-</span>
+find ( query: Object ) : Cursor
+<ul id="fold1_13_3_4_2" style="POSITION: relative; VISIBILITY: visible;"><li>finds all data matching the query object
+
+</li>
+<li>returns a cursor for iteration over results
+
+</li>
+
+</ul><p><span id="show1_13_3_4_3" class="foldclosed" onClick="show_folder('1_13_3_4_3')" style="POSITION: absolute">+</span> <span id="hide1_13_3_4_3" class="foldopened" onClick="hide_folder('1_13_3_4_3')">-</span>
+findOne ( query: Object, callback: MongoCallback&lt;Object&gt; ) : void
+<ul id="fold1_13_3_4_3" style="POSITION: relative; VISIBILITY: visible;"><li>finds the first data matching the query object 
+
+</li>
+<li>then calls the callback function and passes the object found
+
+</li>
+
+</ul><p><span id="show1_13_3_4_4" class="foldclosed" onClick="show_folder('1_13_3_4_4')" style="POSITION: absolute">+</span> <span id="hide1_13_3_4_4" class="foldopened" onClick="hide_folder('1_13_3_4_4')">-</span>
+updateOne ( query: Object, update: Object, options: ReplaceOneOptions, 
+<br>
+callback: MongoCallback&lt;UpdateWriteOpResult&gt;): void; 
+<ul id="fold1_13_3_4_4" style="POSITION: relative; VISIBILITY: visible;"><li>updates one document in the database
+
+</li>
+<li>the first found with the given query
+
+</li>
+<li>using the pattern given as the update-object
+
+</li>
+<li>and the replace options
+
+</li>
+
+</ul><p><span id="show1_13_3_4_5" class="foldclosed" onClick="show_folder('1_13_3_4_5')" style="POSITION: absolute">+</span> <span id="hide1_13_3_4_5" class="foldopened" onClick="hide_folder('1_13_3_4_5')">-</span>
+remove( query: Object, callback: MongoCallback&lt;WriteOpResult&gt;): void;
+<ul id="fold1_13_3_4_5" style="POSITION: relative; VISIBILITY: visible;"><li>removes all data matching the query object
+
+</li>
+
+</ul><p><span id="show1_13_3_4_6" class="foldclosed" onClick="show_folder('1_13_3_4_6')" style="POSITION: absolute">+</span> <span id="hide1_13_3_4_6" class="foldopened" onClick="hide_folder('1_13_3_4_6')">-</span>
+drop ( callback: MongoCallback&lt;any&gt;): void;
+<ul id="fold1_13_3_4_6" style="POSITION: relative; VISIBILITY: visible;"><li><p>Drop the collection from the database, removing it permanently. New accesses will create a new collection.
+</li>
+</ul></li>
+</ul>
+</li>
+<li><span id="show1_13_3_5" class="foldclosed" onClick="show_folder('1_13_3_5')" style="POSITION: absolute">+</span> <span id="hide1_13_3_5" class="foldopened" onClick="hide_folder('1_13_3_5')">-</span>
+Cursor
+<ul id="fold1_13_3_5" style="POSITION: relative; VISIBILITY: visible;"><li>Represents a subset of data as a result of a find-command
+
+</li>
+<li><span id="show1_13_3_5_1" class="foldclosed" onClick="show_folder('1_13_3_5_1')" style="POSITION: absolute">+</span> <span id="hide1_13_3_5_1" class="foldopened" onClick="hide_folder('1_13_3_5_1')">-</span>
+close ( callback: MongoCallback&lt;CursorResult&gt; ): void
+<ul id="fold1_13_3_5_1" style="POSITION: relative; VISIBILITY: visible;"><li>close the cursor
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_13_3_5_2" class="foldclosed" onClick="show_folder('1_13_3_5_2')" style="POSITION: absolute">+</span> <span id="hide1_13_3_5_2" class="foldopened" onClick="hide_folder('1_13_3_5_2')">-</span>
+sort ( keyOrList: string | Object[] | Object, direction?: number): Cursor;
+<ul id="fold1_13_3_5_2" style="POSITION: relative; VISIBILITY: visible;"><li>sort the cursor data
+
+</li>
+<li>according to the criteria given as keyOrList
+
+</li>
+<li>and a- or descendingas given in direction
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_13_3_5_3" class="foldclosed" onClick="show_folder('1_13_3_5_3')" style="POSITION: absolute">+</span> <span id="hide1_13_3_5_3" class="foldopened" onClick="hide_folder('1_13_3_5_3')">-</span>
+toArray ( callback: MongoCallback&lt;any[]&gt; ): void;
+<ul id="fold1_13_3_5_3" style="POSITION: relative; VISIBILITY: visible;"><li>creates a JavaScript-Array of Objects from the Cursor
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_13_3_6" class="foldclosed" onClick="show_folder('1_13_3_6')" style="POSITION: absolute">+</span> <span id="hide1_13_3_6" class="foldopened" onClick="hide_folder('1_13_3_6')">-</span>
+query examples
+<ul id="fold1_13_3_6" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_13_3_6_1" class="foldclosed" onClick="show_folder('1_13_3_6_1')" style="POSITION: absolute">+</span> <span id="hide1_13_3_6_1" class="foldopened" onClick="hide_folder('1_13_3_6_1')">-</span>
+{ "key": "John" }
+<ul id="fold1_13_3_6_1" style="POSITION: relative; VISIBILITY: visible;"><li>the value of property key must match the string "John"
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_13_3_6_2" class="foldclosed" onClick="show_folder('1_13_3_6_2')" style="POSITION: absolute">+</span> <span id="hide1_13_3_6_2" class="foldopened" onClick="hide_folder('1_13_3_6_2')">-</span>
+{ "key": { $gt: 20, $lt: 80, $ne: 50 } }
+<ul id="fold1_13_3_6_2" style="POSITION: relative; VISIBILITY: visible;"><li>the value of property key must be 
+
+</li>
+<li>greater than 20, less than 80 and not equal to 50
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_13_3_6_3" class="foldclosed" onClick="show_folder('1_13_3_6_3')" style="POSITION: absolute">+</span> <span id="hide1_13_3_6_3" class="foldopened" onClick="hide_folder('1_13_3_6_3')">-</span>
+{ $or: [ { "key": { $lt: 20 } }, { "key": { $gt: 80 } }, { "key": 50 } ] }
+<ul id="fold1_13_3_6_3" style="POSITION: relative; VISIBILITY: visible;"><li>the value of property key must be
+
+</li>
+<li>less than 20 or greater than 80 or equal to 50
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_13_3_6_4" class="foldclosed" onClick="show_folder('1_13_3_6_4')" style="POSITION: absolute">+</span> <span id="hide1_13_3_6_4" class="foldopened" onClick="hide_folder('1_13_3_6_4')">-</span>
+{ $where: { "this.key1 + this.key2 &gt; 100" } }
+<ul id="fold1_13_3_6_4" style="POSITION: relative; VISIBILITY: visible;"><li>evaluates a JavaScript-expression
+
+</li>
+<li>example: the sum of the properties key1 and key2 must exceed 100
+
+</li>
+<li>this is mandatory to access the properties
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_13_3_7" class="foldclosed" onClick="show_folder('1_13_3_7')" style="POSITION: absolute">+</span> <span id="hide1_13_3_7" class="foldopened" onClick="hide_folder('1_13_3_7')">-</span>
+update examples
+<ul id="fold1_13_3_7" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_13_3_7_1" class="foldclosed" onClick="show_folder('1_13_3_7_1')" style="POSITION: absolute">+</span> <span id="hide1_13_3_7_1" class="foldopened" onClick="hide_folder('1_13_3_7_1')">-</span>
+{ $set: { "key1": 10, "key2": "John", ... } }
+<ul id="fold1_13_3_7_1" style="POSITION: relative; VISIBILITY: visible;"><li>sets the value of property key1 to 10, and key2 to "John"
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_13_3_7_2" class="foldclosed" onClick="show_folder('1_13_3_7_2')" style="POSITION: absolute">+</span> <span id="hide1_13_3_7_2" class="foldopened" onClick="hide_folder('1_13_3_7_2')">-</span>
+{ $unset: { "key": "", ... } }
+<ul id="fold1_13_3_7_2" style="POSITION: relative; VISIBILITY: visible;"><li>removes the property key and its value
+
+</li>
+<li>the given value is irrelevant
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_13_3_7_3" class="foldclosed" onClick="show_folder('1_13_3_7_3')" style="POSITION: absolute">+</span> <span id="hide1_13_3_7_3" class="foldopened" onClick="hide_folder('1_13_3_7_3')">-</span>
+{ $rename: { "key1": "key2" } }
+<ul id="fold1_13_3_7_3" style="POSITION: relative; VISIBILITY: visible;"><li>renames property "key1" to "key2"
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_13_3_8" class="foldclosed" onClick="show_folder('1_13_3_8')" style="POSITION: absolute">+</span> <span id="hide1_13_3_8" class="foldopened" onClick="hide_folder('1_13_3_8')">-</span>
+options example
+<ul id="fold1_13_3_8" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_13_3_8_1" class="foldclosed" onClick="show_folder('1_13_3_8_1')" style="POSITION: absolute">+</span> <span id="hide1_13_3_8_1" class="foldopened" onClick="hide_folder('1_13_3_8_1')">-</span>
+{ upsert: true }
+<ul id="fold1_13_3_8_1" style="POSITION: relative; VISIBILITY: visible;"><li>if there is no data matching the query, it's inserted
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_14" class="foldclosed" onClick="show_folder('1_14')" style="POSITION: absolute">+</span> <span id="hide1_14" class="foldopened" onClick="hide_folder('1_14')">-</span>
+Canvas
+<ul id="fold1_14" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_14_1" class="foldclosed" onClick="show_folder('1_14_1')" style="POSITION: absolute">+</span> <span id="hide1_14_1" class="foldopened" onClick="hide_folder('1_14_1')">-</span>
+General
+<ul id="fold1_14_1" style="POSITION: relative; VISIBILITY: visible;"><li>area in document that allows pixel manipulation
+
+</li>
+<li>method getContext("2d") of HTMLCanvasElement ...
+
+</li>
+<li>... returns an object of type CanvasRenderingContext2D ...
+
+</li>
+<li>... that offers methods for manipulation of the canvas
+
+</li>
+<li>property canvas of the object holds a reference to the HTMLCanvasElement
+
+</li>
+<li><span id="show1_14_1_1" class="foldclosed" onClick="show_folder('1_14_1_1')" style="POSITION: absolute">+</span> <span id="hide1_14_1_1" class="foldopened" onClick="hide_folder('1_14_1_1')">-</span>
+example
+<ul id="fold1_14_1_1" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_14_1_1_1" class="foldclosed" onClick="show_folder('1_14_1_1_1')" style="POSITION: absolute">+</span> <span id="hide1_14_1_1_1" class="foldopened" onClick="hide_folder('1_14_1_1_1')">-</span>
+var canvas: HTMLCanvasElement;
+<ul id="fold1_14_1_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>create a variable to reference to CanvasElement on the web page
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_14_1_1_2" class="foldclosed" onClick="show_folder('1_14_1_1_2')" style="POSITION: absolute">+</span> <span id="hide1_14_1_1_2" class="foldopened" onClick="hide_folder('1_14_1_1_2')">-</span>
+var crc2: CanvasRenderingContext2D;
+<ul id="fold1_14_1_1_2" style="POSITION: relative; VISIBILITY: visible;"><li>create a variable to reference the render-api-object
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_14_1_1_3" class="foldclosed" onClick="show_folder('1_14_1_1_3')" style="POSITION: absolute">+</span> <span id="hide1_14_1_1_3" class="foldopened" onClick="hide_folder('1_14_1_1_3')">-</span>
+canvas = document.getElementsByTagName("canvas")[0];
+<ul id="fold1_14_1_1_3" style="POSITION: relative; VISIBILITY: visible;"><li>define canvas as the first canvas-element found
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_14_1_1_4" class="foldclosed" onClick="show_folder('1_14_1_1_4')" style="POSITION: absolute">+</span> <span id="hide1_14_1_1_4" class="foldopened" onClick="hide_folder('1_14_1_1_4')">-</span>
+crc2 = canvas.getContext("2d");
+<ul id="fold1_14_1_1_4" style="POSITION: relative; VISIBILITY: visible;"><li>define crc2 as the api-object for this canvas
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_14_1_1_5" class="foldclosed" onClick="show_folder('1_14_1_1_5')" style="POSITION: absolute">+</span> <span id="hide1_14_1_1_5" class="foldopened" onClick="hide_folder('1_14_1_1_5')">-</span>
+console.log ( crc2.canvas == canvas );
+<ul id="fold1_14_1_1_5" style="POSITION: relative; VISIBILITY: visible;"><li>check back if everything fits
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_14_2" class="foldclosed" onClick="show_folder('1_14_2')" style="POSITION: absolute">+</span> <span id="hide1_14_2" class="foldopened" onClick="hide_folder('1_14_2')">-</span>
+CanvasRenderingContext2D
+<ul id="fold1_14_2" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_14_2_1" class="foldclosed" onClick="show_folder('1_14_2_1')" style="POSITION: absolute">+</span> <span id="hide1_14_2_1" class="foldopened" onClick="hide_folder('1_14_2_1')">-</span>
+Path
+<ul id="fold1_14_2_1" style="POSITION: relative; VISIBILITY: visible;"><li><p>beginPath(): void;
+<p>closePath(): void;
+<p>isPointInPath(x: number, y: number, fillRule?: string): boolean;
+<p>clip(fillRule?: string): void;
+<p>moveTo(x: number, y: number): void;
+<p>lineTo(x: number, y: number): void;
+<p>rect(x: number, y: number, w: number, h: number): void;
+<p>arc(x: number, y: number, radius: number, startAngle: number, endAngle: number, anticlockwise?: boolean): void;
+<p>arcTo(x1: number, y1: number, x2: number, y2: number, radius: number): void;
+<p>quadraticCurveTo(cpx: number, cpy: number, x: number, y: number): void;
+<p>bezierCurveTo(cp1x: number, cp1y: number, cp2x: number, cp2y: number, x: number, y: number): void;
+</li>
+</ul>
+</li>
+<li><span id="show1_14_2_2" class="foldclosed" onClick="show_folder('1_14_2_2')" style="POSITION: absolute">+</span> <span id="hide1_14_2_2" class="foldopened" onClick="hide_folder('1_14_2_2')">-</span>
+State
+<ul id="fold1_14_2_2" style="POSITION: relative; VISIBILITY: visible;"><li>save(): void;
+
+</li>
+<li>restore(): void;
+
+</li>
+<li><span id="show1_14_2_2_1" class="foldclosed" onClick="show_folder('1_14_2_2_1')" style="POSITION: absolute">+</span> <span id="hide1_14_2_2_1" class="foldopened" onClick="hide_folder('1_14_2_2_1')">-</span>
+Line
+<ul id="fold1_14_2_2_1" style="POSITION: relative; VISIBILITY: visible;"><li>lineWidth: number;
+
+</li>
+<li>strokeStyle: string | CanvasGradient | CanvasPattern;
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_14_2_2_2" class="foldclosed" onClick="show_folder('1_14_2_2_2')" style="POSITION: absolute">+</span> <span id="hide1_14_2_2_2" class="foldopened" onClick="hide_folder('1_14_2_2_2')">-</span>
+Fill / Gradient
+<ul id="fold1_14_2_2_2" style="POSITION: relative; VISIBILITY: visible;"><li>fillStyle: string | CanvasGradient | CanvasPattern;
+
+</li>
+<li>createLinearGradient(x0: number, y0: number, x1: number, y1: number): CanvasGradient;
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_14_2_2_3" class="foldclosed" onClick="show_folder('1_14_2_2_3')" style="POSITION: absolute">+</span> <span id="hide1_14_2_2_3" class="foldopened" onClick="hide_folder('1_14_2_2_3')">-</span>
+Text
+<ul id="fold1_14_2_2_3" style="POSITION: relative; VISIBILITY: visible;"><li>font: string;
+
+</li>
+<li>textAlign: string;
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_14_2_2_4" class="foldclosed" onClick="show_folder('1_14_2_2_4')" style="POSITION: absolute">+</span> <span id="hide1_14_2_2_4" class="foldopened" onClick="hide_folder('1_14_2_2_4')">-</span>
+Transformation
+<ul id="fold1_14_2_2_4" style="POSITION: relative; VISIBILITY: visible;"><li>rotate(angle: number): void;
+
+</li>
+<li>scale(x: number, y: number): void;
+
+</li>
+<li>transform(m11: number, m12: number, m21: number, m22: number, dx: number, dy: number): void;
+
+</li>
+<li>translate(x: number, y: number): void;
+
+</li>
+<li>setTransform(m11: number, m12: number, m21: number, m22: number, dx: number, dy: number): void;
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_14_2_3" class="foldclosed" onClick="show_folder('1_14_2_3')" style="POSITION: absolute">+</span> <span id="hide1_14_2_3" class="foldopened" onClick="hide_folder('1_14_2_3')">-</span>
+Draw
+<ul id="fold1_14_2_3" style="POSITION: relative; VISIBILITY: visible;"><li>fill(fillRule?: string): void;
+
+</li>
+<li>stroke(path?: Path2D): void;
+
+</li>
+<li>fillRect(x: number, y: number, w: number, h: number): void;
+
+</li>
+<li>strokeRect(x: number, y: number, w: number, h: number): void;
+
+</li>
+<li>clearRect(x: number, y: number, w: number, h: number): void;
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_14_2_4" class="foldclosed" onClick="show_folder('1_14_2_4')" style="POSITION: absolute">+</span> <span id="hide1_14_2_4" class="foldopened" onClick="hide_folder('1_14_2_4')">-</span>
+Image
+<ul id="fold1_14_2_4" style="POSITION: relative; VISIBILITY: visible;"><li><p>getImageData(sx: number, sy: number, sw: number, sh: number): ImageData;
+<p>putImageData(imagedata: ImageData, dx: number, dy: number, dirtyX?: number, dirtyY?: number, dirtyWidth?: number, dirtyHeight?: number): void;
+</li>
+</ul>
+</li>
+<li><span id="show1_14_2_5" class="foldclosed" onClick="show_folder('1_14_2_5')" style="POSITION: absolute">+</span> <span id="hide1_14_2_5" class="foldopened" onClick="hide_folder('1_14_2_5')">-</span>
+Text
+<ul id="fold1_14_2_5" style="POSITION: relative; VISIBILITY: visible;"><li>fillText(text,x,y,maxWidth)
+
+</li>
+<li>strokeText(text,x,y,maxWidth)
+
+</li>
+<li>measureText(text).width
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul><SCRIPT type="text/javascript">
+fold_document();
+</SCRIPT>
+</body>
+</html>
