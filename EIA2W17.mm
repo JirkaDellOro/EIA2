@@ -183,7 +183,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1481403992317" FOLDED="true" ID="ID_187226101" MODIFIED="1520857286058" POSITION="left" TEXT="Curriculum">
+<node CREATED="1481403992317" FOLDED="true" ID="ID_187226101" MODIFIED="1507131919313" POSITION="left" TEXT="Curriculum">
 <node CREATED="1481404003125" FOLDED="true" ID="ID_1041763061" MODIFIED="1507131814711" TEXT="Primer">
 <node CREATED="1489398121825" ID="ID_562893010" MODIFIED="1489517594812" TEXT="Crawford"/>
 <node CREATED="1489396403880" FOLDED="true" ID="ID_160536930" MODIFIED="1489488005036" TEXT="Mindmap">
@@ -196,7 +196,12 @@
 <node CREATED="1481404031015" ID="ID_1317158703" MODIFIED="1486648609453" TEXT="recall first semester"/>
 <node CREATED="1481409931839" ID="ID_429382347" MODIFIED="1481409968816" TEXT="generate some content with typescript"/>
 </node>
-<node CREATED="1486762202465" FOLDED="true" ID="ID_1896864296" MODIFIED="1520857267955" TEXT="Tracetable / Debugger">
+<node CREATED="1486637471804" FOLDED="true" ID="ID_1801808833" MODIFIED="1507120157578" TEXT="Canvas">
+<node CREATED="1488969692163" ID="ID_1770713293" MODIFIED="1488969697610" TEXT="path metaphor"/>
+<node CREATED="1488969708177" ID="ID_171944979" MODIFIED="1488969722328" TEXT="shortcuts fillRect and strokeRect"/>
+<node CREATED="1488970174413" ID="ID_1429693639" MODIFIED="1488970223087" TEXT="create functions for drawing repetitive images"/>
+</node>
+<node CREATED="1486762202465" FOLDED="true" ID="ID_1896864296" MODIFIED="1507128642804" TEXT="Tracetable / Debugger">
 <node CREATED="1488358706786" ID="ID_401747030" MODIFIED="1488910223153" TEXT="difference runtime, compiletime, designtime"/>
 <node CREATED="1488204331937" ID="ID_560167572" MODIFIED="1488910410284" TEXT="console.log"/>
 <node CREATED="1488910150597" ID="ID_704172683" MODIFIED="1488910212974" TEXT="create a tracetable for a given program"/>
@@ -205,7 +210,23 @@
 <node CREATED="1490084092754" ID="ID_217851082" MODIFIED="1490084099334" TEXT="create activity diagram"/>
 <node CREATED="1489056296313" ID="ID_363680767" MODIFIED="1489063058737" TEXT="exercise: trace complex program with new structures/commands"/>
 </node>
-<node CREATED="1488910510768" FOLDED="true" ID="ID_107272273" MODIFIED="1520857270470" TEXT="DOM">
+<node CREATED="1486637481546" FOLDED="true" ID="ID_1450108589" MODIFIED="1507120429617" TEXT="Associative Arrays">
+<node CREATED="1491552724290" FOLDED="true" ID="ID_124890155" MODIFIED="1507120427583" TEXT="create images interactively using events">
+<node CREATED="1507120412955" ID="ID_1938973894" MODIFIED="1507120417694" TEXT="Timeout"/>
+<node CREATED="1507120418393" ID="ID_1818275087" MODIFIED="1507120419490" TEXT="Click"/>
+<node CREATED="1507120420135" ID="ID_542775380" MODIFIED="1507120425193" TEXT="Touch"/>
+</node>
+<node CREATED="1492161459353" ID="ID_837487270" MODIFIED="1492161482583" TEXT="animate objects -&gt; store properties"/>
+</node>
+<node CREATED="1486638178159" FOLDED="true" ID="ID_456355481" MODIFIED="1507120297069" STYLE="fork" TEXT="Classes">
+<node CREATED="1494763801960" ID="ID_1977825127" MODIFIED="1494763813549" TEXT="refactor interfaces to classes"/>
+<node CREATED="1494763814434" ID="ID_283043979" MODIFIED="1494763818503" TEXT="and add methods"/>
+</node>
+<node CREATED="1486638190057" FOLDED="true" ID="ID_786435816" MODIFIED="1507120185791" TEXT="Inheritance, Polymorphism">
+<node CREATED="1494763827970" ID="ID_1864189067" MODIFIED="1494763839566" TEXT="identify common properties and behaviours"/>
+<node CREATED="1494763841512" ID="ID_146002707" MODIFIED="1494763857035" TEXT="and create super- and subclasses"/>
+</node>
+<node CREATED="1488910510768" FOLDED="true" ID="ID_107272273" MODIFIED="1507120292709" TEXT="DOM">
 <node CREATED="1489243515430" FOLDED="true" ID="ID_618942026" MODIFIED="1490084111221" TEXT="examine interpretation of simple txt-file">
 <node CREATED="1489243546446" ID="ID_505479514" MODIFIED="1489243572646" TEXT="browser generates a model"/>
 </node>
@@ -215,7 +236,7 @@
 <node CREATED="1488969173957" ID="ID_340805171" MODIFIED="1488969187454" TEXT="iterate over elements/children"/>
 <node CREATED="1488969215408" ID="ID_1430564621" MODIFIED="1488969219993" TEXT="manipulate nodes"/>
 </node>
-<node CREATED="1486637599832" FOLDED="true" ID="ID_809730445" MODIFIED="1520857213905" TEXT="Events">
+<node CREATED="1486637599832" FOLDED="true" ID="ID_809730445" MODIFIED="1507120355650" TEXT="Events">
 <node CREATED="1488969310177" ID="ID_474591761" MODIFIED="1488969314888" TEXT="different implementations"/>
 <node CREATED="1488969331789" ID="ID_332537836" MODIFIED="1488969394093" TEXT="event-object, listeners, handlers, phases"/>
 <node CREATED="1488969406906" ID="ID_1390934079" MODIFIED="1488969464129" TEXT="listen to events at chosen nodes in the hierarchy"/>
@@ -229,13 +250,13 @@
 <node CREATED="1488969875301" ID="ID_851402124" MODIFIED="1488969908515" TEXT="get dataTransfer-object on drop and process"/>
 </node>
 </node>
-<node CREATED="1486638259326" FOLDED="true" ID="ID_1581079006" MODIFIED="1520857249513" TEXT="Forms and Queries">
+<node CREATED="1486638259326" FOLDED="true" ID="ID_1581079006" MODIFIED="1497820147309" TEXT="Forms and Queries">
 <node CREATED="1488969568570" ID="ID_1120198355" MODIFIED="1488969661636" TEXT="form-elements"/>
 <node CREATED="1488969586440" ID="ID_943351643" MODIFIED="1488969600544" TEXT="group radiobuttons via name"/>
 <node CREATED="1488969614278" ID="ID_1347969907" MODIFIED="1488969616636" TEXT="change-event"/>
 <node CREATED="1488969627297" ID="ID_1334695048" MODIFIED="1488969654224" TEXT="attributes without value: multiple for select, checked for checkbox"/>
 </node>
-<node CREATED="1496075724513" FOLDED="true" ID="ID_1346328657" MODIFIED="1520857252190" TEXT="Server Side">
+<node CREATED="1496075724513" FOLDED="true" ID="ID_1346328657" MODIFIED="1497820175273" TEXT="Server Side">
 <node CREATED="1496076163173" FOLDED="true" ID="ID_1321274879" MODIFIED="1496087525000" TEXT="start with Node.js">
 <node CREATED="1496075839720" ID="ID_1619737544" MODIFIED="1496076192142" TEXT="create new repository on Github"/>
 <node CREATED="1496075855458" ID="ID_48514562" MODIFIED="1496076183159" TEXT="create new project in workspace linked to it"/>
@@ -254,7 +275,7 @@
 <node CREATED="1496087481477" ID="ID_434406269" MODIFIED="1496087501924" TEXT="call app via http -&gt; server missing"/>
 </node>
 </node>
-<node CREATED="1486638322234" FOLDED="true" ID="ID_1397042242" MODIFIED="1520857254768" TEXT="Request/Response">
+<node CREATED="1486638322234" FOLDED="true" ID="ID_1397042242" MODIFIED="1497820753881" TEXT="Request/Response">
 <node CREATED="1496087503229" ID="ID_1139780898" MODIFIED="1496163808725" TEXT="add http-Server and create response"/>
 <node CREATED="1488971938888" ID="ID_456613430" MODIFIED="1496075711766" TEXT="find parameters in browser analysis (if possible for GET)"/>
 <node CREATED="1487865334139" ID="ID_719604506" LINK="https://nodejs.org/dist/latest-v7.x/docs/api/url.html#url_url_strings_and_url_objects" MODIFIED="1494764076199" TEXT="show node URL scheme in documentation"/>
@@ -262,7 +283,7 @@
 <node CREATED="1488204474899" ID="ID_610530320" MODIFIED="1494764020484" TEXT="FormData for POST, just to mention but stick with GET"/>
 <node CREATED="1497820734597" ID="ID_1831989974" MODIFIED="1497820751836" TEXT="Ajax via XMLHttpRequest (Fetch-API?)"/>
 </node>
-<node CREATED="1486640699737" FOLDED="true" ID="ID_684751491" MODIFIED="1520857255979" STYLE="fork" TEXT="Database">
+<node CREATED="1486640699737" FOLDED="true" ID="ID_684751491" MODIFIED="1497820611757" STYLE="fork" TEXT="Database">
 <node CREATED="1497819236269" ID="ID_1981209427" MODIFIED="1497819473011" TEXT="copy node_modules into project, create database-folder"/>
 <node CREATED="1497819417810" ID="ID_143861284" MODIFIED="1497819473015" TEXT="add &quot;mongodb&quot;: &quot;2.2.12&quot; as dependency in package"/>
 <node CREATED="1497819663030" FOLDED="true" ID="ID_644627717" MODIFIED="1497819764542" TEXT="start mongod in terminal">
@@ -275,27 +296,6 @@
 </node>
 <node CREATED="1497820432567" ID="ID_1416798708" MODIFIED="1497820463419" TEXT="examine node-code for database communication"/>
 <node CREATED="1494763924858" ID="ID_1181594085" MODIFIED="1494763935742" TEXT="anonymous and nested functions"/>
-</node>
-<node CREATED="1486637471804" FOLDED="true" ID="ID_1801808833" MODIFIED="1507120157578" TEXT="Canvas">
-<node CREATED="1488969692163" ID="ID_1770713293" MODIFIED="1488969697610" TEXT="path metaphor"/>
-<node CREATED="1488969708177" ID="ID_171944979" MODIFIED="1488969722328" TEXT="shortcuts fillRect and strokeRect"/>
-<node CREATED="1488970174413" ID="ID_1429693639" MODIFIED="1488970223087" TEXT="create functions for drawing repetitive images"/>
-</node>
-<node CREATED="1486637481546" FOLDED="true" ID="ID_1450108589" MODIFIED="1507120429617" TEXT="Associative Arrays">
-<node CREATED="1491552724290" FOLDED="true" ID="ID_124890155" MODIFIED="1507120427583" TEXT="create images interactively using events">
-<node CREATED="1507120412955" ID="ID_1938973894" MODIFIED="1507120417694" TEXT="Timeout"/>
-<node CREATED="1507120418393" ID="ID_1818275087" MODIFIED="1507120419490" TEXT="Click"/>
-<node CREATED="1507120420135" ID="ID_542775380" MODIFIED="1507120425193" TEXT="Touch"/>
-</node>
-<node CREATED="1492161459353" ID="ID_837487270" MODIFIED="1492161482583" TEXT="animate objects -&gt; store properties"/>
-</node>
-<node CREATED="1486638178159" FOLDED="true" ID="ID_456355481" MODIFIED="1507120297069" STYLE="fork" TEXT="Classes">
-<node CREATED="1494763801960" ID="ID_1977825127" MODIFIED="1494763813549" TEXT="refactor interfaces to classes"/>
-<node CREATED="1494763814434" ID="ID_283043979" MODIFIED="1494763818503" TEXT="and add methods"/>
-</node>
-<node CREATED="1486638190057" FOLDED="true" ID="ID_786435816" MODIFIED="1507120185791" TEXT="Inheritance, Polymorphism">
-<node CREATED="1494763827970" ID="ID_1864189067" MODIFIED="1494763839566" TEXT="identify common properties and behaviours"/>
-<node CREATED="1494763841512" ID="ID_146002707" MODIFIED="1494763857035" TEXT="and create super- and subclasses"/>
 </node>
 <node CREATED="1496075759865" FOLDED="true" ID="ID_1755236077" MODIFIED="1497820202748" TEXT="Additional">
 <node CREATED="1486638209592" ID="ID_1941289311" MODIFIED="1494763870909" TEXT="Scopes and Visibility"/>
@@ -784,6 +784,86 @@
 <node CREATED="1488659531611" ID="ID_695593514" MODIFIED="1488659589945" TEXT="... but instead skip execution and continue with the following block marked with the keyword &quot;catch&quot;."/>
 <node CREATED="1488659773367" ID="ID_941338993" MODIFIED="1488659830100" TEXT="if a block marked &quot;finally&quot; is present, it&apos;ll be executed before either the try- or the catch-block terminate"/>
 <node CREATED="1488659841505" ID="ID_260388562" MODIFIED="1488659963437" TEXT="the statement &quot;throw&quot; intentionally causes an exception and passes execution to the logically nearest catch"/>
+</node>
+</node>
+<node CREATED="1337524335428" FOLDED="true" ID="ID_1466249769" MODIFIED="1507120247361" POSITION="right" TEXT="Canvas">
+<node CREATED="1488191205727" FOLDED="true" ID="ID_1664671297" MODIFIED="1507120236529" TEXT="General">
+<node CREATED="1337527035322" ID="ID_248831518" MODIFIED="1488191217920" TEXT="area in document that allows pixel manipulation"/>
+<node CREATED="1488191292167" ID="ID_423812147" MODIFIED="1488192657325" TEXT="method getContext(&quot;2d&quot;) of HTMLCanvasElement ..."/>
+<node CREATED="1488192658376" ID="ID_936059937" MODIFIED="1488192743294" TEXT="... returns an object of type CanvasRenderingContext2D ..."/>
+<node CREATED="1488192747090" ID="ID_544961235" MODIFIED="1488192787051" TEXT="... that offers methods for manipulation of the canvas"/>
+<node CREATED="1488192481247" ID="ID_1014339207" MODIFIED="1488192518217" TEXT="property canvas of the object holds a reference to the HTMLCanvasElement"/>
+<node CREATED="1488191664045" FOLDED="true" ID="ID_1190806350" MODIFIED="1488552767489" TEXT="example">
+<node CREATED="1488191744524" FOLDED="true" ID="ID_663723335" MODIFIED="1488193380306" TEXT="var canvas: HTMLCanvasElement;">
+<node CREATED="1488191769099" ID="ID_1822153518" MODIFIED="1488191802958" TEXT="create a variable to reference to CanvasElement on the web page"/>
+</node>
+<node CREATED="1488191744526" FOLDED="true" ID="ID_1217783441" MODIFIED="1488192291770" TEXT="var crc2: CanvasRenderingContext2D;">
+<node CREATED="1488192054661" ID="ID_1792987222" MODIFIED="1488192077409" TEXT="create a variable to reference the render-api-object"/>
+</node>
+<node CREATED="1488191744527" FOLDED="true" ID="ID_1194610971" MODIFIED="1488192291478" TEXT="canvas = document.getElementsByTagName(&quot;canvas&quot;)[0];">
+<node CREATED="1488192086987" ID="ID_1767251064" MODIFIED="1488192104935" TEXT="define canvas as the first canvas-element found"/>
+</node>
+<node CREATED="1488191744528" FOLDED="true" ID="ID_247128531" MODIFIED="1488192291210" TEXT="crc2 = canvas.getContext(&quot;2d&quot;);">
+<node CREATED="1488192108679" ID="ID_150709825" MODIFIED="1488192220539" TEXT="define crc2 as the api-object for this canvas"/>
+</node>
+<node CREATED="1488192229158" FOLDED="true" ID="ID_1248409096" MODIFIED="1488193381389" TEXT="console.log ( crc2.canvas == canvas );">
+<node CREATED="1488192263390" ID="ID_1204740162" MODIFIED="1488192288741" TEXT="check back if everything fits"/>
+</node>
+</node>
+</node>
+<node CREATED="1488191264660" FOLDED="true" ID="ID_1078380109" MODIFIED="1507120238750" TEXT="CanvasRenderingContext2D">
+<node CREATED="1488187397127" FOLDED="true" ID="ID_301919378" MODIFIED="1491552839961" TEXT="Path">
+<node CREATED="1488187532887" ID="ID_1668848939" MODIFIED="1488187538036" TEXT="beginPath(): void;"/>
+<node CREATED="1488187397304" ID="ID_1497774724" MODIFIED="1488187436565" TEXT="closePath(): void;"/>
+<node CREATED="1488187605742" ID="ID_412940008" MODIFIED="1488187618175" TEXT="isPointInPath(x: number, y: number, fillRule?: string): boolean;"/>
+<node CREATED="1488187635630" ID="ID_1579975797" MODIFIED="1488187640209" TEXT="clip(fillRule?: string): void;"/>
+<node CREATED="1488187397314" ID="ID_83906441" MODIFIED="1488187448050" TEXT="moveTo(x: number, y: number): void;"/>
+<node CREATED="1488187397312" ID="ID_586974949" MODIFIED="1488187444168" TEXT="lineTo(x: number, y: number): void;"/>
+<node CREATED="1488187397316" ID="ID_102551462" MODIFIED="1488187456333" TEXT="rect(x: number, y: number, w: number, h: number): void;"/>
+<node CREATED="1488187397188" ID="ID_1511791021" MODIFIED="1488187397188" TEXT="arc(x: number, y: number, radius: number, startAngle: number, endAngle: number, anticlockwise?: boolean): void;"/>
+<node CREATED="1488187397302" ID="ID_1755220156" MODIFIED="1488187397302" TEXT="arcTo(x1: number, y1: number, x2: number, y2: number, radius: number): void;"/>
+<node CREATED="1488187397315" ID="ID_1966991399" MODIFIED="1488187466127" TEXT="quadraticCurveTo(cpx: number, cpy: number, x: number, y: number): void;"/>
+<node CREATED="1488187397303" ID="ID_836156589" MODIFIED="1488187397303" TEXT="bezierCurveTo(cp1x: number, cp1y: number, cp2x: number, cp2y: number, x: number, y: number): void;"/>
+</node>
+<node CREATED="1337528762331" FOLDED="true" ID="ID_804773048" MODIFIED="1491552886881" TEXT="State">
+<node CREATED="1488188481438" ID="ID_317252191" MODIFIED="1488188978436" TEXT="save(): void;"/>
+<node CREATED="1488188481436" ID="ID_182378928" MODIFIED="1488188978438" TEXT="restore(): void;"/>
+<node CREATED="1337528766902" FOLDED="true" ID="ID_1093657696" MODIFIED="1488188983309" TEXT="Line">
+<node CREATED="1488187745247" ID="ID_1848287957" MODIFIED="1488187745247" TEXT="lineWidth: number;"/>
+<node CREATED="1488187986293" MODIFIED="1488187986293" TEXT="strokeStyle: string | CanvasGradient | CanvasPattern;"/>
+</node>
+<node CREATED="1337528775408" FOLDED="true" ID="ID_1643131067" MODIFIED="1491552884311" TEXT="Fill / Gradient">
+<node CREATED="1488187723185" MODIFIED="1488187723185" TEXT="fillStyle: string | CanvasGradient | CanvasPattern;"/>
+<node CREATED="1488188011564" ID="ID_985381419" MODIFIED="1488188011564" TEXT="createLinearGradient(x0: number, y0: number, x1: number, y1: number): CanvasGradient;"/>
+</node>
+<node CREATED="1488187959990" FOLDED="true" ID="ID_885959023" MODIFIED="1488188934360" TEXT="Text">
+<node CREATED="1488187963460" ID="ID_38867097" MODIFIED="1488187963460" TEXT="font: string;"/>
+<node CREATED="1488188099306" ID="ID_1253961340" MODIFIED="1488188099306" TEXT="textAlign: string;"/>
+</node>
+<node CREATED="1337527818432" FOLDED="true" ID="ID_795392375" MODIFIED="1488188973708" TEXT="Transformation">
+<node CREATED="1488188481437" ID="ID_1572080781" MODIFIED="1488188481437" TEXT="rotate(angle: number): void;"/>
+<node CREATED="1488188481440" ID="ID_97373584" MODIFIED="1488188481440" TEXT="scale(x: number, y: number): void;"/>
+<node CREATED="1488188537797" ID="ID_1675169158" MODIFIED="1488188537797" TEXT="transform(m11: number, m12: number, m21: number, m22: number, dx: number, dy: number): void;"/>
+<node CREATED="1488188537798" ID="ID_965088636" MODIFIED="1488188537798" TEXT="translate(x: number, y: number): void;"/>
+<node CREATED="1488188562618" ID="ID_1444961706" MODIFIED="1488188562618" TEXT="setTransform(m11: number, m12: number, m21: number, m22: number, dx: number, dy: number): void;"/>
+</node>
+</node>
+<node CREATED="1337528653394" FOLDED="true" ID="ID_505588253" MODIFIED="1496091703168" TEXT="Draw">
+<node CREATED="1488187847859" ID="ID_1297232905" MODIFIED="1488187866241" TEXT="fill(fillRule?: string): void;"/>
+<node CREATED="1488187861789" ID="ID_1310777474" MODIFIED="1488187866243" TEXT="stroke(path?: Path2D): void;"/>
+<node CREATED="1488187795920" ID="ID_1867441619" MODIFIED="1488187795920" TEXT="fillRect(x: number, y: number, w: number, h: number): void;"/>
+<node CREATED="1488187819555" ID="ID_200995888" MODIFIED="1488187819555" TEXT="strokeRect(x: number, y: number, w: number, h: number): void;"/>
+<node CREATED="1488187834737" ID="ID_1478354845" MODIFIED="1488187834737" TEXT="clearRect(x: number, y: number, w: number, h: number): void;"/>
+</node>
+<node CREATED="1337529383895" FOLDED="true" ID="ID_1277387801" MODIFIED="1491552846111" TEXT="Image">
+<node CREATED="1488188259344" ID="ID_1516363573" MODIFIED="1488188259344" TEXT="getImageData(sx: number, sy: number, sw: number, sh: number): ImageData;"/>
+<node CREATED="1488188386102" ID="ID_1581825427" MODIFIED="1488188386102" TEXT="putImageData(imagedata: ImageData, dx: number, dy: number, dirtyX?: number, dirtyY?: number, dirtyWidth?: number, dirtyHeight?: number): void;"/>
+</node>
+<node CREATED="1337529423236" FOLDED="true" ID="ID_974773514" MODIFIED="1491552847151" TEXT="Text">
+<node CREATED="1337529507381" ID="ID_5803029" MODIFIED="1337529507381" TEXT="fillText(text,x,y,maxWidth)"/>
+<node CREATED="1337529507382" ID="ID_1185477943" MODIFIED="1337529507382" TEXT="strokeText(text,x,y,maxWidth)"/>
+<node CREATED="1337529507382" ID="ID_1150423360" MODIFIED="1337529507382" TEXT="measureText(text).width"/>
+</node>
 </node>
 </node>
 <node CREATED="1327999892919" FOLDED="true" ID="ID_857216794" MODIFIED="1507120254383" POSITION="right" STYLE="fork" TEXT="Eventsystem">
@@ -1353,86 +1433,6 @@
 <node CREATED="1487711373225" FOLDED="true" ID="ID_847185120" MODIFIED="1487930022423" TEXT="{ upsert: true }">
 <node CREATED="1487711437000" ID="ID_1422438116" MODIFIED="1487711479017" TEXT="if there is no data matching the query, it&apos;s inserted"/>
 </node>
-</node>
-</node>
-</node>
-<node CREATED="1337524335428" FOLDED="true" ID="ID_1466249769" MODIFIED="1520857299567" POSITION="right" TEXT="Canvas">
-<node CREATED="1488191205727" FOLDED="true" ID="ID_1664671297" MODIFIED="1507120236529" TEXT="General">
-<node CREATED="1337527035322" ID="ID_248831518" MODIFIED="1488191217920" TEXT="area in document that allows pixel manipulation"/>
-<node CREATED="1488191292167" ID="ID_423812147" MODIFIED="1488192657325" TEXT="method getContext(&quot;2d&quot;) of HTMLCanvasElement ..."/>
-<node CREATED="1488192658376" ID="ID_936059937" MODIFIED="1488192743294" TEXT="... returns an object of type CanvasRenderingContext2D ..."/>
-<node CREATED="1488192747090" ID="ID_544961235" MODIFIED="1488192787051" TEXT="... that offers methods for manipulation of the canvas"/>
-<node CREATED="1488192481247" ID="ID_1014339207" MODIFIED="1488192518217" TEXT="property canvas of the object holds a reference to the HTMLCanvasElement"/>
-<node CREATED="1488191664045" FOLDED="true" ID="ID_1190806350" MODIFIED="1488552767489" TEXT="example">
-<node CREATED="1488191744524" FOLDED="true" ID="ID_663723335" MODIFIED="1488193380306" TEXT="var canvas: HTMLCanvasElement;">
-<node CREATED="1488191769099" ID="ID_1822153518" MODIFIED="1488191802958" TEXT="create a variable to reference to CanvasElement on the web page"/>
-</node>
-<node CREATED="1488191744526" FOLDED="true" ID="ID_1217783441" MODIFIED="1488192291770" TEXT="var crc2: CanvasRenderingContext2D;">
-<node CREATED="1488192054661" ID="ID_1792987222" MODIFIED="1488192077409" TEXT="create a variable to reference the render-api-object"/>
-</node>
-<node CREATED="1488191744527" FOLDED="true" ID="ID_1194610971" MODIFIED="1488192291478" TEXT="canvas = document.getElementsByTagName(&quot;canvas&quot;)[0];">
-<node CREATED="1488192086987" ID="ID_1767251064" MODIFIED="1488192104935" TEXT="define canvas as the first canvas-element found"/>
-</node>
-<node CREATED="1488191744528" FOLDED="true" ID="ID_247128531" MODIFIED="1488192291210" TEXT="crc2 = canvas.getContext(&quot;2d&quot;);">
-<node CREATED="1488192108679" ID="ID_150709825" MODIFIED="1488192220539" TEXT="define crc2 as the api-object for this canvas"/>
-</node>
-<node CREATED="1488192229158" FOLDED="true" ID="ID_1248409096" MODIFIED="1488193381389" TEXT="console.log ( crc2.canvas == canvas );">
-<node CREATED="1488192263390" ID="ID_1204740162" MODIFIED="1488192288741" TEXT="check back if everything fits"/>
-</node>
-</node>
-</node>
-<node CREATED="1488191264660" FOLDED="true" ID="ID_1078380109" MODIFIED="1507120238750" TEXT="CanvasRenderingContext2D">
-<node CREATED="1488187397127" FOLDED="true" ID="ID_301919378" MODIFIED="1491552839961" TEXT="Path">
-<node CREATED="1488187532887" ID="ID_1668848939" MODIFIED="1488187538036" TEXT="beginPath(): void;"/>
-<node CREATED="1488187397304" ID="ID_1497774724" MODIFIED="1488187436565" TEXT="closePath(): void;"/>
-<node CREATED="1488187605742" ID="ID_412940008" MODIFIED="1488187618175" TEXT="isPointInPath(x: number, y: number, fillRule?: string): boolean;"/>
-<node CREATED="1488187635630" ID="ID_1579975797" MODIFIED="1488187640209" TEXT="clip(fillRule?: string): void;"/>
-<node CREATED="1488187397314" ID="ID_83906441" MODIFIED="1488187448050" TEXT="moveTo(x: number, y: number): void;"/>
-<node CREATED="1488187397312" ID="ID_586974949" MODIFIED="1488187444168" TEXT="lineTo(x: number, y: number): void;"/>
-<node CREATED="1488187397316" ID="ID_102551462" MODIFIED="1488187456333" TEXT="rect(x: number, y: number, w: number, h: number): void;"/>
-<node CREATED="1488187397188" ID="ID_1511791021" MODIFIED="1488187397188" TEXT="arc(x: number, y: number, radius: number, startAngle: number, endAngle: number, anticlockwise?: boolean): void;"/>
-<node CREATED="1488187397302" ID="ID_1755220156" MODIFIED="1488187397302" TEXT="arcTo(x1: number, y1: number, x2: number, y2: number, radius: number): void;"/>
-<node CREATED="1488187397315" ID="ID_1966991399" MODIFIED="1488187466127" TEXT="quadraticCurveTo(cpx: number, cpy: number, x: number, y: number): void;"/>
-<node CREATED="1488187397303" ID="ID_836156589" MODIFIED="1488187397303" TEXT="bezierCurveTo(cp1x: number, cp1y: number, cp2x: number, cp2y: number, x: number, y: number): void;"/>
-</node>
-<node CREATED="1337528762331" FOLDED="true" ID="ID_804773048" MODIFIED="1491552886881" TEXT="State">
-<node CREATED="1488188481438" ID="ID_317252191" MODIFIED="1488188978436" TEXT="save(): void;"/>
-<node CREATED="1488188481436" ID="ID_182378928" MODIFIED="1488188978438" TEXT="restore(): void;"/>
-<node CREATED="1337528766902" FOLDED="true" ID="ID_1093657696" MODIFIED="1488188983309" TEXT="Line">
-<node CREATED="1488187745247" ID="ID_1848287957" MODIFIED="1488187745247" TEXT="lineWidth: number;"/>
-<node CREATED="1488187986293" MODIFIED="1488187986293" TEXT="strokeStyle: string | CanvasGradient | CanvasPattern;"/>
-</node>
-<node CREATED="1337528775408" FOLDED="true" ID="ID_1643131067" MODIFIED="1491552884311" TEXT="Fill / Gradient">
-<node CREATED="1488187723185" MODIFIED="1488187723185" TEXT="fillStyle: string | CanvasGradient | CanvasPattern;"/>
-<node CREATED="1488188011564" ID="ID_985381419" MODIFIED="1488188011564" TEXT="createLinearGradient(x0: number, y0: number, x1: number, y1: number): CanvasGradient;"/>
-</node>
-<node CREATED="1488187959990" FOLDED="true" ID="ID_885959023" MODIFIED="1488188934360" TEXT="Text">
-<node CREATED="1488187963460" ID="ID_38867097" MODIFIED="1488187963460" TEXT="font: string;"/>
-<node CREATED="1488188099306" ID="ID_1253961340" MODIFIED="1488188099306" TEXT="textAlign: string;"/>
-</node>
-<node CREATED="1337527818432" FOLDED="true" ID="ID_795392375" MODIFIED="1488188973708" TEXT="Transformation">
-<node CREATED="1488188481437" ID="ID_1572080781" MODIFIED="1488188481437" TEXT="rotate(angle: number): void;"/>
-<node CREATED="1488188481440" ID="ID_97373584" MODIFIED="1488188481440" TEXT="scale(x: number, y: number): void;"/>
-<node CREATED="1488188537797" ID="ID_1675169158" MODIFIED="1488188537797" TEXT="transform(m11: number, m12: number, m21: number, m22: number, dx: number, dy: number): void;"/>
-<node CREATED="1488188537798" ID="ID_965088636" MODIFIED="1488188537798" TEXT="translate(x: number, y: number): void;"/>
-<node CREATED="1488188562618" ID="ID_1444961706" MODIFIED="1488188562618" TEXT="setTransform(m11: number, m12: number, m21: number, m22: number, dx: number, dy: number): void;"/>
-</node>
-</node>
-<node CREATED="1337528653394" FOLDED="true" ID="ID_505588253" MODIFIED="1496091703168" TEXT="Draw">
-<node CREATED="1488187847859" ID="ID_1297232905" MODIFIED="1488187866241" TEXT="fill(fillRule?: string): void;"/>
-<node CREATED="1488187861789" ID="ID_1310777474" MODIFIED="1488187866243" TEXT="stroke(path?: Path2D): void;"/>
-<node CREATED="1488187795920" ID="ID_1867441619" MODIFIED="1488187795920" TEXT="fillRect(x: number, y: number, w: number, h: number): void;"/>
-<node CREATED="1488187819555" ID="ID_200995888" MODIFIED="1488187819555" TEXT="strokeRect(x: number, y: number, w: number, h: number): void;"/>
-<node CREATED="1488187834737" ID="ID_1478354845" MODIFIED="1488187834737" TEXT="clearRect(x: number, y: number, w: number, h: number): void;"/>
-</node>
-<node CREATED="1337529383895" FOLDED="true" ID="ID_1277387801" MODIFIED="1491552846111" TEXT="Image">
-<node CREATED="1488188259344" ID="ID_1516363573" MODIFIED="1488188259344" TEXT="getImageData(sx: number, sy: number, sw: number, sh: number): ImageData;"/>
-<node CREATED="1488188386102" ID="ID_1581825427" MODIFIED="1488188386102" TEXT="putImageData(imagedata: ImageData, dx: number, dy: number, dirtyX?: number, dirtyY?: number, dirtyWidth?: number, dirtyHeight?: number): void;"/>
-</node>
-<node CREATED="1337529423236" FOLDED="true" ID="ID_974773514" MODIFIED="1491552847151" TEXT="Text">
-<node CREATED="1337529507381" ID="ID_5803029" MODIFIED="1337529507381" TEXT="fillText(text,x,y,maxWidth)"/>
-<node CREATED="1337529507382" ID="ID_1185477943" MODIFIED="1337529507382" TEXT="strokeText(text,x,y,maxWidth)"/>
-<node CREATED="1337529507382" ID="ID_1150423360" MODIFIED="1337529507382" TEXT="measureText(text).width"/>
 </node>
 </node>
 </node>
