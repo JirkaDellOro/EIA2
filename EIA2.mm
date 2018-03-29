@@ -1,7 +1,7 @@
 <map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
 <node CREATED="1480496236572" ID="ID_1483245584" MODIFIED="1492161762523" TEXT="EIA2">
-<node CREATED="1486640980741" FOLDED="true" ID="ID_1634475163" MODIFIED="1507120498850" POSITION="left" TEXT="References">
+<node CREATED="1486640980741" FOLDED="true" ID="ID_1634475163" MODIFIED="1522320217231" POSITION="left" TEXT="References">
 <node CREATED="1487071662786" ID="ID_517239067" LINK="DIA2Landscape.png" MODIFIED="1487071688268" TEXT="Landscape"/>
 <node CREATED="1486899143788" ID="ID_1157514353" LINK="https://git-scm.com/" MODIFIED="1486899151008" TEXT="Git"/>
 <node CREATED="1486647179592" ID="ID_896471124" LINK="https://help.github.com/" MODIFIED="1489396750826" STYLE="fork" TEXT="Github"/>
@@ -10,6 +10,7 @@
 <node CREATED="1486646776223" ID="ID_1508670948" LINK="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links" MODIFIED="1486647194231" TEXT="Markdown"/>
 <node CREATED="1486642741305" ID="ID_1615126765" LINK="https://wiki.selfhtml.org/wiki/JavaScript" MODIFIED="1487715289768" TEXT="JavaScript"/>
 <node CREATED="1486646451410" ID="ID_1638781169" LINK="http://www.typescriptlang.org/" MODIFIED="1486646868704" TEXT="TypeScript"/>
+<node CREATED="1522320175390" ID="ID_758967688" LINK="Kurzskript_160621.pdf" MODIFIED="1522320213537" TEXT="Kurzskript Programmieren"/>
 <node CREATED="1488133408262" ID="ID_1412417841" LINK="https://www.w3.org/" MODIFIED="1489228354447" TEXT="W3C"/>
 <node CREATED="1489228363860" ID="ID_455361631" LINK="https://developer.mozilla.org/en-US/docs/Web" MODIFIED="1489228372498" TEXT="MDN"/>
 <node CREATED="1486898677453" ID="ID_549469088" LINK="DO-Hierarchy.pdf" MODIFIED="1486898724895" TEXT="DOM-Classes"/>
