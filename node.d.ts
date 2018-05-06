@@ -13,7 +13,7 @@
 interface Console {
     Console: NodeJS.ConsoleConstructor;
     assert(value: any, message?: string, ...optionalParams: any[]): void;
-    dir(obj: any, options?: {showHidden?: boolean, depth?: number, colors?: boolean}): void;
+    dir(obj: any, options?: { showHidden?: boolean, depth?: number, colors?: boolean }): void;
     error(message?: any, ...optionalParams: any[]): void;
     info(message?: any, ...optionalParams: any[]): void;
     log(message?: any, ...optionalParams: any[]): void;
@@ -48,6 +48,8 @@ interface WeakSetConstructor { }
 declare var process: NodeJS.Process;
 declare var global: NodeJS.Global;
 declare var console: Console;
+declare var EventSource: any;
+type EventSource = any;
 
 declare var __filename: string;
 declare var __dirname: string;
@@ -249,7 +251,7 @@ declare var Buffer: {
 declare namespace NodeJS {
     export interface ConsoleConstructor {
         prototype: Console;
-        new(stdout: WritableStream, stderr?: WritableStream): Console;
+        new (stdout: WritableStream, stderr?: WritableStream): Console;
     }
 
     export interface ErrnoException extends Error {
@@ -345,13 +347,13 @@ declare namespace NodeJS {
     }
 
     type Platform = 'aix'
-                  | 'android'
-                  | 'darwin'
-                  | 'freebsd'
-                  | 'linux'
-                  | 'openbsd'
-                  | 'sunos'
-                  | 'win32';
+        | 'android'
+        | 'darwin'
+        | 'freebsd'
+        | 'linux'
+        | 'openbsd'
+        | 'sunos'
+        | 'win32';
 
     export interface Process extends EventEmitter {
         stdout: WritableStream;
@@ -1051,14 +1053,14 @@ declare module "zlib" {
     import * as stream from "stream";
 
     export interface ZlibOptions {
-      flush?: number; // default: zlib.constants.Z_NO_FLUSH
-      finishFlush?: number; // default: zlib.constants.Z_FINISH
-      chunkSize?: number; // default: 16*1024
-      windowBits?: number;
-      level?: number; // compression only
-      memLevel?: number; // compression only
-      strategy?: number; // compression only
-      dictionary?: any; // deflate/inflate only, empty dictionary by default
+        flush?: number; // default: zlib.constants.Z_NO_FLUSH
+        finishFlush?: number; // default: zlib.constants.Z_FINISH
+        chunkSize?: number; // default: 16*1024
+        windowBits?: number;
+        level?: number; // compression only
+        memLevel?: number; // compression only
+        strategy?: number; // compression only
+        dictionary?: any; // deflate/inflate only, empty dictionary by default
     }
 
     export interface Gzip extends stream.Transform { }
@@ -2877,65 +2879,65 @@ declare module "tls" {
         /**
          * Construct a new tls.TLSSocket object from an existing TCP socket.
          */
-        constructor(socket:net.Socket, options?: {
-          /**
-           * An optional TLS context object from tls.createSecureContext()
-           */
-          secureContext?: SecureContext,
-          /**
-           * If true the TLS socket will be instantiated in server-mode.
-           * Defaults to false.
-           */
-          isServer?: boolean,
-          /**
-           * An optional net.Server instance.
-           */
-          server?: net.Server,
-          /**
-           * If true the server will request a certificate from clients that
-           * connect and attempt to verify that certificate. Defaults to
-           * false.
-           */
-          requestCert?: boolean,
-          /**
-           * If true the server will reject any connection which is not
-           * authorized with the list of supplied CAs. This option only has an
-           * effect if requestCert is true. Defaults to false.
-           */
-          rejectUnauthorized?: boolean,
-          /**
-           * An array of strings or a Buffer naming possible NPN protocols.
-           * (Protocols should be ordered by their priority.)
-           */
-          NPNProtocols?: string[] | Buffer,
-          /**
-           * An array of strings or a Buffer naming possible ALPN protocols.
-           * (Protocols should be ordered by their priority.) When the server
-           * receives both NPN and ALPN extensions from the client, ALPN takes
-           * precedence over NPN and the server does not send an NPN extension
-           * to the client.
-           */
-          ALPNProtocols?: string[] | Buffer,
-          /**
-           * SNICallback(servername, cb) <Function> A function that will be
-           * called if the client supports SNI TLS extension. Two arguments
-           * will be passed when called: servername and cb. SNICallback should
-           * invoke cb(null, ctx), where ctx is a SecureContext instance.
-           * (tls.createSecureContext(...) can be used to get a proper
-           * SecureContext.) If SNICallback wasn't provided the default callback
-           * with high-level API will be used (see below).
-           */
-          SNICallback?: Function,
-          /**
-           * An optional Buffer instance containing a TLS session.
-           */
-          session?: Buffer,
-          /**
-           * If true, specifies that the OCSP status request extension will be
-           * added to the client hello and an 'OCSPResponse' event will be
-           * emitted on the socket before establishing a secure communication
-           */
-          requestOCSP?: boolean
+        constructor(socket: net.Socket, options?: {
+            /**
+             * An optional TLS context object from tls.createSecureContext()
+             */
+            secureContext?: SecureContext,
+            /**
+             * If true the TLS socket will be instantiated in server-mode.
+             * Defaults to false.
+             */
+            isServer?: boolean,
+            /**
+             * An optional net.Server instance.
+             */
+            server?: net.Server,
+            /**
+             * If true the server will request a certificate from clients that
+             * connect and attempt to verify that certificate. Defaults to
+             * false.
+             */
+            requestCert?: boolean,
+            /**
+             * If true the server will reject any connection which is not
+             * authorized with the list of supplied CAs. This option only has an
+             * effect if requestCert is true. Defaults to false.
+             */
+            rejectUnauthorized?: boolean,
+            /**
+             * An array of strings or a Buffer naming possible NPN protocols.
+             * (Protocols should be ordered by their priority.)
+             */
+            NPNProtocols?: string[] | Buffer,
+            /**
+             * An array of strings or a Buffer naming possible ALPN protocols.
+             * (Protocols should be ordered by their priority.) When the server
+             * receives both NPN and ALPN extensions from the client, ALPN takes
+             * precedence over NPN and the server does not send an NPN extension
+             * to the client.
+             */
+            ALPNProtocols?: string[] | Buffer,
+            /**
+             * SNICallback(servername, cb) <Function> A function that will be
+             * called if the client supports SNI TLS extension. Two arguments
+             * will be passed when called: servername and cb. SNICallback should
+             * invoke cb(null, ctx), where ctx is a SecureContext instance.
+             * (tls.createSecureContext(...) can be used to get a proper
+             * SecureContext.) If SNICallback wasn't provided the default callback
+             * with high-level API will be used (see below).
+             */
+            SNICallback?: Function,
+            /**
+             * An optional Buffer instance containing a TLS session.
+             */
+            session?: Buffer,
+            /**
+             * If true, specifies that the OCSP status request extension will be
+             * added to the client hello and an 'OCSPResponse' event will be
+             * emitted on the socket before establishing a secure communication
+             */
+            requestOCSP?: boolean
         });
         /**
          * Returns the bound address, the address family name and port of the underlying socket as reported by
@@ -4014,7 +4016,7 @@ declare module "v8" {
     }
 
     //** Signifies if the --zap_code_space option is enabled or not.  1 == enabled, 0 == disabled. */
-    enum DoesZapCodeSpaceFlag {disabled = 0, enabled = 1}
+    enum DoesZapCodeSpaceFlag { disabled = 0, enabled = 1 }
 
     interface HeapInfo {
         total_heap_size: number;
@@ -4168,7 +4170,7 @@ declare module "_debugger" {
         reqContinue(cb: RequestHandler): void;
     }
 
-    export var Client : {
+    export var Client: {
         new (): ClientInstance
     }
 }
