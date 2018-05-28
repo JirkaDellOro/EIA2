@@ -184,7 +184,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1481403992317" FOLDED="true" ID="ID_187226101" MODIFIED="1525787933575" POSITION="left" TEXT="Curriculum">
+<node CREATED="1481403992317" FOLDED="true" ID="ID_187226101" MODIFIED="1527539809956" POSITION="left" TEXT="Curriculum">
 <node CREATED="1481404003125" FOLDED="true" ID="ID_1041763061" MODIFIED="1507131814711" TEXT="Primer">
 <node CREATED="1489398121825" ID="ID_562893010" MODIFIED="1489517594812" TEXT="Crawford"/>
 <node CREATED="1489396403880" FOLDED="true" ID="ID_160536930" MODIFIED="1489488005036" TEXT="Mindmap">
@@ -271,34 +271,36 @@
 <node CREATED="1488204474899" ID="ID_610530320" MODIFIED="1494764020484" TEXT="FormData for POST, just to mention but stick with GET"/>
 <node CREATED="1497820734597" ID="ID_1831989974" MODIFIED="1497820751836" TEXT="Ajax via XMLHttpRequest (Fetch-API?)"/>
 </node>
-<node CREATED="1486640699737" FOLDED="true" ID="ID_684751491" MODIFIED="1520857255979" STYLE="fork" TEXT="Database">
-<node CREATED="1497819236269" ID="ID_1981209427" MODIFIED="1497819473011" TEXT="copy node_modules into project, create database-folder"/>
-<node CREATED="1497819417810" ID="ID_143861284" MODIFIED="1497819473015" TEXT="add &quot;mongodb&quot;: &quot;2.2.12&quot; as dependency in package"/>
-<node CREATED="1497819663030" FOLDED="true" ID="ID_644627717" MODIFIED="1497819764542" TEXT="start mongod in terminal">
+<node CREATED="1486640699737" FOLDED="true" ID="ID_684751491" MODIFIED="1527539807540" STYLE="fork" TEXT="Database">
+<node CREATED="1497819663030" FOLDED="true" ID="ID_644627717" MODIFIED="1527539553870" TEXT="start mongod in terminal">
 <node CREATED="1497819685343" ID="ID_1916250083" MODIFIED="1497819713963" TEXT="&quot;C:/Program Files/.../mongod.exe&quot; --dbpath [database-folder]"/>
 <node CREATED="1497819751530" ID="ID_751232791" MODIFIED="1497819763548" TEXT="see port and other messages"/>
 </node>
-<node CREATED="1497819561790" FOLDED="true" ID="ID_823809841" MODIFIED="1497820251302" TEXT="start shell in system console">
+<node CREATED="1497819561790" FOLDED="true" ID="ID_823809841" MODIFIED="1527539605776" TEXT="start shell in system console">
 <node CREATED="1497819617316" ID="ID_1532436672" MODIFIED="1497819621895" TEXT="type some commands"/>
 <node CREATED="1497819623257" ID="ID_1251144955" MODIFIED="1497819638347" TEXT="see response in terminal"/>
 </node>
-<node CREATED="1497820432567" ID="ID_1416798708" MODIFIED="1497820463419" TEXT="examine node-code for database communication"/>
-<node CREATED="1494763924858" ID="ID_1181594085" MODIFIED="1494763935742" TEXT="anonymous and nested functions"/>
+<node CREATED="1527539577677" FOLDED="true" ID="ID_357672342" MODIFIED="1527539599187" TEXT="mongodb with node">
+<node CREATED="1497819236269" ID="ID_1981209427" MODIFIED="1527539590174" TEXT="copy node_modules into project, create database-folder"/>
+<node CREATED="1497819417810" ID="ID_143861284" MODIFIED="1527539590170" TEXT="add &quot;mongodb&quot;: &quot;2.2.12&quot; as dependency in package"/>
+<node CREATED="1497820432567" ID="ID_1416798708" MODIFIED="1527539590166" TEXT="examine node-code for database communication"/>
+<node CREATED="1494763924858" ID="ID_1181594085" MODIFIED="1527539590161" TEXT="anonymous and nested functions"/>
 </node>
-<node CREATED="1486637471804" FOLDED="true" ID="ID_1801808833" MODIFIED="1507120157578" TEXT="Canvas">
+</node>
+<node CREATED="1486637471804" FOLDED="true" ID="ID_1801808833" MODIFIED="1527539692526" TEXT="Canvas">
 <node CREATED="1488969692163" ID="ID_1770713293" MODIFIED="1488969697610" TEXT="path metaphor"/>
 <node CREATED="1488969708177" ID="ID_171944979" MODIFIED="1488969722328" TEXT="shortcuts fillRect and strokeRect"/>
 <node CREATED="1488970174413" ID="ID_1429693639" MODIFIED="1488970223087" TEXT="create functions for drawing repetitive images"/>
 </node>
-<node CREATED="1486638178159" FOLDED="true" ID="ID_456355481" MODIFIED="1507120297069" STYLE="fork" TEXT="Classes">
+<node CREATED="1486638178159" FOLDED="true" ID="ID_456355481" MODIFIED="1527539690434" STYLE="fork" TEXT="Classes">
 <node CREATED="1494763801960" ID="ID_1977825127" MODIFIED="1494763813549" TEXT="refactor interfaces to classes"/>
 <node CREATED="1494763814434" ID="ID_283043979" MODIFIED="1494763818503" TEXT="and add methods"/>
 </node>
-<node CREATED="1486638190057" FOLDED="true" ID="ID_786435816" MODIFIED="1507120185791" TEXT="Inheritance, Polymorphism">
+<node CREATED="1486638190057" FOLDED="true" ID="ID_786435816" MODIFIED="1527539688402" TEXT="Inheritance, Polymorphism">
 <node CREATED="1494763827970" ID="ID_1864189067" MODIFIED="1494763839566" TEXT="identify common properties and behaviours"/>
 <node CREATED="1494763841512" ID="ID_146002707" MODIFIED="1494763857035" TEXT="and create super- and subclasses"/>
 </node>
-<node CREATED="1496075759865" FOLDED="true" ID="ID_1755236077" MODIFIED="1497820202748" TEXT="Additional">
+<node CREATED="1496075759865" FOLDED="true" ID="ID_1755236077" MODIFIED="1527539683891" TEXT="Additional">
 <node CREATED="1486638209592" ID="ID_1941289311" MODIFIED="1494763870909" TEXT="Scopes and Visibility"/>
 <node CREATED="1486640781962" ID="ID_539244345" MODIFIED="1496075817447" TEXT="Exceptions"/>
 <node CREATED="1496075817449" ID="ID_633765229" MODIFIED="1496075817452" TEXT="Enums"/>
@@ -509,7 +511,7 @@
 <node CREATED="1487932863186" MODIFIED="1487932863186" TEXT="encodeURIComponent(uriComponent: string): string"/>
 </node>
 </node>
-<node CREATED="1486646080283" FOLDED="true" ID="ID_348215621" LINK="https://github.com/Microsoft/TypeScript" MODIFIED="1489265674438" POSITION="right" TEXT="TypeScript">
+<node CREATED="1486646080283" FOLDED="true" ID="ID_348215621" LINK="https://github.com/Microsoft/TypeScript" MODIFIED="1527539795284" POSITION="right" TEXT="TypeScript">
 <node CREATED="1486974083503" FOLDED="true" ID="ID_1456788917" MODIFIED="1489265673125" TEXT="General">
 <node CREATED="1486974087029" ID="ID_1931694768" MODIFIED="1486974339416" TEXT="developed by Microsoft"/>
 <node CREATED="1486974339880" ID="ID_1811022442" LINK="https://github.com/ahejlsberg" MODIFIED="1486974773100" TEXT="Anders Hejlsberg (Turbo Pascal, Delphi, J++, C#, .NET)"/>
@@ -526,7 +528,7 @@
 <node CREATED="1486645411698" ID="ID_1538316216" MODIFIED="1489265626593" TEXT="import "/>
 </node>
 </node>
-<node CREATED="1488538765698" FOLDED="true" ID="ID_607602390" MODIFIED="1507131894190" POSITION="right" TEXT="Coding Style">
+<node CREATED="1488538765698" FOLDED="true" ID="ID_607602390" MODIFIED="1527539793793" POSITION="right" TEXT="Coding Style">
 <node CREATED="1489304852746" FOLDED="true" ID="ID_1395923549" MODIFIED="1507131835291" TEXT="Purpose">
 <node CREATED="1488539468570" ID="ID_1233307534" MODIFIED="1488539468570" TEXT="Programme k&#xf6;nnen schnell sehr komplex werden. Daher ist es wichtig, sich an Stil-Regeln zu halten, um sie m&#xf6;glichst verst&#xe4;ndlich zu schreiben. In diesem Kurs gelten folgende Stil-Regeln:"/>
 </node>
@@ -555,7 +557,7 @@
 <node CREATED="1488539468601" ID="ID_770207662" MODIFIED="1489305526121" TEXT="Kommentare werden eingesetzt, um Programmteile abzugrenzen und die Verst&#xe4;ndlichkeit zu erh&#xf6;hen. Programmteile, die von anderen Skripts genutzt werden sollen, werden im JSDoc-Format kommentiert &#xa;(/** &#x2026; */)"/>
 </node>
 </node>
-<node CREATED="1488540848465" FOLDED="true" ID="ID_226943766" MODIFIED="1499275294200" POSITION="right" TEXT="Dictionary">
+<node CREATED="1488540848465" FOLDED="true" ID="ID_226943766" MODIFIED="1527539791223" POSITION="right" TEXT="Dictionary">
 <node CREATED="1488540857224" FOLDED="true" ID="ID_1410670011" MODIFIED="1492161702813" TEXT="namespace">
 <node CREATED="1488645098764" ID="ID_1571933734" MODIFIED="1488645135005" TEXT="defines a section of storage"/>
 <node CREATED="1488541430618" FOLDED="true" ID="ID_1839686656" MODIFIED="1488646109456" TEXT="to store data as variables, functions, arrays, classes, objects etc.">
@@ -787,7 +789,7 @@
 <node CREATED="1488659841505" ID="ID_260388562" MODIFIED="1488659963437" TEXT="the statement &quot;throw&quot; intentionally causes an exception and passes execution to the logically nearest catch"/>
 </node>
 </node>
-<node CREATED="1335127717958" FOLDED="true" ID="ID_598994719" MODIFIED="1523297104735" POSITION="right" TEXT="Document Object Model (DOM)">
+<node CREATED="1335127717958" FOLDED="true" ID="ID_598994719" MODIFIED="1527539783464" POSITION="right" TEXT="Document Object Model (DOM)">
 <node CREATED="1488133392440" FOLDED="true" ID="ID_1057259957" MODIFIED="1523296884704" TEXT="General">
 <node CREATED="1488133408262" FOLDED="true" ID="ID_723172963" LINK="https://www.w3.org/" MODIFIED="1489227841514" TEXT="Standardized by W3C">
 <node CREATED="1488133541068" ID="ID_1572446720" LINK="https://github.com/timbl" MODIFIED="1488133552426" TEXT="led by Tim Berners-Lee"/>
@@ -1112,8 +1114,8 @@
 <node CREATED="1334520793377" ID="ID_157061424" MODIFIED="1334565901585" TEXT="accesskey"/>
 </node>
 </node>
-<node CREATED="1486898557142" FOLDED="true" ID="ID_180594711" LINK="https://github.com/nodejs" MODIFIED="1525788251899" POSITION="right" TEXT="Node">
-<node CREATED="1487715754165" FOLDED="true" ID="ID_1806505984" MODIFIED="1497337700686" TEXT="General">
+<node CREATED="1486898557142" FOLDED="true" ID="ID_180594711" LINK="https://github.com/nodejs" MODIFIED="1527539776708" POSITION="right" TEXT="Node">
+<node CREATED="1487715754165" FOLDED="true" ID="ID_1806505984" MODIFIED="1527539774782" TEXT="General">
 <node CREATED="1487713021466" ID="ID_1177815800" MODIFIED="1488126203585" TEXT="JavaScript outside of the browser"/>
 <node CREATED="1487713580628" ID="ID_366846704" LINK="https://github.com/ry" MODIFIED="1487713624374" TEXT="Developed by Ryan Dahl in 2009"/>
 <node CREATED="1487713801209" FOLDED="true" ID="ID_1184713679" LINK="https://github.com/v8" MODIFIED="1487715775785" TEXT="uses V8-Engine">
@@ -1123,7 +1125,7 @@
 </node>
 <node CREATED="1487715701728" ID="ID_1824008398" MODIFIED="1487715743888" TEXT="Non-blocking server communication"/>
 </node>
-<node CREATED="1487713133990" FOLDED="true" ID="ID_1465681007" MODIFIED="1525788250695" TEXT="Core modules and classes">
+<node CREATED="1487713133990" FOLDED="true" ID="ID_1465681007" MODIFIED="1527539776105" TEXT="Core modules and classes">
 <node CREATED="1487942501631" FOLDED="true" ID="ID_739320235" MODIFIED="1497338233242" TEXT="Console">
 <node CREATED="1487945153554" ID="ID_735847575" MODIFIED="1487945169817" TEXT="log ( message?: any, ...optionalParams: any[] ): void;"/>
 <node CREATED="1487945516287" ID="ID_494132204" MODIFIED="1487945525177" TEXT="instance console is global object"/>
@@ -1231,14 +1233,14 @@
 </node>
 </node>
 </node>
-<node CREATED="1487104916773" FOLDED="true" ID="ID_304950281" LINK="https://github.com/mongodb/mongo" MODIFIED="1497819589988" POSITION="right" TEXT="MongoDB">
+<node CREATED="1487104916773" FOLDED="true" ID="ID_304950281" LINK="https://github.com/mongodb/mongo" MODIFIED="1527539760391" POSITION="right" TEXT="MongoDB">
 <node CREATED="1488133319272" FOLDED="true" ID="ID_378396000" MODIFIED="1489174598819" TEXT="General">
 <node CREATED="1489170788258" ID="ID_150490067" MODIFIED="1489170792585" TEXT="from humongous"/>
 <node CREATED="1489170821684" ID="ID_302364710" MODIFIED="1489170851197" TEXT="free open-source cross-platform document-oriented database"/>
 <node CREATED="1489170884954" ID="ID_1960009251" MODIFIED="1489170911986" TEXT="development started in 2007, initial release in 2009"/>
 <node CREATED="1489171389793" ID="ID_396412775" MODIFIED="1489171428022" TEXT="NoSQL, as opposed to relational"/>
 </node>
-<node CREATED="1487104929733" FOLDED="true" ID="ID_1070702900" MODIFIED="1497819589537" TEXT="Shell commands">
+<node CREATED="1487104929733" FOLDED="true" ID="ID_1070702900" MODIFIED="1527539635662" TEXT="Shell commands">
 <node CREATED="1497816115424" ID="ID_666317112" MODIFIED="1497816133639" TEXT="use system console to type curly brackets"/>
 <node CREATED="1489222593091" FOLDED="true" ID="ID_1148249568" MODIFIED="1489222662105" TEXT="help, db.help(), db.&lt;collection&gt;.help()">
 <node CREATED="1489222628060" ID="ID_431766397" MODIFIED="1489222660599" TEXT="show help for different areas of operation"/>
@@ -1265,9 +1267,9 @@
 <node CREATED="1497816394247" ID="ID_1044010030" MODIFIED="1497816424643" TEXT="delete current database"/>
 </node>
 </node>
-<node CREATED="1487104937556" FOLDED="true" ID="ID_1992942420" MODIFIED="1489223739960" TEXT="Node classes and interfaces">
+<node CREATED="1487104937556" FOLDED="true" ID="ID_1992942420" MODIFIED="1527539759034" TEXT="Node classes and interfaces">
 <node CREATED="1487514437186" ID="ID_1852186695" MODIFIED="1487514592789" TEXT="as defined in module &quot;mongodb&quot;"/>
-<node CREATED="1487513955694" FOLDED="true" ID="ID_1033719456" MODIFIED="1487674598043" TEXT="MongoCallback">
+<node CREATED="1487513955694" FOLDED="true" ID="ID_1033719456" MODIFIED="1527539757798" TEXT="MongoCallback">
 <node CREATED="1487514000759" ID="ID_1609965266" MODIFIED="1487514020510" TEXT="Many methods require a callback function as parameter"/>
 <node CREATED="1487514021439" FOLDED="true" ID="ID_1792344026" MODIFIED="1487593135295" TEXT="of type MongoCallback&lt;T&gt;">
 <node CREATED="1487514066422" ID="ID_195582532" MODIFIED="1487576147287" TEXT="function (error: MongoError, result: T): void;"/>
@@ -1313,7 +1315,7 @@
 <node CREATED="1489223306273" ID="ID_578698258" MODIFIED="1489223306273" TEXT="Drop the collection from the database, removing it permanently. New accesses will create a new collection."/>
 </node>
 </node>
-<node CREATED="1487105814120" FOLDED="true" ID="ID_922031714" MODIFIED="1489223738308" TEXT="Cursor">
+<node CREATED="1487105814120" FOLDED="true" ID="ID_922031714" MODIFIED="1527539630148" TEXT="Cursor">
 <node CREATED="1487600795530" ID="ID_1119169742" MODIFIED="1487600823864" TEXT="Represents a subset of data as a result of a find-command"/>
 <node CREATED="1487674058331" FOLDED="true" ID="ID_1872856572" MODIFIED="1487674859772" TEXT="close ( callback: MongoCallback&lt;CursorResult&gt; ): void">
 <node CREATED="1487674852045" ID="ID_414456688" MODIFIED="1487674858090" TEXT="close the cursor"/>
@@ -1327,7 +1329,9 @@
 <node CREATED="1487680163336" ID="ID_215230960" MODIFIED="1487680189330" TEXT="creates a JavaScript-Array of Objects from the Cursor"/>
 </node>
 </node>
-<node CREATED="1487593514087" FOLDED="true" ID="ID_1393455632" MODIFIED="1487711288450" TEXT="query examples">
+</node>
+<node CREATED="1527539649830" FOLDED="true" ID="ID_1789290553" MODIFIED="1527539746481" TEXT="Examples">
+<node CREATED="1487593514087" FOLDED="true" ID="ID_1393455632" MODIFIED="1527539659209" TEXT="query examples">
 <node CREATED="1487682152114" FOLDED="true" ID="ID_1031203213" MODIFIED="1487709607052" TEXT="{ &quot;key&quot;: &quot;John&quot; }">
 <node CREATED="1487682171733" ID="ID_1802763024" MODIFIED="1487692216846" TEXT="the value of property key must match the string &quot;John&quot;"/>
 </node>
@@ -1345,7 +1349,7 @@
 <node CREATED="1487706815271" ID="ID_1267051184" MODIFIED="1487706836684" TEXT="this is mandatory to access the properties"/>
 </node>
 </node>
-<node CREATED="1487593526013" FOLDED="true" ID="ID_250425857" MODIFIED="1487711280787" TEXT="update examples">
+<node CREATED="1487593526013" FOLDED="true" ID="ID_250425857" MODIFIED="1527539659203" TEXT="update examples">
 <node CREATED="1487708838868" FOLDED="true" ID="ID_1289777789" MODIFIED="1487709650480" TEXT="{ $set: { &quot;key1&quot;: 10, &quot;key2&quot;: &quot;John&quot;, ... } }">
 <node CREATED="1487708968367" ID="ID_181787116" MODIFIED="1487709033256" TEXT="sets the value of property key1 to 10, and key2 to &quot;John&quot;"/>
 </node>
@@ -1357,14 +1361,14 @@
 <node CREATED="1487709677352" ID="ID_1231684289" MODIFIED="1487709697254" TEXT="renames property &quot;key1&quot; to &quot;key2&quot;"/>
 </node>
 </node>
-<node CREATED="1487711363303" FOLDED="true" ID="ID_599284470" MODIFIED="1487711527776" TEXT="options example">
-<node CREATED="1487711373225" FOLDED="true" ID="ID_847185120" MODIFIED="1487930022423" TEXT="{ upsert: true }">
+<node CREATED="1487711363303" FOLDED="true" ID="ID_599284470" MODIFIED="1527539659194" TEXT="options example">
+<node CREATED="1487711373225" FOLDED="true" ID="ID_847185120" MODIFIED="1527539646693" TEXT="{ upsert: true }">
 <node CREATED="1487711437000" ID="ID_1422438116" MODIFIED="1487711479017" TEXT="if there is no data matching the query, it&apos;s inserted"/>
 </node>
 </node>
 </node>
 </node>
-<node CREATED="1337524335428" FOLDED="true" ID="ID_1466249769" MODIFIED="1523296799016" POSITION="right" TEXT="Canvas">
+<node CREATED="1337524335428" FOLDED="true" ID="ID_1466249769" MODIFIED="1527539767339" POSITION="right" TEXT="Canvas">
 <node CREATED="1488191205727" FOLDED="true" ID="ID_1664671297" MODIFIED="1523296796418" TEXT="General">
 <node CREATED="1337527035322" ID="ID_248831518" MODIFIED="1488191217920" TEXT="area in document that allows pixel manipulation"/>
 <node CREATED="1488191292167" ID="ID_423812147" MODIFIED="1488192657325" TEXT="method getContext(&quot;2d&quot;) of HTMLCanvasElement ..."/>

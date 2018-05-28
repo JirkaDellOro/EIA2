@@ -924,13 +924,7 @@ Request/Response
 </li>
 <li><span id="show1_3_9" class="foldclosed" onClick="show_folder('1_3_9')" style="POSITION: absolute">+</span> <span id="hide1_3_9" class="foldopened" onClick="hide_folder('1_3_9')">-</span>
 Database
-<ul id="fold1_3_9" style="POSITION: relative; VISIBILITY: visible;"><li>copy node_modules into project, create database-folder
-
-</li>
-<li>add "mongodb": "2.2.12" as dependency in package
-
-</li>
-<li><span id="show1_3_9_1" class="foldclosed" onClick="show_folder('1_3_9_1')" style="POSITION: absolute">+</span> <span id="hide1_3_9_1" class="foldopened" onClick="hide_folder('1_3_9_1')">-</span>
+<ul id="fold1_3_9" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_3_9_1" class="foldclosed" onClick="show_folder('1_3_9_1')" style="POSITION: absolute">+</span> <span id="hide1_3_9_1" class="foldopened" onClick="hide_folder('1_3_9_1')">-</span>
 start mongod in terminal
 <ul id="fold1_3_9_1" style="POSITION: relative; VISIBILITY: visible;"><li>"C:/Program Files/.../mongod.exe" --dbpath [database-folder]
 
@@ -952,11 +946,22 @@ start shell in system console
 
 </ul>
 </li>
+<li><span id="show1_3_9_3" class="foldclosed" onClick="show_folder('1_3_9_3')" style="POSITION: absolute">+</span> <span id="hide1_3_9_3" class="foldopened" onClick="hide_folder('1_3_9_3')">-</span>
+mongodb with node
+<ul id="fold1_3_9_3" style="POSITION: relative; VISIBILITY: visible;"><li>copy node_modules into project, create database-folder
+
+</li>
+<li>add "mongodb": "2.2.12" as dependency in package
+
+</li>
 <li>examine node-code for database communication
 
 </li>
 <li>anonymous and nested functions
 
+</li>
+
+</ul>
 </li>
 
 </ul>
@@ -3762,19 +3767,24 @@ toArray ( callback: MongoCallback&lt;any[]&gt; ): void;
 
 </ul>
 </li>
-<li><span id="show1_13_3_6" class="foldclosed" onClick="show_folder('1_13_3_6')" style="POSITION: absolute">+</span> <span id="hide1_13_3_6" class="foldopened" onClick="hide_folder('1_13_3_6')">-</span>
+
+</ul>
+</li>
+<li><span id="show1_13_4" class="foldclosed" onClick="show_folder('1_13_4')" style="POSITION: absolute">+</span> <span id="hide1_13_4" class="foldopened" onClick="hide_folder('1_13_4')">-</span>
+Examples
+<ul id="fold1_13_4" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_13_4_1" class="foldclosed" onClick="show_folder('1_13_4_1')" style="POSITION: absolute">+</span> <span id="hide1_13_4_1" class="foldopened" onClick="hide_folder('1_13_4_1')">-</span>
 query examples
-<ul id="fold1_13_3_6" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_13_3_6_1" class="foldclosed" onClick="show_folder('1_13_3_6_1')" style="POSITION: absolute">+</span> <span id="hide1_13_3_6_1" class="foldopened" onClick="hide_folder('1_13_3_6_1')">-</span>
+<ul id="fold1_13_4_1" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_13_4_1_1" class="foldclosed" onClick="show_folder('1_13_4_1_1')" style="POSITION: absolute">+</span> <span id="hide1_13_4_1_1" class="foldopened" onClick="hide_folder('1_13_4_1_1')">-</span>
 { "key": "John" }
-<ul id="fold1_13_3_6_1" style="POSITION: relative; VISIBILITY: visible;"><li>the value of property key must match the string "John"
+<ul id="fold1_13_4_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>the value of property key must match the string "John"
 
 </li>
 
 </ul>
 </li>
-<li><span id="show1_13_3_6_2" class="foldclosed" onClick="show_folder('1_13_3_6_2')" style="POSITION: absolute">+</span> <span id="hide1_13_3_6_2" class="foldopened" onClick="hide_folder('1_13_3_6_2')">-</span>
+<li><span id="show1_13_4_1_2" class="foldclosed" onClick="show_folder('1_13_4_1_2')" style="POSITION: absolute">+</span> <span id="hide1_13_4_1_2" class="foldopened" onClick="hide_folder('1_13_4_1_2')">-</span>
 { "key": { $gt: 20, $lt: 80, $ne: 50 } }
-<ul id="fold1_13_3_6_2" style="POSITION: relative; VISIBILITY: visible;"><li>the value of property key must be 
+<ul id="fold1_13_4_1_2" style="POSITION: relative; VISIBILITY: visible;"><li>the value of property key must be 
 
 </li>
 <li>greater than 20, less than 80 and not equal to 50
@@ -3783,9 +3793,9 @@ query examples
 
 </ul>
 </li>
-<li><span id="show1_13_3_6_3" class="foldclosed" onClick="show_folder('1_13_3_6_3')" style="POSITION: absolute">+</span> <span id="hide1_13_3_6_3" class="foldopened" onClick="hide_folder('1_13_3_6_3')">-</span>
+<li><span id="show1_13_4_1_3" class="foldclosed" onClick="show_folder('1_13_4_1_3')" style="POSITION: absolute">+</span> <span id="hide1_13_4_1_3" class="foldopened" onClick="hide_folder('1_13_4_1_3')">-</span>
 { $or: [ { "key": { $lt: 20 } }, { "key": { $gt: 80 } }, { "key": 50 } ] }
-<ul id="fold1_13_3_6_3" style="POSITION: relative; VISIBILITY: visible;"><li>the value of property key must be
+<ul id="fold1_13_4_1_3" style="POSITION: relative; VISIBILITY: visible;"><li>the value of property key must be
 
 </li>
 <li>less than 20 or greater than 80 or equal to 50
@@ -3794,9 +3804,9 @@ query examples
 
 </ul>
 </li>
-<li><span id="show1_13_3_6_4" class="foldclosed" onClick="show_folder('1_13_3_6_4')" style="POSITION: absolute">+</span> <span id="hide1_13_3_6_4" class="foldopened" onClick="hide_folder('1_13_3_6_4')">-</span>
+<li><span id="show1_13_4_1_4" class="foldclosed" onClick="show_folder('1_13_4_1_4')" style="POSITION: absolute">+</span> <span id="hide1_13_4_1_4" class="foldopened" onClick="hide_folder('1_13_4_1_4')">-</span>
 { $where: { "this.key1 + this.key2 &gt; 100" } }
-<ul id="fold1_13_3_6_4" style="POSITION: relative; VISIBILITY: visible;"><li>evaluates a JavaScript-expression
+<ul id="fold1_13_4_1_4" style="POSITION: relative; VISIBILITY: visible;"><li>evaluates a JavaScript-expression
 
 </li>
 <li>example: the sum of the properties key1 and key2 must exceed 100
@@ -3811,19 +3821,19 @@ query examples
 
 </ul>
 </li>
-<li><span id="show1_13_3_7" class="foldclosed" onClick="show_folder('1_13_3_7')" style="POSITION: absolute">+</span> <span id="hide1_13_3_7" class="foldopened" onClick="hide_folder('1_13_3_7')">-</span>
+<li><span id="show1_13_4_2" class="foldclosed" onClick="show_folder('1_13_4_2')" style="POSITION: absolute">+</span> <span id="hide1_13_4_2" class="foldopened" onClick="hide_folder('1_13_4_2')">-</span>
 update examples
-<ul id="fold1_13_3_7" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_13_3_7_1" class="foldclosed" onClick="show_folder('1_13_3_7_1')" style="POSITION: absolute">+</span> <span id="hide1_13_3_7_1" class="foldopened" onClick="hide_folder('1_13_3_7_1')">-</span>
+<ul id="fold1_13_4_2" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_13_4_2_1" class="foldclosed" onClick="show_folder('1_13_4_2_1')" style="POSITION: absolute">+</span> <span id="hide1_13_4_2_1" class="foldopened" onClick="hide_folder('1_13_4_2_1')">-</span>
 { $set: { "key1": 10, "key2": "John", ... } }
-<ul id="fold1_13_3_7_1" style="POSITION: relative; VISIBILITY: visible;"><li>sets the value of property key1 to 10, and key2 to "John"
+<ul id="fold1_13_4_2_1" style="POSITION: relative; VISIBILITY: visible;"><li>sets the value of property key1 to 10, and key2 to "John"
 
 </li>
 
 </ul>
 </li>
-<li><span id="show1_13_3_7_2" class="foldclosed" onClick="show_folder('1_13_3_7_2')" style="POSITION: absolute">+</span> <span id="hide1_13_3_7_2" class="foldopened" onClick="hide_folder('1_13_3_7_2')">-</span>
+<li><span id="show1_13_4_2_2" class="foldclosed" onClick="show_folder('1_13_4_2_2')" style="POSITION: absolute">+</span> <span id="hide1_13_4_2_2" class="foldopened" onClick="hide_folder('1_13_4_2_2')">-</span>
 { $unset: { "key": "", ... } }
-<ul id="fold1_13_3_7_2" style="POSITION: relative; VISIBILITY: visible;"><li>removes the property key and its value
+<ul id="fold1_13_4_2_2" style="POSITION: relative; VISIBILITY: visible;"><li>removes the property key and its value
 
 </li>
 <li>the given value is irrelevant
@@ -3832,9 +3842,9 @@ update examples
 
 </ul>
 </li>
-<li><span id="show1_13_3_7_3" class="foldclosed" onClick="show_folder('1_13_3_7_3')" style="POSITION: absolute">+</span> <span id="hide1_13_3_7_3" class="foldopened" onClick="hide_folder('1_13_3_7_3')">-</span>
+<li><span id="show1_13_4_2_3" class="foldclosed" onClick="show_folder('1_13_4_2_3')" style="POSITION: absolute">+</span> <span id="hide1_13_4_2_3" class="foldopened" onClick="hide_folder('1_13_4_2_3')">-</span>
 { $rename: { "key1": "key2" } }
-<ul id="fold1_13_3_7_3" style="POSITION: relative; VISIBILITY: visible;"><li>renames property "key1" to "key2"
+<ul id="fold1_13_4_2_3" style="POSITION: relative; VISIBILITY: visible;"><li>renames property "key1" to "key2"
 
 </li>
 
@@ -3843,11 +3853,11 @@ update examples
 
 </ul>
 </li>
-<li><span id="show1_13_3_8" class="foldclosed" onClick="show_folder('1_13_3_8')" style="POSITION: absolute">+</span> <span id="hide1_13_3_8" class="foldopened" onClick="hide_folder('1_13_3_8')">-</span>
+<li><span id="show1_13_4_3" class="foldclosed" onClick="show_folder('1_13_4_3')" style="POSITION: absolute">+</span> <span id="hide1_13_4_3" class="foldopened" onClick="hide_folder('1_13_4_3')">-</span>
 options example
-<ul id="fold1_13_3_8" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_13_3_8_1" class="foldclosed" onClick="show_folder('1_13_3_8_1')" style="POSITION: absolute">+</span> <span id="hide1_13_3_8_1" class="foldopened" onClick="hide_folder('1_13_3_8_1')">-</span>
+<ul id="fold1_13_4_3" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_13_4_3_1" class="foldclosed" onClick="show_folder('1_13_4_3_1')" style="POSITION: absolute">+</span> <span id="hide1_13_4_3_1" class="foldopened" onClick="hide_folder('1_13_4_3_1')">-</span>
 { upsert: true }
-<ul id="fold1_13_3_8_1" style="POSITION: relative; VISIBILITY: visible;"><li>if there is no data matching the query, it's inserted
+<ul id="fold1_13_4_3_1" style="POSITION: relative; VISIBILITY: visible;"><li>if there is no data matching the query, it's inserted
 
 </li>
 
