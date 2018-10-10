@@ -8,4 +8,4 @@
 [Repository](https://github.com/JirkaDellOro/EIA2)  
 
 
-[-> Erwartungen-Mindmap](https://jirkadelloro.github.io/FreeMindViewer/?map=EIA2_W18.mm&path=https://jirkadelloro.github.io/EIA2/TafelW18)  
+[-> Erwartungen-Mindmap](https://jirkadelloro.github.io/FreeMindViewer/?map=EIA2 W18.mm&path=https://jirkadelloro.github.io/EIA2/TafelW18)  
