@@ -30,7 +30,7 @@
 <node CREATED="1486647113550" ID="ID_288337743" LINK="https://devcenter.heroku.com/categories/reference" MODIFIED="1486647120659" TEXT="Heroku"/>
 <node CREATED="1498287456658" ID="ID_540395138" LINK="https://docs.npmjs.com/files/package.json" MODIFIED="1498287470333" TEXT="Package.json"/>
 </node>
-<node CREATED="1480496315340" FOLDED="true" ID="ID_1809458400" MODIFIED="1557761717653" POSITION="left" TEXT="Installations">
+<node CREATED="1480496315340" FOLDED="true" ID="ID_1809458400" MODIFIED="1558334785979" POSITION="left" TEXT="Installations">
 <node CREATED="1553158874643" FOLDED="true" ID="ID_720563409" MODIFIED="1553159009833" TEXT="Git">
 <node CREATED="1553158881821" ID="ID_724995000" LINK="https://git-scm.com/downloads" MODIFIED="1553158926468" TEXT="git-scm.com"/>
 </node>
@@ -526,7 +526,7 @@
 <node CREATED="1486645411698" ID="ID_1538316216" MODIFIED="1489265626593" TEXT="import "/>
 </node>
 </node>
-<node CREATED="1488538765698" FOLDED="true" ID="ID_607602390" MODIFIED="1552665437271" POSITION="right" TEXT="Coding Style">
+<node CREATED="1488538765698" FOLDED="true" ID="ID_607602390" MODIFIED="1558334839382" POSITION="right" TEXT="Coding Style">
 <node CREATED="1489304852746" FOLDED="true" ID="ID_1395923549" MODIFIED="1552662905543" TEXT="Purpose">
 <node CREATED="1488539468570" ID="ID_1233307534" MODIFIED="1488539468570" TEXT="Programme k&#xf6;nnen schnell sehr komplex werden. Daher ist es wichtig, sich an Stil-Regeln zu halten, um sie m&#xf6;glichst verst&#xe4;ndlich zu schreiben. In diesem Kurs gelten folgende Stil-Regeln:"/>
 </node>
@@ -542,11 +542,11 @@
 <node CREATED="1489305067833" FOLDED="true" ID="ID_868361134" MODIFIED="1507131890360" TEXT="4. Names of formal parameters start with underscore">
 <node CREATED="1488539468594" ID="ID_1918366248" MODIFIED="1489305087419" TEXT="Die Namen formaler Parameter in Funktionen beginnen mit einem Unterstrich."/>
 </node>
-<node CREATED="1489305089785" FOLDED="true" ID="ID_1815560056" MODIFIED="1540800473397" TEXT="5. PascalCase for classes, interfaces and namespaces/modules">
+<node CREATED="1489305089785" FOLDED="true" ID="ID_1815560056" MODIFIED="1558334814874" TEXT="5. PascalCase for classes, interfaces and namespaces/modules">
 <node CREATED="1488539468595" ID="ID_1806695145" MODIFIED="1489305142081" TEXT="Die Namen von Klassen, Interfaces und Modulen beginnen mit einem Gro&#xdf;buchstaben und folgen ebenfalls der Kamelnotation. (PascalCase)"/>
 </node>
-<node CREATED="1489305164314" FOLDED="true" ID="ID_1139625541" MODIFIED="1489305224934" TEXT="6. All capital letters for enums, support readability using underscores">
-<node CREATED="1488539468598" ID="ID_1118170874" MODIFIED="1489305210650" TEXT="Die Namen von Enumerations und deren Elemente werden durchgehend mit ro&#xdf;buchstaben geschrieben. Wortteile werden bei Bedarf mit Unterstrich getrennt."/>
+<node CREATED="1489305164314" FOLDED="true" ID="ID_1139625541" MODIFIED="1558334838772" TEXT="6. All capital letters for enums, support readability using underscores">
+<node CREATED="1488539468598" ID="ID_1118170874" MODIFIED="1558334836523" TEXT="Die Namen von Enumerationen und deren Elemente werden durchgehend mit Gro&#xdf;buchstaben geschrieben. Wortteile werden bei Bedarf mit Unterstrich getrennt."/>
 </node>
 <node CREATED="1489305230918" FOLDED="true" ID="ID_1132793376" MODIFIED="1489305309459" TEXT="7. Use double quotes for literal strings">
 <node CREATED="1488539468601" ID="ID_59469303" MODIFIED="1489305307630" TEXT="Literale Zeichenketten werden in doppelte Anf&#xfc;hrungszeichen geschrieben."/>
